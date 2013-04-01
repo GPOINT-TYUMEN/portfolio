@@ -1,0 +1,295 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+<script type="text/javascript">
+    function set_active(el)
+    {
+        $('.date').removeClass('active'); $(el).parent().parent().addClass('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li class="active"><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Лукеры</a></li>
+            <li class="last"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+    <div class="block-view-public">
+        <div class="title">
+            <h2>AutoLook</h2>
+            <span><em>*К примеру, вы выбираете б/у авто в диапазоне цен от 300 000 до 500 000 руб.</em></span>
+            <span class="button"><a class="orange" href="#">ЗАКАЗАТЬ ОТЧЕТ</a></span>
+        </div>
+        <div class="view-public">
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142q.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Hyundai Accent</a></div>
+                        <p>2008 г. 67 000 км.</p>
+                        <p><span>370 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-1.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-2.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142w.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Volkswagen Polo</a></div>
+                        <p>2009 г. 60 000 км.</p>
+                        <p><span>430 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-3.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142e.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Mazda 3</a></div>
+                        <p>2010 г. 80 000 км.</p>
+                        <p><span>480 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-4.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142r.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Opel Astra</a></div>
+                        <p>2009 г. 25 000 км.</p>
+                        <p><span>490 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-5.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142t.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Chevrolet Lanos</a></div>
+                        <p>2008 г. 89 000 км.</p>
+                        <p><span>350 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-6.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142q.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Hyundai Accent</a></div>
+                        <p>2008 г. 67 000 км.</p>
+                        <p><span>370 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-1.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-2.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-3.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-4.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-5.jpg" />
+            </div>
+            <div class="view">
+                <div class="block">
+                    <div class="img"><img src="img/201x142.jpg" /></div>
+                    <div class="text">
+                        <div class="link"><a href="#">Nissan Almera</a></div>
+                        <p>2008 г. 30 000 км.</p>
+                        <p><span>300 000 руб.</span></p>
+                    </div>
+                </div>
+                <img src="img/img-6.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="colum-left">
+            <div class="block-description">
+                <h3>Знакомая ситуация?</h3>
+                <ul>
+                    <li>— Вы хотите купить автомобиль на вторичном рынке.</li>
+                    <li>— Вы смотрите на сайтах различные предложения.</li>
+                    <li>— Вы находите несколько объявлений, которые Вас устраивают.</li>
+                </ul>
+                <h3>Но …</h3>
+                <ul>
+                    <li>— Вы не знаете человека, который опубликовал эту информацию.</li>
+                    <li>— Вы не можете быть уверены в том, что данные в объявлении достоверны.</li>
+                    <li>— Продавец находится в другом городе или нет времени на осмотр.</li>
+                </ul>
+                <h3>Мы все проверяем лично!</h3>
+                <p>Мы предлагаем вам съэкономить время и нервы и заказать подробный отчет о преобретаемом автомобиле.</p>
+                <div class="looker">
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div class="tx">Более<br /><strong>500</strong><br />лукеров</div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                    <div><img src="img/54x54.jpg" /></div>
+                </div>
+                <div class="button"><a class="orange" href="#">ЗАКАЗАТЬ ОТЧЕТ <span>всего за 1000 руб.</span></a></div>
+            </div>
+            <div class="block-guarantee">
+                <i></i>
+                <p><span>Гарантия качества</span></p>
+                <p>Наши <a href="#">лукеры</a> проходят собеседование, перед тем, как пройти аккредитацию на сервисе. Каждое фото в отчете будет снабжено <a href="#">доказательством</a> того, что этот отчет был сделан правдоподобно.</p>
+            </div>
+        </div>
+        <div class="colum-right">
+            <div class="block-report">
+                <h3>Что входит в отчет?</h3>
+                <div class="block-img"><a href="#"><img src="img/332x399.jpg" /><i></i></a></div>
+                <ul>
+                    <li><i></i>Демонстрация работы</li>
+                    <li><i></i>Обнаруженные поломки и недочеты</li>
+                    <li><i></i>Общий косметический осмотр</li>
+                    <li><i></i>Оценки лукера</li>
+                    <li><i></i>Фотографии</li>
+                    <li><i></i>Видео</li>
+                </ul>
+                <div class="button"><a class="blue" href="#">ПРИМЕР ОТЧЕТА</a></div>
+            </div>
+            <div class="block-presentation">
+                <div class="img"><img src="img/ico-pdf.gif" /></div>
+                <div class="text">
+                    <p><a href="#">Скачать презентацию ComeLook</a></p>
+                    <p>pdf, 3 мб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>

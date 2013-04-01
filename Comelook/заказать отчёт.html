@@ -1,0 +1,315 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/formtastic.css" type="text/css" rel="stylesheet" />
+<!--[if lt IE 7 ]><link href="css/formtastic_ie6.css" type="text/css" rel="stylesheet" /><![endif]-->
+<!--[if IE 7 ]><link href="css/formtastic_ie7.css" type="text/css" rel="stylesheet" /><![endif]-->
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/formtastic_changes.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+<script type="text/javascript">
+    function set_active(el)
+    {
+        $('.date').removeClass('active'); $(el).parent().parent().addClass('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Лукеры</a></li>
+            <li class="last active"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+    <div class="body">
+        <div class="colum-left">
+            <div class="block-order-report">
+                <h2>Заказать отчет</h2>
+                <div class="block-tabs clearfix">
+                    <div class="tabs active">
+                        <i class="ok"></i>
+                        <i class="auto"></i>
+                        <p>AutoLook</p>
+                        <p><a href="#">подробнее</a></p>
+                        <span></span>
+                    </div>
+                    <div class="tabs">
+                        <i class="ok"></i>
+                        <i class="home"></i>
+                        <p>HomeLook</p>
+                        <p><a href="#">выбрать этот отчет</a></p>
+                        <span></span>
+                    </div>
+                    <div class="tabs">
+                        <i class="ok"></i>
+                        <i class="all"></i>
+                        <p>AllLook</p>
+                        <p><a href="#">выбрать этот отчет</a></p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="block-form">
+	<form accept-charset="UTF-8" action="/inquiries" class="formtastic inquiry" id="new_inquiry" method="post">
+		<div style="margin:0;padding:0;display:inline">
+			<input name="utf8" type="hidden" value="&#x2713;" />
+			<input name="authenticity_token" type="hidden" value="0knNnZua43e9rVdwMwL+Ahd156GVipM0Ty0epG2CdsU=" />
+		</div>
+		<fieldset class="inputs"><ol>
+                        <li id="inquiry_email_input" class="email input required"><label for="inquiry_email" class=" label">Ваш емейл<abbr title="required">*</abbr></label><span><input type="email" size="30" rows="20" required="required" name="inquiry[email]" id="inquiry_email"></span>
+
+</li>
+                        <li id="inquiry_model_input" class="string input optional stringish"><label for="inquiry_model" class=" label">Марка и модель авто</label><span><input type="text" name="inquiry[model]" maxlength="255" id="inquiry_model"></span>
+
+<p class="inline-hints">Например, Nissan Teana, 2009 г.в.</p></li>
+                        <li id="inquiry_advert_link_input" class="string input optional stringish"><label for="inquiry_advert_link" class=" label">Ссылка на объявление</label><span><input type="text" name="inquiry[advert_link]" maxlength="255" id="inquiry_advert_link"></span>
+
+<p class="inline-hints">Скопируйте ссылку на объявление в интернете</p></li>
+                        <li id="inquiry_comment_input" class="text input required"><label for="inquiry_comment" class=" label">Комментарий к заказу<abbr title="required">*</abbr></label><span><textarea rows="20" required="required" name="inquiry[comment]" id="inquiry_comment"></textarea></span>
+
+<p class="inline-hints">Например, автомобиль находиться в автоцентре «Дина», серо-фиолетовый Nissan Teana, 2.5 CVT</p></li>
+                        <li id="inquiry_report_recommendation_input" class="text input optional"><label for="inquiry_report_recommendation" class=" label">Ваши пожелания к отчету</label><span><textarea rows="20" name="inquiry[report_recommendation]" id="inquiry_report_recommendation"></textarea></span>
+
+<p class="inline-hints">Укажите, на какие моменты лукер должен обратить внимание, какие детали и подробности вас интрересуют</p></li>
+</ol></fieldset>                    <fieldset class="inputs"><legend><span>Контактные данные продавца</span></legend><ol>
+                        <li id="inquiry_seller_name_input" class="string input optional stringish"><label for="inquiry_seller_name" class=" label">ФИО или название</label><span><input type="text" name="inquiry[seller_name]" maxlength="255" id="inquiry_seller_name"></span>
+
+<p class="inline-hints">Например, Иванов Петр или «Автоцентр Дина»</p></li>
+                        <li id="inquiry_city_input" class="select input required"><label for="inquiry_city_id" class=" label">Город<abbr title="required">*</abbr></label><select required="required" name="inquiry[city_id]" id="inquiry_city_id"><option value=""></option>
+<option value="1">Тюмень</option>
+<option value="2">Новосибирск</option>
+<option value="3">Екатеринбург</option></select>
+
+</li>
+                        <li id="inquiry_seller_address_input" class="string input required stringish"><label for="inquiry_seller_address" class=" label">Адрес нахождения авто<abbr title="required">*</abbr></label><span><input type="text" required="required" name="inquiry[seller_address]" maxlength="255" id="inquiry_seller_address"></span>
+
+<p class="inline-hints">Например, ул. Пржевальского, 35, автоцентр «Дина»</p></li>
+                        <li id="inquiry_seller_phone_input" class="phone input optional"><label for="inquiry_seller_phone" class=" label">Телефон продавца</label><span><input type="tel" size="30" rows="20" name="inquiry[seller_phone]" id="inquiry_seller_phone"></span>
+
+<p class="inline-hints">Например, (3452)41-59-64</p></li>
+                        <li id="inquiry_seller_email_input" class="email input optional"><label for="inquiry_seller_email" class=" label">Email продавца</label><span><input type="email" size="30" rows="20" name="inquiry[seller_email]" id="inquiry_seller_email"></span>
+
+<p class="inline-hints">Например, ivan@yandex.ru</p></li>
+</ol></fieldset>
+                    <!--<ul>
+                        <li>
+                            <span class="left">Ваш e-mail:*</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Марка и модель авто:</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Например, Nissan Teana, 2009 г.в.</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Ссылка на объявление:</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Скопируйте ссылку на объявление в интернете</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Комментарий к заказу:*</span>
+                            <span class="right">
+                                <span><textarea></textarea></span>
+                                <p><em>Например, автомобиль находиться в автоцентре «Дина», серо-фиолетовый Nissan Teana, 2.5 CVT</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Ваши пожелания к отчету:</span>
+                            <span class="right">
+                                <span><textarea></textarea></span>
+                                <p><em>Укажите, на какие моменты лукер должен обратить внимание, какие детали и подробности вас интрересуют</em></p>
+                            </span>
+                        </li>
+                    </ul>
+                    <h3>Контактные данные продавца</h3>
+                    <ul>
+                        <li>
+                            <span class="left">ФИО или название:</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Например, Иванов Петр или «Автоцентр Дина»</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Город:*</span>
+                            <span class="right">
+                                <span><select><option>Тюмень</option></select></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Адрес нахождения<br /> авто:*</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Например, ул. Пржевальского, 35, автоцентр «Дина»</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Телефон продавца:</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Например, (3452)41-59-64</em></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">E-mail продавца:</span>
+                            <span class="right">
+                                <span><input type="text" /></span>
+                                <p><em>Например, ivan@yandex.ru</em></p>
+                            </span>
+                        </li>
+                    </ul>
+                    <h3>Дата предоставления отчета</h3>-->
+                    <p>Минимальный срок составления отчета — 3 рабочих дня со дня назначения лукера</p>
+                    <div class="date-report">
+                        <div class="date active">
+                            <p><a onclick="set_active(this);" href="javascript: void(0);">3 дня</a></p>
+                            <p>23 мая, 2011</p>
+                        </div>
+                        <div class="date">
+                            <p><a onclick="set_active(this);" href="javascript: void(0);">5 дней</a></p>
+                            <p>23 сенбяря, 2011</p>
+                        </div>
+                        <div class="date">
+                            <p><a onclick="set_active(this);" href="javascript: void(0);">15 дней</a></p>
+                            <p>23 сенбяря, 2011</p>
+                        </div>
+                        <div class="date">
+                            <p><a onclick="set_active(this);" href="javascript: void(0);">30 дней</a></p>
+                            <p>23 сенбяря, 2011</p>
+                        </div>
+                        <div class="date">
+                            <p><a onclick="set_active(this);" href="javascript: void(0);">Бессрочно</a></p>
+                            <p>по готовности</p>
+                        </div>
+                    </div>
+                    <div class="conditions"><label><input type="checkbox" /> Я согласен с <a href="#">условиями и правилами</a> предоставления услуг</label></div>
+                    <div class="button"><input type="submit" class="orange" value="ЗАКАЗАТЬ ОТЧЕТ" /></div>
+                    </form>
+                </div>
+            </div>
+            <div class="block-guarantee">
+                <i></i>
+                <p><span>Гарантия качества</span></p>
+                <p>Наши <a href="#">лукеры</a> проходят собеседование, перед тем, как пройти аккредитацию на сервисе. Каждое фото в отчете будет снабжено <a href="#">доказательством</a> того, что этот отчет был сделан правдоподобно.</p>
+            </div>
+        </div>
+        <div class="colum-right">
+            <div class="block-report">
+                <h3>Отчет Autolook</h3>
+                <div class="block-img"><a href="#"><img src="img/332x399.jpg" /><i></i></a></div>
+                <ul>
+                    <li><i></i>Демонстрация работы</li>
+                    <li><i></i>Обнаруженные поломки и недочеты</li>
+                    <li><i></i>Общий косметический осмотр</li>
+                    <li><i></i>Оценки лукера</li>
+                    <li><i></i>Фотографии</li>
+                    <li><i></i>Видео</li>
+                </ul>
+                <div class="button"><a class="blue" href="#">ПРИМЕР ОТЧЕТА</a></div>
+                <h3>Задать вопрос</h3>
+                <div class="block-form">
+                    <form>
+                    <ul>
+                        <li>
+                            <span><input placeholder="Ваше имя" type="text" /></span>
+                        </li>
+                        <li>
+                            <span><input placeholder="E-mail*" type="text" /></span>
+                        </li>
+                        <li>
+                            <span><textarea placeholder="Ваш вопрос"></textarea></span>
+                        </li>
+                    </ul>
+                    <div class="button"><input class="blue" type="submit" value="ОТПРАВИТЬ" /></div>
+                    </form>
+                </div>
+            </div>
+            <div class="block-presentation">
+                <div class="img"><img src="img/ico-pdf.gif" /></div>
+                <div class="text">
+                    <p><a href="#">Скачать презентацию ComeLook</a></p>
+                    <p>pdf, 3 мб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>

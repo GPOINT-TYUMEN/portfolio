@@ -1,0 +1,278 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+<script type="text/javascript">
+    function set_active(el)
+    {
+        $('.date').removeClass('active'); $(el).parent().parent().addClass('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Лукеры</a></li>
+            <li class="last active"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+    <div class="body">
+			<div class="colum-center">
+				<div class="block-report">
+					<div class="title">
+						<h2>Пример отчета AutoLook</h2>
+						<a class="print" href="#"><i></i>Распечатать</a>
+						<a class="orange" href="#">ЗАКАЗАТЬ ОТЧЕТ</a>
+					</div>
+					<div class="report">
+						<div class="th">Информация о заказе</div>
+						<ul>
+							<li>
+								<span class="left">ФИО заказчика</span>
+								<span class="right">Горбатков Евгений</span>
+							</li>
+							<li>
+								<span class="left">Номер заказа</span>
+								<span class="right">324309</span>
+							</li>
+							<li>
+								<span class="left">Дата заказа</span>
+								<span class="right">12 мая, 2011 г.</span>
+							</li>
+							<li>
+								<span class="left">Тип заказа</span>
+								<span class="right">AutoLook</span>
+							</li>
+							<li>
+								<span class="left">Объект осмотра</span>
+								<span class="right">Nissan Teana, 2009 г.в. 2.5 CVT</span>
+							</li>
+							<li>
+								<span class="left">Описание объекта осмотра</span>
+								<span class="right">Автомобиль Nissan Teana, цвет сине-фиолетовый</span>
+							</li>
+							<li>
+								<span class="left">Имя продавца</span>
+								<span class="right">Селиверстов Григорий</span>
+							</li>
+							<li>
+								<span class="left">Дата предоставления отчета</span>
+								<span class="right">до 15 мая, 2011 г.</span>
+							</li>
+							<li>
+								<span class="left">Дополнительные вопросы</span>
+								<span class="right">провести тест драйв, описать ощущения от поездки. Посмотреть, есть ли сколы на переднем бампере</span>
+							</li>
+						</ul>
+						<div class="th">ОТЧЕТ</div>
+						<ul>
+							<li>
+								<span class="left">Лукер</span>
+								<span class="right"><a href="#">Иванов Евгений</a></span>
+							</li>
+							<li>
+								<span class="left">Дата осмотра</span>
+								<span class="right">13 мая, 2011 г.</span>
+							</li>
+							<li>
+								<span class="left">Время осмотра</span>
+								<span class="right">14:50</span>
+							</li>
+							<li>
+								<span class="left">Место осмотра</span>
+								<span class="right">г. Тюмень, ул. Пржевальского, 36, корп. 4</span>
+							</li>
+							<li>
+								<span class="left">Как представился продавец</span>
+								<span class="right">Селиверстов Григорий</span>
+							</li>
+							<li>
+								<span class="left">Производитель авто</span>
+								<span class="right">Nissan</span>
+							</li>
+							<li>
+								<span class="left">Марка авто</span>
+								<span class="right">Teana, 2.5 CVT</span>
+							</li>
+							<li>
+								<span class="left">VIN номер</span>
+								<span class="right">совпадает с паспортом</span>
+							</li>
+							<li>
+								<span class="left">Текущий пробег</span>
+								<span class="right">12583 км.</span>
+							</li>
+							<li>
+								<span class="left">Демонстрация работы</span>
+								<span class="right">Продавец предоставил 2 пары ключей. Продемонстрировал открывание/закрывание всех дверей и багажника. Все стекла открываются как нужно. Люк также работает хорошо. Машина завелась с первого раза и работала тихо и плавно. Встроенная печка и кондиционер работали хорошо. На дисплее высвечивались сообщения о недостаточном уровне топлива и омывающей жидкости. Отсутствует система навигации на русском языке. Не читается DVD диск на встроенном плеере. Никаких стуков и рывков при езде не обнаружилось. Разгонялись до 80 км/ч - машина шла тихо и плавно. Машина тормозит четко и без рывков с любой скорости. Продавец также предоставил большое количество документации на автомобиль и сервисную книжку с записями о прохождении техосмотра у официального диллера. Все механические и электрические функции автомобиля работают как надо.</span>
+							</li>
+							<li>
+								<span class="left">Дополнительные комментарии</span>
+								<span class="right">VIN номер соответствует указанному в объявлении. Следов покраски не обнаружено. Сколов и трещин на ЛКП не обнаружено. Краска на всей поверхности кузова заводская и находится в удовлетворительном состоянии. Нет следов подтеков масла в моторном отсеке. Руль немного потерт, вследсвтии нормальной эксплуатации. Все деревянные и пластиковые детали в салоне выглядят свежо и без явных царапин (присутствуют небольшие царапины, которые можно убрать простой полировкой).</span>
+							</li>
+							<li>
+								<span class="left">Общий косметический осмотр</span>
+								<span class="right">Машина выглядет как новая и свежая даже при ближайшем рассмотрении. Интерьер также в хорошем состоянии. 	Есть некоторые недочеты, но они устраняются без особых усилий. Автомобиль не требует срочных вложений во внешний вид.</span>
+							</li>
+							<li>
+								<span class="left">Обнаруженные поломки и дефекты<br />(царапины, сколы, нерабочие<br />элементы<br />и т.д.)</span>
+								<span class="right">Трещина на заднем бампере около 4 сантиметров. Продавец говорит что неаккуратно сдавал задним ходом (фото прилагается). Передние фары немного мутные из за постоянной протирки. Передняя дверь закрывается не до конца, приходится прилагать усилия. Есть небольшой участок с вмятиной на заднем крыле (фото прилагается).</span>
+							</li>
+						</ul>
+						<div class="th">оценки лукера</div>
+						<ul>
+							<li>
+								<span class="left">Внешний вид</span>
+								<span class="right"></span>
+							</li>
+							<li>
+								<span class="left">Работа электроники</span>
+								<span class="right"></span>
+							</li>
+							<li>
+								<span class="left">Работа механики</span>
+								<span class="right"></span>
+							</li>
+							<li>
+								<span class="left">Впечатление от продавца</span>
+								<span class="right"></span>
+							</li>
+							<li>
+								<span class="left">Соответствие заявленным данным</span>
+								<span class="right"></span>
+							</li>
+							<li>
+								<span class="left"><strong>Общая оценка</strong></span>
+								<span class="right"></span>
+							</li>
+						</ul>
+						<div class="th">фотографии</div>
+						<div class="photo-block">
+							<div class="big-img"><img src="img/485x365.jpg" /></div>
+							<div class="mini-img">
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item active">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+								<div class="item">
+									<img src="img/110x80.jpg" />
+									<a href="#"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>

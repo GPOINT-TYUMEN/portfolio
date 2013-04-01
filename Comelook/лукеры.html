@@ -1,0 +1,223 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li class="highlighted"><a href="#">Лукеры</a></li>
+            <li class="last"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+	<div class="looker-body">
+		<div class="title">
+			<div class="left">
+				<h2>Лукеры</h2> <sup><strong>543</strong> лукера в <strong>32</strong> городах России</sup>
+			</div>
+			<div class="right">
+				<div class="button">
+             <a href="#" class="orange">ЗАКАЗАТЬ ОТЧЕТ</a>
+             <a class="black" href="#">СТАТЬ ЛУКЕРОМ</a>
+         </div>
+			</div>
+		</div>
+		<div class="map">
+			<script src="http://api-maps.yandex.ru/1.1/?key=AM0SFE4BAAAAAHiuEAIADzns8s4cpfQPWOXo3mbYvccmKikAAAAAAAAAAADegYgUUqi_V0TpXe3BYgPISROomw==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+					<script type="text/javascript">
+					    YMaps.jQuery(window).load(function () {
+					        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-366")[0]);
+					        map.setCenter(new YMaps.GeoPoint(65.489747,57.234052), 10, YMaps.MapType.MAP);
+					        map.addControl(new YMaps.Zoom());
+					        map.addControl(new YMaps.ToolBar());
+					        YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+					        map.addControl(new YMaps.TypeControl([
+					            YMaps.MapType.MAP,
+					            YMaps.MapType.SATELLITE,
+					            YMaps.MapType.HYBRID,
+					            YMaps.MapType.PMAP
+					        ], [0, 1, 2, 3]));
+
+					        YMaps.Styles.add("constructor#pmlbmPlacemark", {
+					            iconStyle : {
+					                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmlbm.png",
+					                size : new YMaps.Point(28,29),
+					                offset: new YMaps.Point(-8,-27)
+					            }
+					        });
+
+					       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(65.558412,57.182631), "constructor#pmlbmPlacemark", ""));
+
+					        function createObject (type, point, style, description) {
+					            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+					                index = YMaps.jQuery.inArray( type, allowObjects),
+					                constructor = allowObjects[(index == -1) ? 0 : index];
+					                description = description || "";
+
+					            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+					            object.description = description;
+
+					            return object;
+					        }
+					    });
+					</script>
+
+					<div id="YMapsID-366" style="width:100%;height:255px"></div>
+					<div style="width:450px;text-align:right;font-family:Arial;display:none;"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+		</div>
+	</div>
+    <div class="body">
+        <div class="colum-left">
+					<div class="looker-block">
+						<h3>Лукеры — это наши аккредитованные агенты в различных городах. </h3>
+						<p>У каждого лукера есть доступ в личный кабинет, в котором он видит текущие заказы на составление отчетов и может выбрать заказ для выполнения. Каждый агент имеет при себе фото и видео камеру для составления подробного отчета.<br />Лукеры формируют типовой отчет, подробно заполняя все необходимые поля. Как правило, составление готового отчета занимает не более 3-4 дней.</p>
+						<p>Лукеры получают 50% от заказа, то есть 500 руб. за каждый заказ. После того, как заказ сделан, он поступает к нам на модерацию, если с ним все в порядке, - вы получаете уникальный отчет о проверке объявления на электронную почту и в своем личном кабинете на сайте.</p>
+						<p>Если с лукером что-то случится на задании, или он в силу каких-то обстоятельств не сможет выполнить отчет, - мы оповестим Вас об этом и обсудим вариант необходимости продления срока актуальности и проверки объявления. Данный отчет в таком случае попадает другому лукеру, находящемуся в этом городе.</p>
+						<p>Наши лукеры фотографируются с фирменным логотипом нашей компании ComeLook, что является гарантией качества на проверку объявления, так как доступ к этим материалам есть только у аккредитованных лукеров и они получают эти материалы только после принятия заказа.</p>
+					</div>
+					<div class="our-looker">
+						<div class="title">
+							<h3>Наши лукеры</h3>
+							<p>проверьте свое объявление вместе с нашими лукерами!</p>
+						</div>
+						<div class="select">Выберите город: <span><select><option>Все города</option></select></span></div>
+						<div class="block">
+							<div class="item">
+								<div class="img"><img src="img/54x54.jpg" /></div>
+								<div class="info">
+									<p><strong>Андрей Петров</strong></p>
+									<p>Тюмень</p>
+								</div>
+								<div class="reports">5 отчетов</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/54x54.jpg" /></div>
+								<div class="info">
+									<p><strong>Андрей Петров</strong></p>
+									<p>Тюмень</p>
+								</div>
+								<div class="reports">5 отчетов</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/54x54.jpg" /></div>
+								<div class="info">
+									<p><strong>Андрей Петров</strong></p>
+									<p>Тюмень</p>
+								</div>
+								<div class="reports">5 отчетов</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/54x54.jpg" /></div>
+								<div class="info">
+									<p><strong>Андрей Петров</strong></p>
+									<p>Тюмень</p>
+								</div>
+								<div class="reports">5 отчетов</div>
+							</div>
+						</div>
+						<div class="button">
+	              <a href="#" class="orange">ЗАКАЗАТЬ ОТЧЕТ</a>
+	              <a class="black" href="#">СТАТЬ ЛУКЕРОМ</a>
+	          </div>
+					</div>
+            <div class="block-guarantee">
+                <i></i>
+                <p><span>Гарантия качества</span></p>
+                <p>Наши <a href="#">лукеры</a> проходят собеседование, перед тем, как пройти аккредитацию на сервисе. Каждое фото в отчете будет снабжено <a href="#">доказательством</a> того, что этот отчет был сделан правдоподобно.</p>
+            </div>
+        </div>
+        <div class="colum-right">
+					<div class="menu-looker">
+						<ul>
+							<li class="login"><a href="#"><i></i>Вход для лукеров</a></li>
+							<li class="want"><a href="#"><i></i>Хотите стать лукером?</a></li>
+							<li class="faq"><a href="#"><i></i>FAQ для лукеров</a></li>
+							<li class="agreement"><a href="#"><i></i>Пользовательское соглашение</a></li>
+						</ul>
+					</div>
+					<div class="block-presentation">
+              <div class="img"><img src="img/ico-pdf.gif" /></div>
+              <div class="text">
+                  <p><a href="#">Скачать презентацию ComeLook</a></p>
+                  <p>pdf, 3 мб.</p>
+              </div>
+          </div>
+					<div class="button"><a class="blue" href="#">ПРИМЕР ОТЧЕТА</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>

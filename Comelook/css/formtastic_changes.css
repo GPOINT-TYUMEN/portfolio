@@ -1,0 +1,22 @@
+.body .block-form fieldset.inputs { margin: 0 0 30px; }
+.body .block-form .inputs ol { margin: 0; padding: 0; }
+.body .block-form .inputs ol li:nth-child(odd) { background: #d3d3d3; }
+.body .block-form .inputs ol li { padding: 14px 0; }
+.body .block-form .inputs ol li label { text-align: right; display: block; width: 170px; font-size: 14px; color: #302f2f;}
+.body .block-form .inputs ol li input[type=text], .body .block-form .formtastic .input li input[type=email] { width: 330px; }
+.body .block-form .inputs ol li span { float: right; display: block; background: #fff url(../img/bg-351.png) no-repeat -1px 0; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; width: 331px; border-radius: 9px; -webkit-border-radius: 9px; -moz-border-radius: 9px; padding: 3px 9px 4px; margin: 0 14px 0 0; }
+.body .block-form .inputs ol li span input[type=text], .body .block-form .inputs ol li span input[type=email], .body .block-form .inputs ol li span textarea, .body .block-form .inputs ol li span input[type=tel], .body .block-form .inputs ol li span input[type=number], .body .block-form .inputs ol li span select { border: none; width: 330px; }
+.body .block-form .inputs ol li span textarea { max-width: 331px; min-width: 331px; width: 331px; min-height: 124px; height: 124px; }
+.body .block-form .inputs ol li p.inline-hints { display: block; float: right; width: 365px; font-size: 11px; line-height: 14px; color: #777; font-family: Arial; font-style: italic; margin-top: 7px;}
+.body .block-form .buttons ol .button { float: none; padding: 0; }
+
+.body .colum-center .block-form .inputs ol li label { width: 243px; }
+.body .colum-center .block-form .inputs ol li label p { line-height: 15px; margin: 12px 0 0; }
+.body .colum-center .block-form .inputs ol li label p em { font-size: 11px; line-height: 14px; color: #777; font-family: Arial; font-style: italic; }
+.body .colum-center .block-form .inputs ol li a { color: #4c2e88; }
+.body .colum-center .block-form .inputs ol li span { background: #fff url(../img/bg-661.png) no-repeat -1px 0; width: 641px; }
+.body .colum-center .block-form .inputs ol li span input[type=text], .body .colum-center .block-form .inputs ol li span input[type=email], .body .colum-center .block-form .inputs ol li span input[type=tel], .body .colum-center .block-form .inputs ol li span input[type=number] { width: 643px; }
+.body .colum-center .block-form .inputs ol li span textarea { min-height: 290px; min-width: 641px; width: 641px; }
+.body .colum-center .block-form .inputs ol li span.mini { background: #fff url(../img/bg-139.png) no-repeat -1px 0; width: 119px; float: left; margin-left: 30px; }
+.body .colum-center .block-form .inputs ol li span.mini input[type=text] { width: 122px; }
+.body .colum-center .block-form .inputs ol li p.inline-hints { width: 672px; }

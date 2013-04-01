@@ -1,0 +1,381 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/formtastic.css" type="text/css" rel="stylesheet" />
+<!--[if lt IE 7 ]><link href="css/formtastic_ie6.css" type="text/css" rel="stylesheet" /><![endif]-->
+<!--[if IE 7 ]><link href="css/formtastic_ie7.css" type="text/css" rel="stylesheet" /><![endif]-->
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/formtastic_changes.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+<script type="text/javascript">
+    function set_active(el)
+    {
+        $('.date').removeClass('active'); $(el).parent().parent().addClass('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Лукеры</a></li>
+            <li class="last active"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+    <div class="body">
+			<div class="colum-center">
+				<div class="block-order-report">
+              <h2>Отчет</h2>
+              <div class="block-tabs clearfix">
+                  <div class="tabs active">
+                      <i class="ok"></i>
+                      <p>Отчет</p>
+                      <p class="mini">заполнено на 40%</p>
+                      <span></span>
+                  </div>
+                  <div class="tabs">
+                      <i class="ok"></i>
+                      <p>Фото</p>
+                      <p class="mini">загружено 10 из 10</p>
+                      <span></span>
+                  </div>
+                  <div class="tabs">
+                      <i class="ok"></i>
+                      <p>Видео</p>
+                      <p class="mini">не загружено</p>
+                      <span></span>
+                  </div>
+									<div class="progress">
+										<p>Отчет заполнен на 64%</p>
+										<div class="bar">
+											<div class="percent" style="width: 64%"></div>
+										</div>
+										<em>Учитывается заполнение обязательных полей</em>
+									</div>
+              </div>
+              <div class="block-form">
+<form accept-charset="UTF-8" action="/inquiries" class="formtastic inquiry" id="new_inquiry" method="post">
+		<div style="margin:0;padding:0;display:inline">
+			<input name="utf8" type="hidden" value="&#x2713;" />
+			<input name="authenticity_token" type="hidden" value="0knNnZua43e9rVdwMwL+Ahd156GVipM0Ty0epG2CdsU=" />
+		</div>
+		<fieldset class="inputs">
+			<ol>
+				<li class="input">
+					<fieldset class="inputs">
+						<ol>
+							<li class="email input required stringish" id="inquiry_email_input">
+								<label class=" label" for="inquiry_email">Дата осмотра:<abbr title="required">*</abbr></label>
+								<strong>12 мая, 2011 г.</strong> <a class="dotted" href="#">выбрать дату</a>
+							</li>
+							<li class="string input required stringish" id="inquiry_model_input">
+								<label class=" label" for="inquiry_model">Время осмотра:</label>
+								<span class="mini"><input id="inquiry_model" maxlength="255" name="inquiry[model]" required="required" type="text" /></span>
+								<p class="inline-hints">Например, 12:00</p>
+							</li>
+							<li class="string input required stringish" id="inquiry_advert_link_input">
+								<label class=" label" for="inquiry_advert_link">Место осмотра:</label>
+								<span><input id="inquiry_advert_link" maxlength="255" name="inquiry[advert_link]" required="required" type="text" /></span>
+								<p class="inline-hints">Например, г. Тюмень, ул. Пржевальского, 35, автомобильный центр «Дина»</p>
+							</li>
+							<li class="string input required stringish" id="inquiry_advert_link_input">
+								<label class=" label" for="inquiry_advert_link">Как представился продавец:</label>
+								<span><input id="inquiry_advert_link" maxlength="255" name="inquiry[advert_link]" required="required" type="text" /></span>
+								<p class="inline-hints">Укажите, если продавец представился вам при осмотре</p>
+							</li>
+							<li class="string input required stringish" id="inquiry_advert_link_input">
+								<label class=" label" for="inquiry_advert_link">Производитель авто:<abbr title="required">*</abbr></label>
+								<span><input id="inquiry_advert_link" maxlength="255" name="inquiry[advert_link]" required="required" type="text" /></span>
+								<p class="inline-hints">Например, Nissan</p>
+							</li>
+							<li class="string input required stringish" id="inquiry_advert_link_input">
+								<label class=" label" for="inquiry_advert_link">Марка авто:<abbr title="required">*</abbr></label>
+								<span><input id="inquiry_advert_link" maxlength="255" name="inquiry[advert_link]" required="required" type="text" /></span>
+								<p class="inline-hints">Например, Teana, 2.5 CSVT</p>
+							</li>
+							<li class="string input required stringish" id="inquiry_advert_link_input">
+								<label class=" label" for="inquiry_advert_link">VIN:<abbr title="required">*</abbr></label>
+								<label><input type="checkbox" /> Совпадает с указанным в паспорте авто</label>
+							</li>
+							<li class="string input required stringish" id="inquiry_model_input">
+								<label class=" label" for="inquiry_model">Пробег на момент осмотра, км:<abbr title="required">*</abbr></label>
+								<span class="mini"><input id="inquiry_model" maxlength="255" name="inquiry[model]" required="required" type="text" /></span>
+							</li>
+							<li class="text input required" id="inquiry_comment_input">
+								<label class=" label" for="inquiry_comment">Демонстрация работы:<abbr title="required">*</abbr>
+								<p><em>В этом пункте указывается<br /> информация о текущей работе<br /> автомобиля. Ощущения от<br /> тест-драйва и все события, которые<br /> вы заметили при просмотре<br /> автомобиля Пример текста<br /> демонстрации работы можно<br /> <a href="#">прочитать тут</a></em></p></label>
+								<span><textarea id="inquiry_comment" name="inquiry[comment]" required="required" rows="20"></textarea></span>
+							</li>
+							<li class="text input required" id="inquiry_report_recommendation_input">
+								<label class=" label" for="inquiry_report_recommendation">Дополнительные комментарии:
+								<p><em>Общее впечатление от осмотра и<br />работы автомобиля. Пример текста<br />можно <a href="#">прочитать тут</a></em></p></label>
+								<span><textarea id="inquiry_report_recommendation" name="inquiry[report_recommendation]" required="required" rows="20"></textarea></span>
+							</li>
+							<li class="text input required" id="inquiry_report_recommendation_input">
+								<label class=" label" for="inquiry_report_recommendation">Общий косметический осмотр:*
+								<p><em>Впечатления и замечания по осмотру<br />салона, двигателя и внешнего вида<br />автомобиля. Сколы, трещины,<br />потертости и т.д. Пример текста<br />демонстрации работы можно<br /> <a href="#">прочитать тут</a></em></p></label>
+								<span><textarea id="inquiry_report_recommendation" name="inquiry[report_recommendation]" required="required" rows="20"></textarea></span>
+							</li>
+							<li class="text input required" id="inquiry_report_recommendation_input">
+								<label class=" label" for="inquiry_report_recommendation">Обнаруженные поломки и<br />дефекты:*
+								<p><em>Если вы обнаружили стуки мотора при<br />работе, какие то сколы или царапины,<br />следы покраски или деформации<br />корпуса и т.д., укажите все это в этом<br />пункте. Пример теста можно<br /> <a href="#">прочитать тут</a></em></p></label>
+								<span><textarea id="inquiry_report_recommendation" name="inquiry[report_recommendation]" required="required" rows="20"></textarea></span>
+							</li>
+						</ol>
+					</fieldset>
+				</li>
+			</ol>
+		</fieldset>
+                  <ul>
+                      <!--<li>
+                          <span class="left">Дата осмотра:*</span>
+                          <span class="right">
+                              <strong>12 мая, 2011 г.</strong> <a class="dotted" href="#">выбрать дату</a>
+                          </span>
+                      </li>
+                      <li>
+                          <span class="left">Время осмотра:</span>
+                          <span class="right">
+                              <span class="mini"><input type="text" /></span>
+                              <p><em>Например, 12:00</em></p>
+                          </span>
+                      </li>
+                      <li>
+                          <span class="left">Место осмотра:</span>
+                          <span class="right">
+                              <span><input type="text" /></span>
+                              <p><em>Например, г. Тюмень, ул. Пржевальского, 35, автомобильный центр «Дина»</em></p>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">Как представился продавец:</span>
+                          <span class="right">
+                              <span><input type="text" /></span>
+                              <p><em>Укажите, если продавец представился вам при осмотре</em></p>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">Производитель авто:*</span>
+                          <span class="right">
+                              <span><input type="text" /></span>
+                              <p><em>Например, Nissan</em></p>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">Марка авто:*</span>
+                          <span class="right">
+                              <span><input type="text" /></span>
+                              <p><em>Например, Teana, 2.5 CSVT</em></p>
+                          </span>
+                      </li>
+                      <li>
+                          <span class="left">VIN:*</span>
+                          <span class="right">
+                              <label><input type="checkbox" /> Совпадает с указанным в паспорте авто</label>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">Пробег на момент осмотра, км:*</span>
+                          <span class="right">
+                              <span class="mini"><input type="text" /></span>
+                          </span>
+                      </li>
+                      <li>
+                          <span class="left">
+														Демонстрация работы:*
+														<p><em>В этом пункте указывается<br /> информация о текущей работе<br /> автомобиля. Ощущения от<br /> тест-драйва и все события, которые<br /> вы заметили при просмотре<br /> автомобиля Пример текста<br /> демонстрации работы можно<br /> <a href="#">прочитать тут</a></em></p>
+													</span>
+                          <span class="right">
+                              <span><textarea></textarea></span>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">
+														Дополнительные комментарии:
+														<p><em>Общее впечатление от осмотра и<br />работы автомобиля. Пример текста<br />можно <a href="#">прочитать тут</a></em></p>
+													</span>
+                          <span class="right">
+                              <span><textarea></textarea></span>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">
+														Общий косметический осмотр:*
+														<p><em>Впечатления и замечания по осмотру<br />салона, двигателя и внешнего вида<br />автомобиля. Сколы, трещины,<br />потертости и т.д. Пример текста<br />демонстрации работы можно<br /> <a href="#">прочитать тут</a></em></p>
+													</span>
+                          <span class="right">
+                              <span><textarea></textarea></span>
+                          </span>
+                      </li>
+											<li>
+                          <span class="left">
+														Обнаруженные поломки и<br />дефекты:*
+														<p><em>Если вы обнаружили стуки мотора при<br />работе, какие то сколы или царапины,<br />следы покраски или деформации<br />корпуса и т.д., укажите все это в этом<br />пункте. Пример теста можно<br /> <a href="#">прочитать тут</a></em></p>
+													</span>
+                          <span class="right">
+                              <span><textarea></textarea></span>
+                          </span>
+                      </li>-->
+											<li>
+                          <span class="left">
+														Оценки:*
+														<p><em>Общие оценки работы, внешнего вида<br />и самого объявления.</em></p>
+													</span>
+                          <span class="right">
+                              <ul>
+																<li>
+																	<em class="l">Внешний вид</em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a href="#"></a>
+																		<i>4/5</i>
+																	</em>
+																</li>
+																<li>
+																	<em class="l">Работа электроники</em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<i>4/5</i>
+																	</em>
+																</li>
+																<li>
+																	<em class="l">Работа механики</em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<i>4/5</i>
+																	</em>
+																</li>
+																<li>
+																	<em class="l">Впечатление от продавца</em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a href="#"></a>
+																		<a href="#"></a>
+																		<a href="#"></a>
+																		<i>4/5</i>
+																	</em>
+																</li>
+																<li>
+																	<em class="l">Соответствие заявленным данным</em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a href="#"></a>
+																		<i>4/5</i>
+																	</em>
+																</li>
+																<li>
+																	<em class="l"><strong>Общая оценка</strong></em>
+																	<em class="r">
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a class="active" href="#"></a>
+																		<a href="#"></a>
+																		<strong>4/5</strong>
+																	</em>
+																</li>
+															</ul>
+                          </span>
+                      </li>
+                  </ul>
+                  <div class="button">
+										<span class="left"><input type="submit" class="orange" value="СОХРАНИТЬ ДАННЫЕ" /></span>
+										<span class="right">
+											<input type="submit" class="orange" value="ЗАГРУЗИТЬ ФОТО" />
+											<input type="submit" class="orange" value="ЗАГРУЗИТЬ ВИДЕО" />
+										</span>
+									</div>
+                  </form>
+              </div>
+          </div>
+			</div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>

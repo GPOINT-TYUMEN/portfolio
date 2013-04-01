@@ -1,0 +1,323 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Comelook</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/DaxlinePro.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+<!-- всё -->
+
+<script type="text/javascript">
+    function set_active(el)
+    {
+        $('.date').removeClass('active'); $(el).parent().parent().addClass('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="block-header">
+    <div class="header">
+        <div class="logo"><a href="#"><img src="img/logo.jpg" /></a></div>
+        <div class="cabinet">
+            <div class="login">
+                <a href="#">Вход</a>
+                <a class="register" href="#">Регистрация</a>
+            </div>
+            <div class="order">Ваш заказ <a href="#">0 отчетов</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-menu">
+    <div class="block">
+        <ul class="menu">
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Недвижимости</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Лукеры</a></li>
+            <li class="last active"><a href="#">Заказать отчет</a></li>
+        </ul>
+        <div class="looker">
+            <div class="social">
+                <a class="fc" href="#"></a>
+                <a class="vk" href="#"></a>
+                <a class="tw" href="#"></a>
+            </div>
+            <div class="block"><a href="#"><i></i>Для лукеров</a></div>
+        </div>
+    </div>
+</div>
+<div class="block-body">
+    <div class="body">
+			<div class="colum-center">
+				<div class="block-order-report">
+              <h2>Отчет</h2>
+              <div class="block-tabs clearfix">
+                  <div class="tabs">
+                      <i class="ok"></i>
+                      <p>Отчет</p>
+                      <p class="mini">заполнено на 40%</p>
+                      <span></span>
+                  </div>
+                  <div class="tabs active">
+                      <i class="ok"></i>
+                      <p>Фото</p>
+                      <p class="mini">загружено 10 из 10</p>
+                      <span></span>
+                  </div>
+                  <div class="tabs">
+                      <i class="ok"></i>
+                      <p>Видео</p>
+                      <p class="mini">не загружено</p>
+                      <span></span>
+                  </div>
+									<div class="progress">
+										<p>Отчет заполнен на 64%</p>
+										<div class="bar">
+											<div class="percent" style="width: 64%"></div>
+										</div>
+										<em>Учитывается заполнение обязательных полей</em>
+									</div>
+              </div>
+							<div class="block-informer">
+								<div class="button">
+									<input class="orange" type="submit" value="ДОБАВИТЬ ФОТО" />
+								</div>
+								<div class="right"><span>Внимание!</span> Минимум на 2-х фотографиях из отчета, в кадре должен присутстовать напечатанный на листе А4 логотип сервиса ComeLook. Мы делаем это для того, чтобы удостовериться в правдоподобности составления отчета. Отчеты без логотипа в кадре не будут проходить модерацию! Изображение логотипа можно <a href="#">взять тут</a></div>
+							</div>
+							<div class="block-add-photo">
+								<h3>Дополнительное фото</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Вид спереди</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Вид сзади</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Вид с правого борта</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Вид с левого борта</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Водительское сиденье</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Пассажирские сиденья</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Багажник</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="block-add-photo">
+								<h3>Моторный отсек</h3>
+								<ul>
+									<li>
+										<span class="left"><img src="img/210x155.gif" /></span>
+										<span class="right">
+											<div>
+												<p>Файл фотографии:*</p>
+												<input type="file" />
+												<p><em>Фотографии jpg, gif, png до 5 мб. каждая</em></p>
+											</div>
+											<div>
+												<p>Подпись:</p>
+												<span>
+													<input type="text" />
+												</span>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+          </div>
+			</div>
+    </div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+    	<div class="copy">© 2011 ComeLook.ru</div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="#">О проекте</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Партнеры</a></li>
+            </ul>
+        </div>
+        <div class="pay"><img src="img/payment.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>
