@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0;}
+
+/*.informer-vsluh { border: 1px solid #ced2d2; margin-bottom: 30px;}
+.informer-vsluh .head { background: #bd4863 url(../img/bg1x30.gif) repeat-x; padding: 5px 0 6px 9px; font: 15px/20px Verdana, Geneva, sans-serif; color: #fff; text-transform: uppercase;}
+.informer-vsluh .head img { vertical-align: middle; margin-right: 16px;}
+.informer-vsluh .block { margin: 0 9px; padding: 10px 0; border-bottom: 1px solid #ced2d2;}
+.informer-vsluh .block .img { font-size: 11px; line-height: 15px; overflow: hidden; height: 100%!ie; margin-bottom: 3px;}
+.informer-vsluh .block .img p { margin-bottom: 3px;}
+.informer-vsluh .block .img em { color: #979795;}
+.informer-vsluh .block .img strong { color: #977b01;}
+.informer-vsluh .block .img img { float: left; margin-right: 7px;}
+.informer-vsluh .block .text { font-size: 11px; line-height: 15px;}
+.informer-vsluh .block .text a { font-size: 11px; line-height: 15px; color: #bb4661;}
+.informer-vsluh .all { margin: 5px 9px; color: #000; font-size: 11px; line-height: 15px;}
+.informer-vsluh .all a { font-size: 11px; line-height: 15px; color: #000;}*/
+
+.informer-vsluh .head { background: #bd4863 url(../img/bg1x30.gif) repeat-x; padding: 5px 0 6px 9px; font: 15px/19px Verdana, Geneva, sans-serif; color: #fff; text-transform: uppercase; border: 1px solid #ced2d2; border-bottom: none; vertical-align: middle;}
+.informer-vsluh .head img { /*vertical-align: middle;*/ margin-right: 11px; margin-top: 2px;}
+#vsluh { border: 1px solid #ced2d2; border-top: none; margin-bottom: 30px;}
+#vsluh .line { margin: 0 9px; padding: 10px 0; border-bottom: 1px solid #ced2d2; overflow: hidden; height: 100%!ie;}
+#vsluh .line div.img { float: left; margin-right: 7px; margin-bottom: 3px;}
+#vsluh .line .date { margin-bottom: 3px; color: #979795; font-size: 11px; line-height: 15px; font-style: italic;}
+#vsluh .line .rubr { color: #977b01; font-size: 11px; line-height: 15px; font-weight: bold;}
+#vsluh .line div.img img { display: block; width: 40px!important; height: 40px!important;}
+#vsluh .line .title { font-size: 11px; line-height: 15px; float: left; clear: both;}
+#vsluh .line .title a { font-size: 11px; line-height: 15px; color: #bb4661;}
+#vsluh .all { margin: 5px 9px; color: #000; font-size: 11px; line-height: 15px;}
+#vsluh .all a { font-size: 11px; line-height: 15px; color: #000;}

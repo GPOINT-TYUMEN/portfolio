@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 7]> <html class="ie7" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Green House</title>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/Sylfaen_400.font.js"></script>
+
+<!-- скрипты объединенные и минифицированные с помощью ant скрипта -->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!-- всё -->
+
+<script type="text/javascript">
+function mycarousel_initCallback(carousel) {
+    jQuery('.jcarousel-control a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+        return false;
+    });
+
+};
+
+jQuery(document).ready(function() {
+    jQuery("#mycarousel").jcarousel({
+        initCallback: mycarousel_initCallback,
+        scroll: 1,
+        buttonNextHTML: null,
+        buttonPrevHTML: null
+    });
+});
+
+</script>
+
+
+</head>
+
+<body class="bg-seven">
+
+<div class="header">
+	<div class="about">
+    	<h4>Группа компаний «Green House»</h4>
+        <p>Мы рады приветствовать Вас на сайте группы компаний «Green House» под управлением которой находятся популярные и посещаемые в городе Тюмени заведения.</p>
+        <p><a href="#">Подробнее</a> »</p>
+    </div>
+    <div class="logo"><a href="#"></a></div>
+    <div class="phone">
+    	<p>Телефон:</p>
+        3452 / <span>385-385</span>
+    </div>
+		<div class="links"><a href="#">Отель Green House →</a></div>
+</div>
+
+<div class="menu">
+	<ul>
+    	<li class="first"><a href="#">Главная</a></li>
+        <li><a href="#">концепция</a></li>
+        <li><a href="#">ЗАВЕДЕНИЯ</a>
+            <ul class="submenu">
+                <li class="first"><a href="#">Ночной клуб De pompadur Club</a></li>
+                <li><a href="#">Чайная «У Раневской»</a></li>
+                <li><a href="#">Ресторация «У Раневской»</a></li>
+                <li><a href="#">Кафе «Вишневый сад»</a></li>
+                <li><a href="#">Кафе «Английский доврик»</a></li>
+                <li><a href="#">Ресторан «Green House»</a></li>
+                <li class="last"><a href="#">Свадебный центр «Королевская свадьба»</a></li>
+            </ul>
+        </li>
+        <li><a href="#">дисконтная программа</a></li>
+        <li><a href="#">новости</a></li>
+        <li><a href="#">АФИША</a></li>
+        <li><a href="#">вакансии</a></li>
+        <li class="last"><a href="#">обратная связь</a></li>
+    </ul>
+</div>
+
+<div class="body">
+	<div class="cap">
+    	<ul id="mycarousel" class="jcarousel-skin-name">
+            <li>
+                <img src="img/913x229.jpg" />
+                <div class="text">Свадебная церемония в кафе «Вишневый сад»</div>
+            </li>
+            <li>
+                <img src="img/913x229.jpg" />
+                <div class="text">Свадебная церемония в кафе «Вишневый сад»</div>
+            </li>
+            <li>
+                <img src="img/913x229.jpg" />
+                <div class="text">Свадебная церемония в кафе «Вишневый сад»</div>
+            </li>
+            <li>
+                <img src="img/913x229.jpg" />
+                <div class="text">Свадебная церемония в кафе «Вишневый сад»</div>
+            </li>
+        </ul>
+        <div class="button jcarousel-control">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+    </div>
+    <div class="left">
+    	<div class="category">
+        	<div class="line">
+            	<div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+            	<div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="line last">
+            	<div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                	<div class="img"><img src="img/110x90.jpg" /></div>
+                    <div class="text">
+                    	<p><a href="#">Чайная «У Раневской»</a></p>
+                    	<ul>
+                        	<li>
+                            	<span class="left">Мест</span>
+                                <span class="right">70</span>
+                            </li>
+                            <li>
+                            	<span class="left">Кухня</span>
+                                <span class="right">русская, европейская</span>
+                            </li>
+                            <li>
+                            	<span class="left">Телефон</span>
+                                <span class="right">+7(3452)45-25-65</span>
+                            </li>
+                            <li>
+                            	<span class="left">Адрес</span>
+                                <span class="right">ул. Ленина, 46</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-promo">
+        	<div class="block first">
+            	<a href="#">
+                	<img src="img/209x157.jpg" />
+            		<div>Кондитерская</div>
+                </a>
+            </div>
+            <div class="block">
+            	<a href="#">
+                	<img src="img/209x157.jpg" />
+            		<div>Прокат кареты</div>
+                </a>
+            </div>
+            <div class="block">
+            	<a href="#">
+                	<img src="img/209x157.jpg" />
+            		<div>Выездное обслуживание</div>
+                </a>
+            </div>
+        </div>
+        <div class="block-text">
+        	Лучшие рестораны и кафе Москвы и Санкт-Петербурга Группы компаний Аркадия Новикова: ресторан Bon, ресторан Cantinetta Antinori, ресторан China Club, ресторан Company, ресторан Francesco, ресторан GQ Bar, ресторан Luce, ресторан Mr. Lee, Novikov catering,  ресторан Shore house, ресторан Sirena, ресторан Tatler, ресторан Vesna, ресторан Vogue cafe, ресторан Vаниль, ресторан Yoko, ресторан Аист, ресторан Бараshка на Арбате, ресторан Бараshка на Петровке , ресторан Бараshка на Красной Пресне , ресторан Белое солнце пустыни, ресторан Болоньезе, ресторан Большой, ресторан Веранда у дачи, ресторан Ветерок, ресторан Галерея, ресторан Гусятникоff, ресторан Делис кафе, ресторан Джу-Джу, ресторан Донна Маргарита, ресторан Дымов №1, ресторан Индабар, ресторан Кавказская пленница, ресторан Киш-Миш, ресторан Крик, ресторан Макао-кафе, ресторан Маркет, ресторан Мачо-гриль, ресторан Недальний Восток, ресторан Октябрь, ресторан Пеперони, ресторан Причал, ресторан Суши Весла, ресторан Сыр, ресторан Узбекистан, ресторан Царская Охота, ресторан Чердак, ресторан Куршевель
+        </div>
+    </div>
+    <div class="right">
+    	<div class="billboard">
+        	<h4>Афиша</h4>
+            <div class="block">
+            	<div class="img"><img src="img/42x42.jpg" /></div>
+                <div class="text">
+                	<a href="#">"В салоне у Маркизы"</a>
+                </div>
+            </div>
+            <div class="block">
+            	<div class="img"><img src="img/42x42.jpg" /></div>
+                <div class="text">
+                	<a href="#">"В салоне у Маркизы"</a>
+                </div>
+            </div>
+            <div class="block">
+            	<div class="img"><img src="img/42x42.jpg" /></div>
+                <div class="text">
+                	<a href="#">"В салоне у Маркизы"</a>
+                </div>
+            </div>
+            <div class="all"><a href="#">Все события</a> »</div>
+        </div>
+        <div class="news">
+        	<h4>Новости</h4>
+            <div class="block">
+            	<p><em>20 января, 2010</em></p>
+                <p><a href="#">Мы открыли новый сайт для всех заведений</a></p>
+            </div>
+            <div class="block">
+            	<p><em>20 января, 2010</em></p>
+                <p><a href="#">Мы открыли новый сайт для всех заведений</a></p>
+            </div>
+            <div class="block">
+            	<p><em>20 января, 2010</em></p>
+                <p><a href="#">Мы открыли новый сайт для всех заведений</a></p>
+            </div>
+            <div class="all"><a href="#">Все новости</a> »</div>
+        </div>
+        <div class="discount">
+        	<h4>Дисконтная карта</h4>
+            <p><img src="img/174x95.gif" /></p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="copy">
+    	<p>г. Тюмень, ул. Ленина, 46, старинный особняк 19 века.<br />
+        Copyright © Трилогия «У Раневской».</p>
+        <p>Разработка — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>» 
+    </div>
+    <div class="counter">
+    	<a href="#"><img src="img/88x31.gif" /></a>
+        <a href="#"><img src="img/88x31.gif" /></a>
+    </div>
+</div>
+
+</body>
+</html>

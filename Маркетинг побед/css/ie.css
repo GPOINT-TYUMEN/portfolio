@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header .menu ul { height: 100%; }
+.header .phone { height: 100%; }
+
+.cap .block-time .timer { height: 100%; }
+
+.body { height: 100%; }
+
+.program .item { height: 100%; }
+
+.rightcolumn .item .block .photo-gallery { height: 100%; }
+
+.rightcolumn .block-archive { height: 100%; }
+
+.block-register { height: 100%; }
+
+.footer { height: 100%; }
+.footer .right ul { height: 100%; }

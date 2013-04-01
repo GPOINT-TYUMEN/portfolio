@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+ul { list-style: none; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+blockquote, q { quotes:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; color: #232f17; outline: none; }
+a:hover { text-decoration: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+table { border-collapse:collapse; border-spacing:0; width: 100%; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+body { font: 12px/18px Arial, Helvetica, sans-serif; *font-size:small; position: relative; min-width: 966px; /*background: url(../img/bg.jpg) repeat-x #5e874a;*/}
+*:first-child+html body { position: relative;}
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+body, select, input, textarea { color: #444; font-family: Arial, Helvetica, sans-serif; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+strong, th { font-weight: bold; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+textarea { overflow: auto; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+/* курсор в виде руки для всех кликабельных элементов input */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+button {  width: auto; overflow: visible; }
+
+.body-fon-first { background: url(../img/bg178.jpg) repeat scroll #5e874a; /*position: static; top: 0; left: 0; width: 100%;*/}
+.body-fon { background: url(../img/bg.jpg) repeat-x; width: 100%; /*position: absolute; top: 0; left: 0;*/}
+.bg { margin: 0 auto; position: static; width: 966px; z-index: 1;}
+.bg div { background: url(../img/bg385.jpg) no-repeat; width: 385px; height: 290px; margin-left: -131px;}
+.fon { position: static; margin-top: -290px; z-index: 2; width: 100%; }
+.main { width: 966px; margin: 0 auto; overflow: hidden; height: 100%!ie; position: relative; min-height: 704px;}
+.main .header { float: left; width: 389px; border-top: 4px solid #231f20; overflow: hidden; height: 100%!ie;}
+.main .header .logo { float: left; background: url(../img/logo.jpg) no-repeat; width: 143px; height: 147px; margin: 43px 0 25px 19px;}
+.main .header .logo a { display: block; width: 143px; height: 147px;}
+.main .header .phone { float: right; margin: 80px 0 0 0;}
+.main .header .phone .code { font-size: 14px; color: #414a33; margin-bottom: 6px; overflow: hidden;}
+.main .header .phone .tel { color: #000; font-size: 35px; margin-bottom: 3px; overflow: hidden;}
+.main .header .phone p a { color: #535e2e; font-size: 11px;}
+.main .header .menu { clear: both; overflow: hidden; height: 100%!ie; margin-left: -11px;}
+.main .header .menu ul { float: left; margin-left: 30px; }
+.main .header .menu ul li { background: url(../img/bg9x1.gif) no-repeat 0 10px; padding-left: 15px; margin-bottom: 9px;}
+.main .header .menu ul a { font-size: 14px; color: #000; border-bottom: 1px solid #000; padding-bottom: 1px;}
+.main .header .menu ul a:hover { border-bottom: none;}
+.main .header .menu ul li.active a { color: #254313; border-bottom: none;}
+.main .position { position: absolute; z-index: 5; top: 0; left: 0;}
+
+.main .description { float: right; width: 465px; margin-right: 21px; color: #fff; margin: 58px 20px 0 0; height: 205px; overflow: hidden;}
+.main .description h2 { font-size: 29px; line-height: 30px; margin-bottom: 12px;}
+.main .description p { font-size: 14px; line-height: 20px; margin-left: 40px;}
+
+.main .index-block { position: relative; float: left; width: 966px; height: 541px; }
+.main .index-block .tree { background: url(../img/tree.png) no-repeat; width: 297px; height: 169px; position: absolute; z-index: 1; left: 668px; top: 372px;}
+.main .index-block .sold-block { float: left; position: relative; width: 223px; height: 214px; margin-top: 122px;}
+.main .index-block .sold-block .img { position: relative; width: 200px; height: 200px; margin: 14px 0 0 11px;}
+.main .index-block .sold-block .img div { position: absolute; width: 200px; height: 200px; background: url(../img/bg200.png) no-repeat; top: 0; left: 0;}
+.main .index-block .sold-block .sold { position: absolute; top: 0; right: 0; background: url(../img/bg71x71.png) no-repeat; width: 71px; height: 44px; font: 12px/14px "Times New Roman", Times, serif; color: #fff; text-align: center; padding-top: 27px;}
+.main .index-block .sold-block .first { position: absolute; bottom: 23px; left: 18px; background: #664b4b; color: #fff; padding: 3px 7px 4px 7px;}
+.main .index-block .free-block { float: left; position: relative; width: 491px; height: 477px; margin: 0 0 0 18px;}
+.main .index-block .free-block .img { position: relative; width: 477px; height: 477px;}
+.main .index-block .free-block .img div { position: absolute; width: 477px; height: 477px; background: url(../img/bg477.png) no-repeat; top: 0; left: 0;}
+.main .index-block .free-block .free { background: url(../img/bg110x110.png) no-repeat; width: 110px; height: 85px; position: absolute; top: 8px; right: 0; text-align: center; color: #fff; font: 16px/17px "Times New Roman", Times, serif; padding-top: 25px;}
+.main .index-block .free-block .free span { font: 40px/34px "Times New Roman", Times, serif; display: block;}
+.main .index-block .free-block .two { position: absolute; left: 6px; bottom: 102px; color: #fff; font-size: 18px; background: #000; padding: 10px 12px 11px 12px;}
+.main .index-block .soon-block { float: left; position: relative; width: 212px; height: 214px; margin: 122px 0 0 11px;}
+.main .index-block .soon-block .img { width: 200px; height: 200px; position: relative; margin: 14px 0 0 0;}
+.main .index-block .soon-block .img div { position: absolute; background: url(../img/bg200t.png) no-repeat; width: 200px; height: 200px; top: 0; left: 0;}
+.main .index-block .soon-block .soon { position: absolute; top: 0; right: 0; background: url(../img/bg71x71t.png) no-repeat; width: 71px; height: 44px; font: 12px/14px "Times New Roman", Times, serif; color: #fff; text-align: center; padding-top: 27px;}
+.main .index-block .soon-block .three { position: absolute; bottom: 23px; left: 7px; background: #5dc71e; color: #fff; padding: 3px 7px 4px 7px;}
+.main .index-block .price { position: absolute; bottom: 54px; left: 18px;}
+.main .index-block .price h3 { font-size: 18px; color: #fff; margin-bottom: 21px; overflow: hidden; padding-bottom: 2px;}
+.main .index-block .price h3 a { color: #fff; border-bottom: 1px solid #fff; }
+.main .index-block .price h3 a:hover { border-bottom: none;}
+.main .index-block .price .block { overflow: hidden; height: 100%!ie; margin-left: 27px; padding: 5px 0;}
+.main .index-block .price .block .file { float: left; width: 135px; margin-right: 5px;}
+.main .index-block .price .block .file img { float: left; margin: -5px 8px 0 0;}
+.main .index-block .price .block .file a { color: #2d491b; font-size: 12px;}
+.main .index-block .price .block .file p { font-size: 11px; color: #fff;}
+
+.main .block-faq { float: right; min-height: 400px; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-faq h2 { font-size: 29px; line-height: 30px; margin-bottom: 14px; color: #fff;}
+.main .block-faq .block { border-bottom: 1px solid #648d4b; padding-bottom: 15px; margin-bottom: 15px;} 
+.main .block-faq .block .name { font-size: 11px; line-height: 15px; color: #fff; margin-bottom: 3px;}
+.main .block-faq .block .subject { font-size: 14px; color: #000; line-height: 20px; margin-bottom: 8px;}
+.main .block-faq .block .reply { color: #2e4c1e; font-style: italic; font-size: 14px; line-height: 20px; margin-left: 40px;}
+.main .block-faq .last { border-bottom: none;}
+
+.main .block-question { float: left; width: 369px; margin: 45px 0 40px 19px;}
+.main .block-question h3 { font-size: 18px; color: #fff;}
+.main .block-question ul { margin: 13px 0 0 30px;}
+.main .block-question ul li { margin-bottom: 10px;}
+.main .block-question ul p { font-size: 10px; line-height: 12px; color: #fff; text-transform: uppercase; font-weight: bold; margin-bottom: 3px;}
+.main .block-question ul input[type=text] { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; padding: 4px 0; width: 235px;}
+.main .block-question ul textarea { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; width: 332px; height: 109px;}
+.main .block-question ul input[type=button] { border: none; background: #365824; font-size: 14px; color: #fff; padding: 2px 8px 3px;}
+
+.main .block-contact { float: right; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-contact h2 { font-size: 29px; line-height: 30px; margin-bottom: 12px; color: #fff;}
+.main .block-contact p { font-size: 14px; line-height: 20px; color: #fff; margin-left: 40px; margin-bottom: 20px;}
+.main .block-contact p a { color: #425e2e;}
+.main .block-contact h3 { font-size: 18px; color: #fff; margin: 17px 0 13px 0;}
+.main .block-contact ul { margin: 0 0 0 37px;}
+.main .block-contact ul li { margin-bottom: 10px;}
+.main .block-contact ul p { font-size: 10px; line-height: 12px; font-weight: bold; margin: 0; text-transform: uppercase; margin-bottom: 3px;}
+.main .block-contact ul input[type=text] { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; padding: 4px 0; width: 235px;}
+.main .block-contact ul textarea { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; width: 332px; height: 109px;}
+.main .block-contact ul input[type=button] { border: none; background: #365824; font-size: 14px; color: #fff; padding: 2px 8px 3px;}
+
+.main .block-news { float: right; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-news h2 { font-size: 29px; line-height: 30px; margin-bottom: 15px; color: #fff;}
+.main .block-news .block { border-bottom: 1px solid #648d4b; padding-bottom: 15px; margin-bottom: 15px;}
+.main .block-news .block .date { font-size: 11px; line-height: 13px; color: #fff; font-style: italic; margin-bottom: 4px;}
+.main .block-news .block .text { font-size: 14px; line-height: 20px; color: #000;}
+
+.main .block-about { float: right; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-about h2 { font-size: 29px; line-height: 30px; margin-bottom: 12px; color: #fff;}
+.main .block-about p { color: #fff; font-size: 14px; line-height: 20px; margin-left: 40px;}
+.main .block-about ol, .main .block-about ul { color: #fff; font-size: 14px; line-height: 20px; margin: 0 0 20px 60px;}
+
+.main .block-price { float: right; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-price h2 { font-size: 29px; line-height: 30px; margin-bottom: 12px; color: #fff;}
+.main .block-price p { color: #fff; font-size: 14px; line-height: 20px; margin-left: 40px;}
+.main .block-price table { color: #fff; margin: 15px 0 30px 0;}
+.main .block-price table th { background: #648d4b; text-align: left; font-size: 11px; padding: 8px 12px 6px;}
+.main .block-price table tr { border-bottom: 1px solid #648d4b;}
+.main .block-price table td { padding: 11px 12px;}
+.main .block-price h3 { font-size: 18px; color: #fff; margin: 17px 0 23px 0;}
+.main .block-price .files { overflow: hidden; height: 100%!ie; margin-left: 13px;}
+.main .block-price .files .file { float: left; width: 195px; overflow: hidden; height: 100!ie; margin: 0 0 27px 11px;}
+.main .block-price .files .file img { float: left; margin-right: 8px;}
+.main .block-price .files .file p { font-size: 11px;}
+.main .block-price .files .file p a { color: #2d491b; font-size: 12px;}
+
+.main .block-special { float: right; width: 465px; margin: 58px 20px 40px 0;}
+.main .block-special h2 { font-size: 29px; line-height: 30px; margin-bottom: 14px; color: #fff;}
+.main .block-special .block { overflow: hidden; height: 100%!ie; border-bottom: 1px solid #648d4b; padding-bottom: 17px; margin-bottom: 19px;}
+.main .block-special .block .img { float: left; width: 69px; height: 69px; margin-right: 11px;}
+.main .block-special .block .info { float: left; width: 385px;}
+.main .block-special .block .info .head { font-size: 16px; color: #fff; line-height: 20px; margin-top: 3px;}
+.main .block-special .block .info .head span { color: #dccccc; font-size: 11px;}
+.main .block-special .block .info .date { font-size: 11px; color: #fff; font-style: italic; margin: 11px 0 1px 0;}
+.main .block-special .block .info .text { color: #000; font-size: 14px; line-height: 20px; margin-top: 8px;}
+
+.main .block-map { float: left; width: 927px; margin: 0 19px 65px 20px;}
+.main .block-map .head { overflow: hidden; height: 100%!ie; line-height: 25px; margin-bottom: 11px; position: relative;}
+.main .block-map .head h3 { float: left; font-size: 18px; color: #fff; }
+.main .block-map .head span { display: block; float: right; font-size: 11px; line-height: 20px; color: #394f2e; position: relative; font-style: italic;}
+.main .block-map .head span i { display: block; position: absolute; background: url(../img/sprite.gif) no-repeat; width: 15px; height: 16px; top: 2px; left: -20px;}
+.main .block-map .map { cursor: move; margin: 0 0 12px 0;}
+.main .block-map .open a { font-size: 14px; color: #fff;}
+
+.foot-body { background: url(../img/bg368.png) repeat-x top left; margin-top: -35px; padding-top: 35px;}
+.foot-body .backgorund { background: url(../img/bg-178.jpg) repeat-x top left;}
+.foot-body .page { width: 927px; margin: 0 auto; overflow: hidden; height: 100%!ie; position: relative; padding: 30px 21px 50px 18px;}
+.foot-body .page .special { float: left; width: 400px; margin-right: 64px; margin-bottom: 45px;}
+.foot-body .page .special h3 { font-size: 18px; margin-bottom: 21px;}
+.foot-body .page .special h3 a { color: #fff; border-bottom: 1px solid #fff; padding-bottom: 2px; overflow: hidden;}
+.foot-body .page .special h3 a:hover { border-bottom: none;}
+.foot-body .page .special .block { overflow: hidden; height: 100%!ie; margin: 0 0 26px 30px;}
+.foot-body .page .special .block .img { float: left; position: relative; width: 69px; height: 69px; margin-right: 14px;}
+.foot-body .page .special .block .img div { position: absolute; background: url(../img/bg69.png) no-repeat; width: 69px; height: 69px; top: 0; left: 0;}
+.foot-body .page .special .block .img div.t { background: url(../img/bg69t.png) no-repeat;}
+.foot-body .page .special .block .text { font-size: 16px; line-height: 20px; color: #fff; margin-top: 8px;}
+.foot-body .page .special .block .text span { font-size: 11px; color: #dccccc;}
+.foot-body .page .poll { float: left; width: 240px; overflow: hidden; height: 100%!ie; margin-bottom: 45px;}
+.foot-body .page .poll h3 { font-size: 18px; margin-bottom: 10px; color: #fff;}
+.foot-body .page .poll p { font-weight: bold; color: #000; margin-bottom: 12px;}
+.foot-body .page .poll ul { float: left; margin: 0 0 11px 0;}
+.foot-body .page .poll ul li { line-height: 12px; color: #fff; width: 120px; margin-bottom: 7px;}
+.foot-body .page .poll ul li input { margin-right: 5px; vertical-align: middle;}
+.foot-body .page .poll input[type=button] { border: none; background: #344d27; color: #fff; padding: 5px; margin-right: 9px;}
+.foot-body .page .block-text { float: left; width: 205px; margin-left: 18px; margin-bottom: 45px;}
+.foot-body .page .block-text h3 { font-size: 18px; margin-bottom: 11px;}
+.foot-body .page .block-text h3 a { color: #fff; border-bottom: 1px solid #fff; padding-bottom: 2px; overflow: hidden;}
+.foot-body .page .block-text h3 a:hover { border-bottom: none;}
+.foot-body .page .block-text p { color: #fff;}
+.foot-body .page .map { float: left; width: 927px;}
+.foot-body .page .map .head { font-size: 11px; color: #cac0b8; margin-bottom: 10px;}
+.foot-body .page .map .head span { font-size: 18px; color: #fff; margin-right: 20px;}
+
+.foot-body .page .left { float: left; width: 430px; margin-bottom: 70px;}
+.foot-body .page .left h3 { font-size: 18px; margin-bottom: 21px; color: #fff;}
+.foot-body .page .left h3 a { color: #fff; border-bottom: 1px solid #fff; padding-bottom: 2px; overflow: hidden;}
+.foot-body .page .left h3 a:hover { border-bottom: none;}
+.foot-body .page .left .price { margin-bottom: 60px;}
+.foot-body .page .left .price .block { overflow: hidden; height: 100%!ie; padding-top: 3px;}
+.foot-body .page .left .price .block .file { float: left; width: 135px; overflow: hidden; height: 100%!ie;}
+.foot-body .page .left .price .block .file img { float: left; margin-right: 8px;}
+.foot-body .page .left .price .block .file p { color: #fff; font-size: 11px;}
+.foot-body .page .left .price .block .file p a { color: #2d491b; font-size: 12px;}
+.foot-body .page .left .gallery { margin-bottom: 45px;}
+.foot-body .page .left .gallery .head { overflow: hidden; height: 100%!ie; width: 370px;}
+.foot-body .page .left .gallery .head h3 { float: left;}
+.foot-body .page .left .gallery .head em { display: block; float: right; font-size: 11px; color: #394f2e;}
+.foot-body .page .left .gallery .block { overflow: hidden; height: 100%!ie; margin-left: 14px;}
+.foot-body .page .left .gallery .block .photo { float: left; width: 79px; height: 79px; margin: 0 0 12px 10px;}
+.foot-body .page .left .gallery .block .photo a { display: block; width: 79px; height: 79px; position: relative;}
+.foot-body .page .left .gallery .block .photo div { position: absolute; background: url(../img/bg79.png) no-repeat; width: 79px; height: 79px; top: 0; left: 0;}
+.foot-body .page .left .about { margin-bottom: 50px;}
+.foot-body .page .left .about h3 { margin-bottom: 11px; }
+.foot-body .page .left .about p { color: #fff;}
+.foot-body .page .left .special { margin-right: 0; margin-bottom: 0;}
+.foot-body .page .right { float: right; width: 465px; margin-bottom: 70px;}
+.foot-body .page .right .plots { position: relative;}
+.foot-body .page .right .plots .head { overflow: hidden; height: 100%!ie; margin-bottom: 15px;}
+.foot-body .page .right .plots .head h3 { color: #fff; font-size: 18px; float: left; display: block; margin-right: 30px;}
+.foot-body .page .right .plots .head span { display: block; float: left;}
+.foot-body .page .right .plots .head .filter a { color: #9ad274;}
+.foot-body .page .right .plots .head .download { float: right; color: #394f2e;}
+.foot-body .page .right .plots .head .download a { color: #fff;}
+.foot-body .page .right .plots table th { text-align: left; color: #fff; font-size: 11px; background: #648d4b; padding: 8px 12px 7px;}
+.foot-body .page .right .plots table tr { border-bottom: 1px solid #85b564;}
+.foot-body .page .right .plots table tr.th { border-bottom: none;}
+.foot-body .page .right .plots table td { color: #fff; font-size: 12px; padding: 11px 12px;}
+.foot-body .page .right .plots table td.nn { padding: 11px 0 11px 22px;}
+.foot-body .page .right .plots table td a { position: relative; display: block; width: 16px; height: 14px; text-indent: -9999px;}
+.foot-body .page .right .plots table td a i { display: block; position: absolute; background: url(../img/sprite.gif) no-repeat -15px 0; width: 16px; height: 14px; top: 0; left: 0;}
+.foot-body .page .right .plots table tr.free td span.color { color: #9ad274;}
+.foot-body .page .right .plots table tr.busy td span.color { color: #922e35;}
+.foot-body .page .right .plots table tr.busy td span.strike { text-decoration: line-through;}
+.foot-body .page .right .plots table tr.blocked td span.strike { text-decoration: line-through;}
+.foot-body .page .right .plots table tr.busy td a { display: none;}
+.foot-body .page .right .plots table tr.blocked td a { display: none;}
+.foot-body .page .right .plots .popup { position: absolute; background: #fff; border: 4px solid #365824; z-index: 99; -moz-box-shadow: 0 0 29px #333;}
+.foot-body .page .right .plots .popup .block { position: relative; padding: 14px 14px 3px;}
+.foot-body .page .right .plots .popup .close { position: absolute; top: 8px; right: 7px; background: url(../img/sprite.gif) no-repeat -31px 0; width: 13px; height: 13px; }
+.foot-body .page .right .plots .popup .block h4 { font-size: 14px; font-weight: normal; color: #000; line-height: 18px; width: 165px;}
+.foot-body .page .right .plots .popup .block ul { margin: 7px 0 0;}
+.foot-body .page .right .plots .popup .block ul li { margin-bottom: 7px;}
+.foot-body .page .right .plots .popup .block ul p { font-size: 10px; text-transform: uppercase; font-weight: bold; color: #796d6d;}
+.foot-body .page .right .plots .popup .block ul input[type=text] { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; padding: 4px 0; width: 235px;}
+.foot-body .page .right .plots .popup .block ul textarea { border-style: solid; border-width: 1px; border-color: #3e4343 #abb3b3 #c1c8c8 #5d6464; width: 235px; height: 109px;}
+.foot-body .page .right .plots .popup .block ul input[type=button] { border: none; background: #365824; font-size: 14px; color: #fff; padding: 2px 8px 3px; margin-right: 5px;}
+.foot-body .page .right .plots .popup .block ul a { font-size: 11px;}
+
+
+.foot-body .footer { width: 927px; margin: 0 auto; overflow: hidden; height: 100%!ie; position: relative; border-top: 1px solid #88a677; padding-bottom: 15px;}
+.foot-body .footer .text { float: left; width: 430px; color: #c7d3be; margin-top: 24px;}
+.foot-body .footer .text p { font-size: 11px; line-height: 15px; margin-bottom: 12px;}
+.foot-body .footer .text p a { color: #c7d3be;}
+.foot-body .footer .social { float: left; margin: 20px 0 0 25px;}
+.foot-body .footer .social a { color: #fff; font-size: 11px;}
+.foot-body .footer .counter { float: right; width: 250px; text-align: right; margin-top: 28px;}
+.foot-body .footer .counter a { margin-left: 25px;}

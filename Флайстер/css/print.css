@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; }
+.header { display: none; }
+.footer { display: none; }
+.print-h { display: none; }
+.print-block { box-shadow: none; }
+.img-print { display: none; }
+ul { list-style: none; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+.body { margin: 0 auto; width: 959px; padding: 0 20px; position: relative; z-index: 2; font: 12px/18px Arial, Helvetica, sans-serif; position: relative; *font-size:small; min-width: 999px; }
+
+.block-print { margin: 0 0 50px 0; }
+.block-print h2 { font-size: 36px; line-height: 40px; font-weight: normal; color: #000; margin: 0 0 45px 0; }
+.block-print .print-block { background: #fff; }
+.block-print .print-block .head { overflow: hidden; height: 100%!ie; background: #58c4f4; padding: 0 43px; margin: 0 0 20px 0; }
+.block-print .print-block .head .logotype { float: left; margin: 43px 0 39px; }
+.block-print .print-block .head .code { float: right; margin: 40px 0 0 0; }
+.block-print .print-block .head .code p { color: #0c3149; font-size: 20px; text-align: center; }
+.block-print .print-block .head .code p span { font-size: 46px; text-decoration: underline; line-height: 50px; }
+.block-print .print-block .block-body { padding: 0 43px; }
+.block-print .print-block .block-body h3 { font-size: 20px; color: #000; font-weight: normal; line-height: 30px; margin: 0 0 23px 0; }
+.block-print .print-block .block-body h3 span { color: #0885af }
+.block-print .print-block .block-body .name-action { overflow: hidden; margin: 0 0 36px 0; }
+.block-print .print-block .block-body .name-action .img { float: left; width: 534px; height: 309px; }
+.block-print .print-block .block-body .name-action .name { float: left; background: #58c4f4; width: 284px; height: 250px; font-size: 28px; line-height: 34px; color: #0c3149; padding: 59px 27px 0 27px; }
+.block-print .print-block .block-body .block-text { overflow: hidden; height: 100%ie; border-bottom: 1px dashed #adb2b3; padding: 0 0 26px 0; margin: 0 0 43px 0; }
+.block-print .print-block .block-body .block-text .text { float: left; width: 436px; }
+.block-print .print-block .block-body .block-text .text h4 { font-size: 36px; line-height: 40px; color: #000; font-weight: normal; margin: 0 0 13px 0; }
+.block-print .print-block .block-body .block-text .text p { color: #424242; font-size: 14px; line-height: 23px; }
+.block-print .print-block .block-body .block-text .text ul { margin: 0; }
+.block-print .print-block .block-body .block-text .text li { color: #424242; font-size: 14px; line-height: 21px; padding: 0 0 0 17px; background: url(../images/bg-14x1.gif) no-repeat 0 12px; margin: 0 0 14px 0; }
+.block-print .print-block .block-body .block-adress { overflow: hidden; }
+.block-print .print-block .block-body .block-adress img { float: left; margin: 0 42px 0 0; }
+.block-print .print-block .block-body .block-adress .img-print { float: right; margin: 160px 36px 0 0; }
+.block-print .print-block .block-body .block-adress ul { float: left; margin: 0; }
+.block-print .print-block .block-body .block-adress ul li { font-family: Arial; font-size: 24px; line-height: 36px; color: #000; }

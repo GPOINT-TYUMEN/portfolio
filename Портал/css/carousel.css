@@ -1,0 +1,41 @@
+.jcarousel-skin-brand {background:#f5f1d6;}
+.jcarousel-skin-brand img {float:left; margin-right:5px; height:37px;}
+.jcarousel-skin-brand .jcarousel-container {border:0;}
+.jcarousel-skin-brand .jcarousel-container-horizontal {width:100%;}
+.jcarousel-skin-brand .jcarousel-clip-horizontal {margin:0 auto; width:280px; height:37px;}
+.jcarousel-skin-brand .jcarousel-item {width:210px; height:37px; line-height:36px; margin:0 20px 0 50px;}
+.jcarousel-skin-brand .jcarousel-item-horizontal {padding:0;}
+.jcarousel-skin-brand .jcarousel-item-placeholder {color:#000;}
+
+
+.jcarousel-skin-brand .jcarousel-next-horizontal,
+.jcarousel-skin-brand .jcarousel-prev-horizontal {position:absolute; width:13px; height:37px; cursor:pointer!important;} 
+ 
+.jcarousel-skin-brand .jcarousel-next-horizontal {background:url(../img/bg-arrow-r.png) no-repeat; margin:0 0 0 267px; z-index:100;}
+.jcarousel-skin-brand .jcarousel-prev-horizontal {background:url(../img/bg-arrow-l.png) no-repeat; margin:0; z-index:100;}
+
+.jcarousel-skin-brand .jcarousel-next-horizontal:hover,
+.jcarousel-skin-brand .jcarousel-next-horizontal:active,
+.jcarousel-skin-brand .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-brand .jcarousel-prev-horizontal:active {background-position:0 0;}
+
+.jcarousel-skin-brand .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-brand .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-brand .jcarousel-next-disabled-horizontal:active,
+.jcarousel-skin-brand .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-brand .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-brand .jcarousel-prev-disabled-horizontal:active {cursor:default; background-position:0 -37px;}
+
+
+.jcarousel-container {position:relative;}
+.jcarousel-clip {z-index:2; padding:0; margin:0; overflow:hidden; position:relative;}
+.jcarousel-list {z-index:1; overflow:hidden; position:relative; top:0; left:0; margin:0; padding:0;}
+.jcarousel-list li, .jcarousel-item {float:left; list-style:none; text-align:left; width:auto; height:auto;}
+.jcarousel-next {z-index:3; display:none;}
+.jcarousel-prev {z-index:3; display:none;}
+
+
+.stepcarousel {position:relative; overflow:scroll; width:100%; height:95px;}
+.stepcarousel .belt {position:absolute; left:0; top:0;}
+.stepcarousel .panel {float:left; overflow:hidden; margin:1px; width:125px;}
+.stepcarousel .panel img {width:125px; height:95px;}

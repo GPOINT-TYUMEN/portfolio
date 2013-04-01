@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Мегатюмень</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/carousel.css" type="text/css" rel="stylesheet" />
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/style-ie.css" /><![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jscroll.js"></script>
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+    <script type="text/javascript" src="js/jstepcarousel.js"></script>
+    <script type="text/javascript" src="js/jmousewheel.js"></script>
+    <script type="text/javascript" src="js/handlers.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="banner">
+    	<a class="top" target="_blank" href="#"><img src="images/banner-top.jpg" /></a>
+    </div>
+    <div id="header">
+    	<a href="/" class="logo">&nbsp;</a>
+        <div class="logon">
+        	<a href="#" class="ent">Выход</a>
+            <a href="#" class="ava"><img src="img/bg-logon.gif" /></a>
+            <a href="#" class="reg">Иван Петров</a>
+            <p>ул. Республики, 45 <a href="#" class="dot-blue">Уточнить</a></p>
+        </div>
+        <div class="search-form">
+            <ul>
+            	<li><a href="#">по слову</a></li>
+                <li><a href="#">по ID</a></li>
+            </ul>
+        	<input type="text" class="frm" value="Поиск по порталу" />
+            <a href="#" class="select">по слову</a>
+            <input type="submit" class="btn" value="Искать" title="Искать" />
+        </div>
+        <ul class="menu">
+        	<li><a href="#">Афиша</a></li>
+        	<li><a href="#">Каталог</a></li>
+        	<li class="active"><a href="#">Витрина</a></li>
+        	<li><a href="#">Сити-квест</a></li>
+        	<li><a href="#">Скидки</a></li>
+        	<li><a href="/">Главная</a></li>
+        </ul>
+  	</div>
+    <div id="breadcrumbs">
+    	<a href="#">Главная</a><em>\</em>
+        <a href="#">Личный кабинет</a><em>\</em>
+        Витрина
+    </div>
+    <div id="content">
+    	<div class="box nobr">
+        	<div class="col-two">
+                <div class="col-l">
+                    <div id="organization">
+                    	<h1>Добавить объект</h1>
+                        <div class="notice">
+                        	На данной площадке вы сможете разместить объявления рекламного характера в соответствующих категориях. <br /><br />
+                        </div>
+                        <small class="small-red" style="display:block; margin-bottom:-10px;"><em>* Все поля обязательны для заполнения</em></small>
+                        <div class="forms">
+                        	<div class="item gr">
+                            	<span>Название</span>
+                                <div>
+                                	<p>
+                                        <input type="text" class="sf fst" />
+                                        <small>Например, ноутбук Acer</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<span>Раздел:</span>
+                                <div>
+                                	<p>
+                                        <select class="sf fst">
+                                            <option>Авто</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item gr">
+                            	<span>Подраздел:</span>
+                                <div>
+                                	<p>
+                                        <select class="sf fst">
+                                            <option>Барахолка</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<span>Стоимость:</span>
+                                <div>
+                                	<p>
+                                      	<input type="text" class="sf fth" />руб
+                                        <input type="checkbox" class="chk-fst" style="margin-left:20px;" />торг
+                                        <input type="checkbox" class="chk-fst" style="margin-left:10px;" />скидки
+                                        <input type="checkbox" class="chk-fst" style="margin-left:10px;" />новый товар
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item gr">
+                            	<span>Адрес:</span>
+                                <div>
+                                	<p>
+                                        <input type="text" class="sf snd" />
+                                        <a href="#" class="geo">показать на карте</a>
+                                        <small>Место осмотра или непосредственной продажи объекта</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<span>Ваш e-mail:</span>
+                                <div>
+                                	<p>
+                                    	<input type="text" class="sf fst" />
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item gr">
+                            	<span>Телефон:</span>
+                                <div>
+                                	<p>
+                                    	<input type="text" class="sf fst" />
+                                        <small>Например: +79028181102, +7(3452)41-56-56</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<span>Дополнительная информация:</span>
+                                <div>
+                                	<p>
+                                        <textarea class="sf"></textarea>
+                                        <small style="margin:-5px 0 5px;">Например: Core 2 Duo P8400 2260 Mhz/18.4" WXGA Full HD 1080p/1920x1080/4096Mb</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item gr">
+                            	<span>Фотографии</span>
+                                <div>
+                                	<p>
+                                    	Tyumen_Zapsibkombank2_728x90_Odnoklassniki.swf <b class="a-red">[-] <a href="#">убрать</a></b>
+                                        <small>Загрузите фотографии, характеризующие акцию</small>
+                                        <input type="file" class="sf thd" size="50" style="margin:10px 0 5px;" />
+                                        <small>Загрузите фотографии, характеризующие акцию</small>
+                                        <b class="a-blue">[+] <a href="#">добавить еще фотографию</a></b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<span>Период размещения:</span>
+                                <div>
+                                	<p>
+                                        <select class="sf fst">
+                                            <option>3 дня</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="btn2" style="margin:0 -10px; padding-top:10px;">
+                                	<p><a href="#" class="button">Сохранить</a></p>
+                                    <p style=" padding:15px 22px 15px 0; margin-right:15px;"><a href="#" class="button" style="width:290px;">Предварительный просмотр</a></p>
+                                    <a href="#" class="cancel">Отменить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-r">
+                	<ul class="personalcase">
+                    	<li>
+                        	<a href="#">Страница компании</a>
+                        </li>
+                        <li>
+                        	<span>6</span>
+                        	<a href="#">Приглашения</a> (10)
+                        </li>
+                        <li>
+                        	<span>12</span>
+                        	<a href="#">Награды</a> (10)
+                        </li>
+                        <li class="active">
+                        	<a href="#">Витрина</a> (10)
+                        </li>
+                        <li>
+                        	<a href="#">Акции</a> (10)
+                        </li>
+                        <li>
+                        	<a href="#">Кошелек</a> (10 руб.)
+                        </li>
+                        <li>
+                        	<a href="#">Общие настройки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="empty"></div>
+</div>
+<div id="footer">
+	<div class="l">
+        <p>© 2000-2010 Тюменская региональная интернет-<br />газета "Вслух.ру"</p>
+        <p>Свидетельство о регистрации СМИ ЭЛ #77-4710 от</p>
+        <p>&nbsp;</p>
+        <p><a href="#">О проекте</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Размещение рекламы</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Сообщить об ошибке</a></p>
+        <div>
+            <a href="#"><img src="images/meter.gif" /></a>
+            <a href="#"><img src="images/meter.gif" /></a>
+        </div>
+	</div>
+    <div class="c">
+    	<div>
+        	<a href="#">Каталог</a>
+        </div>
+        <ul>
+        	<li><a href="#">Отдых</a></li>
+            <li><a href="#">Дети</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Такси</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Красота</a></li>
+            <li><a href="#">Дом</a></li>
+            <li><a href="#">Досуг</a></li>
+            <li><a href="#">Туризм</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Шопинг</a></li>
+			<li><a href="#">Финанасы</a></li>
+            <li><a href="#">Питомцы</a></li>
+        </ul>
+        <div>
+            <a href="#">Сити квест</a>
+            <a href="#">События</a>
+            <a href="#">Афиша</a>
+            <a href="#">Витрина</a>
+        </div>
+    </div>
+    <div class="r">
+    	<div class="search-form">
+            <ul>
+            	<li><a href="#">по слову</a></li>
+                <li><a href="#">по ID</a></li>
+            </ul>
+        	<input type="text" class="frm" value="Поиск по порталу" />
+            <a href="#" class="select">по слову</a>
+            <input type="submit" class="btn" value="Искать" title="Искать" />
+        </div>
+    	<p>Разработка — студия «<a href="http://creativeru.com/" target="_blank" title="Студия интернет-технологий «Креатив»">Креатив</a>»</p>
+    </div>
+</div>
+</body>
+</html>

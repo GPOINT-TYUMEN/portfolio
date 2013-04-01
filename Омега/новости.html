@@ -1,0 +1,143 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#carousel").carouFredSel({
+			width: 920,
+			height: 360,
+			items: {
+				width: 920,
+				height: 360
+			},
+			auto: false,
+			pagination: ".pagination",
+			prev: ".prev",
+			next: ".next"
+		});
+	})
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+	<header>
+		<div class="header clearfix">
+			<nav>
+				<ul class="clearfix">
+					<li class="home"><a href="#"></a></li>
+					<li><a href="#">Научная деятельность</a></li>
+					<li class="active"><a href="#">страхование</a></li>
+					<li><a href="#">консалтинг</a></li>
+					<li><a href="#">статьи</a></li>
+					<li><a href="#">отправить заявку</a></li>
+				</ul>
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту" />
+						<input type="submit" value="" />
+					</form>
+				</div>
+			</nav>
+		</div>
+		<div class="block-header clearfix">
+			<div class="logo"><a href="#"><img src="images/logo.gif" alt="" width="269" height="62" /></a></div>
+			<div class="block-phone">
+				<div class="phone"><span>(3452)</span> 42-75-82</div>
+				<div class="adress">Тюмень, ул. Ямская, 122 ст1</div>
+			</div>
+			<div class="block-phone">
+				<div class="phone"><span>(3452)</span> 55-24-55</div>
+				<div class="adress">Тюмень, ул. Московский тракт, 100</div>
+			</div>
+		</div>
+	</header>
+	<div class="body clearfix">
+		<div class="clumbs">
+			<a href="#">Страхование</a> /
+			<a href="#">Корпоративным клиентам</a> /
+			<a href="#">Коллективное накопительное страхование</a>
+		</div>
+		<div class="news-list">
+			<div class="title">Новости и акции</div>
+			<div class="item clearfix">
+				<div class="images">
+					<img src="images/119x96.jpg" alt="" width="119" height="96" />
+				</div>
+				<div class="info">
+					<div class="title"><a href="#">заголовок</a><span>15.11.12</span></div>
+					<div class="description">
+						Краткое описание
+					</div>
+				</div>
+			</div>
+			<div class="item clearfix">
+				<div class="images">
+					<img src="images/119x96.jpg" alt="" width="119" height="96" />
+				</div>
+				<div class="info">
+					<div class="title"><a href="#">заголовок</a><span>15.11.12</span></div>
+					<div class="description">
+						Краткое описание
+					</div>
+				</div>
+			</div>
+			<div class="item clearfix">
+				<div class="images">
+					<img src="images/119x96.jpg" alt="" width="119" height="96" />
+				</div>
+				<div class="info">
+					<div class="title"><a href="#">заголовок</a><span>15.11.12</span></div>
+					<div class="description">
+						Краткое описание
+					</div>
+				</div>
+			</div>
+			<div class="item clearfix">
+				<div class="images">
+					<img src="images/119x96.jpg" alt="" width="119" height="96" />
+				</div>
+				<div class="info">
+					<div class="title"><a href="#">заголовок</a><span>15.11.12</span></div>
+					<div class="description">
+						Краткое описание
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer clearfix">
+		<div class="copy">© 2012 Омега консалт. Омега капитал. Все права защищены.</div>
+		<div class="social"></div>
+		<div class="dev">
+			Сделано в <a href="http://www.createdigital.me" target="_blank">Create</a>
+		</div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

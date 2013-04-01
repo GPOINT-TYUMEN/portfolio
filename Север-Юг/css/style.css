@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+ul { list-style: none; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+blockquote, q { quotes:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; color: #008bec; }
+a:hover { text-decoration: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+table { border-collapse:collapse; border-spacing:0; width: 100%; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+body { font: 12px/18px Arial, Helvetica, sans-serif; *font-size:small; min-width: 1000px; }
+*:first-child+html body { position: relative;}
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+body, select, input, textarea { color: #444; font-family: Arial, Helvetica, sans-serif; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+strong, th { font-weight: bold; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+/* курсор в виде руки для всех кликабельных элементов input */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.block-header { background: url(../img/bg-1x116.gif) repeat-x; }
+.block-header .header { width: 950px; margin: 0 auto 14px; padding: 0 23px 0 23px; overflow: hidden; height: 100%!ie; }
+.block-header .header .logo { float: left; width: 218px; margin: 21px 148px 0 0; }
+.block-header .header .direction { overflow: hidden; height: 100%!ie; float: left; font: 20px/24px Tahoma; margin: 23px 0 0 0; }
+.block-header .header .direction a { color: #fff; text-decoration: none; display: block; text-align: center; padding: 4px 0 0 0; height: 32px; }
+.block-header .header .direction .north { float: left; }
+.block-header .header .direction .north a { text-shadow: 0 -1px 0 #005d9d; background: url(../img/north.gif) no-repeat; width: 123px; }
+.block-header .header .direction .south  { float: left; }
+.block-header .header .direction .south a { background: url(../img/south.gif) no-repeat; width: 122px; }
+.block-header .header .phone { float: right; overflow: hidden; height: 100%!ie; font-family: Tahoma; line-height: 36px; margin: 17px 0 0 0; }
+.block-header .header .phone .code { float: left; font-size: 21px; color: #797979; margin: 0 9px 0 0; }
+.block-header .header .phone .tel { float: left; font-size: 30px; color: #000; margin: 3px 0 0 0; }
+.block-header .menu { width: 950px; margin: 0 auto; background: #000; }
+.block-header .menu ul { margin: 0; overflow: hidden; height: 100%!ie; }
+.block-header .menu ul li { float: left; font-size: 14px; padding: 9px 12px 12px; }
+.block-header .menu ul li a { color: #fff; }
+.block-header .menu ul li.pro { background: url(../img/bg-1x39pro.gif) repeat-x; }
+.block-header .menu ul li.nort { background: url(../img/bg-1x39a.gif) repeat-x;  }
+.block-header .menu ul li.nort a { font-weight: bold; color: #00161f; text-decoration: none; text-shadow: 0 1px 0 #00c3f2; }
+.block-header .menu ul li.south { background: url(../img/bg-1x39s.gif) repeat-x; }
+.block-header .menu ul li.south a { font-weight: bold; color: #3c2f04; text-decoration: none; text-shadow: 0 1px 0 #eed517; }
+.block-header .menu ul li.active a { color: #ecb70f; text-decoration: none; }
+.block-header .submenu { width: 950px; margin: 0 auto; }
+.block-header .s-nort { background: url(../img/bg-1x50nort.gif) repeat-x; }
+.block-header .s-south { background: url(../img/bg-1x50south.gif) repeat-x; }
+.block-header .submenu ul { overflow: hidden; height: 100%!ie; margin: 0; }
+.block-header .submenu ul li { float: left; font: 14px/18px Tahoma; padding: 16px 12px; }
+.block-header .submenu ul li a { color: #fff; }
+
+.main-carpusel { width: 950px; margin: 0 auto 23px; height: 606px; position: relative; }
+.main-carpusel ul { margin: 0; padding: 0; overflow: hidden; height: 100%!ie; }
+.main-carpusel ul li { float: left; width: 950px; height: 606px; }
+.main-carpusel .pagination { position: absolute; right: 19px; bottom: 19px; }
+.main-carpusel .pagination a { display: block; float: left; margin: 0 0 0 4px; background: #fff; color: #757575; font: 11px/14px Arial; width: 21px; text-align: center; text-decoration: none; padding: 4px 0 3px; }
+.main-carpusel .pagination a.selected { background: #008bec; color: #000; }
+
+.body { margin: 0 auto; width: 950px; padding: 22px 0 50px; }
+.body .title { position: relative; margin: 0 0 21px; overflow: hidden; height: 100%!ie; }
+.body .title h2 { position: relative; font-size: 18px; color: #000; float: left; text-transform: uppercase; font-weight: normal; }
+.body .title span { font-size: 14px; color: #979797; margin: 0 0 0 20px; }
+.body .block-map { border: 1px solid #f9c78e; margin: 0 0 15px; }
+.body .block-map .map-ya { width: 948px; height: 219px; }
+.body .contacts .adress { font: 24px/26px Tahoma; color: #373737; margin: 0 0 22px; }
+.body .contacts .phone, .body .contacts .fax, .body .contacts .call { font: 14px/18px Tahoma; margin: 0 0 2px; }
+.body .contacts ul { list-style: disc; font: 14px/18px Tahoma; margin: 20px 0; }
+.body .contacts ul a { color: # }
+.body .contacts ul li { margin: 0 0 2px 16px;}
+.body .contacts p { font: 14px/18px Tahoma; }
+
+.body .news-view h2 { font-size: 24px; color: #000; font-weight: normal; margin: 0 0 8px; }
+.body .news-view p { font-size: 14px; line-height: 20px; margin: 0 0 20px; }
+.body .news-view img { padding: 0 14px 0 0; }
+.body .news-view .date { color: #969696; font-size: 12px; margin: 0 0 11px; }
+.body .news-view .block-prev { overflow: hidden; height: 100%!ie; }
+.body .news-view .block-prev span { display: block; font-size: 18px; }
+.body .news-view .block-prev span.prev { float: left; }
+.body .news-view .block-prev span.next { float: right; }
+
+.block-about { overflow: hidden; height: 100%!ie; }
+.block-about .about { float: left; width: 750px; }
+.block-about .about .title { margin: 0 0 16px; }
+.block-about .about p { font-size: 14px; line-height: 20px; margin: 0 0 20px; }
+.block-about .about h3 { font: 16px/20px Tahoma; font-weight: normal; text-transform: uppercase; color: #0068b0; margin: 0 0 20px; }
+.block-about .photo { float: right; }
+.block-about .photo p { text-align: right; font-size: 14px; color: #979797; margin: 0 0 22px; }
+.block-about .photo p a { position: relative; }
+.block-about .photo .img { width: 182px; height: 113px; margin: 0 0 15px; }
+
+.block-partner { overflow: hidden; height: 100%!ie; margin: 0 0 0 -10px; }
+.block-partner .block { float: left; width: 182px; margin: 0 0 15px 10px; height: 170px; }
+.block-partner .block .link { text-align: center; font-size: 11px; line-height: 15px; }
+
+.block-special .block { overflow: hidden; height: 100%!ie; margin: 0 0 20px; }
+.block-special .block .img { float: left; width: 182px; margin: 0 15px 0 0; }
+.block-special .block .info { float: left; width: 752px; }
+.block-special .block .info p { font-size: 14px; line-height: 20px; }
+.block-special .block .info p.title a { font-size: 20px; line-height: 24px; color: #ec0f0f; }
+
+.block-news .block { margin: 0 0 15px; }
+.block-news .block p { font-size: 14px; line-height: 20px; }
+.block-news .block .date { font-size: 12px; color: #969696; }
+
+.block-tour .block { overflow: hidden; height: 100%!ie; border-bottom: 1px solid #eee; margin: 0 0 30px; padding-bottom: 25px; }
+.block-tour .block .img { float: left; width: 182px; margin: 0 15px 0 0; }
+.block-tour .block .info { float: left; width: 752px; }
+.block-tour .block .info p { font-size: 14px; line-height: 20px; }
+.block-tour .block .info p.title a { font-size: 20px; line-height: 24px; }
+.block-tour .block .info p.text { color: #979797; margin: 0 0 20px; }
+
+.block-footer { background: url(../img/bg-1x121.gif) repeat-x; padding: 30px 0 33px; }
+.block-footer .footer { width: 951px; margin: 0 auto; padding: 0 24px 0 23px; overflow: hidden; height: 100%!ie; }
+.block-footer .footer p { font: 11px/15px Tahoma; color: #6c6c6c; margin: 0 0 13px; }
+.block-footer .footer p a { color: #6c6c6c; }
+.block-footer .footer .copy { float: left; width: 385px; }
+.block-footer .footer .partner { float: left; width: 240px; }
+.block-footer .footer .partner p { margin: 0 0 5px; }
+.block-footer .footer .partner ul { margin: 0; font-size: 11px; line-height: 15px; }
+.block-footer .footer .partner ul a { color: #008bec; }
+.block-footer .footer .partner ul li { margin: 0 0 6px; }
+.block-footer .footer .search { float: right; }
+.block-footer .footer .search p { margin: 0 0 5px; }
+.block-footer .footer .search input[type=text] { border-width: 1px; border-style: solid; border-color: #5c5d5d #e3e4e4 #eaebeb #8a8c8c; padding: 2px 3px 1px; width: 195px; }
+.block-footer .footer .search input[type=submit] { border: 1px solid #a2a0a0; background: #fff; text-transform: uppercase; font: 11px/14px Tahoma; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; padding: 2px 0 3px; width: 95px; }
+
+
+
+
+
+
+
+

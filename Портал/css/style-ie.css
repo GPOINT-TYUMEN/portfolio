@@ -1,0 +1,9 @@
+.eventape .scroll-pane .item em {color:#979795; display:block; width:100px;}
+
+.directory-new, .directory-cat {margin-bottom:0;}
+
+#wrap .comment .cont input {margin-top:0;}
+
+#registration .left div input, #registration .right div input {margin:5px 0 0 -25px;}
+
+#organization .list .last div {width:125px; padding:10px 11px;}

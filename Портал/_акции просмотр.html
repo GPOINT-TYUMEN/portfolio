@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Мегатюмень</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/carousel.css" type="text/css" rel="stylesheet" />
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/style-ie.css" /><![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+    <script type="text/javascript" src="js/jmousewheel.js"></script>
+    <script type="text/javascript" src="js/handlers.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="banner">
+    	<a class="top" target="_blank" href="#"><img src="images/banner-top.jpg" /></a>
+    </div>
+    <div id="header">
+    	<a href="/" class="logo">&nbsp;</a>
+        <div class="logon">
+        	<a href="#" class="ent">Выход</a>
+            <a href="#" class="ava"><img src="img/bg-logon.gif" /></a>
+            <a href="#" class="reg">Иван Петров</a>
+            <p>ул. Республики, 45 <a href="#" class="dot-blue">Уточнить</a></p>
+        </div>
+        <div class="search-form">
+            <ul>
+            	<li><a href="#">в интересах</a></li>
+                <li><a href="#">по ID</a></li>
+            </ul>
+            <p>Поиск по порталу</p>
+        	<input type="text" class="frm disable" value="Например, питомцы" />
+            <a href="#" class="select">в интересах</a>
+            <input type="submit" class="btn" value="Искать" title="Искать" />
+        </div>
+        <ul class="menu">
+        	<li class="setting"><a href="#">Настроить</a></li>
+        	<li><a href="#">ПО ИНТЕРЕСАМ</a></li>
+        	<li><a href="#">РАЗВЛЕКАТЕЛЬНЫЙ</a></li>
+        	<li><a href="#">НОВОСТНОЙ</a></li>
+        	<li class="first active"><a href="/">СТАНДАРТНЫЙ</a></li>
+        </ul>
+  	</div>
+    <div id="content">
+    	<div style="display: none; top: 200px; left: 508px;" id="popup">
+            <div class="map-up">
+                <a href="#" class="close">закрыть</a>
+                <h2>На карте</h2>
+                <div class="cont">
+                    <p><strong>«Ресторанный комплекс Green House»</strong><br />ул. Николая Федорова, 9</p>
+                    <p>&nbsp;</p>
+                    <div class="m-ya">
+                    
+                    <script type="text/javascript" src="http://api-maps.yandex.ru/1.1/?key=AOYASEwBAAAAaQhaWQIAwqb0Gcn6IdAAXcelpjbps0ftK-sAAAAAAAAAAAB2JvPZ7UVnwFKoIPYusXmxkN6itQ==&amp;wizard=constructor"></script><link href="http://api-maps.yandex.ru/1.1.15/_YMaps.css" rel="stylesheet"><script src="http://api-maps.yandex.ru/1.1.15/_YMaps.js" charset="utf-8" type="text/javascript"></script><script src="http://api-maps.yandex.ru/1.1.15/xml/data.xml?v=1.49.3" charset="utf-8" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            YMaps.jQuery(window).load(function () {
+                                var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2645")[0]);
+                                map.setCenter(new YMaps.GeoPoint(65.515634,57.154947), 9, YMaps.MapType.MAP);
+                                map.addControl(new YMaps.Zoom());
+                                map.addControl(new YMaps.ToolBar());
+                                map.addControl(new YMaps.TypeControl());
+                                
+                                function createObject (type, point, style, description) {
+                                    var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                                        index = YMaps.jQuery.inArray( type, allowObjects),
+                                        constructor = allowObjects[(index == -1) ? 0 : index];
+                                        description = description || "";
+                                    
+                                    var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+                                    object.description = description;
+                                    
+                                    return object;
+                                }
+                            });
+                        </script>
+                        <div style="width: 100%; height: 185px;" id="YMapsID-2645" class="YMaps YMaps-cursor-grab"><div class="YMaps-layer-container" style="z-index: 1;"><div class="YMaps-map-type-layer-container"><div style="z-index: 5; left: 0px; top: 0px;" class="YMaps-layer"><div class="YMaps-tile-container" style="z-index: 6;"><img style="position: absolute; width: 256px; height: 256px; left: -77px; top: -140px;" src="http://vec01.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=348&amp;y=156&amp;z=9&amp;g="><img style="position: absolute; width: 256px; height: 256px; left: 179px; top: -140px;" src="http://vec03.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=349&amp;y=156&amp;z=9&amp;g=Gag"><img style="position: absolute; width: 256px; height: 256px; left: 435px; top: -140px;" src="http://vec01.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=350&amp;y=156&amp;z=9&amp;g=Gagari"><img style="position: absolute; width: 256px; height: 256px; left: -77px; top: 116px;" src="http://vec02.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=348&amp;y=157&amp;z=9&amp;g=G"><img style="position: absolute; width: 256px; height: 256px; left: 179px; top: 116px;" src="http://vec04.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=349&amp;y=157&amp;z=9&amp;g=Gaga"><img style="position: absolute; width: 256px; height: 256px; left: 435px; top: 116px;" src="http://vec02.maps.yandex.ru/tiles?l=map&amp;v=2.16.0&amp;x=350&amp;y=157&amp;z=9&amp;g=Gagarin"></div></div></div><div style="z-index: 50; left: 0px; top: 0px;" class="YMaps-layer YMaps-common-object-layer"></div></div><div style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: absolute ! important; padding: 0pt ! important; display: block ! important; margin: 0pt ! important; height: 20px ! important; width: 51px ! important;" class="YMaps-logo"><a style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: absolute ! important; padding: 0pt ! important; display: block ! important; margin: 0pt ! important; height: 20px ! important; width: 51px ! important;" class="YMaps-logo-link" target="_blank" href="http://maps.yandex.ru?origin=jsapi&amp;ll=65.51563404500486,57.15494697223186&amp;z=9&amp;l=map"><i style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: absolute ! important; padding: 0pt ! important; margin: 0pt ! important; height: 106px ! important; width: 56px ! important;"></i></a></div><div style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: absolute ! important; overflow: visible ! important; padding: 0pt ! important; display: block ! important; margin: 0pt ! important; height: auto ! important; width: auto ! important; color: rgb(68, 68, 68);" class="YMaps-copyrights"><span style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: static ! important; padding: 0pt ! important; display: inline ! important; font-family: Arial,sans-serif ! important; font-size: 10px ! important; text-indent: 0pt ! important; text-align: left ! important; white-space: nowrap ! important; line-height: normal ! important; text-decoration: none ! important; margin: 0pt ! important; height: auto ! important; width: auto ! important; color: rgb(68, 68, 68);">&copy;&nbsp;ЗАО&nbsp;«Геоцентр-Консалтинг»,&nbsp;2009, &copy;&nbsp;ЗАО «Резидент», &copy;&nbsp;Роскартография, &copy;&nbsp;ЗАО&nbsp;«ТГА»,&nbsp;2006&nbsp;&ndash;&nbsp;</span><a style="background-color: transparent ! important; border: medium none ! important; float: none ! important; z-index: 1001 ! important; position: static ! important; padding: 0pt ! important; display: inline ! important; font-family: Arial,sans-serif ! important; font-size: 10px ! important; text-indent: 0pt ! important; text-align: left ! important; white-space: nowrap ! important; line-height: normal ! important; text-decoration: underline ! important; margin: 0pt ! important; height: auto ! important; width: auto ! important; color: rgb(68, 68, 68);" target="_blank" href="http://maps.yandex.ru/agreement.xml">Условия использования</a></div><div class="YMaps-slider" style="z-index: 1000; left: 5px; top: 75px; height: 176px;"><div class="YMaps-slider-content"><a href="javascript:void(0)" class="YMaps-slider-minus"><i class="YMaps-slider-btn"><i></i></i></a><div class="YMaps-slider-scale" style="height: 126px; padding-bottom: 0pt;"><i type="button" class="YMaps-slider-grab" style="margin-top: 62px;"><i></i><input type="button"></i><i class="YMaps-slider-marks" style="height: 126px;"><i></i></i><div style="visibility: hidden; height: 126px;" class="YMaps-slider-tips"><a class="YMaps-button-tip YMaps-cursor-pointer" href="javascript:void(0)" style="top: 8px;"><i class="YMaps-button-tip-l"><i></i></i><i class="YMaps-button-tip-r"><i></i></i><b class="YMaps-button-tip-container"><i class="YMaps-button-tip-text">мир</i><i class="YMaps-button-tip-m"></i></b></a><a class="YMaps-button-tip YMaps-cursor-pointer" href="javascript:void(0)" style="top: 29px;"><i class="YMaps-button-tip-l"><i></i></i><i class="YMaps-button-tip-r"><i></i></i><b class="YMaps-button-tip-container"><i class="YMaps-button-tip-text">страна</i><i class="YMaps-button-tip-m"></i></b></a><a class="YMaps-button-tip YMaps-cursor-pointer" href="javascript:void(0)" style="top: 57px;"><i class="YMaps-button-tip-l"><i></i></i><i class="YMaps-button-tip-r"><i></i></i><b class="YMaps-button-tip-container"><i class="YMaps-button-tip-text">город</i><i class="YMaps-button-tip-m"></i></b></a><a class="YMaps-button-tip YMaps-cursor-pointer" href="javascript:void(0)" style="top: 85px;"><i class="YMaps-button-tip-l"><i></i></i><i class="YMaps-button-tip-r"><i></i></i><b class="YMaps-button-tip-container"><i class="YMaps-button-tip-text">улица</i><i class="YMaps-button-tip-m"></i></b></a><a class="YMaps-button-tip YMaps-cursor-pointer" href="javascript:void(0)" style="top: 106px;"><i class="YMaps-button-tip-l"><i></i></i><i class="YMaps-button-tip-r"><i></i></i><b class="YMaps-button-tip-container"><i class="YMaps-button-tip-text">дом</i><i class="YMaps-button-tip-m"></i></b></a></div></div><a href="javascript:void(0)" class="YMaps-slider-plus"><i class="YMaps-slider-btn"><i></i></i></a></div></div><div class="YMaps-buttons" style="z-index: 999; left: 5px; top: 5px;"><div class="YMaps-button YMaps-button_active" title="Переместить карту"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m" style="width: 19px;"><i></i><img src="http://api-maps.yandex.ru/i/0.4/zero.gif" title="Переместить карту" alt="Переместить карту" class="YMaps-icon YMaps-icon_move"></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div><div class="YMaps-button" title="Увеличить"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m YMaps-cursor-pointer" style="width: 19px;"><i></i><img src="http://api-maps.yandex.ru/i/0.4/zero.gif" title="Увеличить" alt="Увеличить" class="YMaps-icon YMaps-icon_magnifier"></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div><div class="YMaps-button" title="Измерение расстояний на карте"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m YMaps-cursor-pointer" style="width: 19px;"><i></i><img src="http://api-maps.yandex.ru/i/0.4/zero.gif" title="Измерение расстояний на карте" alt="Измерение расстояний на карте" class="YMaps-icon YMaps-icon_ruler"></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div></div><div class="YMaps-buttons" style="z-index: 999; right: 5px; top: 5px;"><div class="YMaps-button YMaps-button_active"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m"><i></i><span class="YMaps-button-caption">Схема</span></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div><div class="YMaps-button"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m YMaps-cursor-pointer"><i></i><span class="YMaps-button-caption">Спутник</span></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div><div class="YMaps-button"><i class="YMaps-button-c YMaps-button-l"><i></i></i><i class="YMaps-button-m YMaps-cursor-pointer"><i></i><span class="YMaps-button-caption">Гибрид</span></i><i class="YMaps-button-c YMaps-button-r"><i></i></i></div></div></div>
+                    
+                    </div>
+                </div>
+                <a href="#" class="button small">Закрыть</a>
+            </div>
+        </div>
+    	<div class="submenu">
+        	<ul>
+            	<li><a href="#">Сообщества</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Афиша</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сити-квест</a></li>
+                <li><a href="#">Онлайн витрина</a></li>
+                <li class="active"><a href="#">Копи на скидку</a></li>
+            </ul>
+            <ul class="old">
+            	<li class="pda"><a href="#"><i></i>Мобильная версия</a></li>
+                <li class="rss"><a href="#"><i></i>RSS</a></li>
+                <li class="vk"><a href="#"><i></i>vkontakte</a></li>
+                <li class="adv"><a href="#">Размещение рекламы</a></li>
+            </ul>
+        </div>
+        <div id="breadcrumbs">
+            <a href="#">Главная</a><em>\</em>
+            Копи на скидку
+   	  </div>
+        <div class="header-b">
+        	<div class="left-h">
+            	<div class="l-h">
+                	<h1>СКИДКА 39% НА УСЛУГИ СПА-САЛОНА</h1>
+                </div>
+            </div>
+            <div class="right-h"></div>
+        </div>
+ 		<div class="box nobr">
+			<div class="leftcolum">
+          		<div class="basis">
+                	<div class="lyer-info">
+                    	<div class="left">
+                        	<p style="font-size: 14px;">Купить флаер можно только до <strong>6 июля 2010 г.</strong></p>
+                            <p>Воспользоваться флаером можно до <strong>31 июля 2010 г.</strong></p>
+                        </div>
+                        <div class="right">
+                        	<a class="on-map" href="#">На карте</a>
+                        	<a class="invite" href="#">Пригласить</a>
+                            <div class="invite-pop" style="display: block; margin: 50px 0 0 70px;">
+                            	<div>
+                                	<ul>
+                                    	<li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                        <li><label><input type="checkbox" /> Виктор Петрович</label></li>
+                                    </ul>
+                                </div>
+                                <input class="button-i" type="button" value="Пригласить" /><a href="#">Отмена</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discount-block">
+                    	<div class="left">
+                            <div class="photo">
+                                <img src="img/img-action.jpg" />
+                            </div>
+                            <div class="terms">
+                            	<h4>Условия</h4>
+                                <ol>
+                                	<li>Важное условие — один купон на одно лицо с возможностью воспользоваться только один раз.</li>
+                                    <li>Один купон дает скидку на одно лицо, поэтому, если идете вдвоем или компанией, надо покупать купон на  каждого.</li>
+                                    <li>Купоном можно воспользоваться до 09 авг. 2010 г.</li>
+                                </ol>
+                            </div>
+                            <div class="terms">
+                            	<h4>Особенности</h4>
+                                <ol>
+                                	<li>Важное условие — один купон на одно лицо с возможностью воспользоваться только один раз.</li>
+                                    <li>Один купон дает скидку на одно лицо, поэтому, если идете вдвоем или компанией, надо покупать купон на  каждого.</li>
+                                    <li>Купоном можно воспользоваться до 09 авг. 2010 г.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="discount-buy">
+                            	<span class="l">Стоимость флаера:</span>
+                                <span><strong>100</strong> руб.</span>
+                                <a class="button small" href="#">Купить флаер</a>
+                            </div>
+                            <div class="spec">
+                                <div>
+                                    <span><em>Превоначальная стоимость</em></span>
+                                    <p>1000 руб.</p>
+                                </div>
+                                <div>
+                                    <span><em>Скидка</em></span>
+                                    <p>60%</p>
+                                </div>
+                                <div>
+                                    <span><em>Экономия</em></span>
+                                    <p><strong>600 руб.</strong></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="to-complete"><i></i>
+                            <div class="percentage">
+                                <div class="percentage-line"><div style="width: 3%"></div></div>
+                                <p>До завершения акции: <strong>23:43:34</strong></p>
+                            </div>
+                        </div>
+                        <div class="advanced">
+                        	<div class="social">
+                            	<span><img src="img/ico-twitt.gif" /></span>
+                                <span><img src="img/ico-face.gif" /></span>
+                                <span><img src="img/ico-vkontakte.gif" /></span>
+                            </div>
+                            <div class="already">
+                            	<div class="left">Уже купили: <a class="active" href="#">45 человек</a></div>
+                                <div class="right"><i></i>Акция состоится!</div>
+                            </div>
+                            <div class="list">
+                                <div>
+                                    <a class="avatar" href="#"><img src="images/pic-moderator.gif" /></a>
+                                    <span>
+                                        <strong><a href="#"><i class="active"></i>Григорий</a></strong>
+                                        <p><a href="#">Скидка 39% на услуги SPA салона</a></p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <a class="avatar" href="#"><img src="images/pic-moderator.gif" /></a>
+                                    <span>
+                                        <strong><a href="#"><i></i>Петр Петрович</a></strong>
+                                        <p><a href="#">Скидка 39% на услуги SPA салона</a></p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <a class="avatar" href="#"><img src="images/pic-moderator.gif" /></a>
+                                    <span>
+                                        <strong><a href="#"><i></i>Krendel664</a></strong>
+                                        <p><a href="#">Скидка 39% на услуги SPA салона</a></p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <a class="avatar" href="#"><img src="images/pic-moderator.gif" /></a>
+                                    <span>
+                                        <strong><a href="#"><i></i>Krendel664</a></strong>
+                                        <p><a href="#">Скидка 39% на услуги SPA салона</a></p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <a class="avatar" href="#"><img src="images/pic-moderator.gif" /></a>
+                                    <span>
+                                        <strong><a href="#"><i></i>Krendel664</a></strong>
+                                        <p><a href="#">Скидка 39% на услуги SPA салона</a></p>
+                                    </span>
+                                </div>
+                          </div>
+                          <div class="all">[+] <a href="#">Все пользователи, участвующие в акции</a></div>
+                        </div>
+                    </div>
+                    <div class="header-ac">РЕСТОРАННЫЙ КОМПЛЕКС Green house</div>
+                    <div id="organization">
+                    	<div class="headbar">
+                        	<div class="user">
+                            	<a class="button small red" href="#">Пригласить</a>
+                            	<a class="button small red" href="#">Я здесь был</a>
+                            	<a class="button small" href="#">Я сейчас тут</a>
+                            </div>
+                    		<p><span><a class="dot-blue" href="#">ул. Николая Федорова, 9</a></span></p>
+                        </div>
+                        <div class="infor">
+                        	<div class="ifl">
+                                <div class="spec">
+                                    <div>
+                                        <span><em>Тип</em></span>
+                                        <p>ресторан, кафе</p>
+                                    </div>
+                                    <div>
+                                        <span><em>Время работы</em></span>
+                                        <p>10:00 - 04:00</p>
+                                    </div>
+                                    <div>
+                                        <span><em>Кухня</em></span>
+                                        <p>Европейская, авторская, итальянская, средиземноморская, японская</p>
+                                    </div>
+                                    <div>
+                                        <span><em>Средний чек</em></span>
+                                        <p>1000 - 1500 руб.</p>
+                                    </div>
+                                    <div>
+                                        <span><em>Метки</em></span>
+                                        <p><a href="#">Ресторан</a> ˖ <a href="#">Wi-Fi</a> ˖ <a href="#">Бизнес Ланч</a> ˖ <a href="#">Доставка</a> ˖ <a href="#">Суши</a></p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <div>
+                                    	<p>243</p>
+                                        просмотров
+                                    </div> 
+                                    <div>
+                                    	<p>23</p>
+                                        отзывов
+                                    </div>                               
+                                	<div>
+                                    	<span>5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ifr">
+                            	<div class="text">
+                                	<span>Особенности</span>
+                                    <p>всевозможные сорта кофе, алкогольные и безалкогольные напитки на основе кофе, разнообразный чай (китайский, шотландский, английский), десерты и полноценные блюда(холодные, горячие)</p>
+                                </div>
+                            	<div class="awards">
+                                    <div>
+                                        <img src="img/org-award-first.gif">
+                                        <a href="#">Самое посещаемое</a>
+                                    </div>
+                                    <div>
+                                        <img src="img/org-award-first.gif">
+                                        <a href="#">Самое посещаемое</a>
+                                    </div>
+                                    <div>
+                                        <img src="img/org-award-first.gif">
+                                        <a href="#">Самое посещаемое</a>
+                                    </div>
+                                    <div>
+                                        <img src="img/org-award-first.gif">
+                                        <a href="#">Самое посещаемое</a>
+                                    </div>
+                                </div>
+                                <div class="all">[+] <a href="#">Все награды</a></div>
+                            </div>
+                        </div>
+                        <div class="more-company"><a href="#">Подробнее о компании</a> »</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcolum">
+            	<div class="banner"><a href="#"><img src="images/banner-180.jpg"></a></div>
+                <div class="show-window">
+                	<h2>ОНЛАЙН ВИТРИНА</h2>
+                    <a href="#" class="i-top"><i></i></a>
+                    <div class="show-list">
+                    	<div class="img"><img src="images/img-l.jpg"></div>
+                        <div class="text"><p><a href="#">Нетбук ASUS Eee PC</a></p><span>11 345 руб.</span></div>
+                    </div>
+                    <div class="show-list">
+                    	<div class="img"><img src="images/img-l.jpg"></div>
+                        <div class="text"><p><a href="#">Нетбук ASUS Eee PC</a></p><span>11 345 руб.</span></div>
+                    </div>
+                    <div class="show-list">
+                    	<div class="img"><img src="images/img-l.jpg"></div>
+                        <div class="text"><p><a href="#">Нетбук ASUS Eee PC</a></p><span>11 345 руб.</span></div>
+                    </div>
+                    <a class="i-bottom" href="#"><i></i></a>
+                    <ul>
+                    	<li><a href="#">Личные вещи</a></li>
+                        <li><a href="#">Транспорт</a></li>
+                        <li><a href="#">Дом, дача</a></li>
+                        <li><a href="#">Бизнес</a></li>
+                        <li><a href="#">Животные</a></li>
+                        <li><a href="#">Бытовая электроника</a></li>
+                    </ul>
+                    <div class="add"><a href="#"><i></i>Добавить товар/услугу</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+	<div class="l">
+        <p>© 2000-2010 Тюменская региональная интернет-<br />газета "Вслух.ру"</p>
+        <p>Свидетельство о регистрации СМИ ЭЛ #77-4710 от</p>
+        <p>&nbsp;</p>
+        <p><a href="#">О проекте</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Размещение рекламы</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Сообщить об ошибке</a></p>
+        <div>
+            <a href="#"><img src="images/meter.gif" /></a>
+            <a href="#"><img src="images/meter.gif" /></a>
+        </div>
+	</div>
+    <div class="c">
+    	<div>
+        	<a href="#">Каталог</a>
+        </div>
+        <ul>
+        	<li><a href="#">Отдых</a></li>
+            <li><a href="#">Дети</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Такси</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Красота</a></li>
+            <li><a href="#">Дом</a></li>
+            <li><a href="#">Досуг</a></li>
+            <li><a href="#">Туризм</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Шопинг</a></li>
+			<li><a href="#">Финанасы</a></li>
+            <li><a href="#">Питомцы</a></li>
+        </ul>
+        <div>
+            <a href="#">Сити квест</a>
+            <a href="#">События</a>
+            <a href="#">Афиша</a>
+            <a href="#">Витрина</a>
+        </div>
+    </div>
+    <div class="r">
+    	<div class="search-form">
+            <ul>
+            	<li><a href="#">по слову</a></li>
+                <li><a href="#">по ID</a></li>
+            </ul>
+        	<input type="text" class="frm" value="Поиск по порталу" />
+            <a href="#" class="select">по слову</a>
+            <input type="submit" class="btn" value="Искать" title="Искать" />
+        </div>
+    	<p>Разработка — студия «<a href="http://creativeru.com/" target="_blank" title="Студия интернет-технологий «Креатив»">Креатив</a>»</p>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</head>
+
+<body class="green">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="sanofi"><a href="#"><img src="images/logo-sanofi.jpg" alt="" width="97" height="22" /></a></div>
+<header>
+	<div class="line"></div>
+	<div class="header">
+		<div class="clearfix">
+			<div class="logo"><a href="/" id="start"><img src="images/logo.png" alt="" width="409" height="47" /></a></div>
+			<div class="contacts">
+				<p><a href="#">Контактная информация</a></p>
+				<div class="social"><div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="arial"></div></div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="body">
+	<nav>
+		<ul class="menu clearfix">
+			<li class="active"><span><a href="/move.html">Эссенциале форте Н</a></span></li>
+			<li><span><a href="#">О здоровье печени</a></span></li>
+			<li><span><a href="#">Часто задаваемые вопросы</a></span></li>
+			<li><span><a href="#">Для врачей</a></span></li>
+			<li><span><a href="#">Для фармацевтов</a></span></li>
+			<li><span><a href="#">Промо-акция</a></span></li>
+		</ul>
+	</nav>
+	<div class="content clearfix">
+		<div class="shape">
+			<ul>
+				<li><span><a href="#">Эссенциале<br />в мире</a></span></li>
+				<li class="active"><span><a href="#">Действие<br />Эссенциале</a></span></li>
+				<li><span><a href="#">Инструкция<br />Эссенциале</a></span></li>
+				<li><span><a href="#">Видео ролики<br />Эссенциале</a></span></li>
+				<li><span><a href="#">Новости<br />и публикации</a></span></li>
+			</ul>
+		</div>
+		<div class="pages">
+			<div class="calc">
+				<div class="title">Калькуляторы</div>
+				<div class="tabs clearfix" id="tabs">
+					<div class="item"><a href="javascript:void(0);" onclick="$('.calc .hide').hide();$('#tabs .item').removeClass('active');$(this).parent().addClass('active');$('#weight').show();">Индекс массы тела</a></div>
+					<div class="item"><a href="javascript:void(0);" onclick="$('.calc .hide').hide();$('#tabs .item').removeClass('active');$(this).parent().addClass('active');$('#insulin').show();">Инсулинорезистентность</a></div>
+					<div class="item active"><a href="javascript:void(0);" onclick="$('.calc .hide').hide();$('#tabs .item').removeClass('active');$(this).parent().addClass('active');$('#fibroz').show();">фиброз НАЖБП</a></div>
+				</div>
+				<div class="clearfix hide" id="weight" style="display: none;">
+					<form>
+						<div class="form">
+							<ul>
+								<li><label>Масса тела:</label> <input type="text" /></li>
+								<li><label>Рост:</label> <input type="text" /></li>
+							</ul>
+						</div>
+						<div class="button"><input type="submit" value="Результат" /></div>
+						<div class="result">
+							<p><span>1,87</span></p>
+							<p>Избыточная масса<br />тела (предожирение)</p>
+						</div>
+					</form>
+				</div>
+				<div class="clearfix hide" id="insulin" style="display: none;">
+					<form>
+						<div class="form">
+							<ul>
+								<li><label>Концентрация глюкозы<br />в сыворотке крови натощак:</label> <input type="text" /></li>
+								<li><label>Концентрация инсулина<br />в сыворотке натощак:</label> <input type="text" /></li>
+							</ul>
+						</div>
+						<div class="button"><input type="submit" value="Результат" /></div>
+						<div class="result">
+							<p><span>1,87</span></p>
+						</div>
+					</form>
+				</div>
+				<div class="clearfix hide" id="fibroz">
+					<form>
+						<div class="form">
+							<ul>
+								<li><label>Возраст, лет</label> <input type="text" /></li>
+								<li class="" id="index-form">
+									<label><span>Индекс массы тела</span></label> <input style="" type="text" /> <a  style="" onclick="$(this).hide();$('#index-form').addClass('index-form');$('#index-form input:first').hide();$('#index-form .clearfix').show();" href="javascript:void(0);">Рассчитать</a>
+									<div class="clearfix" style="display: none;">
+										<div class="form">
+											<ul>
+												<li><label>Масса тела:</label> <input type="text" /></li>
+												<li><label>Рост:</label> <input type="text" /></li>
+											</ul>
+										</div>
+										<div class="button"><input type="submit" value="Результат" /></div>
+										<div class="result">
+											<p><span>1,87</span></p>
+											<p>Избыточная масса<br />тела (предожирение)</p>
+										</div>
+									</div>
+								</li>
+								<li><label>Нарушение толерантности<br />к глюкозе/диабет</label> <input type="checkbox" /></li>
+								<li><label>Уровень АСТ</label> <input type="text" /> Ед/л</li>
+								<li><label>Уровень АЛТ</label> <input type="text" /> Ед/л</li>
+								<li><label>Уровень тромбоцитов, х 109</label> <input type="text" /> х 109 /л</li>
+								<li><label>Уровень альбумина<br />сыворотки крови</label> <input type="text" /> г/дл</li>
+							</ul>
+						</div>
+						<div class="button"><input type="submit" value="Результат" /></div>
+						<div class="result">
+							<p><span>1,87</span></p>
+						</div>
+						<div class="result2"><p>Промежуточный результат<br />(средняя вероятность фиброза)</p></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="warning">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ.</div>
+		<div class="copy">Copyright © 2005-2012 Sanofi. Все права защищены. <a href="#">Официальное уведомление</a></div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

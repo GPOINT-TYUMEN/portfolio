@@ -1,0 +1,103 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Север-Юг</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  
+<!-- всё -->
+
+</head>
+
+<body>
+<div class="block-header">
+	<div class="header">
+		<div class="logo"><a href="/"><img src="img/logo.gif" /></a></div>
+		<div class="direction">
+			<div class="north"><a href="javascript: void(0);">Север</a></div>
+			<div class="south"><a href="javascript: void(0);">Юг</a></div>
+		</div>
+		<div class="phone">
+			<div class="code">495 /</div>
+			<div class="tel">658-58-85</div>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Направления</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+			<li><a href="#">Партнеры</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li class="nort"><a href="#">Туристам</a></li>
+			<li class="pro"><a class="dotted" href="#">Профессионалам</a></li>
+		</ul>
+	</div>
+	<div class="submenu s-nort">
+		<ul>
+			<li><a href="#">Охота</a></li>
+			<li><a href="#">Рыбалка</a></li>
+			<li><a href="#">Этнографический туризм</a></li>
+			<li><a href="#">Активный отдых</a></li>
+		</ul>
+	</div>
+</div>
+<div class="main-carpusel">
+	<ul id="main-carpusel">
+		<li><img src="img/950x606.jpg" /></li>
+		<li><img src="img/950x606.jpg" /></li>
+		<li><img src="img/950x606.jpg" /></li>
+		<li><img src="img/950x606.jpg" /></li>
+	</ul>
+	<div class="pagination" id="main-carpusel-pag"></div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 Туроператор «Север-Юг». Все права защищены.<br />Перепечатка материалов только с согласия администрации сайта.</p>
+			<p>Разработка — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<div class="partner">
+			<p><strong>Наши партнеры</strong></p>
+			<ul>
+				<li><a href="#">Администрация Ямало-Ненецкого автономного округа</a></li>
+				<li><a href="#">Студия «Креатив»</a></li>
+				<li><a href="#">Правительство Москвы</a></li>
+				<li><a href="#">Администрация ЯНАО</a></li>
+				<li><a href="#">Студия «Креатив»</a></li>
+				<li><a href="#">Правительство Москвы</a></li>
+			<ul>
+		</div>
+		<div class="search">
+			<p>Подписка на рассылку новостей:</p>
+			<form>
+				<input type="text" placeholder="Ваш e-mail" />
+				<input type="submit" value="Подтвердить" />
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

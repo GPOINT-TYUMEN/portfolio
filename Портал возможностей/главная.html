@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" media="all" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/stepcarousel.js"></script>
+<title></title>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'mygallery', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: false, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+</head>
+
+<body>
+
+<div class="header">
+	<!--<div class="bg-top"></div>-->
+    <div class="top">
+    	<div class="login">Здравствуйте, <a href="#">Иван Кирюхин</a> (<a href="#">Выход</a>)</div>
+    	<div class="logo"><a href="#"></a></div>
+        <div class="slogan"><a href="#"></a></div>
+        <div class="menu">
+        	<ul>
+            	<li>
+                	<p><a href="#">Об учреждении</a></p>
+                    <p>коротко о главном</p>
+                </li>
+                <!--<li>
+                	<p><a href="#">Сообщество</a></p>
+                    <p>молодежи</p>
+                </li>-->
+                <li>
+                	<p><a href="#">Контакты</a></p>
+                    <p>филиалы в городах</p>
+                </li>
+                <li>
+                	<p><a href="#">Мероприятия</a></p>
+                    <p>и фотогалереи</p>
+                </li>
+                <li>
+                	<p><a href="#">Филиал</a></p>
+                    <p>г. Новый Уренгой</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header-search">
+	<div>
+        <span>Поиск возможностей:</span>
+        <input type="text" class="text" value="Например, работа в летнее время" />
+        <!--<select><option>Искать на всем портале</option></select>-->
+        <input type="button" placeholder="Найти" class="button" />
+        <i class="arrow"></i>
+    </div>
+</div>
+
+<div class="body">
+	<!--<div class="block-ad">
+    	<div class="ad">
+            <div class="img"><img src="img/75x45.gif" /></div>
+            <div class="text">
+                <p><a href="#">Тут будут публиковаться анонсы интересных событий</a></p>
+                <p>формат достаточно простой и прозрачный: баннер и анонсный текст при клике, переход на материал</p>
+            </div>
+        </div>
+    	<div class="ad">
+            <div class="img"><img src="img/75x70.gif" /></div>
+            <div class="text">
+                <p><a href="#">Лагерь Ямал приглашает друзей!</a></p>
+                <p>проведем лето-2010 вместе. Новые программы и старые друзья +солнце,море и отличное настроение!</p>
+            </div>
+        </div>
+        <div class="ad">
+            <div class="img"><img src="img/75x70t.gif" /></div>
+            <div class="text">
+                <p><a href="#">Лучший изобретатель и рационализатор ЯНАО</a></p>
+                <p>администрация ЯНАО проводит конкурс инновационных проектов.</p>
+            </div>
+        </div>
+    </div>-->
+	<div class="center">
+    	<div class="colum-l">
+        	<div class="events">
+            	<h3>Новости</h3>
+                <div class="promo">
+                    <div id="mygallery" class="stepcarousel">
+                    	<div class="belt">
+                        	<div class="panel">
+                                <img src="img/251x192.jpg" />
+                                <div><a href="#">Последняя вечеринка года. Спешите</a></div>
+                            </div>
+                            <div class="panel">
+                                <img src="img/251x192.jpg" />
+                                <div><a href="#">Последняя вечеринка года. Спешите</a></div>
+                            </div>
+                            <div class="panel">
+                                <img src="img/251x192.jpg" />
+                                <div><a href="#">Последняя вечеринка года. Спешите</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="mygallery-paginate"><img src="img/opencircle.gif" data-over="img/closedcircle.gif" data-select="img/closedcircle.gif" data-moveby="1" /></p>
+                </div>
+                <div class="block">
+                	<p class="date">15 ноября, 2010</p>
+                    <p><a href="#">Окружная шахматная полярная школа им.А.Карпова</a></p>
+                </div>
+                <div class="block">
+                	<p class="date">15 ноября, 2010</p>
+                    <p><a href="#">Окружная шахматная полярная школа им.А.Карпова</a></p>
+                </div>
+                <div class="block">
+                	<p class="date">15 ноября, 2010</p>
+                    <p><a href="#">Окружная шахматная полярная школа им.А.Карпова</a></p>
+                </div>
+                <div class="all"><a href="#">Все события</a></div>
+            </div>
+            <div class="probation">
+            	<h4>Оранизация обучения и стажировок за рубежом</h4>
+            </div>
+        </div>
+        <div class="colum-r">
+        	<div class="employment">
+            	<div class="new-vacancy">
+                	<h3>Вакансии работодателей</h3>
+                    <div class="block">
+                    	<p><a href="#">ООО "СК"Росгосстрах-Жизнь"</a></p>
+                        <p>Финансовый консультант</p>
+                    </div>
+                    <div class="block">
+                    	<p><a href="#">ООО "СК"Росгосстрах-Жизнь"</a></p>
+                        <p>Финансовый консультант</p>
+                    </div>
+                    <div class="block">
+                    	<p><a href="#">ООО "СК"Росгосстрах-Жизнь"</a></p>
+                        <p>Финансовый консультант</p>
+                    </div>
+                    <div class="all"><a href="#">Все вакансии</a></div>
+                </div>
+            	<h3>Занятость молодежи</h3>
+                <ul>
+                	<li><a href="#"><i class="prof"></i>Профессиональная ориентация</a></li>
+                    <li><a href="#"><i class="industry"></i>Молодежное предпринимательство</a></li>
+                	<li><a href="#"><i class="tech"></i>Временная занятость молодежи</a></li>
+                    <li class="height"><a href="#"><i class="labor"></i>Выездные молодежные студенческие трудовые отряды</a></li>
+                    <li class="height"><a href="#"><i class="in-labor"></i>Международные молодежные трудовые отряды</a></li>
+                    <li class="height"><a href="#"><i class="output"></i>Штаб студенческих строительных отрядов ЯНАО</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+    	<div class="customer">
+        	<h4>Информация для заказчиков</h4>
+        	<a href="#">ГАУ ЯНАО «Молодежный центр технологий занятости» работает как с физическими, так и с юридическими лицами.</a>
+        </div>
+    	<div class="block-community">
+        	<h3>Форум</h3>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+            <div class="block">
+            	<p><strong><a href="#">Летние сборы, вожатство,пионерия</a></strong></p>
+                <p><a href="#">Кто с нами в лагерь?</a> <span>Антон, 21.01 <em>01:43</em></span></p>
+            </div>
+        </div>
+        <div class="login">
+        	<h4>Вход для пользователей</h4>
+            <div class="form">
+            	<p><input type="text" value="Логин (e-mail)" style="font-style: italic; color: #807979" /></p>
+                <p><input type="text" value="Пароль" style="font-style: italic; color: #807979" /></p>
+            </div>
+            <div class="button"><input type="button" value="Вход" /></div>
+            <div class="password"><a href="#">Забыли пароль?</a></div>
+            <div class="registration"><a href="#">Зарегистрироваться</a></div>
+        </div>
+    </div>
+    <div class="line-photo">
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div><a href="#"><img src="img/78x78.jpg" /></a></div>
+        <div class="all"><a href="#">Все<br />участники<br />сообщества</a></div>
+    </div>
+</div>
+
+<div class="blank-link">
+	<div class="block">
+    	<ul class="first">
+        	<li class="first"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li class="last"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+        </ul>
+        <ul>
+        	<li class="first"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li class="last"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+        </ul>
+        <ul>
+        	<li class="first"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+            <li class="last"><a href="#">Агентство по физической культуре и спорту  ЯНАО</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="copy">
+    	<p>© 2009 Единый портал возможностей</p>
+        <p>Все права защищены. Информация агрегируется из свободных<br />источников. При перепечатке, ссылка на источник обязательна.</p>
+    </div>
+    <div class="web">Разработка — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</div>
+    <div class="counter"><img src="img/88x31.jpg" /><img src="img/88x31.jpg" /></div>
+</div>
+
+</body>
+</html>

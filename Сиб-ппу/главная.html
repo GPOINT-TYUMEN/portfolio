@@ -1,0 +1,230 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/nivo-slider.css" type="text/css" rel="stylesheet" />
+<title>Сибппу</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/Plumb.font.js"></script>
+<script src="js/PlumbCondensed.font.js"></script>
+<script src="js/Myriad_Pro.font.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  
+<!-- всё -->
+
+<script type="text/javascript">
+$(window).load(function() {
+    $('#carousel').nivoSlider({
+        effect:'random', // Specify sets like: 'fold,fade,sliceDown'
+        slices:15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed:500, // Slide transition speed
+        pauseTime:3000, // How long each slide will show
+        startSlide:0, // Set starting Slide (0 index)
+        directionNav:false, // Next & Prev navigation
+        directionNavHide:true, // Only show on hover
+        controlNav:true, // 1,2,3... navigation
+        controlNavThumbs:true, // Use thumbnails for Control Nav
+        controlNavThumbsFromRel:false, // Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', // Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+        keyboardNav:false, // Use left & right arrows
+        pauseOnHover:true, // Stop animation while hovering
+        manualAdvance:false, // Force manual transitions
+        captionOpacity:0.8, // Universal caption opacity
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="block-menu">
+	<div class="menu">
+		<ul>
+			<li class="first active"><a href="#">главная</a></li>
+			<li><a href="#">о компании</a></li>
+			<li><a href="#">цены</a></li>
+			<li><a href="#">контакты</a></li>
+		</ul>
+		<div class="mail"><a href="mailto:sibppu@gmail.com">sibppu@gmail.com</a></div>
+	</div>
+</div>
+<div class="block-header">
+	<div class="header">
+		<div class="block-logo">
+			<div class="slogan">долговечность и экологичность</div>
+			<div class="logo"><a href="#"><img src="img/logo.gif" /></a></div>
+		</div>
+		<div class="block-carousel">
+			<div class="splash"></div>
+			<div class="carousel">
+				<div class="bg-top"><img src="img/bg-top.gif" /></div>
+					<div id="index" class="clearfix">
+						<div class="bg-left"></div>
+						<div class="bg-center">
+							<div class="logo-img"><img src="img/logo-img.png" /></div>
+							<ul id="carousel">
+								<li>
+									<img src="img/1180x398.jpg" title="#htmlcaption1" />
+									<span id="htmlcaption1" class="option">Применение</span>
+								</li>
+								<li>
+									<img src="img/1180x398q.jpg" title="#htmlcaption2" />
+									<span id="htmlcaption2" class="option">Применение23</span>
+								</li>
+								<li>
+									<img src="img/1180x398.jpg" title="#htmlcaption3" />
+									<span id="htmlcaption3" class="option">Применение12423</span>
+								</li>
+								<li>
+									<img src="img/1180x398q.jpg" title="#htmlcaption4" />
+									<span id="htmlcaption4" class="option">Применение4123</span>
+								</li>
+							</ul>
+						</div>
+						<div class="bg-right"></div>
+					</div>
+					<div class="bg-bottom"><img src="img/bg-bottom.gif" /></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block-body">
+	<div class="body">
+		<div class="block-promo">
+			<div class="top"></div>
+			<div class="center">
+				<div class="title">
+					<div class="head">
+						<div class="left"></div>
+						<div class="text">продукт ппу</div>
+						<div class="right"></div>
+					</div>
+				</div>
+				<div class="block-product clearfix">
+					<div class="product">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="product">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+				</div>
+				<div class="title">
+					<div class="head">
+						<div class="left"></div>
+						<div class="text">применение</div>
+						<div class="right"></div>
+					</div>
+				</div>
+				<div class="block-application clearfix">
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+					<div class="application">
+						<a href="#"></a>
+						<img src="img/349x188.jpg" />
+						<span>полимочевина</span>
+					</div>
+				</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		<div class="main-text">
+			<h2>Уважаемые дамы и господа!</h2>
+			<p>Мы рады приветствовать Вас на страницах нашего сайта!<br />Данный сайт посвящен инновационным технологиям в области строительства и ремонта, отвечающим главным на сегодняшний день критериям: <strong>долговечности и экологичности</strong>.</p>
+			<h3>Мы представляем <strong>новый продукт</strong> в нашем регионе.</h3>
+			<p>Компания «СИБ-ППУ» занимается устройством бесшовных гидроизоляционных покрытий с применением ультросовременной технологии нанесение пенополиуретана, полимочевины. Наша компания использует оборудование и компоненты производства США.</p>
+			<p>Благодаря накопленному опыту работы в сфере гидроизоляции и теплоизоляции компания «СИБ-ППУ» предоставляет услуги по тепловизионному обследованию качественно и в короткие сроки.</p>
+			<p>Наша компания осуществляет работы в области гидроизоляции и теплоизоляции с применением современных технологий на объектах в городе Москве и в Московской области.</p>
+		</div>
+		<div class="block-partner">
+			<div class="title">
+				<div class="head">
+					<div class="left"></div>
+					<div class="text">наши партнёры</div>
+					<div class="right"></div>
+				</div>
+			</div>
+			<div class="partner-carousel">
+				<ul id="partner">
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+					<li><a href="#"><img src="img/431x111.jpg" /></a></li>
+				</ul>
+				<a class="prev" id="partner-prev" href="#"></a>
+				<a class="next" id="partner-next" href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+		<div class="copy">© 2009-2011 КОМПАНИЯ «СИБ-ППУ». ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+		<div class="social">
+			<a class="gmail" href="#"></a>
+			<a class="tw" href="#"></a>
+			<a class="fc" href="#"></a>
+			<a class="vk" href="#"></a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

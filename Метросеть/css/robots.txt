@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*.php
+Disallow: /catalog*
+Disallow: /news*
+Disallow: /personal*
+Disallow: /about*
+Disallow: /index.html

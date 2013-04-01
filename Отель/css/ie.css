@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper-main .top-menu ul { height: 100%; }
+
+.wrapper { height: 100%; }
+
+.block-about { height: 100%; }
+
+.block-about .service .item { height: 100%; }
+
+.service-room { height: 100; }
+.service-room ul { height: 100%; }
+.other-rooms .block { height: 100%; }
+.other-rooms .block .item { height: 100%; }
+
+.specials .block { height: 100%; }
+
+.block-news .item { height: 100%; }
+
+.block-news .item .info { height: 100%; }
+
+.pag-nav ul { height: 100%; }
+
+.list-news .block { height: 100%; }
+.list-news .block .item { height: 100%; } 

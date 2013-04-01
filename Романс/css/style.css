@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0;}
+html { background: url(../img/bg-fon.gif) repeat; }
+body { font: 14px/22px Georgia, "Times New Roman", Times, serif; }
+a { outline: none; color: #958058;}
+a:hover { text-decoration: none;}
+ul { list-style: none;}
+img { border: none;}
+h2 { font-size: 22px; line-height: 18px; font-weight: normal; color: #615536; text-transform: uppercase;}
+
+.bg-header { background: url(../img/bg-header.png) repeat-x; _background: none; _display: none; height: 331px; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; }
+.bg-footer { background: url(../img/bg-footer.png) repeat-x; _background: none; _display: none; height: 331px; width: 100%; position: fixed; z-index: 1; bottom: 0; left: 0; }
+
+.cont { position: absolute; z-index: 99; width: 100%; }
+.wrapper { margin: 22px auto 30px; width: 1001px; box-shadow: 0 0 30px #333; /*-moz-box-shadow: 0 0 30px #333;*/ -webkit-box-shadow: 0 0 30px #333;}
+.header { background: url(../img/bg-header-n.png) no-repeat; width: 1001px; height: 97px; padding: 25px 0 0 0; position: relative;}
+.header .logo { background: url(../img/logo.gif) no-repeat; width: 229px; height: 97px; margin: 0 0 0 44px; float: left;}
+.header .logo a { display: block; width: 229px; height: 97px; cursor: pointer;}
+.header ul { float: left; position: relative; width: 490px; overflow: hidden; height: 100%!ie; margin: 25px 0 0 19px;}
+.header ul li { float: left; display: inline!ie; margin-right: 10px; margin-bottom: 10px;}
+.header ul li a { font: 15px/18px Georgia, "Times New Roman", Times, serif; font-style: italic; font-weight: bold; }
+.header ul li a.active { text-decoration: none; color: #9e9e9e;}
+/*.header ul li.about { top: 33px; left: 0; width: 75px;}
+.header ul li.medical { top: 23px; left: 78px; width: 170px;}
+.header ul li.studio { top: 62px; left: 35px; width: 130px;}
+.header ul li.photo { top: 45px; left: 161px; width: 110px;}
+.header ul li.contact { top: 33px; left: 280px; width: 95px;}
+.header ul li.events { top: 62px; left: 279px; width: 80px;}
+.header ul li.public { top: 22px; left: 392px; width: 105px;}
+.header ul li.new { top: 52px; left: 376px; width: 75px;}
+.header ul li.price { top: 62px; left: 451px; width: 50px;}*/
+.header .phone { float: right; overflow: hidden; height: 100%!ie; margin: 24px 43px 0 0;}
+.header .phone div { float: left; }
+.header .phone .phones { font-size: 24px; color: #000; line-height: 29px; font-weight: bold; margin-left: 9px; font-style: italic;}
+.header .phone .code { font-size: 17px; font-style: italic; color: #c5b088; line-height: 29px;}
+.header .ru-en { position: absolute; top: 23px; right: 36px; font-weight: bold; font-size: 11px; color: #9f8c5d; line-height: 15px;}
+.header .ru-en a { font-size: 11px; margin: 0 6px; font-weight: normal; line-height: 15px;}
+
+.body {  background: #fff; width: 1001px; }
+.body .info { background: url(../img/bg-body.jpg) no-repeat right top; color: #fff; font-size: 16px; padding: 40px 0 46px 0;}
+.body .info .text { background: #9e9e9e url(../img/bg-info.jpg) no-repeat right top; margin: 0 49px 0 44px; height: 195px;}
+.body .info .text .left { float: left; background: url(../img/bg-left.gif) no-repeat; width: 9px; height: 195px;}
+.body .info .text .right { float: left; width: 580px; padding-left: 15px; position: relative; height: 170px; }
+.body .info h2 { font-size: 30px; font-style: italic; color: #fff; font-weight: normal; margin: 27px 0 15px 0; text-transform: none;}
+.body .info p { font-size: 14px; font-style: italic; color: #fff; }
+.body .info .text .right .more { font-style: italic; color: #fff; font-size: 14px; bottom: 0; position: absolute;}
+.body .info .text .right .more a { color: #fff;}
+.body .photo-bg { background: url(../img/bg-photo.jpg) no-repeat right top;}
+.body .photo-bg .text { background: #9e9e9e url(../img/bg-photo-i.jpg) no-repeat right top;}
+.body .studio-bg { background: url(../img/bg-studio.jpg) no-repeat right top;}
+.body .studio-bg .text { background: #9e9e9e url(../img/bg-studio-i.jpg) no-repeat right top;}
+.body .medical-bg { background: url(../img/bg-medical.jpg) no-repeat right top;}
+.body .medical-bg .text { background: #9e9e9e url(../img/bg-medical-i.jpg) no-repeat right top;}
+.body .public-bg { background: url(../img/bg-public.jpg) no-repeat right top;}
+.body .public-bg .text { background: #9e9e9e url(../img/bg-public-i.jpg) no-repeat right top;}
+.body .price-bg { background: url(../img/bg-price.jpg) no-repeat right top;}
+.body .price-bg .text { background: #9e9e9e url(../img/bg-price-i.jpg) no-repeat right top;}
+.body .contact-bg { background: url(../img/bg-contact.jpg) no-repeat right top;}
+.body .contact-bg .text { background: #9e9e9e url(../img/bg-contact-i.jpg) no-repeat right top;}
+
+
+.body .content { padding: 0 49px 0 44px;}
+.body .content .promo-block { overflow: hidden; height: 100%!ie; margin-left: -20px; margin-top: 20px;}
+.body .content .promo-block .block { float: left; width: 289px; margin-left: 20px;}
+.body .content .promo-block .block h2 { margin-bottom: 15px;}
+.body .content .promo-block .block .img { position: relative; height: 125px; width: 289px; margin-bottom: 20px;}
+.body .content .promo-block .block .img .more { position: absolute; bottom: 18px; right: 0;}
+.body .content .promo-block .block .text { font-size: 11px; color: #545454; line-height: 15px;}
+
+.body .content .block-separe { overflow: hidden; height: 100%!ie; background: url(../img/bg-separe.jpg) repeat-x; margin: 50px -49px 0 -44px; padding: 25px 49px 20px 44px;}
+.body .content .block-separe .left { float: left; width: 262px;}
+.body .content .block-separe .left .img { margin-top: 8px;}
+.body .content .block-separe .left h3 { font-size: 18px; font-style: italic; margin-bottom: 7px; }
+.body .content .block-separe .left h3 a { color: #545454; font-weight: normal;}
+.body .content .block-separe .left .text { font-size: 11px; color: #545454; line-height: 15px;}
+.body .content .block-separe .right { float: right; width: 600px;}
+.body .content .block-separe .right .stepcarousel { position: relative; height: 251px; margin: 15px 0 5px 0; width: 599px;}
+.body .content .block-separe .right .belt { position: absolute; top: 0; left: 0;}
+.body .content .block-separe .right .panel { float: left; overflow: hidden; width: 599px;}
+.body .content .block-separe .right .img { position: relative; width: 599px; height: 251px; }
+.body .content .block-separe .right .img .border { position: absolute; top: 0; left: 0; background: url(../img/bg-border.gif) no-repeat; width: 599px; height: 251px;}
+.body .content .block-separe .right p { font-size: 14px; line-height: 18px;}
+.body .content .block-separe .right p img { vertical-align: middle; margin-right: 5px;}
+.body .content .block-separe .right p span { font-size: 10px; color: #808080; font-family: Arial, Helvetica, sans-serif;}
+.body .content .block-separe .block { overflow: hidden; height: 100%!ie;}
+.body .content .block-separe .block .img { float: left; margin-right: 25px;}
+.body .content .block-separe .block .text { float: left; width: 660px; margin-top: 25px;}
+.body .content .block-separe .block .text h3 { font-size: 18px; font-style: italic; margin-bottom: 7px;}
+.body .content .block-separe .block .text h3 a { color: #545454; font-weight: normal;}
+.body .content .block-separe .block .text p { font-size: 11px; color: #545454; line-height: 15px;}
+.body .content .block-public { overflow: hidden; height: 100%!ie; margin-left: -50px; margin-bottom: 45px;}
+.body .content .block-public .block { float: left; width: 250px; margin-left: 50px;}
+.body .content .block-public .block .img { margin-bottom: 5px;}
+.body .content .block-public .block .img img { border: 3px solid #9e9e9e; display: block;}
+.body .content .block-public .block p a { font-size: 18px; font-style: italic; color: #545454;}
+.body .content .block-public .block p { font-size: 11px; color: #545454;}
+.body .content .block-price { overflow: hidden; height: 100%!ie;}
+.body .content .block-price .left { float: left; width: 590px;}
+.body .content .block-price .right { float: right; width: 287px;}
+.body .content .block-price .left table { border: none; font-size: 14px; width: 590px;}
+.body .content .block-price .left table a { color: #545454;}
+.body .content .block-price .left td { padding: 4px 8px 7px 8px; color: #545454; border-bottom: 1px solid #dad1bf; text-align: left;}
+.body .content .block-price .left th { padding: 2px 8px 3px 8px; font-size: 12px; font-style: italic; color: #545454; background: url(../img/bg-1x27.gif) repeat-x; text-align: left;}
+.body .content .block-price .left .one { width: 425px; }
+.body .content .block-price .text h2 { margin-bottom: 10px;}
+.body .content .block-price .text p { font-size: 14px; color: #545454; margin-bottom: 20px;}
+.body .content .block-price .text img { border: 3px solid #9e9e9e; margin: 0 10px 7px 0;}
+#YMapsID-936 table { width: auto;}
+#YMapsID-936 td { padding: 0; border: none;}
+.body .content .block-price .right .send { background: #eae2d4; padding: 23px 0 15px 19px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+.body .content .block-price .right .send h2 { font-style: italic; color: #a0895b; text-transform: none; font-size: 24px; margin-bottom: 26px;}
+.body .content .block-price .right .send li { margin-bottom: 9px;}
+.body .content .block-price .right .send li input { border: 1px solid #a1a1a1; width: 232px; padding: 3px 5px 4px 5px; color: #74726f; font: 14px/20px Georgia, "Times New Roman", Times, serif;}
+.body .content .block-price .right .send li textarea { border: 1px solid #a1a1a1; width: 232px; height: 130px; padding: 3px 5px 4px 5px; color: #74726f; font: 14px/20px Georgia, "Times New Roman", Times, serif;}
+.body .content .block-price .right .send .button a { font-style: italic; color: #656058; font-size: 18px; position: relative;}
+.body .content .block-price .right .send .button a i { display: block; position: absolute; background: url(../img/ico-9x11.gif) no-repeat; width: 9px; height: 11px; top: 7px; right: -14px;}
+.body .content .block-adress { color: #484747; font-size: 18px; margin-bottom: 20px;}
+.body .content .block-price .right .other { padding-bottom: 10px;}
+.body .content .block-price .right .other h2 { margin-bottom: 15px;}
+.body .content .block-price .right .other li a { font-size: 18px; color: #656058; font-style: italic;}
+
+.body .content .block-img {  width: 901px;}
+.body .content .block-img .stepcarousel { position: relative; height: 367px; width: 100%; border: 3px solid #9e9e9e; margin-bottom: 10px;}
+.body .content .block-img .belt { position: absolute; top: 0;}
+.body .content .block-img p { text-align: center;}
+.body .content .block-img p img { margin-right: 5px;}
+
+.footer { background: url(../img/bg-footer-n.png) no-repeat; width: 1001px; height: 108px; font-size: 11px; color: #484747; line-height: 16px; margin: 0px auto 0px; }
+.footer .left { float: left; margin: 24px 0 0 40px;}
+.footer .right { float: right; margin: 40px 52px 0 0;}
+.footer .right a { color: #484747;}

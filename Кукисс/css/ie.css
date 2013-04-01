@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top-menu nav {
+	height: 100%;
+}
+.body .columnright .carousel .pagination a {
+	display: inline;
+	zoom: 1;
+}
+.body .columnright .carousel ul {
+	height: 100%;
+}
+.columnleft ul li.active .submenu li.active a {
+	display: inline;
+	zoom: 1;
+}
+.block-catalog .block .item .block-order .order .popup .size {
+	height: 100%;
+}
+.pag-nav ul {
+	height: 100%;
+}
+.view-product {
+	height: 100%;
+}
+.view-product .images .mini-img {
+	height: 100%;
+}
+.view-product .info .options ul li {
+	height: 100%;
+}
+.view-product .block-size .block {
+	height: 100%;
+}
+.pop-size .table .tr {
+	height: 100%;
+}
+.block-news .list .item {
+	height: 100%;
+}
+.block-news .view .images {
+	height: 100%;
+}
+.block-basket .title {
+	height: 100%;
+}
+.block-basket .table .th {
+	height: 100%;
+}
+.block-basket .table .tr .size .popup .item {
+	height: 100%;
+}
+.block-basket .total {
+	height: 100%;
+}
+.block-basket .block-form ul li {
+	height: 100%;
+}
+.footer {
+	height: 100%;
+}
+.footer .phone span {
+	display: inline;
+	zoom: 1;
+}

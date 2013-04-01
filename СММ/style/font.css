@@ -1,0 +1,34 @@
+
+.header ul a{color:white; font-family:arial, sans-serif; font-size:1.4em;}
+.amount{font-style:italic; font-size:1.2em; word-spacing:0.13em;}
+.phone_code{font-size:1.6em; word-spacing:0.1em; letter-spacing:0.01em;}
+.phone_numb{font-size:3.1em;}
+
+.menu{font-size:1.4em; font-family:Tahoma, Geneva, Kalimati, sans-serif;}
+.sale_color{color:#c6ff00;}
+.circle{color:white; text-align:center; text-decoration:none; font-size:2.4em; font-family:arial, sans-serif;}
+#login{font-size:1.2em; font-family:arial, sans-serif;}
+#login a{color:white; text-decoration:none;}
+
+
+#content_text{font: 1.4em arial, sans-serif;}
+.main_header{font-size:3.6em; word-spacing:-0.4em;}
+#c_text{font: 1.4em arial, sans-serif;}
+.c_t_head{font-size:2.4em; word-spacing:-0.4em;}
+
+.descrip{line-height:1.8em;}
+.descrip_inform a{color:white; font-size:1.4em; font-family:arial, sans-serif; line-height:1.3;}
+.descrip_type{font-size:1.1em; font-family:arial, sans-serif; font-style:italic;}
+.value{font-size:2.4em; font-family:arial, sans-serif; font-weight:bold;}
+.discount{text-decoration:line-through; font-size:1.4em; font-family:arial, sans-serif;}
+
+.right_menu{color:white; font-size:1.4em; font-family:arial, sans-serif;}
+.subm_element{text-decoration:none; font-size:1.4em; font-family:arial, sans-serif; word-spacing:-0.05em;}
+.text_green{color:#32d20a;}
+.text_grey{color:#81878c;}
+
+.f_menu{font: 1.4em arial,sans-serif bold;}
+.f_header{text-decoration:none; color:#878b8b;}
+.f_item{color:white;}
+
+.d_font{font: 1.2em arial,sans-serif;}

@@ -1,0 +1,137 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Мирово</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/PF_Agora_Serif_Pro.font.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  
+<!-- всё -->
+
+<script type="text/javascript">
+	function animate_show(el) {
+		$(el).stop();
+		$(el).animate({height:"71px"});
+	}
+
+	function animate_hide(el) {
+		$(el).stop();
+		$(el).animate({height: '21px'});
+	}
+</script>
+
+</head>
+
+<body>
+<div class="header clearfix">
+	<div class="menu">
+		<ul>
+			<li class="first"><a href="#">Выбрать владение</a></li>
+			<li>• <a href="#">О поселке</a></li>
+			<li>• <a href="#">Контакты</a></li>
+			<li>• <a href="#">Фотогалерея</a></li>
+			<li>• <a href="#">Партнёры</a></li>
+			<li>• <a href="#">промо видео</a></li>
+		</ul>
+	</div>
+	<div class="phone">
+		<div class="block">
+			<div class="tel">55-55-72</div>
+			<div class="code">+7 3452</div>
+		</div>
+		<div class="text">
+			<a class="dotted" href="#">обратный звонок</a>
+			<div class="popup">
+				<p>Номер телефона:</p>
+				<form>
+					<input type="text" />
+					<input type="submit" value="Отправить" />
+				</form>
+			</div>
+			<a href="#">онлайн-консультант</a>
+		</div>
+	</div>
+</div>
+<div class="body">
+	<div class="logo"><a href="#"><img src="img/logo.gif" /></a></div>
+	<div class="item-block">
+		<a class="maps" href="#"><i></i>Найти нас на карте</a>
+	</div>
+	<div class="item-block" style="left: 216px;">
+		<a class="question" href="#"><i></i>Задать вопрос директору</a>
+	</div>
+	<div class="carousel">
+		<ul id="carousel">
+			<li><img src="img/1000x352.jpg" /><span>Где обретают гармонию ...</span></li>
+			<li><img src="img/1000x352q.jpg" /><span>Где обретают гармонию ...</span></li>
+			<li><img src="img/1000x352.jpg" /><span>Где обретают гармонию ...</span></li>
+		</ul>
+	</div>
+	<div class="block-info">
+		<div class="philosophy">
+			<h2>Философия</h2>
+			<p>Создавая проект Мировоград мы искали лучшее место, наполненное совершенной природой. Принимая решения каждый день, мы ищем лучшее, приближая наш проект к идеалу. Мы стремимся к совершенству. Стремимся созидать. Стремимся оставить за собой проект, где люди будут жить достойно. <a href="#">Почему?</a></p>
+		</div>
+		<div class="promo">
+			<h2>ВАШ КЛУБНЫЙ ПОСЁЛОК</h2>
+			<div class="block">
+				<div onmouseover="animate_show(this)" onmouseout="animate_hide(this)" class="item first">
+					<p class="title">Первый</p>
+					<p>Единственный в Тюменской области клубный поселок.</p>
+				</div>
+				<div onmouseover="animate_show(this)" onmouseout="animate_hide(this)" class="item luck">
+					<p class="title">Счастливый</p>
+					<p>Единственный в Тюменской области клубный поселок.</p>
+				</div>
+				<div onmouseover="animate_show(this)" onmouseout="animate_hide(this)" class="item comfort">
+					<p class="title">Уютный</p>
+					<p>Единственный в Тюменской области клубный поселок.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-news">
+		<div class="img"><img src="img/99x65.jpg" /></div>
+		<div class="text">
+			<p><a href="#">Собираем друзей, коллег и партнеров на презентацию</a></p>
+			<p>Об актуальных тенденциях жизни за городом, воплощенных в нашем<br /> новом проекте, можно будет узнать на презентации, которая состоится<br /> 7 июля.</p>
+		</div>
+		<div class="more"><a href="#">ВСЕ НОВОСТИ</a></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="copy">
+		<p>© 2011 «Мирово Парк». Все права защищены.</p>
+		<p>Единый телефон справочной службы +7(3452)99-99-99</p>
+		<p>Разработка — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+	</div>
+	<div class="slogan">Стермление к совершенству</div>
+	<div class="social">
+		<div class="text">Дружите с нами:</div>
+		<div class="button"><!-- тут кнопки социальных сетей твиттер, фейсбук, вконтакте и однокласники --></div>
+	</div>
+	<div class="masteko"><a href="#"><img src="img/logo131x35.gif" /></a></div>
+</div>
+</body>
+</html>

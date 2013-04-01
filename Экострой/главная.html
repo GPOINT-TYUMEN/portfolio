@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Plumb_700.font.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/stepcarousel.js"></script>
+<title></title>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'mygallery', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: false, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+
+
+</head>
+
+<body>
+
+<div class="header">
+	<div class="center">
+        <div class="logo"><a href="#"><img src="img/logo.gif" /></a></div>
+        <ul class="menu">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Прайс</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="search"><input type="text" value="поиск по сайту" /></div>
+        <div class="basket">
+            <img src="img/img-basket.gif" />
+            <p>В корзине <a href="#">2 товара</a><br />на сумму <strong>2345 руб.</strong></p>
+        </div>
+    </div>
+</div>
+
+<div class="block-top">
+	<div class="top">
+        <div>
+            <img src="img/ceramic-tile.jpg" />
+            <span>Керамическая плитка</span>
+        </div>
+        <div>
+            <img src="img/sanitary.jpg" />
+            <span>Санфаянс</span>
+        </div>
+        <div>
+            <img src="img/sanitary.jpg" />
+            <span>Пробковое покрытие</span>
+        </div>
+        <div>
+            <img src="img/sanitary.jpg" />
+            <span>Обои</span>
+        </div>
+        <div>
+            <img src="img/sanitary.jpg" />
+            <span>Смесители</span>
+        </div>
+        <div>
+            <img src="img/sanitary.jpg" />
+            <span>Ламинат</span>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+	<div class="left">
+    	<h2>Каталог продукции</h2>
+        <div class="menu">
+        	<ul>
+            	<li class="head"><a href="#">Керамическая плитка</a><sup>332</sup></li>
+                <li><a href="#">Уралкерамика</a></li>
+                <li><a href="#">Nativa</a></li>
+            </ul>
+            <ul>
+            	<li class="head"><a href="#">Санфаянс</a><sup>332</sup></li>
+                <li><a href="#">Уралкерамика</a></li>
+                <li><a href="#">Nativa</a></li>
+            </ul>
+            <ul>
+            	<li class="head"><a href="#">Пробковое покрытие</a><sup>332</sup></li>
+                <li><a href="#">Клеевые напольные покрытия</a></li>
+                <li><a href="#">Плавающие напольные покрытия</a></li>
+                <li><a href="#">Настенные покрытия</a></li>
+                <li><a href="#">Пробковый</a></li>
+                <li><a href="#">Клей и лак</a></li>
+            </ul>
+            <ul>
+            	<li class="head"><a href="#">Обои</a><sup>332</sup></li>
+                <li><a href="#">Окрашенные</a></li>
+                <li><a href="#">Под покраску</a></li>
+            </ul>
+            <ul class="last">
+            	<li class="head"><a href="#">Смесители</a><sup>332</sup></li>
+                <li><a href="#">Молот</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+    	<div class="promo">
+        	<div class="yellow">
+            	<h3>Новое поступление сантехники</h3>
+                <p>более 30 наименований со скидками от производителя.</p>
+            </div>
+            <div class="red">
+            	<h3>Новое поступление сантехники</h3>
+                <p>более 30 наименований со скидками от производителя.</p>
+            </div>
+            <div class="green">
+            	<h3>Новое поступление сантехники</h3>
+                <p>более 30 наименований со скидками от производителя.</p>
+            </div>
+        </div>
+        <div class="shares">
+        	<h2>Акция</h2>
+            <div id="mygallery" class="stepcarousel">
+            	<div class="belt">
+                    <div class="block panel">
+                        <div class="img"><img src="img/140x160.jpg" /></div>
+                        <div class="text">
+                            <p><a href="#">Унитаз подвесной Duravit Starck</a></p>
+                            <ul>
+                                <li><span class="l">Цвет</span><span class="r">белый</span></li>
+                                <li><span class="l">Длина, см</span><span class="r">23</span></li>
+                                <li><span class="l">Ширина, см</span><span class="r">43</span></li>
+                                <li><span class="l">Материал</span><span class="r">санфаянс</span></li>
+                                <li><span class="l">Страна</span><span class="r">Россия</span></li>
+                            </ul>
+                            <div class="price">
+                                <span><strong>11 270</strong> руб.</span><a class="dotted" href="#"><i></i>В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block panel">
+                        <div class="img"><img src="img/140x160.jpg" /></div>
+                        <div class="text">
+                            <p><a href="#">Унитаз подвесной Duravit Starck</a></p>
+                            <ul>
+                                <li><span class="l">Цвет</span><span class="r">белый</span></li>
+                                <li><span class="l">Длина, см</span><span class="r">23</span></li>
+                                <li><span class="l">Ширина, см</span><span class="r">43</span></li>
+                                <li><span class="l">Материал</span><span class="r">санфаянс</span></li>
+                                <li><span class="l">Страна</span><span class="r">Россия</span></li>
+                            </ul>
+                            <div class="price">
+                                <span><strong>11 270</strong> руб.</span><a class="dotted" href="#"><i></i>В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block panel">
+                        <div class="img"><img src="img/140x160.jpg" /></div>
+                        <div class="text">
+                            <p><a href="#">Унитаз подвесной Duravit Starck</a></p>
+                            <ul>
+                                <li><span class="l">Цвет</span><span class="r">белый</span></li>
+                                <li><span class="l">Длина, см</span><span class="r">23</span></li>
+                                <li><span class="l">Ширина, см</span><span class="r">43</span></li>
+                                <li><span class="l">Материал</span><span class="r">санфаянс</span></li>
+                                <li><span class="l">Страна</span><span class="r">Россия</span></li>
+                            </ul>
+                            <div class="price">
+                                <span><strong>11 270</strong> руб.</span><a class="dotted" href="#"><i></i>В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="center" id="mygallery-paginate"><img src="img/circle-active.gif" data-over="img/circle-deactive.gif" data-select="img/circle-deactive.gif" data-moveby="1" /></p>
+        </div>
+        <div class="new">
+        	<h2>Новые поступления</h2>
+            <div class="block-item">
+                <div class="block">
+                    <div class="img">
+                        <img src="img/67x69.jpg" />
+                        <div class="price">
+                            <p><strong>11270</strong> руб.</p>
+                            <span class="best">лучшая цена</span>
+                            <div class="add-cart"><a class="dotted" href="#"><i></i>В корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="info"><a href="#">Краска "Bindo-3" латексная глубоко мат., 5 л</a></div>
+                </div>
+                <div class="block">
+                    <div class="img">
+                        <img src="img/67x69.jpg" />
+                        <div class="price">
+                            <p><strong>11270</strong> руб.</p>
+                            <span class="novelty">новинка</span>
+                            <div class="add-cart"><a class="dotted" href="#"><i></i>В корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="info"><a href="#">Краска "Bindo-3" латексная глубоко мат., 5 л</a></div>
+                </div>
+                <div class="block">
+                    <div class="img">
+                        <img src="img/67x69.jpg" />
+                        <div class="price">
+                            <p><strong>11270</strong> руб.</p>
+                            <div class="add-cart"><a class="dotted" href="#"><i></i>В корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="info"><a href="#">Краска "Bindo-3" латексная глубоко мат., 5 л</a></div>
+                </div>
+            </div>
+            <div class="all"><a href="#">Все новые поступления</a></div>
+        </div>
+        <div class="news">
+        	<h2>Наши новости</h2>
+            <div class="block-news">
+            	<div class="block">
+                	<p class="date">28 ноября, 2010</p>
+                    <p><a href="#">Владимир Якушев: ни на йоту не отступать от присяги</a></p>
+                </div>
+                <div class="block">
+                	<p class="date">28 ноября, 2010</p>
+                    <p><a href="#">Владимир Якушев: ни на йоту не отступать от присяги</a></p>
+                </div>
+                <div class="block">
+                	<p class="date">28 ноября, 2010</p>
+                    <p><a href="#">Владимир Якушев: ни на йоту не отступать от присяги</a></p>
+                </div>
+            </div>
+            <div class="all"><a href="#">Все новости</a></div>
+        </div>
+    </div>
+    <div class="right">
+    	<div class="phone">
+        	<div class="img"><img src="img/img-phone.jpg" /></div>
+            <div class="cod">(3452)</div>
+            <div class="tel">45-22-45</div>
+        </div>
+        <div class="about">
+        	<h2>О компании</h2>
+            <p>Конкурентоспособность наших цен обуславливается поддержанием высокого уровня товарооборота и, соответственно, широким портфелем прямых дилерских контрактов. Наш давний и лояльный партнер «СБЕРБАНК» позволяет нам, несмотря</p>
+            <p class="more"><a href="#">Читать подробнее</a></p>
+        </div>
+        <div class="fact">
+        	<h2>Интересный факт<i></i></h2>
+            <div class="blockquote"><i></i>Мы работаем напрямую с поставщиками, поэтому цены у нас ниже, чем в обычных магазинах на 5-10%</div>
+        </div>
+        <div class="questions">
+        	<h2>Ваши вопросы</h2>
+            <div class="form">
+            	<ul>
+                	<li>
+                    	<p>Ваше имя</p>
+                        <input type="text" />
+                    </li>
+                    <li>
+                    	<p>E-mail</p>
+                        <input type="text" />
+                    </li>
+                    <li>
+                    	<p>Вопрос</p>
+                        <textarea style="font-style: italic; color: #5d5d5d; font-size: 11px;">Например, интересует возможность доставки в регионы.</textarea>
+                    </li>
+                </ul>
+                <a href="#">Задать вопрос</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="block">
+    	<p>© 2010 ООО ЭкоСтрой-Тюмень<br />Россия, г. Тюмень, ул. Ялуторовская, д.27<br />office@bio72.ru</p>
+        <p>Разработка — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/modulargrid.js"></script>
+</body>
+</html>

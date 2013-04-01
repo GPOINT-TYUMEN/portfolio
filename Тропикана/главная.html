@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Агентство путешествий «Тропикана»</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<script src="js/jquery-1.5.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.newsticker.pack.js"></script>
+    <script src="js/script.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-4.2.3-packed.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(function() {
+
+				//	Basic carousel
+				$('#foo0').carouFredSel();
+
+				//	Basic carousel + timer
+				$('#foo1').carouFredSel({
+					auto: {
+						pauseOnHover: 'resume',
+						onPauseStart: function( percentage, duration ) {
+							$(this).trigger( 'configuration', ['width', function( value ) { 
+								$('#timer1').stop().animate({
+									width: value
+								}, {
+									duration: duration,
+									easing: 'linear'
+								});
+							}]);
+						},
+						onPauseEnd: function( percentage, duration ) {
+							$('#timer1').stop().width( 0 );
+						},
+						onPausePause: function( percentage, duration ) {
+							$('#timer1').stop();
+						}
+					}
+				});
+
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					scroll: {
+						items: 2,
+						fx: 'crossfade'
+					},
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					auto: false
+				});
+
+				//	Variable number of visible items with variable sizes
+				$('#foo3').carouFredSel({
+					width: 360,
+					height: 'auto',
+					scroll: 2,
+					next: '#next3',
+					prev: '#prev3',
+					auto: false
+				});
+
+				//	Fluid layout example
+				$(window).resize(function() {
+					$('#fooF').carouFredSel({
+						width: $(window).width(),
+						padding: 'auto',
+						scroll: 2
+					});					
+				}).resize();
+			});
+		</script>
+</head>
+
+<body>
+<div class="container_1">
+	<div class="left">
+    	<a href="#" title=""><img src="img/logo.jpg" alt="" title="" class="logo" /></a>
+        <div class="telefon">+7 (3452) <span>71-71-50</span></div>
+        <div class="adress">Тюмень, ул. Республики,<br />141, 3 этаж, оф. 305</div>
+        <div class="feedback">
+        	<a href="#" title="">Обратный звонок</a>
+            <div>Мы вам обязательно перезвоним!</div>
+        </div>
+    </div>
+	<div class="right">
+		<ul id="foo2" class="ul_top">
+			<li>
+    			<div class="spec" style="background:url(img/foto.jpg) no-repeat">
+            		<div class="shadow">
+            			<div class="best_tours">Лучшие туры</div>
+                		<div class="best_tours_bg">
+                			<div class="best_tours_price">1500<span>$</span></div>
+                    		<div class="best_tours_country"><a href="#" title="">Турция</a></div>
+                    		<div class="best_tours_text">вылет из Тюмени<br />8 дней / 7 ночей</div>
+               		    </div>
+                		<div class="status">
+                			<img src="img/status_on.png" alt="" title="" /><img src="img/status_off.png" alt="" title="" /><img src="img/status_off.png" alt="" title="" />
+                		</div>
+            		</div>
+        		</div>
+            </li>
+            <li></li>
+			<li>
+    			<div class="spec" style="background:url(img/foto.jpg) no-repeat">
+            		<div class="shadow">
+            			<div class="best_tours">Лучшие туры</div>
+                		<div class="best_tours_bg">
+                			<div class="best_tours_price">1200<span>$</span></div>
+                    		<div class="best_tours_country"><a href="#" title="">Египет</a></div>
+                    		<div class="best_tours_text">вылет из Тюмени<br />8 дней / 7 ночей</div>
+               		    </div>
+                		<div class="status">
+                			<img src="img/status_off.png" alt="" title="" /><img src="img/status_on.png" alt="" title="" /><img src="img/status_off.png" alt="" title="" />
+                		</div>
+            		</div>
+        		</div>
+            </li>
+            <li></li>
+			<li>
+    			<div class="spec" style="background:url(img/foto.jpg) no-repeat">
+            		<div class="shadow">
+            			<div class="best_tours">Лучшие туры</div>
+                		<div class="best_tours_bg">
+                			<div class="best_tours_price">1800<span>$</span></div>
+                    		<div class="best_tours_country"><a href="#" title="">Греция</a></div>
+                    		<div class="best_tours_text">вылет из Тюмени<br />8 дней / 7 ночей</div>
+               		    </div>
+                		<div class="status">
+                			<img src="img/status_off.png" alt="" title="" /><img src="img/status_off.png" alt="" title="" /><img src="img/status_on.png" alt="" title="" />
+                		</div>
+            		</div>
+        		</div>
+            </li>
+            <li></li>
+		</ul>
+		<div class="clearfix"></div>
+		<a id="prev2" class="arr_left" href="#"></a>
+		<a id="next2" class="arr_right" href="#"></a>
+    </div>
+    <br class="clear" />
+    <div class="menu_top_bg">
+    	<ul class="menu_top">
+        	<li class="home_on"><a href="#" title="">Главная</a></li>
+        	<li><a href="#" title="">О компании</a></li>
+        	<li><a href="#" title="">Страны</a></li>
+        	<li class="d"><a href="#" title="">Спецпредложения</a></li>
+        	<li><a href="#" title="">Фотогалерея</a></li>
+        	<li><a href="#" title="">События</a></li>
+        	<li><a href="#" title="">Контакты</a></li>
+        	<li><div class="search"><input type="text" value="Поиск по сайту" onfocus="if(this.value=='Поиск по сайту') {this.value='';}" onblur="javascript:if(this.value==''){this.value='Поиск по сайту'};" /><input type="submit" value="" class="submit" /></div></li>
+        </ul>
+    </div>
+    <div class="container_2">
+	    <div class="main_left">
+    		<ul class="menu_left">
+        		<li><a href="#" title="">Экскурсионные туры</a></li>
+        		<li><a href="#" title="">Экзотические путешествия</a></li>
+	        	<li><a href="#" title="">Свадебные туры</a></li>
+    	    	<li><a href="#" title="">Круизы</a></li>
+        		<li><a href="#" title="">Туры в кредит</a></li>
+        		<li><a href="#" title="">Горящие туры</a></li>
+	        	<li><a href="#" title="">Лечебные туры</a></li>
+    	    	<li><a href="#" title="">Горнолыжные туры</a></li>
+        		<li><a href="#" title="">Образовательные туры</a></li>
+        		<li><a href="#" title="">Активный туризм</a></li>
+	        	<li><a href="#" title="">Индивидуальные и VIP туры</a></li>
+    	    </ul>
+        	<div class="cards">
+        		<a href="#" title="">Оплата по карте</a>
+	        </div>
+    	</div>
+	    <div class="main_mid">
+    		<div class="submit_tour"><a href="#" title=""></a></div>
+            <div class="main_title"><a href="#" title="">Новости туризма</a></div>
+            <div class="main_news_date">2 апреля, 2011 г.</div>
+            <div class="main_link_title"><a href="#" title="">Росавиация составила рейтинг самых непунктуальных авиаперевозчиков</a></div>
+            <div class="main_news_text">Новый законопроект предлагает считать доминирующим на рынке пассажирских авиаперевозок перевозчика, который занимает больше 25% на рынке внутренних</div>
+            <div class="main_news_date">1 апреля, 2011 г.</div>
+            <div class="main_link_title"><a href="#" title="">ST.PETER LINE открыла новую регулярную паромную линию в Европу</a></div>
+            <div class="main_news_text">31 марта компания ST.PETER LINE открыла новую регулярную паромную линию Ст. Петербург – Стокгольм – Таллинн – Ст. Петербург...</div>
+            <div class="main_news_date">1 апреля, 2011 г.</div>
+            <div class="main_link_title"><a href="#" title="">На «АвтоВаз» повезут туристов</a></div>
+            <div class="main_news_text">Первые идеи по организации туров на известный российский автомобильный гигант «АвтоВаз» высказывались ещё порядка нескольких лет назад...</div>
+            <div class="main_links"><a href="#" title="">Все новости</a><a href="#" title="">Подписка на новости</a></div>
+	    </div>
+    	<div class="main_right">
+    		<div class="key"><a href="#" title="">Вход в личный кабинет</a></div>
+            <div class="main_title"><a href="#" title="">События</a></div>
+            <div class="main_link_title"><a href="#" title="">День защитника Отечества (День ANZAC)</a></div>
+            <div class="main_news_text">25 апреля каждый австралиец особенно гордится своей страной. Ежегодно в этот день Австралия и Новая Зеландия празднуют День ANZAC — в русской версии День</div>
+            <div class="main_links"><a href="#" title="">Все события</a></div>
+            <div class="line_bg"></div>
+            <div class="main_title"><a href="#" title="">Фотогалерея</a></div>
+            <div class="main_foto"><img src="img/img_04.jpg" alt="" /></div>
+			<div class="main_foto"><img src="img/img_04_small.jpg" alt="" /><img src="img/img_04_small.jpg" alt="" /><img src="img/img_04_small.jpg" alt="" /><img src="img/img_04_small.jpg" alt="" /></div>
+            <div class="main_links_2"><a href="#" title="">Все фото</a></div>
+	    </div>
+    	<br class="clear" />
+        <div class="line_bg_2"></div>
+    	<div class="main_left_2">
+            <div class="main_title"><a href="#" title="">Отзывы</a></div>
+			<div class="main_links"><a href="#" title="">Семья Логуновых</a></div>        	
+            <div class="main_news_text">25 апреля каждый австралиец особенно гордится своей страной. Ежегодно в этот день Австралия и Новая Зеландия празднуют День ANZAC — в русской версии День защитника Отечества. В этот день по всей стране (по сути — по двум</div>
+			<div class="main_links"><a href="#" title="">Все отзывы</a></div>        	
+	    </div>
+    	<div class="main_mid_2">
+             <div class="main_title"><a href="#" title="">О компании</a></div>
+            <div class="main_news_text">Экологически чистое, живописное, тихое место, идеально подходит для постройки загородного дома, при этом находится недалеко от города. Московский тракт считается одним из лучших направлений: роза ветров 80% в сторону города с запада; дорога в 4 полосы позволяет доехать до города за 15 - 20 минут.<br />
+            Экологически чистое, живописное, тихое место, идеально подходит для постройки загородного дома, при этом находится недалеко от города. Московский тракт считается одним из лучших направлений: роза ветров 80% в сторону города с запада; дорога в 4 полосы позволяет доехать до города за 15 - 20 минут.</div>
+	    </div>
+    	<div class="main_right_2">
+            <div class="main_title">Полезные ссылки</div>
+            <div class="main_link_title_2">
+            	<a href="#" title="">Курсы валют</a><br />
+            	<a href="#" title="">Погода</a><br />
+            	<a href="#" title="">Покупка билетов</a><br />
+            </div>
+	    </div>
+    	<br class="clear" />
+	    <div class="operators">
+    		<img src="img/img_01.jpg" alt="" title="" />
+    		<img src="img/img_02.jpg" alt="" title="" />
+	    	<img src="img/img_03.jpg" alt="" title="" />
+    		<img src="img/img_01.jpg" alt="" title="" />
+    		<img src="img/img_02.jpg" alt="" title="" />
+	    </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="counter"><img src="img/rambler.gif" alt="" /></div>
+	© 2011 Агентство путешествий <span>«Тропикана»</span><br />
+	Все права защищены. 
+</div>
+
+</body>
+
+</html>

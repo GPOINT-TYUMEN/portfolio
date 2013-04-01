@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Салон красоты «Романс»</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/pt_sans.font.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/stepcarousel.js"></script>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'mygallery', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+<div class="bg-header"></div>
+<div class="bg-footer"></div>
+<div class="cont">
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo"><a href="#"></a></div>
+            <ul>
+            	<li class="about"><a href="#">О салоне</a></li>
+                <li class="studio"><a href="#">Имидж студия</a></li>
+                <li class="medical"><a href="#">Медицинский центр</a></li>
+                <li class="new"><a href="#">Новинки</a></li>
+                <li class="price"><a href="#">Цены</a></li>
+                <li class="public"><a href="#">Публикации</a></li>
+                <li class="contact"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="phone">
+            	<div class="code">(3452)</div>
+                <div class="phones">
+                	<p>38-39-17</p>
+                    <p>74-77-39</p>
+                </div>
+            </div>
+            <div class="ru-en">
+            	РУС<a href="#">ENG</a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <div class="text">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Салон красоты «Романс»</h2>
+                        <p>Жилищный фонд юга области огромен - больше 30 тысяч многоквартирных домов.</p>
+                        <p>Доля домов, требующих капительного ремонта, - примерно 10%. На данный<br />момент область реализует три программы, направленные на ремонт </p>
+                        <div class="more">» <a href="#">узнать подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+            	<div class="promo-block">
+                	<div class="block">
+                    	<h2>ТЕРМАЖ</h2>
+                        <div class="img">
+                        	<img src="img/img-thermage.jpg" />
+                        	<div class="more"><a href="#"><img src="img/img-more.gif" /></a></div>
+                        </div>
+                        <div class="text">
+                        	C инициативой создания союза молодых предпринимателей в Тюменской области выступил на сегодняшней конференции «День предпринимателя».
+                        </div>
+                    </div>
+                    <div class="block">
+                    	<h2>Морфолипоскульптура</h2>
+                        <div class="img">
+                        	<img src="img/img-morfoliposkulptura.jpg" />
+                        	<div class="more"><a href="#"><img src="img/img-more.gif" /></a></div>
+                        </div>
+                        <div class="text">
+                        	Вопрос пока не решен, говорят чиновники, но в нынешней ситуации закупка зерна за границей была бы логичной.
+                        </div>
+                    </div>
+                    <div class="block">
+                    	<h2>Косметика Cholley</h2>
+                        <div class="img">
+                        	<img src="img/img-cosmetics.jpg" />
+                        	<div class="more"><a href="#"><img src="img/img-more.gif" /></a></div>
+                        </div>
+                        <div class="text">
+                        	Председатель совета директоров и президент Lafarge Брюно Лафон раскрывает секрет успеха: в России надо быть русским, а в Китае — китайцем.
+                        </div>
+                    </div>
+                </div>
+                <div class="block-separe">
+                	<div class="left">
+                    	<h2>СПЕЦПРЕДЛОЖЕНИЕ</h2>
+                        <div class="img"><img src="img/img1.jpg" /></div>
+                        <h3><a href="#">SPA программа</a></h3>
+                        <div class="text">Жилищный фонд юга области огромен - больше 30 тысяч многоквартирных домов. Доля домов, требующих капительнvого ремонта, - примерно 10%. На данный момент область реализует три </div>
+                    </div>
+                    <div class="right">
+                    	<h2>ФОТОГАЛЕРЕЯ</h2>
+                        <!-- у фотографий не нужно закруглять уголки -->
+                        <div id="mygallery" class="stepcarousel">
+                        	<div class="belt">
+                                <div class="img panel">
+                                    <img src="img/img2.jpg" />
+                                    <a href="#"><div class="border"></div></a>
+                                </div>
+                                <div class="img panel">
+                                    <img src="img/img2.jpg" />
+                                    <a href="#"><div class="border"></div></a>
+                                </div>
+                                <div class="img panel">
+                                    <img src="img/img2.jpg" />
+                                    <a href="#"><div class="border"></div></a>
+                                </div>
+                                <div class="img panel">
+                                    <img src="img/img2.jpg" />
+                                    <a href="#"><div class="border"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="mygallery-paginate">
+                            <em>Другие фотографии —</em> <img src="img/opencircle.png" data-over="img/closedcircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                            <span>Для просмотра изображения используйте левую клавишу мыши</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left">© 2010 Романс<br />г. Тюмень. Ул. Грибоедова, 6 корпус 1/5. (Отель «Ремезов») 2 этаж.<br />Тел.: (3452) 38-39-17, 74-77-39.</div>
+            <div class="right">Разработка — студия интернет-технологий «<a href="http://www.creativeru.com" target="_blank">Креатив</a>»</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

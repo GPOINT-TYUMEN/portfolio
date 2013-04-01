@@ -1,0 +1,307 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Персона</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+<script src="js/jquery.carouFredSel-4.0.2-packed.js"></script>
+
+<script src="js/cufon-yui.js"></script>
+<script src="js/Palatino.font.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  
+<!-- всё -->
+
+</head>
+
+<body>
+<div class="background">
+    <div class="header clearfix">
+        <div class="logo"><a href="#"><img src="img/logo.gif" /></a></div>
+        <div class="callback">
+            <p><a onclick="$('#block-open').show();" href="javascript: void(0);">Обратный звонок<i></i></a></p>
+            <p>мы позвоним в удобное для вас время</p>
+            <div id="block-open" class="callback-block" style="display: none;">
+                <p><span>Обратный звонок<i></i></span></p>
+                <form>
+                <ul>
+                    <li>
+                        <p>Ваше имя: <span>*</span></p>
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <p>Ваш телефон: <span>*</span></p>
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <p>Телефон салона:</p>
+                        <select><option>8 (906) 768-06-42</option></select>
+                    </li>
+                    <li style="margin-top: 11px;"><input type="submit" value="Отправить" /> <a onclick="$('#block-open').hide();" href="javascript: void(0);">Закрыть</a></li>
+                </ul>
+                </form>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="block">
+                <div class="text">«Персона-Le», м. Тёплый стан:</div>
+                <div class="code">8 (906)</div>
+                <div class="tel">768-06-42</div>
+            </div>
+            <div class="block">
+                <div class="text">Твой дом 1, Крокус сити:</div>
+                <div class="code">8 (967)</div>
+                <div class="tel">043-28-86</div>
+            </div>
+            <div class="block">
+                <div class="text">Твой дом 2, ТРЦ Вегас:</div>
+                <div class="code">8 (925)</div>
+                <div class="tel">759-5476</div>
+            </div>
+            <div class="block">
+                <div class="text">ТРЦ Принц Плаза:</div>
+                <div class="code">8 (967)</div>
+                <div class="tel">266-44-68</div>
+            </div>
+            <div class="block">
+                <div class="text">Кухни Парк:</div>
+                <div class="code">8 (961)</div>
+                <div class="tel">577-95-51</div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="image_carousel">
+            <ul id="foo">
+                <li>
+                    <img src="img/898x233.jpg" />
+                </li>
+                <li>
+                    <img src="img/898x233.jpg" />
+                </li>
+                <li>
+                    <img src="img/898x233.jpg" />
+                </li>
+                <li>
+                    <img src="img/898x233.jpg" />
+                </li>
+            </ul>
+        	<a class="prev" id="foo_prev" href="#"></a>
+        	<a class="next" id="foo_next" href="#"></a>
+        	<div class="pagination" id="foo_pag"></div>
+        </div>
+    </div>
+    <div class="block-menu">
+        <ul>
+            <li class="first"><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li class="active"><a href="#">Каталог</a></li>
+            <li><a href="#">Покупателям</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li class="last"><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="colum-left">
+            <div class="block-calculation">
+                <h2>Онлайн расчет кухни</h2>
+                <div class="block">
+                    <form>
+                    <ul>
+                        <li>
+                            <span class="left">Ваше имя:*</span>
+                            <span class="right"><input type="text" /></span>
+                        </li>
+                        <li>
+                            <span class="left">Телефон:*</span>
+                            <span class="right"><input type="text" /></span>
+                        </li>
+                        <li>
+                            <span class="left">E-mail:</span>
+                            <span class="right"><input type="text" /></span>
+                        </li>
+                        <li>
+                            <span class="left">Город:*</span>
+                            <span class="right"><input type="text" /></span>
+                        </li>
+                        <li>
+                            <span class="left">Какой способ связи наиболее удобен для вас?</span>
+                            <span class="right">
+                                <p><label><input type="radio" /> По электронной почте</label></p>
+                                <p><label><input type="radio" /> Онлайн-заявки на обслуживание</label></p>
+                                <p><label><input type="radio" /> ICQ</label></p>
+                                <p><label><input type="radio" /> Skype</label></p>
+                                <p><label><input type="radio" /> По телефону</label></p>
+                                <p><label><input type="radio" /> Другой</label></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Необходимы услуги замерщика?</span>
+                            <span class="right">
+                                <p><label><input type="radio" /> Да</label></p>
+                                <p><label><input type="radio" /> Нет</label></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Вид гарнитура:</span>
+                            <span class="right">
+                                <p><label><input type="radio" /> Прямой</label></p>
+                                <p><label><input type="radio" /> Г-образный</label></p>
+                                <p><label><input type="radio" /> П-образный</label></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Размер кухни, см:</span>
+                            <span class="right">
+                                <img align="right" src="img/formed.gif" />
+                                <p style="margin-bottom: 14px;"><input type="text" placeholder="1" /> Левая сторона</p>
+                                <p style="margin-bottom: 14px;"><input type="text" placeholder="2" /> Прямая сторона</p>
+                                <p><input type="text" placeholder="3" /> Правая сторона</p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Планируемая техника:</span>
+                            <span class="right">
+                                <p><label><input type="checkbox" /> Плита</label></p>
+                                <p><label><input type="checkbox" /> Вытяжка</label></p>
+                                <p><label><input type="checkbox" /> Стиральная машина</label></p>
+                                <p><label><input type="checkbox" /> Посудомоечная машина</label></p>
+                                <p><label><input type="checkbox" /> Холодильник</label></p>
+                                <p><label><input type="checkbox" /> Стеновая панель</label></p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">Дополнительные пожелания:</span>
+                            <span class="right"><textarea></textarea></span>
+                        </li>
+                        <li>
+                            <span class="left">Материал фасада:</span>
+                            <span class="right"><input type="text" /></span>
+                        </li>
+                        <li>
+                            <p>При наличии готового чертежа кухни или помещения, Вы можете воспользоваться одним из следующих вариантов:</p>
+                            <ol>
+                                <li class="clearfix">
+                                    <span class="left">Прикрепить его к анкете:</span>
+                                    <span class="right">
+                                        <input type="file" /><br />
+                                        <span>(Для загрузки разрешены форматы файлов zip, jpg, gif, dwg)</span>
+                                    </span>
+                                </li>
+                                <li>Прислать нам письмо с ним на <a href="mailto:persona-le@mail.ru">persona-le@mail.ru</a></li>
+                                <li>Связаться по телефону +7(967) 043-28-86 </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span class="left">Введите символы:*</span>
+                            <span class="right">
+                                <img src="img/150x50.jpg" />
+                                <input type="text" class="code" />
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">&nbsp;</span>
+                            <span class="right">
+                                <input type="submit" value="Отправить" />
+                            </span>
+                        </li>
+                    </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="colum-right">
+            <div class="block-info">
+                <div class="action"><a href="#"><i></i>Акции</a></div>
+                <div class="calculation"><a href="#"><i></i>Онлайн расчет кухни</a></div>
+                <div class="news">
+                    <a class="news" href="#"><i></i>Новости:</a>
+                    <ul id="news">
+                        <li>
+                            <span>13/04/11</span> <a href="#">Горячие скидки</a>
+                        </li>
+                        <li>
+                            <span>13/04/11</span> <a href="#">Горячие скидки</a>
+                        </li>
+                        <li>
+                            <span>13/04/11</span> <a href="#">Горячие скидки</a>
+                        </li>
+                    </ul>
+                    <span class="prev" id="news_prev">← <a href="#">пред.</a></span>
+        	        <span class="next" id="news_next"><a href="#">след.</a> →</span>
+                </div>
+                <div class="feedback">
+                    <a class="feedback" href="#"><i></i>Отзывы:</a>
+                    <ul id="feedback">
+                        <li>
+                            <span>Андрей Красногорск.</span> Купил кухню из массива в магазине Твой Дом Крокус.Качество, как обещали отличное и сборщики сделали всё чётко и <a href="#">…</a>
+                        </li>
+                        <li>
+                            <span>Андрей Красногорск.</span> Купил кухню из массива в магазине Твой Дом Крокус.Качество, как обещали отличное и сборщики сделали всё чётко и <a href="#">…</a>
+                        </li>
+                        <li>
+                            <span>Андрей Красногорск.</span> Купил кухню из массива в магазине Твой Дом Крокус.Качество, как обещали отличное и сборщики сделали всё чётко и <a href="#">…</a>
+                        </li>
+                    </ul>
+                    <span class="prev" id="feedback_prev">← <a href="#">пред.</a></span>
+        	        <span class="next" id="feedback_next"><a href="#">след.</a> →</span>
+                </div>
+            </div>
+            <div class="block-recipes">
+                <h2>Рецепты вкусных блюд<i></i></h2>
+                <div class="block">
+                    <p><em>Альпийская тайна</em></p>
+                    <p><span>На 4 порции: творог 300 гр., хлеб 150 гр., укроп 20 гр., яйцо куриное 1 шт., сметана 100 гр., чеснок 20 гр., соль по вкусу.</span></p>
+                    <p>Творог смешать с яйцом, чесноком растертым с солью, затем добавить сметану и мелко нарубленную зелень. Перемшать и подавать с хлебом.</p>
+                </div>
+                <div class="block">
+                    <p><em>Альпийская тайна</em></p>
+                    <p><span>На 4 порции: творог 300 гр., хлеб 150 гр., укроп 20 гр., яйцо куриное 1 шт., сметана 100 гр., чеснок 20 гр., соль по вкусу.</span></p>
+                    <p>Творог смешать с яйцом, чесноком растертым с солью, затем добавить сметану и мелко нарубленную зелень. Перемшать и подавать с хлебом.</p>
+                </div>
+                <div class="block">
+                    <p><em>Альпийская тайна</em></p>
+                    <p><span>На 4 порции: творог 300 гр., хлеб 150 гр., укроп 20 гр., яйцо куриное 1 шт., сметана 100 гр., чеснок 20 гр., соль по вкусу.</span></p>
+                    <p>Творог смешать с яйцом, чесноком растертым с солью, затем добавить сметану и мелко нарубленную зелень. Перемшать и подавать с хлебом.</p>
+                </div>
+                <div class="block">
+                    <p><em>Альпийская тайна</em></p>
+                    <p><span>На 4 порции: творог 300 гр., хлеб 150 гр., укроп 20 гр., яйцо куриное 1 шт., сметана 100 гр., чеснок 20 гр., соль по вкусу.</span></p>
+                    <p>Творог смешать с яйцом, чесноком растертым с солью, затем добавить сметану и мелко нарубленную зелень. Перемшать и подавать с хлебом.</p>
+                </div>
+                <div class="more"><a class="dotted" href="#">ещё рецепты<i></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-text">Мебель компании "Персона-le", в стиле от классики до модерна, станут стильной изюминкой Вашего интерьера.</div>
+</div>
+<div class="footer">
+    <div class="copy">
+        <p>© 2011 «Персона`le».</p>
+        <p>Все права защищены.</p>
+        <p>Разработка - студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+    </div>
+    <div class="counter">
+        <a href="#"><img src="img/88x31.gif" /></a>
+        <a href="#"><img src="img/88x31.gif" /></a>
+    </div>
+</div>
+</body>
+</html>

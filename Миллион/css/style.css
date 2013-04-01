@@ -1,0 +1,341 @@
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'PFAgoraSansProBlackRegular';
+    src: url('../font/pfagorasanspro-black-webfont.eot');
+    src: url('../font/pfagorasanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfagorasanspro-black-webfont.woff') format('woff'),
+         url('../font/pfagorasanspro-black-webfont.ttf') format('truetype'),
+         url('../font/pfagorasanspro-black-webfont.svg#PFAgoraSansProBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PFAgoraSansProMediumRegular';
+    src: url('../font/pfagorasanspro-medium-webfont.eot');
+    src: url('../font/pfagorasanspro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfagorasanspro-medium-webfont.woff') format('woff'),
+         url('../font/pfagorasanspro-medium-webfont.ttf') format('truetype'),
+         url('../font/pfagorasanspro-medium-webfont.svg#PFAgoraSansProMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PFAgoraSansProMediumItalic';
+    src: url('../font/pfagorasanspro-mediumital-webfont.eot');
+    src: url('../font/pfagorasanspro-mediumital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfagorasanspro-mediumital-webfont.woff') format('woff'),
+         url('../font/pfagorasanspro-mediumital-webfont.ttf') format('truetype'),
+         url('../font/pfagorasanspro-mediumital-webfont.svg#PFAgoraSansProMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HeliosCBold';
+    src: url('../font/heliosc-bold-webfont.eot');
+    src: url('../font/heliosc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/heliosc-bold-webfont.woff') format('woff'),
+         url('../font/heliosc-bold-webfont.ttf') format('truetype'),
+         url('../font/heliosc-bold-webfont.svg#HeliosCBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background: #004a0b url(../images/bg.jpg) no-repeat top center; min-width: 1022px; }
+body { font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+a { outline: 0; color: #232f17; }
+a:hover { text-decoration: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+
+th { font-weight: bold; }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+@media print {
+* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+a, a:visited { text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } /* h5bp.com/t */
+tr, img { page-break-inside: avoid; }
+img { max-width: 100% !important; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+}
+
+.header {
+	margin: 0 auto 6px;
+	width: 1022px;
+}
+.header .logo {
+	float: left;
+	margin: 12px 97px 0 0;
+}
+.header .block-condition {
+	float: left;
+	margin: 36px 0 0;
+}
+.header .block-condition .condition {
+	margin: 0 0 13px;
+}
+
+.header .block-condition .text {
+	font: 14px/18px PFAgoraSansProMediumRegular, Myriad Pro;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 3px;
+}
+.header .block-condition .time {
+	font: 38px/40px PFAgoraSansProBlackRegular, Myriad Pro;
+	color: #fff;
+	text-align: center;
+}
+
+.header .block-login {
+	float: right;
+	margin: 42px 0 0;
+}
+.header .block-login ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header .block-login ul li {
+	margin: 0 0 10px;
+}
+
+.header .block-login ul label {
+	display: inline-block;
+	width: 46px;
+	padding: 3px 15px 0 0;
+	text-align: right;
+	font: 14px/18px PFAgoraSansProMediumItalic, Myriad Pro;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(16,69,0,1);
+}
+.header .block-login ul input[type=text],
+.header .block-login ul input[type=password] {
+	border: none;
+	box-shadow: inset 1px 1px 3px rgba(4,62,21,.89);
+	width: 178px;
+	font: 14px/18px Myriad Pro;
+	padding: 5px 10px 4px;
+	vertical-align: top;
+}
+.header .block-login ul input[type=submit] {
+	background: url(../images/button-input.png) no-repeat;
+	height: 31px;
+	border: none;
+	width: 108px;
+	vertical-align: middle;
+}
+.header .block-login .text {
+	padding: 0 0 0 61px;
+}
+.header .block-login .text span {
+	font: 13px/15px PFAgoraSansProMediumItalic, Myriad Pro;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(16,69,0,1);
+	display: inline-block;
+	width: 105px;
+}
+.header .block-login .text span a {
+	color: #fff;
+}
+.header .block-login .text p {
+	font: 13px/15px PFAgoraSansProMediumRegular, Myriad Pro;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(16,69,0,1);
+	margin: 17px 0 0;
+}
+.main {
+	background: url(../images/main-bg.png) no-repeat center top;
+	min-height: 614px;
+}
+.main .block {
+	margin: 0 auto;
+	width: 1022px;
+}
+.main .block .svetlakov {
+	float: left;
+	margin: 50px 0 0 36px;
+}
+.main .block .block-news {
+	float: right;
+	background: url(../images/bg-news.jpg) no-repeat top right;
+	width: 273px;
+	height: 324px;
+	padding: 10px 30px 0 40px;
+	text-align: center;
+	margin: 72px 34px 53px 0;
+}
+.main .block .block-news .title {
+	font: 21px/24px HeliosCBold, Myriad Pro;
+	text-transform: uppercase;
+	color: #8d2c1b;
+	margin: 0 0 10px;
+}
+.main .block .block-news .text h2 {
+	font: 18px/20px HeliosCBold, Myriad Pro;
+	color: #8d2b1b;
+	margin: 0 0 5px;
+}
+.main .block .block-news .images {
+	margin: 0 0 6px;
+}
+.main .block .block-news .text p {
+	font: 13px/15px HeliosCBold, Myriad Pro;
+	color: #8d2b1b;
+	margin: 0 0 5px;
+}
+.main .block .block-news .text p.more {
+	text-align: right;
+	font: 14px/18px PFAgoraSansProMediumItalic, Myriad Pro;
+}
+.main .block .block-news .text p.more a {
+	color: #056313;
+}
+.main .block-promo {
+	float: right;
+	margin: 0 35px 0 0;
+}
+
+.main .block-promo .item {
+	float: left;
+	margin: 0 0 0 27px;
+}
+.bottom-menu {
+	margin: 0 auto 34px;
+	width: 1022px;
+}
+.bottom-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.bottom-menu ul li {
+	float: left;
+	font: 18px/20px PFAgoraSansProMediumRegular, Myriad Pro;
+	padding: 20px 15px 19px;
+}
+.bottom-menu ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.bottom-menu ul .winners-active {
+	background: url(../images/active-winners.png) no-repeat center top;
+}
+.bottom-menu ul .winners-active a {
+	color: #000;
+}
+
+.footer {
+	margin: 0 auto;
+	width: 1022px;
+	padding: 0 0 20px;
+}
+.footer .copy {
+	float: left;
+	width: 285px;
+	font: 12px/14px PFAgoraSansProMediumItalic, Myriad Pro;
+	color: #fff;
+	margin: 0 0 0 5px;
+}
+.footer .social {
+	float: left;
+	width: 540px;
+}
+
+.footer .phone {
+	float: right;
+	width: 185px;
+	font: 12px/14px PFAgoraSansProMediumItalic, Myriad Pro;
+	color: #fff;
+}
+
+
+

@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Мегатюмень</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/carousel.css" type="text/css" rel="stylesheet" />
+    <link href="css/popup.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jscroll.js"></script>
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+    <script type="text/javascript" src="js/jstepcarousel.js"></script>
+    <script type="text/javascript" src="js/jmousewheel.js"></script>
+    <script type="text/javascript" src="js/handlers.js"></script>
+</head>
+<body>
+<div class="fon-bg">
+<div id="wrapper-top">
+
+    <div id="popup" style="top: 200px; left: 720px; display: block;">
+        <a href="#" class="close">закрыть</a>
+        <h2>Я сейчас тут</h2>
+        <div class="cont comment">
+        	<p>Вы действительно сейчас находитесь или побывали в:</p>
+            <div class="info-company">
+            	<div class="img"><img src="images/110x90.jpg" /></div>
+                <div class="text">
+                	<p><strong>3452, городское кафе</strong></p>
+                    <p><em>ул. Николая Федорова, 9</em></p>
+                </div>
+            </div>
+            <p><strong>Ваше впечатление от посещения этого места:</strong></p>
+            <p><label><input type="radio" /><a href="#" class="g">&nbsp;</a>— положительное</label></p>
+            <p><label><input type="radio" /><a href="#" class="r">&nbsp;</a>— отрицательное</label></p>
+            <p><label><input type="radio" /><a href="#" class="b">&nbsp;</a>— нейтральное</label></p>
+            <p class="comments"><strong>Отзыв или комментарий:</strong></p>
+            <p><textarea class="sf"></textarea></p>
+            <div class="codeword">
+            	<p><em>Сегодня: Понедельник, 7 марта</em></p>
+            	<p><strong>Кодовое слово дня:*</strong></p>
+                <p><input class="sf" type="text" /></p>
+                <p><small>Слово можно вводить только на русском языке без учета регистра.<br />Кодовое слово можно увидеть на видном месте и на столиках в заведении или уточнить у администратора заведения.</small></p>
+                <p><a href="#">Подробнее о проведении акции</a></p>
+            </div>
+        </div>
+        <a href="#" class="button small">Я здесь был</a>
+    </div>
+
+    <ul class="old">
+        <li class="pda"><a href="#"><i></i>Мобильная версия</a></li>
+        <li class="rss"><a href="#"><i></i>RSS</a></li>
+        <li class="vk"><a href="#"><i></i>vkontakte</a></li>
+        <li class="adv"><a href="#">О проекте</a></li>
+    </ul>
+	<div class="banner">
+    	<a class="top" target="_blank" href="#"><img src="images/banner-top.jpg" /></a>
+    </div>
+    <div id="header">
+    	<div class="header-t">
+            <a href="/" class="logo">&nbsp;</a>
+            <div class="search-form">
+                <ul style="display: none;">
+                    <li><a href="#">в&nbsp;интересах</a></li>
+                    <li><a href="#">по ID</a></li>
+                    <li><a href="#">по ID</a></li>
+                    <li><a href="#">по ID</a></li>
+                </ul>
+                <p>Поиск по порталу</p>
+                <p><input type="text" class="frm disable" value="Например, питомцы" />
+                <a href="#" class="select">в интересах</a>
+                <input type="submit" class="btn" value="Искать" title="Искать" /></p>
+            </div>
+            <div class="block-login">
+                <div class="logon">
+                	<!--<a href="#" class="ava add"><img src="img/bg-logon.gif" /></a>
+                    <div class="login">
+                        <a class="login" href="#">Вход</a>
+                        <a class="register" href="#">Регистрация</a>
+                    </div>-->
+                    <a href="#" class="ava"><img src="images/pic-moderator.gif" /></a>
+                    <a href="#" class="reg"><i></i>Иван Петров</a><a class="message" href="#"><i></i> 1</a>
+                    <a href="#" class="ent">Выход</a>
+                    <p><a href="#" class="adress"><i></i>ул. Республики, 45</a><a href="#" class="dot-blue">Уточнить</a></p>
+                </div>
+                <div class="status">
+                	<a href="#">Статус</a> <em>Установите статус</em>
+                </div>
+                <!--<div class="pop-status">
+                	<div class="bg"></div>
+                	<div class="border">Курю бамбук сидя на работе.</div>
+                </div>-->
+            </div>
+        </div>
+        <ul class="menu">
+        	<li><a href="/">Главная</a></li>
+            <li><a href="#">Сообщества</a></li>
+            <li class="active"><a href="#">Каталог</a></li>
+            <li><a href="#">Афиша</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Сити-квест</a></li>
+            <li><a href="#">ОНЛАЙН ВИТРИНА</a></li>
+            <li><a href="#">копи на скидку</a></li>
+        </ul>
+  	</div>
+</div>
+</div>
+<div id="wrapper">
+    <div id="content">
+    	<div class="submenu">
+        	<ul>
+            	<li class="active"><a href="#">Стандартная</a></li>
+                <li><a href="#">Новостная</a></li>
+                <li><a href="#">Развлекательная</a></li>
+                <li><a href="#">Пользовательская</a></li>
+            </ul>
+        </div>
+        <div id="breadcrumbs">
+            <a href="#">Главная</a><em>\</em>
+            <a href="#">Каталог</a><em>\</em>
+            <a href="#">Еда</a><em>\</em>
+            Ресторанный комплекс Green House
+   	  </div>
+        <div class="header-b">
+        	<div class="left-h">
+            	<div class="l-h">
+                	<h1>ЕДА</h1>
+                </div>
+            </div>
+            <div class="right-h">← <a href="#">Вернуться в каталог</a></div>
+        </div>
+  <div class="box nobr">
+        	<div class="leftcolum">
+          		<div class="basis">
+                	<div class="title-company">
+                    	<div class="left">Ресторанный комплекс Green House</div>
+                        <div class="right"><a href="#"><i></i>Акция</a></div>
+                    </div>
+                    <div class="share">
+                    	<i class="ipad"></i><span><i></i>Это заведение участвует в акции! Разыгрываются реальные призы. <em><a href="#">Подробее</a> »</em></span>
+                    </div>
+                    <div class="block-organization">
+                    	<div class="left">
+                        	<div class="button-header">
+                                <a href="#" class="button small red">Пригласить</a>
+                                <a href="#" class="button place-b red">В мои места</a>
+                                <a href="#" class="button small">Я сейчас тут</a>
+                            </div>
+                            <div class="spec">
+                                <div>
+                                    <span><em>Тип</em></span>
+                                    <p>ресторан, кафе</p>
+                                </div>
+                                <div>
+                                    <span><em>Телефон</em></span>
+                                    <p>(3452)41-59-64</p>
+                                </div>
+                                <div>
+                                    <span><em>Адрес</em></span>
+                                    <p><a class="adress" href="#"><i></i>ул. Николая Федорова, 9</a></p>
+                                </div>
+                                <div>
+                                    <span><em>Время работы</em></span>
+                                    <p>10:00 - 04:00</p>
+                                </div>
+                                <div>
+                                    <span><em>Кухня</em></span>
+                                    <p>Европейская, авторская, итальянская, средиземноморская, японская</p>
+                                </div>
+                                <div>
+                                    <span><em>Средний чек</em></span>
+                                    <p>1000 - 1500 руб.</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>Особенности</span>
+                                <p>всевозможные сорта кофе, алкогольные и безалкогольные напитки на основе кофе, разнообразный чай (китайский, шотландский, английский), десерты и полноценные блюда(холодные, горячие)</p>
+                            </div>
+                            <div class="awards">
+                            	<h4>Награды</h4>
+                                <div>
+                                    <img src="img/org-award-first.gif" />
+                                    <a href="#">Самое посещаемое</a>
+                                </div>
+                                <div>
+                                    <img src="img/org-award-first.gif" />
+                                    <a href="#">Самое посещаемое</a>
+                                </div>
+                                <div>
+                                    <img src="img/org-award-first.gif" />
+                                    <a href="#">Самое посещаемое</a>
+                                </div>
+                                <div>
+                                    <img src="img/org-award-first.gif" />
+                                    <a href="#">Самое посещаемое</a>
+                                </div>
+                            </div>
+                            <div class="all">[+] <a href="#">Все награды</a></div>
+                        </div>
+                        <div class="right">
+                        	<div class="photo">
+                            	<div id="mygallery" class="stepcarousel">
+                                    <div class="belt">
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                        <div class="panel"><img src="images/336x243.jpg" /></div>
+                                    </div>
+                                </div>
+                                <p id="mygallery-paginate">
+                                    <img src="img/opencircle.png" data-over="img/graycircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                                </p>
+                            </div>
+                            <div class="block-info-c">
+                            	<div class="logo-i"><img src="images/110x90.jpg" /></div>
+                                <div class="other-i">
+                                	<div class="rating">
+                                        <div>
+                                            <p>243</p>
+                                            просмотров
+                                        </div> 
+                                        <div>
+                                            <p>23</p>
+                                            отзывов
+                                        </div>                               
+                                        <div>
+                                            <span>5</span>
+                                        </div>
+                                    </div>
+                                    <div class="social">
+                                    	<span><img src="img/ico-twitt.gif" /></span>
+                                        <span><img src="img/ico-face.gif" /></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                	<div id="organization">
+                        <div class="about">
+                        	<div class="video">
+                            	<h3>Видеообзор</h3>
+                                <!--<object width="300" height="260" style="position:relative;">
+                                <param name="movie" value="http://www.youtube.com/v/6_I70KACh4o&amp;hl=ru_RU&amp;fs=1"></param>
+                                <param name="allowFullScreen" value="true"></param>
+                                <param name="wmode" value="opaque">
+                                <param name="allowscriptaccess" value="always"></param>
+                                <embed src="http://www.youtube.com/v/6_I70KACh4o&amp;hl=ru_RU&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="300" height="260"></embed>
+                                </object>-->
+                            </div>
+                        	<h3>О компании</h3>
+                            <p>Открытие  ресторанного комплекса Green House в замке. Средневековая роскошь и тюменский политикум.</p>
+							<p>&nbsp;</p>
+                            <p>В минувшую пятницу тюменские политики и селебритиз потчевались международными деликатесами (свиной ирландский окорок в апельсиновой глазури с шотландским хлебом, царским лососем особого посола по рецепту придворных поваров) под звуки благородного джаза стильных мотивов «кантри» и запивали все это реками французского шампанского и красного итальянского вина.</p>
+                            <p>&nbsp;</p>
+                            <p>Поводом для такого изысканного пира стало открытие ресторанного комплекса Green House. В роли конферансье фигурировала Ольга Орлова, музыкальную атмосферу создавали ансамбль «Evergreen» (репертуар, в основе которого вечнозеленые хиты XX века), Ольга Орлова и Александр Кириллов (певица и гитарист)</p>
+                            <p>&nbsp;</p>
+                            <p>Ценителями средневековой роскоши оказались: Шумков Вадим Михайлович, Езикеева Ольга Леонидовна, Минулин Ильфат Гумарович, Левин Геннадий Семенович и другие именитые персоны.</p>
+                        </div>
+                        <div class="map">
+                            <h3>На карте</h3>
+                            <div class="background">
+                                <script src="http://api-maps.yandex.ru/1.1/?key=AOYASEwBAAAAaQhaWQIAwqb0Gcn6IdAAXcelpjbps0ftK-sAAAAAAAAAAAB2JvPZ7UVnwFKoIPYusXmxkN6itQ==&wizard=constructor" type="text/javascript"></script>
+                                <script type="text/javascript">
+                                    YMaps.jQuery(window).load(function () {
+                                        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2645")[0]);
+                                        map.setCenter(new YMaps.GeoPoint(65.515634,57.154947), 9, YMaps.MapType.MAP);
+                                        map.addControl(new YMaps.Zoom());
+                                        map.addControl(new YMaps.ToolBar());
+                                        map.addControl(new YMaps.TypeControl());
+                                        
+                                        function createObject (type, point, style, description) {
+                                            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                                                index = YMaps.jQuery.inArray( type, allowObjects),
+                                                constructor = allowObjects[(index == -1) ? 0 : index];
+                                                description = description || "";
+                                            
+                                            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+                                            object.description = description;
+                                            
+                                            return object;
+                                        }
+                                    });
+                                </script>
+                                <div id="YMapsID-2645" style="width:100%; height:195px;"></div>
+                            </div>
+                        </div>
+                        <div class="com">
+                            <a href="#">Отзывы и комментарии</a> (3)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcolum">
+            	<div class="see">
+                    <h2>НОВОСТИ компании</h2>
+                    <div class="block">
+                    	<div class="date">Сегодня, 21:50</div>
+                        <div class="link"><a href="#">Медведев и Янукович поучаствуют в автопробеге Питер-Москва-Киев</a></div>
+                    </div>
+                    <div class="block">
+                    	<div class="date">Сегодня, 21:50</div>
+                        <div class="link"><a href="#">Медведев и Янукович поучаствуют в автопробеге Питер-Москва-Киев</a></div>
+                    </div>
+                    <div class="block">
+                    	<div class="date">Сегодня, 21:50</div>
+                        <div class="link"><a href="#">Медведев и Янукович поучаствуют в автопробеге Питер-Москва-Киев</a></div>
+                    </div>
+                    <div class="block">
+                    	<div class="date">Сегодня, 21:50</div>
+                        <div class="link"><a href="#">Медведев и Янукович поучаствуют в автопробеге Питер-Москва-Киев</a></div>
+                    </div>
+                    <div class="all">[+] <a href="#">Все новости</a></div>
+                </div>
+                <div class="banner"><a href="#"><img src="images/banner-180.jpg" /></a></div>
+                <div class="usercase">
+                    <h2>кто Тут рядом</h2>
+                    <div class="list">
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Григорий</a></strong>
+                                <p class="m">140 метров</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Петр Петрович</a></strong>
+                                <p class="m">140 метров</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Григорий</a></strong>
+                                <p class="m">140 метров</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Петр Петрович</a></strong>
+                                <p class="m">140 метров</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="all">
+                        [+] <a href="#">Все пользователи рядом</a>
+                    </div>
+                </div>
+                <div class="usercase">
+                    <h2>ТУТ БЫВАЮТ</h2>
+                    <div class="list">
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Григорий</a></strong>
+                                <p>Вчера, 15:54</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Петр Петрович</a></strong>
+                                <p>15 сентярбя, 2010</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Григорий</a></strong>
+                                <p>15 сентярбя, 2010</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="avatar" href="#"><img src="images/avatar-small.jpg"></a>
+                            <span>
+                                <strong><a href="#"><i></i>Петр Петрович</a></strong>
+                                <p>15 сентярбя, 2010</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="all">
+                        [+] <a href="#">Все пользователи</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+	<div class="l">
+        <p>© 2000-2010 Тюменская региональная интернет-<br />газета "Вслух.ру"</p>
+        <p>Свидетельство о регистрации СМИ ЭЛ #77-4710 от</p>
+        <p>&nbsp;</p>
+        <p><a href="#">О проекте</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Размещение рекламы</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Сообщить об ошибке</a></p>
+        <div>
+            <a href="#"><img src="images/meter.gif" /></a>
+            <a href="#"><img src="images/meter.gif" /></a>
+        </div>
+	</div>
+    <div class="c">
+    	<div>
+        	<a href="#">Каталог</a>
+        </div>
+        <ul>
+        	<li><a href="#">Отдых</a></li>
+            <li><a href="#">Дети</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Такси</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Красота</a></li>
+            <li><a href="#">Дом</a></li>
+            <li><a href="#">Досуг</a></li>
+            <li><a href="#">Туризм</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Шопинг</a></li>
+			<li><a href="#">Финанасы</a></li>
+            <li><a href="#">Питомцы</a></li>
+        </ul>
+        <div>
+            <a href="#">Сити квест</a>
+            <a href="#">События</a>
+            <a href="#">Афиша</a>
+            <a href="#">Витрина</a>
+        </div>
+    </div>
+    <div class="r">
+    	<div class="search-form">
+            <ul>
+            	<li><a href="#">по слову</a></li>
+                <li><a href="#">по ID</a></li>
+            </ul>
+        	<input type="text" class="frm" value="Поиск по порталу" />
+            <a href="#" class="select">по слову</a>
+            <input type="submit" class="btn" value="Искать" title="Искать" />
+        </div>
+    	<p>Разработка — студия «<a href="http://creativeru.com/" target="_blank" title="Студия интернет-технологий «Креатив»">Креатив</a>»</p>
+    </div>
+</div>
+</div>
+</body>
+</html>

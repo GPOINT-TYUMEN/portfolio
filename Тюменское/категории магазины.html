@@ -1,0 +1,334 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 7]><link href="css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#weather").carouFredSel({
+		circular: false,
+		infinite: false,
+		height: "auto",
+		items: {
+			visible: 1,
+			height: "variable"
+		},
+		auto: false,
+		prev: "#weather-prev",
+		next: "#weather-next"
+	});
+	$("#promo").carouFredSel({
+		circular: false,
+		infinite: false,
+		height: 76,
+		items: {
+			visible: 3,
+			height: 76
+		},
+		pagination: "#promo-pager"
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="top-header">
+		<div class="header">
+			<div class="ico">
+				<a class="home" href="#"></a>
+				<a class="feedback" href="#"></a>
+				<a class="map" href="#"></a>
+			</div>
+			<div class="statistics">
+				<span>Товаров: <strong>456</strong></span>
+				<span>Производителей: <strong>50</strong></span>
+				<span>Магазинов: <strong>140</strong></span>
+			</div>
+			<div class="search">
+				<strong>Поиск по сайту:</strong> <label><span><i></i><input type="text" placeholder="Например, молоко" /></span></label>
+			</div>
+		</div>
+	</div>
+	<div class="info-header">
+		<div class="logo">
+			<h1>Товары Тюменской области</h1>
+			<a href="#"><img src="images/logo.gif" /></a>
+		</div>
+		<div class="city">
+			<div class="text">Город или район:</div>
+			<div class="choice"><span>Тюменская область<i></i></span></div>
+			<div class="links">
+				<a class="product" href="#"><i></i>Товары</a>
+				<a class="manufacturers" href="#"><i></i>Производители</a>
+				<a class="stores" href="#"><i></i>Магазины</a>
+			</div>
+		</div>
+		<div class="people">
+			<div class="text">
+				<p><a href="#" class="dotted">Обращение</a></p>
+				<p>Губернатора<br />Тюменской области<br />Якушева В.В.</p>
+				<img src="images/113x93.jpg" />
+			</div>
+		</div>
+	</div>
+	<div class="header-menu">
+		<nav>
+		<div class="menu">
+			<ul>
+				<li class="first"><a href="#"><i></i></a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Производители</a></li>
+				<li class="active"><a href="#">Магазины и рынки</a></li>
+				<li><a href="#">Официально</a></li>
+				<li><a href="#"><i></i>Знай наших</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li><a href="#">Советы</a></li>
+				<li><a href="#">Вопрос-ответ</a></li>
+			</ul>
+		</div>
+		</nav>
+		<div class="top-banners">
+			<div class="banners">
+				<div class="item first">
+					<a href="#"><img src="images/banner.jpg" /></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="images/banner.jpg" /></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="images/banner.jpg" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="content">
+	<div class="columnleft">
+		<div class="true">
+			<h2>Актуально</h2>
+			<div class="item">
+				<div class="img"><img src="images/76x76.jpg" /></div>
+				<div class="name"><p><strong>Кузин</strong><br />Виктор Григорьевич</p></div>
+			</div>
+			<div class="links"><a href="#">Семенной картофель отбираем правильно</a></div>
+			<div class="comments"><i></i>10 комментариев</div>
+			<div class="switch"><a href="#">Перейти в раздел</a></div>
+		</div>
+		<div class="block-login">
+			<h2>Личный кабинет</h2>
+			<form>
+				<ul>
+					<li><label><span><input type="text" placeholder="Логин (e-mail)" /></span></label></li>
+					<li><label><span><input type="password" placeholder="Пароль" /></span></label></li>
+					<li><input type="submit" value="Вход" /> <a href="#">Забыли пароль?</a></li>
+				</ul>
+			</form>
+			<h2>Регистрация</h2>
+			<div class="producer">
+				<div class="img"><img src="images/ico-producer.gif" /></div>
+				<div class="text">
+					<p><a href="#">Производитель</a></p>
+					<p>Возможность ведения карточки компании, добавление товаров и агазинов</p>
+				</div>
+			</div>
+			<div class="producer">
+				<div class="img"><img src="images/ico-user.gif" /></div>
+				<div class="text">
+					<p><a href="#">Пользователь</a></p>
+					<p>Участие в обсужении, подписка на новости, доступ в скрытые разделы</p>
+				</div>
+			</div>
+		</div>
+		<div class="block-weather">
+			<h2>Погода по области</h2>
+			<ul id="weather">
+				<li>
+					<span class="ico"><img src="images/partly_cloudy.gif" /></span>
+					<span class="info">
+						<span class="city">Тюмень</span>
+						<span class="figures">+5...+10</span>
+						<span class="text">облачно</span>
+					</span>
+				</li>
+				<li>
+					<span class="ico"><img src="images/partly_cloudy.gif" /></span>
+					<span class="info">
+						<span class="city">Тюмень</span>
+						<span class="figures">+5...+10</span>
+						<span class="text">облачно, небольшие осадки</span>
+					</span>
+				</li>
+				<li>
+					<span class="ico"><img src="images/partly_cloudy.gif" /></span>
+					<span class="info">
+						<span class="city">Тюмень</span>
+						<span class="figures">+5...+10</span>
+						<span class="text">облачно, небольшие осадки</span>
+					</span>
+				</li>
+			</ul>
+			<a href="#" id="weather-prev" class="prev"></a>
+			<a href="#" id="weather-next" class="next"></a>
+		</div>
+		<div class="banners"><a href="#"><img src="images/198x215.jpg" /></a></div>
+		<div class="stock">
+			<h2>Акции и скидки</h2>
+			<div class="item first">
+				<p><a href="#">Скидка на масло до 15%!</a></p>
+				<p>ООО "Заводоуковский маслозавод”</p>
+			</div>
+			<div class="item">
+				<p><a href="#">Скидка на масло до 15%!</a></p>
+				<p>ООО "Заводоуковский маслозавод”</p>
+			</div>
+			<div class="item last">
+				<p><a href="#">Скидка на масло до 15%!</a></p>
+				<p>ООО "Заводоуковский маслозавод”</p>
+			</div>
+			<div class="switch"><a href="#">Все акции и скидки</a></div>
+		</div>
+	</div>
+	<div class="columnright">
+		<div class="crumbs"><a href="#">Главная</a> / Магазины и рынки</div>
+		<div class="block-brands">
+			<div class="block-filter">
+				<div class="title">
+					<h2>Магазины и рынки</h2>
+					<a class="add" href="#">Добавить магазин</a>
+				</div>
+				<div class="filter">
+					<form>
+						<ul>
+							<li>
+								<p>Тип</p>
+								<span><select><option>Все</option></select></span>
+							</li>
+							<li>
+								<p>Город или район:</p>
+								<span><select><option>Тюменская область</option></select></span>
+							</li>
+							<li>
+								<p>Ключевое слово</p>
+								<span><input type="text" placeholder="Например, молоко" /></span>
+							</li>
+							<li class="submit">
+								<input type="submit" value="Поиск" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="block">
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+				<div class="item">
+					<span>99</span>
+					<img src="images/100x72.jpg">
+					<p><a href="#">Ассоциации производителей</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="block-promo">
+			<div class="block">
+				<div class="block-bottom">
+					<ul id="promo">
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+						<li>
+							<span class="img"><img src="images/64x64.gif" /></span>
+							<span class="text">Водка от Заводоуковского Спиртоводочного завода</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pagination" id="promo-pager"></div>
+		</div>
+	</div>
+</div>
+<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2010 — 2011 Тюменское 2.0<br />Перепечатка материалов только с согласия администрации сайта.</p>
+			<p><a href="#">Контакты редакции</a></p>
+		</div>
+		<div class="right">
+			<p><a href="http://www.crtweb.ru" target="_blank">Разработка сайта</a> — студия «Креатив»</p>
+		</div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

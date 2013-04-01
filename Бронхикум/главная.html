@@ -1,0 +1,222 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheets/style.css" type="text/css" rel="stylesheet" />
+
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/modernizr.min.js"></script>
+
+<script src="javascripts/script.js"></script>
+
+
+</head>
+
+<body>
+<header>
+	<div class="top">
+		<a href="#"><img src="images/logo-sanofi.gif" alt="" width="95" height="22" /></a>
+	</div>
+	<div class="header">
+		<div class="clearfix">
+			<div class="logo"><a href="#"><img src="images/logo.png" alt="" width="169" height="119" /></a></div>
+			<nav>
+				<div class="menu clearfix">
+					<ul class="clearfix">
+						<li class="active"><a href="#">Природа</a></li>
+						<li><a href="#">Побеждает</a></li>
+						<li><a href="#">Кашель</a></li>
+						<li class="star">*</li>
+						<li class="faq"><a href="#">Вопросы - ответы</a></li>
+					</ul>
+					<div class="login">
+						Здравствуйте, <a href="#">Username</a>
+					</div>
+				</div>
+				<div class="submenu">
+					<ul class="clearfix">
+						<li><a href="#">Правила акции</a></li>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Каталог призов</a></li>
+						<li><a href="#">Победители</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="area">
+		<p>3 шага = 3 подарка!</p>
+		<p><span>с 15 сентября по 31 декабря 2012</span></p>
+	</div>
+	<div class="clearfix">
+		<div class="block-visual">
+			<div class="first-prize">
+				<div class="clearfix">
+					<div class="img"><img src="images/prize-ipad.png" alt="" width="92" height="131" /></div>
+					<div class="text">
+						<p class="title">Приз месяца</p>
+						<p>Описание приза недели и прочий текст касающийся того как его получить участвуя в конкурсе</p>
+					</div>
+				</div>
+			</div>
+			<div class="last-prize">
+				<div class="clearfix">
+					<div class="img"><img src="images/prize-ipod.png" alt="" width="80" height="127" /></div>
+					<div class="text">
+						<p class="title">Приз недели</p>
+						<p>Описание приза недели и прочий текст касающийся того как его получить участвуя в конкурсе</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-register">
+			<div class="tabs clearfix">
+				<div class="item active"><a onclick="$('.tabs .item').removeClass('active');$('.register').hide();$(this).parent().addClass('active');$('#reg').show();" href="javascript:void(0);">Регистрация</a></div>
+				<div class="item"><a onclick="$('.tabs .item').removeClass('active');$('.register').hide();$(this).parent().addClass('active');$('#input').show();" href="javascript:void(0);">Вход</a></div>
+			</div>
+			<div class="register" id="reg">
+				<form>
+					<ul>
+						<li class="clearfix">
+								<span class="left">Ваше имя:</span>
+								<span class="right"><input type="text" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Пол:</span>
+								<span class="right">
+									<label><input type="radio" /> Мужской</label>
+									<label><input type="radio" /> Женский</label>
+								</span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Возраст:</span>
+								<span class="right"><input type="text" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Город:</span>
+								<span class="right"><input type="text" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left" style="padding: 0;">Есть ли у<br /> вас дети?</span>
+								<span class="right">
+									<label><input type="radio" /> Да</label>
+									<label><input type="radio" /> Нет</label>
+								</span>
+						</li>
+						<li class="clearfix">
+								<span class="left">E-mail:</span>
+								<span class="right"><input type="email" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Пароль:</span>
+								<span class="right"><input type="password" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Пароль еще раз:</span>
+								<span class="right"><input type="password" /></span>
+						</li>
+						<li>
+							<label><input type="checkbox" /> Получать новости от Бронхикум</label>
+						</li>
+						<li>
+							<label style="margin: 0;"><input type="checkbox" /> Я принимаю правила акции</label> <a href="#">Ознакомиться с правилами</a>
+						</li>
+					</ul>
+					<div class="button"><input type="submit" value="Зарегистрироваться" /></div>
+				</form>
+			</div>
+			<div class="register" id="input" style="display:none;">
+				<form>
+					<ul>
+						<li class="clearfix">
+								<span class="left">E-mail:</span>
+								<span class="right"><input type="email" /></span>
+						</li>
+						<li class="clearfix">
+								<span class="left">Пароль:</span>
+								<span class="right"><input type="password" /></span>
+						</li>
+					</ul>
+					<div class="button"><input type="submit" value="Войти" /></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block-winners">
+	<div class="winners">
+		<div class="title">
+			Работы наших участников <a href="#">Голосовать за других участников</a>
+		</div>
+		<div class="block clearfix">
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+			<div class="item">
+				<div class="img"><img src="images/100x100.jpg" alt="" width="100" height="100" /></div>
+				<div class="name">Наталья<br />Константинова</div>
+				<div class="vote"><a href="#"></a> <span><i></i>2</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="warning">
+			ПЕРЕД ПРИМЕНЕНИЕМ ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ
+		</div>
+		<div class="clearfix">
+			<div class="star">*данное утверждение не является гарантией эффективности</div>
+			<div class="contacts"><a href="#">Контакты</a></div>
+		</div>
+		<div class="clearfix">
+			<div class="feedback"><a href="#">Обратная связь</a></div>
+			<div class="services"><a href="#">Условия использования</a></div>
+			<div class="copy"><a href="#">© 2012 Sanofi-aventis. Все права защищены</a></div>
+			<div class="date">Дата последнего изменения: 10.08.2012</div>
+			<div class="count"><img src="images/w3c.gif" alt="" width="88" height="31" /></div>
+		</div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

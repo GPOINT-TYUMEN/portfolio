@@ -1,0 +1,3 @@
+﻿$(document).ready(function(){
+    Cufon.replace('.body h2, .body h3, .body h4, .body .center .block-resume .block-add a, .body .center .block-vacancy .block-add a, .vacancy-block .block-view div.l .recommend a, .user-resume .info .recommend a, .body .right .new-organization .block-add a, .body .center .block-user .block-add a, .body .center .block-message .block-add a, .block-post .post .reply a, .body .right .add-theme a, .header-search span, .header-search div button.button, .colum-r .employment .new-resume h5 span, .colum-r .employment .new-vacancy h5 span, .block-catalog ul li .button a, .search-header', { fontFamily: 'PT Sans', hover: 'true' });
+});

@@ -1,0 +1,33 @@
+* { margin:0; padding:0;}
+
+
+html, body {background: #fff; font-family: Tahoma, Geneva, sans-serif; font-size: 11px; line-height: 14px; color: #292929;}
+ul, ol {list-style:none;}
+a { color: #8a8a8a;}
+a:hover { text-decoration: none;}
+h1,h2,h3,h4 { font-size: 11px; color: #000; font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 5px;}
+img { border: none;}
+.header { overflow: hidden; border-bottom: 1px solid #e1dfd9;}
+.header .logo { float: left; margin: 13px 25px 3px 6px;}
+.header .order { float: left; margin: 21px 0 0 0; }
+.header .order a { font-weight: bold; color: #532308;}
+.menu { overflow: hidden; margin: 4px 0 0 0; padding: 0 0 2px 6px; border-bottom: 1px solid #e1dfd9;}
+.menu li { float: left; margin: 0 10px 4px 0;}
+.block { padding: 6px 10px 10px 10px; border-bottom: 1px solid #e1dfd9;}
+.news { padding: 6px 10px 10px 10px; font-family: Georgia, "Times New Roman", Times, serif;}
+.news p { margin-bottom: 5px;}
+.footer { background: #e1dfd9; padding: 6px 10px 10px 10px; color: #5b5b5b;}
+.footer a { color: #5b5b5b;}
+.footer p { margin-bottom: 2px;}
+.back { padding: 10px 0 10px 25px;}
+.back a { position: relative;}
+.back a i { display: block; position: absolute; background: url(../img/home.gif) no-repeat; width: 14px; height: 11px; top: 2px; left: -18px;}
+.block-order { padding: 6px 0 10px 10px;}
+.block-order ul { margin: 12px 0 0 0;}
+.block-order li { margin-bottom: 15px;}
+.block-order li p { margin-bottom: 5px;}
+.block-order li select, .block-order li input { border: 1px solid #c7bfb7; font-size: 11px; color: #666666; font-family: Verdana, Geneva, sans-serif; padding: 1px 1px 1px 2px;}
+.block-order li select { height: 22px; margin-right: 9px; width: 65px;}
+.block-order li select.width { width: 219px; margin: 0;}
+.block-order li input { height: 18px; width: 214px;}
+.block-order .button { color: #fff; font: 11px/15px Tahoma, Geneva, sans-serif bold; cursor: pointer; border: none; background: #977b6d url(../img/button.gif) no-repeat; width: 155px; height: 22px;}

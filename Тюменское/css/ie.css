@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top-header .header { height: 100%; }
+.top-header .header .ico { height: 100%; }
+.top-header .header .search input[type=text] { border-color: transparent; }
+
+.info-header { height: 100%; }
+
+.header-menu .menu ul { height: 100%; }
+.header-menu .top-banners .banners { height: 100%; }
+
+.content { height: 100%; }
+.content .columnright { height: 100%; }
+
+.columnleft .true .item { height: 100%; }
+
+.columnleft .block-login ul li input[type=text], .columnleft .block-login ul li input[type=password] { border-color: transparent; }
+.columnleft .block-login ul li input[type=submit] { border-color: transparent; }
+.columnleft .block-login .producer { height: 100%; }
+.columnleft .block-login .user { height: 100%; }
+
+.columnleft .block-weather ul { height: 100%; }
+.columnleft .block-weather ul li { height: 100%; }
+
+.main-catalog .block { height: 100%; }
+
+.block-promo .block ul { height: 100%; }
+.block-promo .block ul li { height: 100%; }
+
+.most-purchased .item { height: 100%; }
+
+.photogallery ul { height: 100%; }
+
+.pag-nav ul { height: 100%; }
+
+.ask-question ul li { height: 100%; }
+.ask-question ul li .right input[type=text] { border-color: transparent; }
+.ask-question ul li .right textarea { border-color: transparent; }
+.ask-question ul li input[type=submit] { border-color: transparent; }
+
+.block-social { height: 100%; }
+
+.block-brands .title { height: 100%; }
+.block-brands .block { height: 100%; }
+
+.block-filter .filter ul { height: 100%; }
+.block-filter .filter ul li span select { border-color: transparent; }
+.block-filter .filter ul li span input[type=text] { border-color: transparent; }
+.block-filter .filter ul li input[type=submit] { border-color: transparent; }
+
+.block-filter .title { height: 100%; }
+.block-manufacturers .options { height: 100%; }
+.block-manufacturers .options ul { height: 100%; }
+.block-manufacturers .options .info li { height: 100%; }
+
+.block-manufacturers .product ul { height: 100%; }
+.block-manufacturers .block-info { height: 100%; }
+
+.block-product .info { height: 100%; }
+.block-product .block-more .item { height: 100%; }
+.block-user .progress-bar .progress { height: 100%; }
+.block-user .block-form ul li { height: 100%; }
+.block-user .block-form ul li .right span input[type=text], .block-user .block-form ul li .right span select, .block-user .block-form ul li .right span input[type=file], .block-user .block-form ul li .right span input[type=email], .block-user .block-form ul li .right span textarea { border-color: transparent; }
+.block-user .block-form .submit input[type=submit] { border-color: transparent; }
+.block-user .block-form .block { height: 100%; }
+
+.block-ads .block .item { height: 100%; }
+
+.block-news .text p.preview { height: 100%; }
+
+.news-more .title { height: 100%; }
+.news-more .item { height: 100%; }
+
+.block-photo .photo .block { height: 100%; }
+.block-photo .video div.edit { height: 100%; }
+
+.footer { height: 100%; }

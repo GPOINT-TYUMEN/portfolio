@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0;}
+a { color: #6b5bcc; outline: none;}
+a:hover { text-decoration: none;}
+img { border: none;}
+ul { list-style: none;}
+body { background: #f2fdff url(../img/bg-fon.jpg) no-repeat center top; font: 14px/20px Arial, Helvetica, sans-serif; min-width: 910px;}
+
+.header { margin: 0 auto; width: 910px; height: 154px; background: url(../img/bg-header.jpg) no-repeat;}
+.header .logo { color: #fe0000; font-size: 34px; float: left; font-weight: bold; width: 335px; line-height: 35px; margin-top: 34px;}
+.header .logo .img { float: left; margin-right: 10px;}
+.header .logo .slogan { float: left; overflow: hidden; width: 240px; margin-top: 9px;}
+
+.body { margin: 0 auto; width: 910px; background: url(../img/1x1.png) repeat; box-shadow: 0 0 30px #666; -moz-box-shadow: 0 0 30px #666; -webkit-box-shadow: 0 0 30px #666; overflow: hidden; height: 100%!ie; position: relative;}
+.body .left { float: left; padding: 25px 0 25px 25px; width: 540px;}
+.body .left p { margin-bottom: 20px;}
+.body .left .photo-galery { overflow: hidden; height: 100%!ie; margin-left: -18px;}
+.body .left .photo-galery p { font-size: 12px; margin: 0 0 5px 18px; font-weight: bold;}
+.body .left .photo-galery div { float: left; margin: 0 0 15px 18px;}
+.body .left h2 { font-size: 30px; font-weight: normal; margin-bottom: 8px;}
+.body .left .filter { overflow: hidden; height: 100%!ie; margin-left: -7px;}
+.body .left .filter div { float: left; font-size: 12px; padding: 3px 7px 4px 7px;}
+.body .left .filter div.active { background: #f1822e;}
+.body .left .filter div.active a { color: #fff; text-decoration: none;}
+.body .left .block-kids { overflow: hidden; height: 100%!ie; margin-left: -3px; margin-top: 10px;}
+.body .left .block-kids .block { float: left; width: 243px; background: url(../img/1x1-a.png) repeat; margin: 0 0 3px 3px; padding: 12px 12px 0 12px; height: 198px;}
+.body .left .block-kids .block .name { font-size: 24px; margin-top: 4px;}
+.body .left .block-kids .block .info { font-size: 11px; color: #4c4c4c; margin-top: 1px;}
+.body .left .block-kids .block .dreeam { font-size: 14px; margin-top: 6px; height: 40px; overflow: hidden;}
+.body .left .block-kids .block .mail { margin-top: 6px; height: 20px;}
+.body .left .block-kids .block .mail a { font-size: 14px; text-decoration: none; margin-left: 21px; position: relative; border-bottom: 1px dotted;}
+.body .left .block-kids .block .mail a:hover { border-bottom: none;}
+.body .left .block-kids .block .mail a i { display: block; position: absolute; background: url(../img/ico-mail.gif) no-repeat; width: 16px; height: 13px; top: 2px; left: -21px;}
+.body .left .block-kids .block .gist { margin-top: 10px;}
+
+.body .popup { padding: 20px; position: absolute; width: 600px; background: #fff; z-index: 99; box-shadow: 0 0 30px #666; -moz-box-shadow: 0 0 30px #666; -webkit-box-shadow: 0 0 30px #666; overflow: hidden; height: 100%!ie;}
+.body .popup .close { display: block; position: absolute; background: url(../img/close.gif) no-repeat; width: 16px; height: 16px; top: 10px; right: 10px;}
+.body .popup h2 { font-size: 24px; font-weight: normal;}
+.body .popup .form { float: left; width: 380px; padding-top: 12px;}
+.body .popup .form p { font-size: 11px; line-height: 15px; color: #626262; font-weight: normal; margin-top: 3px;}
+.body .popup .form li { margin-bottom: 12px;}
+.body .popup .form li input { width: 371px; border: 1px solid #666; font-family: Arial, Helvetica, sans-serif; padding: 3px; font-size: 12px; color: #000;}
+.body .popup .form li textarea { width: 371px; height: 125px; font-family: Arial, Helvetica, sans-serif; border: 1px solid #666; padding: 3px; font-size: 12px; color: #000;}
+.body .popup .form li p { font-size: 12px; font-weight: bold; margin: 0 0 3px 0; color: #000;}
+.body .popup .form .button { background: url(../img/gift-fiolet.png) no-repeat; border: none; width: 237px; height: 58px; cursor: pointer;}
+.body .popup div.info { width: 194px; float: right; margin-left: 25px; margin-top: 12px;}
+.body .popup div.info p.info { font-size: 11px; color:c #4c4c4c; line-height: 15px;}
+.body .popup div.info .dream { font-size: 14px; margin-bottom: 7px;}
+.body .popup .thanks { float: left; width: 340px; padding: 12px 0 0 40px; background: url(../img/thanks.gif) no-repeat 0 13px;}
+.body .popup .thanks p { margin-bottom: 5px;}
+
+.body .right { float: right; width: 260px; padding: 25px 30px 25px 15px;}
+.body .right .block-joy { width: 260px; color: #fff; background: url(../img/bg-1x61.gif) repeat-x; height: 61px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+.body .right .block-joy .big { float: left; font-size: 48px; line-height: 40px; margin: 10px 15px 0 13px; text-shadow: 0 -1px 0 #75393b; }
+.body .right .block-joy .text { float: left; font-size: 11px; line-height: 15px; width: 150px; margin-top: 15px;}
+.body .right .list { margin-top: 20px;}
+.body .right .list p strong { font-size: 12px;}
+.body .right .list ul { margin-left: -15px;}
+.body .right .list li { height: 34px; padding: 7px 0 5px 15px;}
+.body .right .list li p a { font-size: 14px; color: #6b5bcc;}
+.body .right .list li p { font-size: 11px; color: #6e6e6e; line-height: 15px;}
+.body .right .list li.active { background: url(../img/active.gif) no-repeat; }
+.body .right .list li.active p { color: #fff;}
+.body .right .list li.active p a { font-weight: bold; color: #fff; text-decoration: none;}
+.body .right .phone { font-size: 30px;}
+.body .right .phone span { color: #565151;}
+.body .right .phone p { font-size: 14px; margin-bottom: 5px;}
+
+.footer { margin: 25px auto 0; width: 890px; background: url(../img/1x1.png) repeat; box-shadow: 0 0 30px #666; -moz-box-shadow: 0 0 30px #666; -webkit-box-shadow: 0 0 30px #666; overflow: hidden; height: 100%!ie; padding: 10px 0 10px 20px;}
+.footer div { float: left; width: 280px; font-size: 11px; line-height: 15px; color: #626262;}
+.footer div a { color: #626262;}
+.footer div img { vertical-align: middle; margin-right: 10px;}
+.footer div.last { width: 308px;}
+.footer div span { margin-top: 10px; display: block;}
