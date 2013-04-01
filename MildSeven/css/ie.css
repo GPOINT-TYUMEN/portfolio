@@ -1,0 +1,20 @@
+.page, .login-enter, .prize-info, .footer-inner, .form-container, .faq-tabs, .reg-steps, .form-checkbox, .form-sel-cont, .form-buttons-right, .error-mes, .form-footer, .reg-captcha {zoom: 1;}
+html {//filter: expression(runtimeStyle.filter = '',document.execCommand('BackgroundImageCache', false, true));}
+a * {cursor: pointer;}
+.uploader input, .login-enter-button input, .button-reg input, .button-right input, .button-pass input {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+.title, .select-current sup {display: inline; zoom: 1;}
+.select-current-inner {padding-bottom: 5px;}
+.select-container {z-index: 50;}
+.form-checkbox {padding-bottom: 8px;}
+.login-block .form-block {left: 49px;}
+.popup-password .content-container {
+	margin: -13px 0 0;
+}
+
+.button-left:active {background-position: -326px -46px;}
+.button-reg:active {background-position: -230px -189px;}
+.login-enter-button:active {background-position: -20px -192px;}
+.arrows a.a-prev:active {background-position: -478px -206px;}
+.arrows a.a-next:active {background-position: -514px -206px;}
+.popup-button a:active {background-position: -21px -39px;}
+.button-right:active {background-position: -515px -46px;}

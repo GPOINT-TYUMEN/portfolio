@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Plumb_700.font.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/stepcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<title>X-Robot</title>
+</head>
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'mygallery', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'similar', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+
+<script>
+jQuery(document).ready(function() {
+   jQuery('#mycarousel').jcarousel({
+      // Configuration goes here
+   });
+});
+</script>
+<body>
+<div class="bg-header">
+    <div class="header">
+        <div class="logo">
+            <div class="img"><a href="#"><img src="img/logo.gif" /></a></div>
+            <div class="text">
+                <p class="cufon"><span>X-robot</span>.ru</p>
+                <p><small>высокие технологии комфорта</small></p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg-plash">
+	<div class="plash">
+    	<div class="left">
+        	<div class="similar">
+            	<div class="h">
+                    <h4>Похожие товары</h4>
+                    <span id="mygallery-paginate">
+                            <img src="img/opencircle.png" data-over="img/closedcircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                    </span>
+                </div>
+                <div id="similar" class="stepcarousel">
+                	<div class="belt">
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="recommended">
+            	<div class="h">
+                    <h4>Рекомендуем</h4>
+                    <span id="mygallery-paginate">
+                            <img src="img/opencircle.png" data-over="img/closedcircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                    </span>
+                </div>
+                <div id="mygallery" class="stepcarousel">
+                	<div class="belt">
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+    <div class="center width">
+    	<div class="review">
+        	<h3>роботы</h3>
+        	<div class="crumbs"><a href="#">Пылесосы</a> / <a href="#">Roomba</a> / Уборщик-пылесос Roomba 581</div>
+            <div class="block-text">
+            	<div class="img">
+                	<img src="img/290x230.jpg" />
+                    <div class="galerry">
+                        <ul id="mycarousel" class="jcarousel-skin-name">
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                            <li><a href="#"><img src="img/40x40.jpg" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text">
+                	<h3>Уборщик-пылесос Roomba 581 от iRobot для умного пылесосинга дома и офиса</h3>
+                    <div class="price">
+                        <span>1 456 руб.</span>
+                        <a class="dotted" href="#">в корзину</a>
+                    </div>
+                    <p>Roomba 581 – одна из самых продвинутых версий робота-уборщика от iRobot, при его создании использованы новейшие разработки в области робототехники, навигации в помещении, вакуумной уборки. Максимальные возможности и расширенная комплектация.</p>
+                </div>
+            </div>
+            <div class="filter-view">
+                <div><a class="dotted" href="#">Характеристики</a></div>
+                <div><a class="dotted" href="#">Аксессуары</a></div>
+                <div><a class="dotted" href="#">Видео</a></div>
+                <div class="active"><a class="dotted" href="#">Задать вопрос о товаре</a></div>
+            </div>
+            <div class="text-view" style="display: none;">
+                <p>Roomba® 531 — представитель 500-ой серии (5-ого поколения) роботов, которые выпускает компания iRobot, в нем использованы новейшие разработки в области робототехники, навигации в помещении, вакуумной уборки.</p>
+                <p>Roomba 531 предназначен для сухой уборки напольных покрытий: плитки, ламината, паркета, ковров с коротким ворсом.</p>
+                <ul>
+                    <li>Русифицированный языковой модуль.</li>
+                    <li>Убирает 3 комнаты на 1 подзарядке.</li>
+                    <li>Возвращается на зарядную базу после окончания цикла уборки.</li>
+                    <li>Вращающиеся с высокой скоростью щетки эффективно собирают мусор в мусоросборник, легко в вынимаются и очищаются.</li>
+                    <li>Фильтр тонкой очистки удерживает мелкие частицы пыли и аллергены.</li>
+                    <li>Оснащен системой «антипутаница», которая помогает Roomba не застревать в проводах, шнурах, бахроме ковров.</li>
+                    <li>Боковая лопастная щетка позволяет очень эффективно чистить вдоль плинтуса и в углах помещения.</li>
+                    <li>Оснащен сенсорами перепада высоты, распознает ступеньки, иные перепады высоты и избегает падения.</li>
+                    <li>1 год гарантии, сертифицированный сервис</li>
+                </ul>
+                <p>Можно использовать IR-пульт дистанционного управления (приобретается дополнительно). С помощью 
+                пульта можно управлять движением робота.</p>
+                <p>Пульт удобен и прост в обращении. Пользуясь им, Вы сами сможете определять последовательность 
+                и тщательность уборки в Вашем доме.</p>
+                <p>Вес 3,8 кг, размеры - диаметр 34, высота 9,5 см</p>
+                <p>Ограничитель движения работает от 2-х элементов питания типа «D».</p>
+            </div>
+            <div class="text-request">
+            	<div class="form">
+                	<form>
+                	<ul>
+                    	<li><input type="text" value="Ваше имя" style="font-style: italic" /><!-- при наведении мыши font-style: italic исчезает--></li>
+                        <li><input type="text" value="E-mail" style="font-style: italic" /></li>
+                        <li style="margin: 0;"><textarea style="font-style: italic">Ваш вопрос.
+Например, как часть приходится чистить пылесос.</textarea></li>
+                    </ul>
+                    <input type="button" class="button" value="ОТПРАВИТЬ" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+    	<div class="basket">
+        	<h3>Корзина</h3>
+            <div>
+            	<p class="sum"><a href="#">5 товаров</a> на сумму 40 000 руб.</p>
+                <p><a href="#">Перейти в корзину</a></p>
+            </div>
+        </div>
+        <div class="phone">
+        	<div class="img"><img src="img/phone.gif" /></div>
+            <div class="cod">8-800</div>
+            <div class="telephone">2000-600</div>
+            <div class="text"><strong>Бесплатный</strong> Звонок <nobr>по России</nobr></div>
+        </div>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg-footer"></div>
+
+<div class="footer">
+	<div class="counter">
+    	<div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+    </div>
+    <div class="copy">
+    	<p>© 2010 X-robot.ru <br />Все права защищены. Любая перепечатка информации только по согласованию с администрацией сайта.</p>
+        <p>Разработка — студия «<a href="http://www.crtweb.ru/" target="_blank">Креатив</a>»</p>
+    </div>
+    <div class="phone">
+        <div class="img"><img src="img/phone.gif" /></div>
+        <div class="cod">8-800</div>
+        <div class="telephone">2000-600</div>
+    </div>
+</div>
+
+</body>
+</html>

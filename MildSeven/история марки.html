@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />	
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<script src="js/jquery.roundabout.min.js"></script>
+	<script src="js/jquery.roundabout-shapes.js"></script>
+	<script type="text/javascript" src="js/jquery.ez-bg-resize.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			prev_id = null;
+			$('.block-history ul').roundabout({
+				shape: 'lazySusan'
+			});
+
+			$('.cigarete').click(function(){
+				id = $(this).attr('id');
+				console.log(id);
+				$("#light li:first").insertAfter("#light li:last");
+				$("#text_"+id).before("#light li:first");
+			});
+
+			$('#next').click(function(){
+				$('.product ul').roundabout("animateToNextChild");
+			});
+
+			$('#prev').click(function(){
+				$('.product ul').roundabout("animateToPreviousChild");
+			});
+
+
+		});
+	</script>
+</head>
+
+<body class="history">
+	<!--[if lte IE 7]><img src="i/bg-history.jpg" class="bg" alt="" /><![endif]-->
+	<div class="block-top">
+		<div class="block clearfix">
+			<ul>
+				<li>
+					<a href="#">о марке</a>
+				</li>
+				<li>
+					<a href="#">магазин</a>
+				</li>
+				<li>
+					<a href="#">Мероприятия</a>
+				</li>
+				<li>
+					<a href="#">личный кабинет</a>
+				</li>
+			</ul>
+			<div class="promo">
+				<span><a href="#">ввести промо код</a></span>
+				<div class="popup" style="display: none">
+					<form>
+						<div class="form-block">
+							<label for="code">Введите промо-код</label>
+							<input type="text" class="form-field js-placeholder" id="code">
+						</div>
+						<div class="form-buttons">
+							<div class="button-pass"><input type="submit" value="ok" /></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="login clearfix">
+				<div class="name"><a href="#"><i></i>Williams Grand</a></div>
+				<div class="quit"><a href="#">выйти</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Container -->
+	<div class="private-office">
+		<div class="header">
+			<div class="info">
+				<div class="title">История марки</div>
+			</div>
+			<div class="logo"><img src="i/logo-mildseven.png" /></div>
+		</div>
+	</div>
+	<div class="block-history">
+		<ul>
+				<li class="cigarete">
+					<!--<img src="i/bg-76x125.png" align="left" />-->
+					<p class="title">1977</p>
+					<p>Бренд Mild Seven запущен в продажу как облегченная версия сигарет Seven Stars — наиболее популярных в Японии.</p>
+				</li>
+				<li class="cigarete">
+					<p class="title">1978</p>
+					<p>Сигареты Mild Seven стали самыми продаваемыми в Японии, уверенно потеснив Seven Stars. Бренд стремительно завоевал четвертый по величине табачный рынок в мире и удерживает место лидера до сих пор.</p>
+				</li>
+				<li class="cigarete">
+					<p>В 1980-х годах Mild Seven начинает экспансию на международном рынке. Сегодня Mild Seven имеет прочные позиции в Азии, в России, в магазинах беспошлинной торговли по всему миру. Активное продвижение позволило Mild Seven стать брендом № 1 в мире среди сигарет с угольным фильтром.</p>
+				</li>
+				<li class="cigarete">
+					<p class="title">1985</p>
+					<p>Запуск Mild Seven Lights — первой линейки бренда, не связанной с Seven Stars.</p>
+				</li>
+				<li class="cigarete">
+					<p class="title">1993</p>
+					<p>Глобальный редизайн пачки с целью дистанцирования бренда от Seven Stars.</p>
+				</li>
+				<li class="cigarete">
+					<p class="title">2005</p>
+					<p>В ответ на изменение вкусов потребителей представлен новый дизайн пачки, способствующий увеличению узнаваемости бренда.</p>
+				</li>
+				<li class="cigarete">
+					<p class="title">2008</p>
+					<p>В условиях усилившейся конкуренции и широких законодательных ограничений пачка становится важной частью коммуникации бренда. Редизайн решает задачу создания образа премиального продукта с превосходным качеством.</p>
+				</li>
+			</ul>
+	</div>
+	<!-- END Container -->
+	<!-- Footer -->
+	<div class="footer">
+		<div class="block-banners">
+		<div class="block">
+			<div class="banner clearfix">
+				<div class="item one">
+					<img src="i/banner-one.png" />
+					<span class="text"><span>Конкурс</span><br />Honda CBR1000 FireBlade</span>
+					<a class="arrow" href="#"></a>
+				</div>
+				<div class="item two">
+					<img src="i/banner-two.png" />
+					<span class="text"><span>битва открытий</span><br />выяви победителя</span>
+					<a class="arrow" href="#"></a>
+				</div>
+				<div class="item three">
+					<img src="i/banner-three.png" />
+					<span class="text"><span>Промо-блок</span><br />новый mildseven revo</span>
+					<a class="arrow" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="footer-inner">
+			<address class="copy">&copy; 2012 Mild Seven</address>
+			<ul class="footer-nav">
+				<li><a href="#">Обратная связь</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+		<img src="i/at.png" class="attention" alt="Минздравсоцразвития России предупреждает: курение вредит вашему здоровью" />
+	</div>
+	<!-- END Footer -->
+	<div id="bg">
+		<img src="i/bg-history.jpg" alt="" />
+	</div>
+</body>
+</html>

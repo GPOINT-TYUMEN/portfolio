@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Plumb_700.font.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/stepcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<title>X-Robot</title>
+</head>
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'mygallery', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+galleryid: 'similar', //id of carousel DIV
+beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+panelclass: 'panel', //class of panel DIVs each holding content
+panelbehavior: {speed:300, wraparound:false, persist:true},
+defaultbuttons: {enable: true, moveby: 1, leftnav: ['arrowl.gif', -10, 100], rightnav: ['arrowr.gif', -10, 100]},
+statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
+contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
+})
+
+</script>
+
+<script>
+jQuery(document).ready(function() {
+   jQuery('#mycarousel').jcarousel({
+      // Configuration goes here
+   });
+});
+</script>
+<body>
+<div class="bg-header">
+    <div class="header">
+        <div class="logo">
+            <div class="img"><a href="#"><img src="img/logo.gif" /></a></div>
+            <div class="text">
+                <p class="cufon"><span>X-robot</span>.ru</p>
+                <p><small>высокие технологии комфорта</small></p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg-plash">
+	<div class="plash">
+    	<div class="left">
+        	<div class="similar">
+            	<div class="h">
+                    <h4>Похожие товары</h4>
+                    <span id="mygallery-paginate">
+                            <img src="img/opencircle.png" data-over="img/closedcircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                    </span>
+                </div>
+                <div id="similar" class="stepcarousel">
+                	<div class="belt">
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="recommended">
+            	<div class="h">
+                    <h4>Рекомендуем</h4>
+                    <span id="mygallery-paginate">
+                            <img src="img/opencircle.png" data-over="img/closedcircle.png" data-select="img/closedcircle.png" data-moveby="1" />
+                    </span>
+                </div>
+                <div id="mygallery" class="stepcarousel">
+                	<div class="belt">
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block panel">
+                            <div class="img"><img src="img/87x80.jpg" /></div>
+                            <div class="text">
+                                <p><a href="#">Roomba 505</a></p>
+                                <p>лучшее решение для тех, кому нужна чистота без усилий и потери времени.</p>
+                                <div class="price">
+                                    <span>1 456 руб.<i></i></span>
+                                    <a class="dotted" href="#">в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body">
+    <div class="center width">
+    	<div class="review">
+        	<h3>Заказ товара</h3>
+        	<div class="crumbs"><a href="#">Главная</a> / Корзина</div>
+            <div class="order">
+            	<div class="block-title">
+                	<div class="title">Название</div>
+                    <div class="article">Артикул</div>
+                    <div class="price">Стоимость</div>
+                    <div class="number">Количество</div>
+                </div>
+                <div class="block-order">
+                	<div class="img"><img src="img/102x102.jpg" /></div>
+                    <div class="title"><a href="#">Уборщик-пылесос Roomba 581</a></div>
+                    <div class="article">С00014244</div>
+                    <div class="price">24 500 <span>руб.</span></div>
+                    <div class="number"><input type="text" value="1" /><a href="#">Удалить</a></div>
+                </div>
+                <div class="block-total">
+                	<div class="total">Общая сумма:</div>
+                    <div class="price">24 500 <span>руб.</span></div>
+                </div>
+                <ul class="delivery">
+                	<span>Укажите способ доставки:</span>
+                	<li><label><input type="radio" />Курьерская доставка по городу Тюмени</label></li>
+                    <li><label><input type="radio" />Самовывоз из магазина (оплата в магазине)</label></li>
+                </ul>
+                <form>
+                <div class="form-order">
+                	<ul class="left">
+                    	<li>
+                        	<p>Электронная почта</p>
+                            <input class="error" type="text" />
+                        </li>
+                        <li>
+                        	<p>Имя</p>
+                            <input class="error" type="text" />
+                        </li>
+                        <li>
+                        	<p>Фамилия</p>
+                            <input class="error" type="text" />
+                        </li>
+                        <li>
+                        	<p>Телетефон</p>
+                            <input class="error" type="text" />
+                        </li>
+                    </ul>
+                    <ul class="right">
+                    	<li>
+                        	<p>Город</p>
+                            <input class="error" type="text" />
+                        </li>
+                        <li>
+                        	<p>Адрес</p>
+                            <textarea class="error" style="font-style:italic; font-size: 10px; color: #666;">Например: 625002, ул. Республики, д. 52, кв. 10</textarea>
+                        </li>
+                        <li>
+                        	<p>Примечания и пожелания к заказу</p>
+                            <textarea></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="submit-order"><input type="button" value="Отправить заказ" /></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="phone">
+        	<div class="img"><img src="img/phone.gif" /></div>
+            <div class="cod">8-800</div>
+            <div class="telephone">2000-600</div>
+            <div class="text"><strong>Бесплатный</strong> Звонок <nobr>по России</nobr></div>
+        </div>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+        <ul class="menu">
+        	<h3>Пылесосы</h3>
+        	<li><a href="#">Sony</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">JVC</a></li>
+            <li><a href="#">Daewoo</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg-footer"></div>
+
+<div class="footer">
+	<div class="counter">
+    	<div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+        <div><img src="img/counter.gif" /></div>
+    </div>
+    <div class="copy">
+    	<p>© 2010 X-robot.ru <br />Все права защищены. Любая перепечатка информации только по согласованию с администрацией сайта.</p>
+        <p>Разработка — студия «<a href="http://www.crtweb.ru/" target="_blank">Креатив</a>»</p>
+    </div>
+    <div class="phone">
+        <div class="img"><img src="img/phone.gif" /></div>
+        <div class="cod">8-800</div>
+        <div class="telephone">2000-600</div>
+    </div>
+</div>
+
+</body>
+</html>

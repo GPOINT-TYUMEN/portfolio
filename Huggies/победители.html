@@ -1,0 +1,292 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 8]><link href="css/ie.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lte IE 8]>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+if ((jQuery.browser.msie == true)&(jQuery.browser.version <=8))
+{
+	function rotate(el, deg) {
+		var deg2radians = Math.PI * 2 / 360,
+			rad = deg * deg2radians,
+			costheta = Math.cos(rad),
+			sintheta = Math.sin(rad);
+
+			el.css({
+					filter: 'progid:DXImageTransform.Microsoft.Matrix(M11='+costheta+', M12='+(-1)*sintheta+', M21='+sintheta+', M22='+costheta+', SizingMethod="auto expand", enabled=true)'
+				});
+	}
+
+	rotate(jQuery('li.about span'),-24);
+	rotate(jQuery('li.results span'),-6);
+	rotate(jQuery('li.rules span'),7);
+	rotate(jQuery('li.index span'),22);
+};
+});
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="popup-feedback">
+	<!--<div class="block">
+		<form>
+			<ul>
+				<li><label><input type="text" placeholder="Ваше имя и фамилия" /></label></li>
+				<li><label><input type="email" placeholder="Ваш e-mail" /></label></li>
+				<li><label><textarea placeholder="Ваше сообщение"></textarea></label></li>
+			</ul>
+			<input type="submit" value="отправить" />
+		</form>
+	</div>-->
+	<a href="javascript:void(0);" class="open"><span>Напишите нам</span></a>
+	<!--<a href="javascript:void(0);" onclick="$('.popup-feedback').animate({ left: '-371px' });$('.popup-feedback .hide').hide();$('.popup-feedback .show').show();$('.popup-feedback .block').css('z-index','0');" class="open hide" style="display: none;"><span>Напишите нам</span></a>-->
+</div>
+<header>
+	<div class="header">
+		<div class="block-kinder" onmouseover="animation_begin()" onmouseout="animation_end()">
+			<div id="children_small" class="mini"></div>
+			<div id="children_normal" class="kinder" style="display: none;left:40px;top:40px;width:92px;"></div>
+			<div id="children_hands" class="hands"><img src="images/hands.png" /></div>
+		</div>
+		<div class="menu">
+			<nav>
+				<ul class="clearfix">
+					<li class="index"><span><a href="#" title="Главная">&nbsp;</a></span></li>
+					<li class="rules"><span><a href="#" title="Правила">&nbsp;</a></span></li>
+					<li class="results"><span><a href="#" title="Результаты">&nbsp;</a></span></li>
+					<li class="about"><span><a href="#" title="О продукте">&nbsp;</a></span></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="main-top">
+		<div class="main-bottom">
+			<div class="content">
+				<div class="block-result winner-block">
+					<div class="title">
+						<div class="clearfix">
+							<div class="left">
+								<h2>Победители<i></i></h2>
+							</div>
+							<div class="all"><a href="#"></a></div>
+						</div>
+					</div>
+					<div class="filter-day">
+						<div class="clearfix">
+							<span class="day"><a class="active" href="javascript:void(0);"></a></span>
+							<span class="week"><a href="javascript:void(0);"></a></span>
+						</div>
+						<div class="winner">
+							Победители за <a href="javascript:void(0);" class="dotted">25.06.2012<i></i></a>
+							<div class="popup-date">
+								<div class="date">25.06.2012</div>
+								<div class="calendar">
+									<div class="title"><span>Июнь 2012</span></div>
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td class="last">28</td>
+												<td class="last">29</td>
+												<td class="last">30</td>
+												<td class="last">31</td>
+												<td><a href="#">1</a></td>
+												<td><a href="#">2</a></td>
+												<td><a href="#">3</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">4</a></td>
+												<td><a href="#">5</a></td>
+												<td><a href="#">6</a></td>
+												<td class="active"><a href="#">7</a></td>
+												<td><a href="#">8</a></td>
+												<td><a href="#">9</a></td>
+												<td><a href="#">10</a></td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>12</td>
+												<td>13</td>
+												<td>14</td>
+												<td>15</td>
+												<td>16</td>
+												<td>17</td>
+											</tr>
+											<tr>
+												<td>18</td>
+												<td>19</td>
+												<td>20</td>
+												<td>21</td>
+												<td>22</td>
+												<td>23</td>
+												<td>24</td>
+											</tr>
+											<tr>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+												<td>30</td>
+												<td class="next">1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table">
+						<div class="item award">
+							<div class="number">1</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">2</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">3</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">4</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">5</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">6</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">7</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">8</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">9</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+						<div class="item award">
+							<div class="number">10</div>
+							<div class="name">Serinenan</div>
+							<div class="time">
+								<span>02</span>
+								<span>:</span>
+								<span>01</span>
+								<span>,</span>
+								<span>23</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="social">
+		<span><a href="#"><img src="images/vk.png" /></a></span>
+		<span><a href="#"><img src="images/tw.png" /></a></span>
+		<span><a href="#"><img src="images/fc.png" /></a></span>
+		<span><a href="#"><img src="images/od.png" /></a></span>
+	</div>
+	<div class="footer">
+		<p>© 2012 Huggies. Все права защищены.</p>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

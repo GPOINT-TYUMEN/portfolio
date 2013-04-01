@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header { height: 100%; }
+.header .info .block { height: 100%; }
+
+.menu ul { height: 100%; }
+
+.main-news { height: 100%; }
+
+.block-contacts .contacts li { height: 100%; }
+
+.footer { height: 100%; }

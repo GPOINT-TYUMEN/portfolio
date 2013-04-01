@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.block-steps .item .order a {
+	background: url(../images/img-button-ie.png) no-repeat;
+	text-indent: -9999px;
+}
+.block-steps .item .order a span i {
+	display: none;
+}
+
+
+
+
+
+

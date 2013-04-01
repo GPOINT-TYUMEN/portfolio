@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />	
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+	<script type="text/javascript" src="js/jquery.ez-bg-resize.js"></script>
+</head>
+
+<body class="index">
+	<!--[if lte IE 7]><img src="i/bg-index.jpg" class="bg" alt="" /><![endif]-->
+	<div class="popup-smoke">
+		<div class="block">
+			<a href="#" class="yes"></a>
+			<a href="#" class="no"></a>
+		</div>
+	</div>
+	<div class="popup-video" style="display: none;">
+		<div id="flashContent">
+			<a href="javascript:void(0);" onclick="$('.popup-video').hide();" class="close"></a>
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="560" height="374" id="player" align="middle">
+				<param name="movie" value="player.swf" />
+				<param name="quality" value="high" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="allowFullScreen" value="true" />
+				<param name="FlashVars" value="videoUrl=http%3A//static.rexonasmm.grape.ru/flv/full3/start_boy_ap_bikers_striptis.flv" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="player.swf" width="560" height="374">
+					<param name="movie" value="player.swf" />
+					<param name="quality" value="high" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="true" />
+					<param name="FlashVars" value="videoUrl=http%3A//static.rexonasmm.grape.ru/flv/full3/start_boy_ap_bikers_striptis.flv" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+	</div>
+	<div class="block-top">
+		<div class="block clearfix">
+			<ul>
+				<li class="hide">
+					<a href="#">о марке</a>
+					<ul class="submenu" style="display: none">
+						<li><a href="#">продуктовая линейка</a></li>
+						<li><a href="#">история марки</a></li>
+						<li><a href="#">Видео</a></li>
+						<li><a href="#">mildseven revo</a></li>
+					</ul>
+				</li>
+				<li class="hide">
+					<a href="#">магазин</a>
+					<ul class="submenu" style="display: none">
+						<li><a href="#">продуктовая</a></li>
+						<li><a href="#">история магазин</a></li>
+						<li><a href="#">Видео</a></li>
+						<li><a href="#">mildseven магазин</a></li>
+					</ul>
+				</li>
+				<li class="hide">
+					<a href="#">Мероприятия</a>
+					<ul class="submenu" style="display: none">
+						<li><a href="#">линейка</a></li>
+						<li><a href="#">Мероприятия марки</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Мероприятия revo</a></li>
+					</ul>
+				</li>
+				<li class="hide">
+					<a href="#">личный кабинет</a>
+					<ul class="submenu" style="display: none">
+						<li><a href="#">продуктовая линейка</a></li>
+						<li><a href="#">история марки</a></li>
+						<li><a href="#">Видео</a></li>
+						<li><a href="#">mildseven revo</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="promo">
+				<span><a href="javascript:void(0);" onclick="$('.promo').addClass('promo-active');">ввести промо код</a></span>
+				<div class="popup" style="display: none">
+					<form>
+						<div class="form-block">
+							<label for="code">Введите промо-код</label>
+							<input type="text" class="form-field js-placeholder" id="code">
+						</div>
+						<div class="form-buttons">
+							<div class="button-pass"><input type="submit" value="ok" /></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="login clearfix">
+				<div class="name"><a href="#"><i></i>Williams Grand</a></div>
+				<div class="quit"><a href="#">выйти</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Container -->
+	<div class="logo-index"><img src="i/logo-index.png" /></div>
+	<div class="block-menu">
+		<ul>
+			<li class="one">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a id="click_a" href="javascript:void(0);">инновационные гаджеты</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="two">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">интерьеры будущего</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="three">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">визуализация будущего</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="four">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">футуристическая архитектура</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="five">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">профессии будудущего</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="six">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">изобретения и открытия</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="seven">
+				<a class="menu" href="javascript:void(0);" id="click_a"></a>
+				<ul class="submenu">
+					<li><i></i><a href="javascript:void(0);" id="click_a">транспорт будущего</a></li>
+				</ul>
+				<div class="sub-menu">
+					<div class="block">
+						<ul style="display: block">
+							<li><a href="#">галерея</a></li>
+							<li><a href="#">конкурс</a></li>
+							<li><a href="#">эксперт</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="block-votes">
+		<div class="title"><img src="i/titles/who.png" /></div>
+		<div class="block">
+			<div class="item">
+				<div class="img"><div><img src="uploads/img1.png" /></div></div>
+				<div class="number">64</div>
+				<div id="like_1" class="like" style="display: none;"><!-- тут код кнопок лайков --></div>
+				<div class="votes"><a id="l_1" href="#"></a></div>
+			</div>
+			<div class="vs">VS.</div>
+			<div class="item right">
+				<div class="img"><div><img src="uploads/img2.png" /></div></div>
+				<div class="number">64</div>
+				<div class="like" id="like_2" style="display: none;"><!-- тут код кнопок лайков --></div>
+				<div class="votes"><a id="l_2" href="#"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="info-block">
+		<script>
+			$(document).ready(function(){
+				$("#popup-i").carouFredSel({
+					width: 235,
+					height: 120,
+					items: {
+						visible: "variable",
+						minimum: 1,
+						width: 235,
+						height: 120,
+						start: "random"
+					},
+					scroll: {
+						fx: "crossfade",
+						items: 1,
+						duration: 500
+					},
+					prev: ".a-prev",
+					next: ".a-next"
+				});
+			});
+		</script>
+		<a href="javascript:void(0);" class="info"></a>
+		<div class="popup-i hide">
+			<ul id="popup-i">
+				<li>
+					<p>1Разве может понять человек, который ездит всегда в таратайке, переживания и впечатления едущего экспрессом или летящего в воздухе. </p>
+					<p class="author">Казимир Малевич</p>
+				</li>
+				<li>
+					<p>2Разве может понять человек, который ездит всегда в таратайке, переживания и впечатления едущего экспрессом или летящего в воздухе. </p>
+					<p class="author">Казимир Малевич</p>
+				</li>
+				<li>
+					<p>3Разве может понять человек, который ездит всегда в таратайке, переживания и впечатления едущего экспрессом или летящего в воздухе. </p>
+					<p class="author">Казимир Малевич</p>
+				</li>
+			</ul>
+			<div class="arrows">
+				<a class="a-prev" href="javascript:void(0);"></a>
+				<a class="a-next" href="javascript:void(0);"></a>
+			</div>
+		</div>
+	</div>
+	<!-- END Container -->
+
+	<!-- Footer -->
+	<div class="footer-index">
+		<div class="block-banners">
+			<div class="block">
+				<div class="banner clearfix">
+					<div class="item one">
+						<img src="i/banner-one.png" />
+						<span class="text"><span>дорожный знак будущего</span><br />прими участие в конкурсе</span>
+						<a class="arrow" href="#"></a>
+					</div>
+					<div class="item two">
+						<img src="i/banner-two.png" />
+						<span class="text"><span>байк Xenon<br />в твоем городе</span><br />фотогалерея</span>
+						<a class="arrow" href="#"></a>
+					</div>
+					<div class="item three">
+						<img src="i/banner-three.png" />
+						<span class="text"><span>Mild Seven<br />REVO</span><br />продукт будущего</span>
+						<a class="arrow" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="i/at.png" class="attention" alt="Минздравсоцразвития России предупреждает: курение вредит вашему здоровью" />
+	</div>
+	<!-- END Footer -->
+	<div id="bg">
+		<img src="i/main_bg.jpg" alt="" />
+	</div>
+</body>
+</html>

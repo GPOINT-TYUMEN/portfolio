@@ -1,0 +1,214 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+		<div class="right"><img src="images/spasskaya.gif" /></div>
+		<div class="info">
+			<div class="social"><a href="#"><img src="images/facebook.gif" /></a> <a href="#"><img src="images/twitter.gif" /></a></div>
+			<div class="block">
+				<div class="language">Язык сайта: <select><option>Русский</option></select></div>
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту" />
+						<span><input type="submit" value="Найти" /></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="content clearfix">
+	<nav>
+	<div class="menu">
+		<ul>
+			<li class="first"><a href="#">Главная</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Об отеле</a></li>
+			<li><a href="#">Номера</a></li>
+			<li class="active"><a href="#">Бронирование</a></li>
+			<li><a href="#">Конференц-центр</a></li>
+			<li><a href="#">Рестораны и бары</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+	</nav>
+	<div class="head">
+		<img src="images/956x204.jpg" />
+	</div>
+	<div class="block-order">
+		<h1>Бронирование</h1>
+			<form method="post" id="new_reserv" class="formtastic reserv" action="/reservation_save" accept-charset="UTF-8">
+				<ul>
+				<li id="reserv_user_name_input" class="string required">
+					<label for="reserv_user_name">ФИО<abbr title="required">*</abbr></label>
+					<input type="text" name="reserv[user_name]" maxlength="255" id="reserv_user_name">
+				</li>
+				<li id="reserv_come_date_input" class="string required">
+					<label for="reserv_come_date">Дата заезда<abbr title="required">*</abbr></label>
+					<input type="text" value="" name="reserv[come_date]" maxlength="255" id="reserv_come_date" class="hasDatepicker">
+				</li>
+				<li id="reserv_escape_date_input" class="string required">
+					<label for="reserv_escape_date">Дата отъезда<abbr title="required">*</abbr></label>
+					<input type="text" value="" name="reserv[escape_date]" maxlength="255" id="reserv_escape_date" class="hasDatepicker">
+				</li>
+				<li id="reserv_email_input" class="email required">
+					<label for="reserv_email">E-mail<abbr title="required">*</abbr></label>
+					<input type="email" name="reserv[email]" maxlength="255" id="reserv_email">
+				</li>
+				<li id="reserv_phone_input" class="phone required">
+					<label for="reserv_phone">Телефон<abbr title="required">*</abbr></label>
+					<input type="tel" name="reserv[phone]" maxlength="255" id="reserv_phone">
+				</li>
+				<li id="reserv_number_input" class="select optional">
+					<label for="reserv_number">Количество человек</label>
+					<select name="reserv[number]" id="reserv_number">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					</select>
+				</li>
+				<li id="reserv_children_number_input" class="select optional">
+					<label for="reserv_children_number">Количество детей</label>
+					<select name="reserv[children_number]" id="reserv_children_number">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					</select>
+				</li>
+				<li id="reserv_number_of_room_input" class="select optional">
+					<label for="reserv_number_of_room">Количество номеров</label>
+					<select name="reserv[number_of_room]" id="reserv_number_of_room">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					</select>
+				</li>
+				<li id="reserv_room_type_input" class="select optional">
+					<label for="reserv_room_type">Категория номера</label>
+					<select name="reserv[room_type]" id="reserv_room_type">
+					<option selected="selected" value="1">Одноместный</option>
+					<option value="2">Двухместный</option>
+					</select>
+				</li>
+				<p>* - поля обязательные для заполнения</p>
+				</ul>
+				<div class="block-rooms">
+					<p>Вам доступны для заказа следующие номера:</p>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<div class="img"><img src="images/187x113.jpg" /></div>
+						<div class="info">
+							<label><input type="radio" /> <a href="#">Стандарт, одноместный</a></label>
+							<p>Количество доступных номеров: <strong>2</strong></p>
+							<p>Цена в день: <strong>3 800 руб.</strong></p>
+							<p>Цена за выбранный период: <strong>11 400 руб.</strong></p>
+						</div>
+					</div>
+					<span class="button"><input type="submit" value="Забронировать" name="commit"></span>
+				</div>
+			</form>
+	</div>
+</div>
+<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 Отель Best Western Тюмень.</p>
+			<p>Перепечатка информации только с согласия администратора сайта.</p>
+		</div>
+		<div class="adress">
+			<p>+7 (3452) 550-007, 550-008</p>
+			<p>г. Тюмень, улица Ленина, 2А</p>
+		</div>
+		<div class="dev"><p>Разработка сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p></div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

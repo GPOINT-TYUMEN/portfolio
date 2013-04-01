@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0;}
+body { font: 14px/20px Arial, Helvetica, sans-serif; min-width: 1000px;}
+img { border: none;}
+a { color: #6c4ec3;}
+a:hover { text-decoration: none;}
+ul { list-style: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+
+.bg-header { background: url(../img/bg-top-header.gif) repeat-x; padding-top: 5px;}
+.header { margin: 0 auto; width: 926px; height: 124px; background: url(../img/bg-header.gif) no-repeat 698px 6px; }
+.header .logo { float: left; overflow: hidden; height: 100%!ie; margin: 31px 0 0 0;}
+.header .logo .img { width: 66px; height: 65px; float: left; margin-right: 9px;}
+.header .logo .text { float: left; font-size: 32px; margin-top: 13px; font-weight: bold; text-transform: uppercase; line-height: 7px; color: #7d7d85;}
+.header .logo .text .cufon {  overflow: hidden;}
+.header .logo .text span { color: #b01d16;}
+.header .logo .text small { text-transform: none; font-size: 13px; color: #636363; font-weight: normal;}
+.header ul { float: left; overflow: hidden; height: 100%!ie; margin: 53px 0 0 28px;}
+.header ul li { float: left; text-transform: uppercase; margin-right: 10px; overflow: hidden;}
+.header ul li a { color: #4c4c51; font-size: 14px; font-weight: bold;}
+
+.bg-plash { background: url(../img/bg-plash.gif) repeat-x; }
+.plash { margin: 0 auto; width: 926px; height: 186px; background: url(../img/bg-top-plash.gif) no-repeat center top;}
+.plash .left { width: 520px; padding-top: 27px; float: left; }
+.plash .left h2 { font-size: 24px; margin: 9px 0 8px 0; overflow: hidden;}
+.plash .left p { font-size: 13px; line-height: 19px;}
+.plash .left p a { color: #fff;}
+.plash .left .similar { overflow: hidden; width: 372px; background: url(../img/1x1.png) repeat; padding: 11px 12px 12px 12px;}
+.plash .left .similar .h { overflow: hidden; height: 100%!ie;}
+.plash .left .similar h4 { color: #fff; font-size: 14px; display: block; float: left;}
+.plash .left .similar .h span { display: block; float: right; height: 9px;}
+.plash .left .similar .h span img { display: block; float: left; margin-left: 6px;}
+.plash .left .similar .stepcarousel { height: 89px; position: relative; width: 100%;}
+.plash .left .similar .belt { position: absolute; top: 0;}
+.plash .left .similar .panel { width: 372px;}
+.plash .left .similar .block { height: 80px; margin-top: 8px; }
+.plash .left .similar .block .img { float: left; width: 87px; margin-right: 13px;}
+.plash .left .similar .block .text { float: left; width: 272px;}
+.plash .left .similar .block .text p { color: #fff; font-size: 11px; line-height: 15px;}
+.plash .left .similar .block .text p a { color: #fff; font-weight: bold; font-size: 12px; line-height: 17px;}
+.plash .left .similar .block .text span { display: block; position: relative; float: left; margin: 8px 0 1px 0; font-size: 13px; color: #fff; background: #c13119; padding: 4px 3px 3px 5px; margin-right: 14px; }
+.plash .left .similar .block .text span i { display: block; position: absolute; background: url(../img/9x20.png) no-repeat; width: 9px; height: 20px; top: 0; right: -9px;}
+.plash .left .similar .block .text .dotted { display: block; float: left; color: #58da35; font-size: 11px; line-height: 15px; margin-top: 9px;}
+
+.plash .right { padding-top: 27px; width: 396px; background: url(../img/hands.png) no-repeat 164px 0; float: right;}
+.plash .right .recommended { overflow: hidden; background: url(../img/1x1.png) repeat; padding: 11px 12px 12px 12px;}
+.plash .right .recommended .h { overflow: hidden; height: 100%!ie;}
+.plash .right .recommended h4 { color: #fff; font-size: 14px; display: block; float: left;}
+.plash .right .recommended .h span { display: block; float: right; height: 9px;}
+.plash .right .recommended .h span img { display: block; float: left; margin-left: 6px;}
+/*.plash .right .recommended .stepcarousel { height: 89px; position: relative; width: 100%;}
+.plash .right .recommended .belt { position: absolute; top: 0;}
+.plash .right .recommended .panel { width: 372px;}*/
+.plash .right .recommended .block { height: 80px; margin-top: 8px; }
+.plash .right .recommended .block .img { float: left; width: 87px; margin-right: 13px;}
+.plash .right .recommended .block .text { float: left; width: 272px;}
+.plash .right .recommended .block .text p { color: #fff; font-size: 11px; line-height: 15px;}
+.plash .right .recommended .block .text p a { color: #fff; font-weight: bold; font-size: 12px; line-height: 17px;}
+.plash .right .recommended .block .text span { display: block; position: relative; float: left; margin: 8px 0 1px 0; font-size: 13px; color: #fff; background: #c13119; padding: 4px 3px 3px 5px; margin-right: 14px; }
+.plash .right .recommended .block .text span i { display: block; position: absolute; background: url(../img/9x20.png) no-repeat; width: 9px; height: 20px; top: 0; right: -9px;}
+.plash .right .recommended .block .text .dotted { display: block; float: left; color: #58da35; font-size: 11px; line-height: 15px; margin-top: 9px;}
+
+.body { margin: 28px auto 55px; width: 926px; overflow: hidden; height: 100%!ie;}
+.body div.left { float: left; width: 200px; margin-right: 30px;}
+.body .menu { margin-bottom: 29px;}
+.body .menu h3 { text-transform: uppercase; font-size: 18px; overflow: hidden; margin-bottom: 2px;}
+.body .menu li { border-bottom: 1px solid #dfe5e1; font-size: 12px; padding: 2px 0 5px 0;}
+.body div.right { float: right; width: 200px; margin-left: 30px;}
+.body div.right .basket { background: url(../img/basket.gif) no-repeat right top; height: 130px; margin-bottom: 28px;}
+.body div.right .basket h3 { text-transform: uppercase; font-size: 18px; overflow: hidden;}
+.body div.right .basket div { width: 110px; margin-top: 7px;}
+.body div.right .basket div a { font-size: 12px;}
+.body div.right .basket div .sum { font-size: 12px; line-height: 19px; margin-bottom: 5px;}
+.body div.right .basket div .sum a { color: #000; }
+.body div.right .phone, .body div.left .phone { overflow: hidden; height: 100%!ie; margin-bottom: 40px;}
+.body div.right .phone .img, .body div.left .phone .img { float: left; margin-right: 10px;}
+.body div.right .phone .cod, .body div.left .phone .cod { font-size: 22px; overflow: hidden;}
+.body div.right .phone .telephone, .body div.left .phone .telephone { font-size: 30px; overflow: hidden; margin-bottom: 3px;}
+.body div.right .phone .text, .body div.left .phone .text { font-size: 10px; color: #585858; line-height: 13px;}
+
+.body .best-selling { margin-bottom: 42px;}
+.body .best-selling h3 { text-transform: uppercase; font-size: 18px; overflow: hidden; margin-bottom: 8px;}
+.body .best-selling .block { border: 3px solid #d5e3e2; border-bottom: 2px solid #d5e3e2;}
+.body .best-selling .block .item { overflow: hidden; padding: 9px 0 9px 9px; border-bottom: 1px solid #d5e3e2; height: 100%!ie;}
+.body .best-selling .block .item .img { float: left; margin-right: 9px;}
+.body .best-selling .block .item .text { font-size: 12px; float: left; margin: 7px 0 0 0;}
+.body .best-selling .block .item .text span { display: block; float: left; margin: 8px 0 1px 0; font-size: 13px; color: #fff; overflow: hidden; padding: 4px 10px 3px 5px; background: #c13119 url(../img/9x20.gif) no-repeat top right;}
+.body .best-selling .block .item .text p { clear: both;}
+.body .best-selling .block .item .text .dotted { color: #c13119; font-size: 11px;}
+
+.body div.right .news h3 { text-transform: uppercase; font-size: 18px; overflow: hidden;}
+.body div.right .news .block { border-bottom: 1px solid #d5e3e2; font-size: 12px; line-height: 17px; padding: 10px 0;}
+.body div.right .news .block .date { font-style: italic; color: #7d7d7d;}
+
+.body .center { float: left; width: 466px;}
+.body .width { width: 695px;}
+.body .center .filter { margin-bottom: 46px;}
+.body .center .filter h3 { text-transform: uppercase; font-size: 18px; overflow: hidden; margin-bottom: 11px;}
+.body .center .filter .block { background: url(../img/bg-filter.jpg) repeat-x; height: 65px; padding: 13px 14px 0 14px; }
+.body .center .filter .block p { margin-bottom: 11px;}
+.body .center .filter .block select { border: 1px solid #666; font: 11px/15px Arial, Helvetica, sans-serif; width: 205px; padding: 2px 1px 2px 2px;}
+.body .center .filter .block .left { margin-right: 24px;}
+.body .center .filter .block .price { width: 93px;}
+.body .center .filter .block .l { margin-right: 15px;}
+.body .center .filter .search { background: url(../img/bg-filter-s.jpg) repeat-x; height: 35px; text-align: center; }
+.body .center .filter .search input { margin-top: 3px; font: 13px Arial, Helvetica, sans-serif; background: #f3950d; border-width: 1px; border-style: solid; border-color: #f8c477 #b9710a #8b5507 #d07f0b; padding: 4px 15px; cursor: pointer; }
+
+.body .width .review h3 { text-transform: uppercase; font-size: 18px; overflow: hidden; }
+.body .width .review .crumbs { font-size: 12px; color: #585858; margin-bottom: 14px;}
+.body .width .review .block-text { overflow: hidden; height: 100%!ie;}
+.body .width .review .block-text .img { float: left; width: 290px; margin-right: 15px;}
+.body .width .review .block-text .img .galerry { margin-top: 10px; height: 40px; padding: 5px 10px; width: 236px; background: #e6e9ea; margin-left: 8px;}
+.body .width .review .block-text .img .galerry li { float: left; display: block; height: 40px; margin-left: 6px;}
+.body .width .review .block-text .img .galerry .jcarousel-prev { float: left; background: url(../img/sprite.png) no-repeat 0 0; width: 17px; height: 17px; position: absolute; cursor: pointer; top: 11px; left: -18px;}
+.body .width .review .block-text .img .galerry .jcarousel-prev-disabled { cursor: default; background: none;}
+.body .width .review .block-text .img .galerry .jcarousel-next { float: right; background: url(../img/sprite.png) no-repeat -17px 0; width: 17px; height: 17px; position: absolute; cursor: pointer; top: 11px; right: -18px;}
+.body .width .review .block-text .img .galerry .jcarousel-next-disabled { cursor: default; background: none;}
+.body .width .review .block-text .text { float: left; width: 390px;}
+.body .width .review .block-text .text h3 { text-transform: none;}
+.body .width .review .block-text .text .price { overflow: hidden; height: 100%!ie; margin: 20px 0 25px 0;}
+.body .width .review .block-text .text .price span { display: block; float: left; margin-right: 6px; font-size: 20px; color: #fff; overflow: hidden; padding: 7px 15px 4px 5px; background: #c13119 url(../img/14x31.gif) no-repeat top right;}
+.body .width .review .block-text .text .price .dotted { display: block; float: left; color: #c13119; line-height: 19px; font-size: 14px; margin: 5px 0 0 0;}
+.body .width .review .block-text .text p { font-size: 14px;}
+.body .width .review .filter-view { overflow: hidden; height: 100%!ie; margin: 30px 0 10px 0;}
+.body .width .review .filter-view div { float: left; font-size: 18px; padding: 5px; margin-right: 5px;}
+.body .width .review .filter-view .active { background: #c13119; }
+.body .width .review .filter-view .active a { color: #fff; border-bottom: none;}
+.body .width .review .text-view p, .body .width .review .text-view ul { margin-bottom: 20px;}
+.body .width .review .text-view ul li { padding-left: 19px; background: url(../img/dash.gif) no-repeat 0 10px;}
+.body .width .review .text-request .form { background: url(../img/bg-form.jpg) repeat; padding: 14px;}
+.body .width .review .text-request .form ul { margin-bottom: 6px;}
+.body .width .review .text-request .form li { margin-bottom: 11px;}
+.body .width .review .text-request .form li input { border: 1px solid #666; font: 11px/15px Arial, Helvetica, sans-serif; padding: 2px 3px; width: 180px;}
+.body .width .review .text-request .form li textarea { border: 1px solid #666; width: 99%; height: 115px; font: 11px/15px Arial, Helvetica, sans-serif; padding: 2px 3px; }
+.body .width .review .text-request .form .button { font: 13px Arial, Helvetica, sans-serif; background: #f3950d; border-width: 1px; border-style: solid; border-color: #f8c477 #b9710a #8b5507 #d07f0b; padding: 4px 15px; cursor: pointer;}
+.body .width .review .text-property .block { border-bottom: 1px solid #dfe5e1; overflow: hidden; height: 100%!ie; padding: 10px 0 11px 0;}
+.body .width .review .text-property .block .img { float: left; width: 102px; margin-right: 15px;}
+.body .width .review .text-property .block .text { float: left; width: 575px; padding-top: 6px;}
+.body .width .review .text-property .block .text h4 { font-size: 18px; font-weight: normal; margin-bottom: 6px;}
+.body .width .review .text-property .block .text .price { overflow: hidden; height: 100%!ie;}
+.body .width .review .text-property .block .text .price span { display: block; float: left; margin: 8px 0 1px 0; font-size: 13px; color: #fff; overflow: hidden; margin-right: 7px; padding: 4px 10px 3px 5px; background: #c13119 url(../img/9x20.gif) no-repeat top right;}
+.body .width .review .text-property .block .text .price .dotted { display: block; float: left; font-size: 12px; color: #c13119; line-height: 17px; margin-top: 8px;}
+.body .width .text-view h3 { text-transform: uppercase; font-size: 18px; overflow: hidden; margin-bottom: 8px;}
+.body .width .text-view div h4 { font-size: 18px; font-weight: normal; margin-bottom: 20px;}
+.body .width .text-view div p, .body .width .text-view div ul { font-size: 14px; margin-bottom: 20px;}
+.body .width .text-view div ul li { padding-left: 19px; background: url(../img/dash.gif) no-repeat 0 10px;}
+.body .order .block-title { overflow: hidden; height: 100%!ie; font-size: 11px; line-height: 15px; color: #585858;}
+.body .order .block-title div { float: left; display: inline!ie;}
+.body .order .block-title .title { width: 210px; margin-left: 117px;}
+.body .order .block-title .article { width: 91px;}
+.body .order .block-title .price { width: 133px;}
+.body .order .block-order { border-width: 1px 0; border-style: solid; border-color: #dfe5e1; overflow: hidden; height: 100%!ie; padding: 15px 0; margin-top: 3px;}
+.body .order .block-order div { float: left; padding-top: 31px; display: inline!ie;}
+.body .order .block-order .img { width: 102px; margin-right: 15px; padding: 0;}
+.body .order .block-order .title { width: 210px; font-size: 12px;}
+.body .order .block-order .article { width: 91px; font-size: 11px;}
+.body .order .block-order .price { width: 133px; font-size: 24px;}
+.body .order .block-order .price span { font-size: 12px;}
+.body .order .block-order .number { font-size: 12px;}
+.body .order .block-order .number input { width: 65px; margin-right: 20px; border: 1px solid #666; text-align: center;}
+.body .order .block-total { overflow: hidden; height: 100%ie; margin-top: 14px;}
+.body .order .block-total div { float: left;}
+.body .order .block-total .total { width: 404px; margin-right: 14px; text-align: right;}
+.body .order .block-total .price { font-size: 24px;}
+.body .order .block-total .price span { font-size: 12px;}
+.body .order .delivery { font-size: 12px; margin-top: 25px; margin-bottom: 20px;}
+.body .order .delivery span { margin-bottom: 5px; display: block;}
+.body .order .delivery li input { margin-right: 4px; }
+.body .order .form-order { overflow: hidden; height: 100%!ie; background: url(../img/bg-55.jpg) repeat-x; padding: 5px 10px 4px 10px; margin-bottom: 30px;}
+.body .order .form-order ul li { margin-bottom: 6px;}
+.body .order .form-order ul.left { float: left; width: 300px; font-size: 12px;}
+.body .order .form-order ul.left input, .body .order .form-order ul.right input { margin-top: 3px; border: 1px solid #666; font: 12px/17px Arial, Helvetica, sans-serif; padding: 2px 3px; width: 290px;}
+.body .order .form-order ul.left input.error, .body .order .form-order ul.right input.error { border: 1px solid #F00;}
+.body .order .form-order ul.right { float: right; width: 300px; font-size: 12px;}
+.body .order .form-order ul.right textarea { border: 1px solid #666; font: 12px/17px Arial, Helvetica, sans-serif; padding: 2px 3px; width: 290px; height: 81px;}
+.body .order .submit-order input { font: 13px Arial, Helvetica, sans-serif; background: #f3950d; border-width: 1px; border-style: solid; border-color: #f8c477 #b9710a #8b5507 #d07f0b; padding: 4px 15px; cursor: pointer;}
+
+.body .center .novelty { margin-left: -40px;}
+.body .center .novelty .h { overflow: hidden; height: 10%!ie; margin-left: 40px;}
+.body .center .novelty .h h3 { float: left; display: block; text-transform: uppercase; font-size: 18px; overflow: hidden;}
+.body .center .novelty .h a { float: left; display: block; font-size: 11px; color: #f3950d; font-style: italic; margin-left: 10px;}
+.body .center .novelty .block { float: left; width: 212px; margin: 9px 0 20px 40px;}
+.body .center .novelty .bottom { border-bottom: 1px solid #d5e3e2; padding-bottom: 35px;}
+.body .center .novelty .block .img { position: relative; width: 200px; margin-bottom: 15px;}
+.body .center .novelty .block .img .new { position: absolute; background: url(../img/new.png) no-repeat; width: 70px; height: 49px; bottom: 10px; right: 0; font-size: 24px; color: #fff; padding: 24px 0 0 0; text-align: center;}
+.body .center .novelty .block .img .discount { position: absolute; background: url(../img/discount.png) no-repeat; width: 70px; height: 49px; bottom: 10px; right: 0; font-size: 24px; color: #fff; padding: 25px 0 0 0; text-align: center;}
+.body .center .novelty .block .text { font-size: 12px; color: #525252; line-height: 17px; margin-bottom: 13px;}
+.body .center .novelty .block .text a { font-size: 24px; line-height: 22px;}
+.body .center .novelty .block .text p { margin-bottom: 10px;}
+.body .center .novelty .block .price { overflow: hidden; height: 100%!ie; }
+.body .center .novelty .block .price span { display: block; float: left; font-size: 20px; color: #fff; overflow: hidden; background: #c13119 url(../img/14x31.gif) no-repeat top right; padding: 7px 15px 4px 7px;}
+.body .center .novelty .block .price a { display: block; float: left; color: #c13119; margin: 3px 0 0 7px;}
+
+.list-catalog .h { overflow: hidden; height: 100%!ie;}
+.list-catalog .h h3 { display: block; float: left; text-transform: uppercase; font-size: 18px; overflow: hidden;}
+.list-catalog .h .filter-h { float: right; font-size: 11px;}
+.list-catalog .h .filter-h em { margin-left: 4px;}
+.list-catalog .filter-cat { overflow: hidden; height: 100%!ie; margin: 10px 0 10px 0;}
+.list-catalog .filter-cat div { float: left; font-size: 12px; font-style: italic; padding: 0 5px; color: #fff;}
+.list-catalog .filter-cat .active { background: #c83418;}
+.list-catalog .filter-cat div a { color: #f3950d;}
+.list-catalog .item { overflow: hidden; height: 100%!ie; border-bottom: 1px solid #d5e3e2; padding: 10px 0 11px 0;}
+.list-catalog .item .img { float: left; width: 87px; margin-right: 10px; position: relative;}
+.list-catalog .item .img .new { font-size: 11px; color: #fff; text-align: center; background: url(../img/new-m.png) no-repeat; width: 34px; height: 28px; position: absolute; right: 0; bottom: 0; padding-top: 7px;}
+.list-catalog .item .img .discount { position: absolute; background: url(../img/discount-m.png) no-repeat; width: 34px; height: 28px; bottom: 0; right: 0; font-size: 11px; color: #fff; text-align: center; padding-top: 7px;}
+.list-catalog .item .text { float: left; width: 368px;}
+.list-catalog .item .text p a { font-size: 14px;}
+.list-catalog .item .text p { font-size: 11px; line-height: 15px; color: #525252;}
+.list-catalog .item .text .price { overflow: hidden; height: 100%!ie;}
+.list-catalog .item .text .price span { display: block; float: left; margin: 8px 0 1px 0; font-size: 13px; color: #fff; overflow: hidden; margin-right: 7px; padding: 4px 10px 3px 5px; background: #c13119 url(../img/9x20.gif) no-repeat top right;}
+.list-catalog .item .text .price .dotted { display: block; float: left; font-size: 12px; color: #c13119; line-height: 17px; margin-top: 8px;}
+
+.body .center .pag-nav { overflow: hidden; height: 100%!ie; margin-top: 20px;}
+.body .center .pag-nav a { display: block; float: left; font-weight: bold; color: #fff; text-shadow: 0 -1px 0 #60180c; background: #c13119; text-decoration: none; font-size: 15px; padding: 0 5px; margin-right: 5px;}
+.body .center .pag-nav a.active { background: none; color: #000; font-weight: normal; text-shadow: none;}
+
+.bg-footer { background: url(../img/bg-footer.gif) repeat-x; height: 31px;}
+.footer { margin: 35px auto 0; width: 926px; overflow: hidden; height: 100%!ie; padding-bottom: 20px;}
+.footer .counter { float: left; overflow: hidden; height: 100%!ie; max-width: 230px;}
+.footer .counter div { float: left; margin-right: 26px; margin-bottom: 17px; }
+.footer .copy { float: left; width: 475px; font-size: 11px; line-height: 15px; color: #525252;}
+.footer .copy p { margin-bottom: 15px;}
+.footer .copy a { color: #525252;}
+.footer .phone { float: left; overflow: hidden; height: 100%!ie; width: 200px;}
+.footer .phone .img { float: left; margin-right: 10px;}
+.footer .phone .cod { font-size: 22px; overflow: hidden; margin-top: 8px;}
+.footer .phone .telephone { font-size: 30px; overflow: hidden; margin-bottom: 3px;}

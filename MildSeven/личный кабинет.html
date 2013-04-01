@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />	
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+</head>
+
+<body>
+	<div class="popup-del-accaunt">
+		<div class="block">
+			<a href="javascript:void(0);" onclick="$('.popup-del-accaunt').hide();" class="close"></a>
+			<div class="container">
+				<div class="content">
+					<div class="title">Вы действительно хотите удалить свои личные данные?</div>
+					<div class="text">
+						<p>Удаление персональных данных необратимая операция, при удалении персональных данных будут потеряны
+все выигранные призы, активные коды, накопленные былла и другие данные. Вы не сможете восстановить
+или повторно зарегистрировать коды.</p>
+						<p>Ваши данные будут удалены автоматически, через 60 дней после подтверждения.</p>
+					</div>
+					<form>
+					<div class="code">
+						<div class="text">Подтвердите сове желание удалить данные, введя проверочный код:</div>
+						<div class="form-block" style="z-index: 1;">
+							<input type="text" style="width: 93px;" class="form-field js-placeholder" id="f-street">
+							<img src="uploads/80x30.png" />
+							<div class="error-mes">
+								<div class="error-mes-inner">
+									<b data-field="#id_last_name">Код</b> введён неверно.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button-del"><input type="submit" value="удалить личные данные" /></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-del-accaunt" style="display: none">
+		<div class="block">
+			<a href="javascript:void(0);" onclick="$('.popup-del-accaunt').hide();" class="close"></a>
+			<div class="container">
+				<div class="content">
+					<div class="text">
+						<h3>Williams Grand, Ваши личные данные ожидают удаления<br />и будут удалены через 50 дней — 13 июня 2012</h3>
+						<p>Удаление персональных данных необратимая операция, при удалении персональных данных будут потеряны
+все выигранные призы, активированные коды, накопленные балы и другие данные. Вы не сможете их
+восстановить или повторно зарегистрировать коды.</p>
+					</div>
+					<div class="button-del-cancel"><input type="submit" value="отменить удаление личных данных" /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-del-accaunt" style="display: none">
+		<div class="block">
+			<a href="javascript:void(0);" onclick="$('.popup-del-accaunt').hide();" class="close"></a>
+			<div class="container">
+				<div class="content">
+					<div class="text">
+						<h3>Ваши данные будут удалены через 50 дней — 13 июня 2012</h3>
+						<p>В случае, если вы пожелаете отменить удаление, нажмите на кнопку “Отменить удаление личных данных”,
+которая находится на странице <a href="#">редактирования личных данных</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-delete" style="display: none">
+		<div class="block">
+			<a class="yes" href="#"></a>
+			<a class="no" href="javascript:void(0);" onclick="$('.popup-delete').hide();"></a>
+		</div>
+	</div>
+	<div class="popup-edit" style="display: none;">
+		<div class="container">
+			<a href="javascript:void(0);" class="close" onclick="$('.popup-edit').hide();"></a>
+				<h3 class="title"><span class="title-inner"><img src="i/titles/edit.png" alt="Регистрация" /></span></h3>
+				<div class="content-container">
+					<div class="content">
+						<form action="" class="content-inner">
+
+							<!-- Reg Step1 -->
+							<ul class="reg-steps">
+								<li><a href="#"><img src="i/tabs/step1-current.png" alt="Персональная информация" /></a></li>
+								<li><a href="#"><img src="i/tabs/step2.png" alt="Адресная информация" /></a></li>
+								<li><a href="#"><img src="i/tabs/step3.png" alt="Анкета потребителя табачной продукции" /></a></li>
+							</ul>
+
+							<h1 class="reg-title">Персональная информация</h1>
+
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-fio">Фамилия <sup>*</sup></label>
+									<input type="text" id="f-fio" value="Пукпкин" class="form-field js-placeholder" />
+								</div>
+								<div class="form-block">
+									<label for="f-ml">Электронная почта <sup>*</sup></label>
+									<input type="text" id="f-ml" value="vasya@maio.ru" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-username">Имя <sup>*</sup></label>
+									<input type="text" id="f-username" value="Вася" class="form-field js-placeholder" />
+								</div>
+								<div class="form-block">
+									<label for="f-phone">Телефон <sup>*</sup></label>
+									<input type="text" id="f-phone" value="7095234543" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-ot">Отчество</label>
+									<input type="text" id="f-ot" value="Радионович" class="form-field js-placeholder" />
+								</div>
+								<div class="form-block">
+									<label for="f-homephone">Домашний телефон</label>
+									<input type="text" id="f-homephone" value="7095124256" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="birthday">Дата рождения <sup>*</sup></div>
+
+							<div class="form-container">
+								<div class="form-block form-sel-cont">
+
+									<div class="select" style="width: 66px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>31</li>
+											<li>1</li>
+										</ul>
+									</div>
+									<div class="select" style="width: 110px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>Сентябрь</li>
+											<li>Январь</li>
+										</ul>
+									</div>
+									<div class="select" style="width: 80px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>1999</li>
+											<li>2222</li>
+										</ul>
+									</div>
+
+								</div>
+								<div class="form-block">
+									<label for="f-pass1">Пароль <sup>*</sup></label>
+									<input type="password" id="f-pass1" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-checkbox">
+									<div class="for-male">Пол <sup>*</sup></div>
+									<img src="i/separator.png" class="for-male-separator" alt="" />
+									<ul>
+										<li><label><input type="radio" name="male" />Мужской</label></li>
+										<li><label><input type="radio" name="male" />Женский</label></li>
+									</ul>
+								</div>
+								<div class="form-block">
+									<label for="f-pass2">Повторить пароль <sup>*</sup></label>
+									<input type="password" id="f-pass2" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="form-buttons form-buttons-right">
+								<div class="button-save"><input type="submit" value="сохранить" /></div>
+								<div class="button-right"><input type="submit" value="дальше" /></div>
+							</div>
+							<!-- END Reg Step1 -->
+
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="pop-public" style="display: none">
+		<div class="container">
+				<h3 class="title"><span class="title-inner"><img src="i/titles/new-public.png" alt="Новая публикация" /></span></h3>
+				<div class="content-container">
+					<div class="content">
+						<form action="" class="content-inner">
+
+							<!-- Feedback -->
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-name">Название <sup>*</sup></label>
+									<input type="text" id="f-name" class="form-field js-placeholder" />
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-mes">Текст <sup>*</sup></label>
+									<textarea cols="30" rows="10" id="f-mes" class="form-field js-placeholder"></textarea>
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-block select-container">
+									<div class="select">
+										<div class="select-current js-select"><div class="select-current-inner">Рубрика <sup>*</sup></div></div>
+										<ul class="select-list">
+											<li>Рубрика раз</li>
+											<li>И Рубрика два</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-container">
+								<div class="form-block error">
+									<span class="uploader"><span class="uploader-inner"><span class="filename">Изображение</span><input type="file" size="1" /></span></span>
+								</div>
+							</div>
+
+							<div class="form-buttons form-buttons-right">
+								<div class="button-public"><input type="submit" value="опубликовать"></div>
+								<a class="cancel" href="javascript:void(0);" onclick="$('.pop-public').hide();"></a>
+							</div>
+							<!-- END Feedback -->
+
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="block-top">
+		<div class="block clearfix">
+			<ul>
+				<li>
+					<a href="#">о марке</a>
+				</li>
+				<li>
+					<a href="#">магазин</a>
+				</li>
+				<li>
+					<a href="#">Мероприятия</a>
+				</li>
+				<li>
+					<a href="#">личный кабинет</a>
+				</li>
+			</ul>
+			<div class="promo">
+				<span><a href="javascript:void(0);" onclick="$('.promo').addClass('promo-active');">ввести промо код</a></span>
+				<div class="popup" style="display: none;">
+					<form>
+						<div class="form-block">
+							<label for="code">Введите промо-код</label>
+							<input type="text" class="form-field js-placeholder" id="code">
+						</div>
+						<div class="form-buttons">
+							<div class="button-pass"><input type="submit" value="ok" /></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="login clearfix">
+				<div class="name"><a href="#"><i></i>Williams Grand</a></div>
+				<div class="quit"><a href="#">выйти</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Container -->
+	<div class="private-office">
+		<div class="header">
+			<div class="info">
+				<div class="title">личный кабинет</div>
+				<div class="edit"><a href="javascript:void(0);" onclick="$('.popup-edit').show();"><i></i>Изменить анкету</a></div>
+			</div>
+			<div class="logo"><img src="i/logo-mildseven.png" /></div>
+		</div>
+		<div class="wrapper">
+			<div class="my-rating">
+				<div class="title"><img src="i/titles/my-rating.png" /></div>
+				<div class="rating">
+					<div class="item">
+						<span>13</span>
+						Баллов<br />на счету
+					</div>
+					<div class="item last">
+						<span>721</span>
+						Промо-кодов<br />на счету
+					</div>
+				</div>
+				<ul>
+					<li>
+						<span class="left">За викторину</span>
+						<span class="right">366</span>
+					</li>
+					<li>
+						<span class="left">За мои посты</span>
+						<span class="right">3</span>
+					</li>
+					<li>
+						<span class="left">За коды</span>
+						<span class="right">4</span>
+					</li>
+					<li>
+						<span class="left">За все время</span>
+						<span class="right">0</span>
+					</li>
+				</ul>
+			</div>
+			<div class="my-post">
+				<div class="title">
+					<img src="i/titles/my-post.png" />
+					<a href="#"><i></i>избранное</a>
+				</div>
+				<div class="post">
+					<div class="block">
+						<div class="item">
+							<div class="img"><span></span><img src="uploads/200x121.jpg" /></div>
+							<div class="links"><i></i><a href="#">Давайте сделаем отличную работу</a></div>
+						</div>
+						<div class="item last">
+							<div class="img"><span></span><img src="uploads/200x121.jpg" /></div>
+							<div class="links"><i></i><a href="#">Давайте сделаем отличную работу</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="public">
+					<div class="new"><a href="javascript:void(0);" onclick="$('.pop-public').show();"><i></i>Новая публикация</a></div>
+					<div class="all"><a href="#"><i></i>все посты</a></div>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$("#prize").carouFredSel({
+						circular: false,
+						width: 280,
+						height: 138,
+						items: {
+							minimum: 1,
+							width: 280,
+							height: 138
+						},
+						scroll: {
+							fx: "crossfade"
+						},
+						auto: false,
+						prev: "#prev",
+						next: "#next"
+					});
+				})
+			</script>
+			<div class="prize-cont">
+				<div class="title"><img src="i/titles/my-prizes.png" /></div>
+				<div>
+					<ul id="prize">
+						<li>
+							<img src="uploads/ipad2.png" class="prize-pic" alt="" />
+							<div class="prize-info">
+								<img src="i/ipad.png" class="pr" alt="" />1
+							</div>
+						</li>
+						<li>
+							<img src="uploads/ipad.png" class="prize-pic" alt="" />
+							<div class="prize-info">
+								<img src="i/ipad.png" class="pr" alt="" />2
+							</div>
+						</li>
+					</ul>
+					<div class="arrows">
+						<a href="#" class="a-prev" id="prev"></a>
+						<a href="#" class="a-next" id="next"></a>
+					</div>
+				</div>
+			</div>
+			<div class="block-links">
+				<a href="#" class="unsubscribe"><i></i>Отписаться от рассылок</a>
+				<a href="javascript:void(0);" onclick="$('.popup-delete').show();" class="delete"><i></i>удалить профиль</a>
+			</div>
+		</div>
+	</div>
+	<!-- END Container -->
+	<div class="block-banners">
+		<div class="block">
+			<div class="banner clearfix">
+				<div class="item one">
+					<img src="i/banner-one.png" />
+					<span class="text"><span>Конкурс</span><br />Honda CBR1000 FireBlade</span>
+					<a class="arrow" href="#"></a>
+				</div>
+				<div class="item two">
+					<img src="i/banner-two.png" />
+					<span class="text"><span>битва открытий</span><br />выяви победителя</span>
+					<a class="arrow" href="#"></a>
+				</div>
+				<div class="item three">
+					<img src="i/banner-three.png" />
+					<span class="text"><span>Промо-блок</span><br />новый mildseven revo</span>
+					<a class="arrow" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-inner">
+			<address class="copy">&copy; 2012 Mild Seven</address>
+			<ul class="footer-nav">
+				<li><a href="#">Обратная связь</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+		<img src="i/at.png" class="attention" alt="Минздравсоцразвития России предупреждает: курение вредит вашему здоровью" />
+	</div>
+	<!-- END Footer -->
+	<div id="bg">
+		<img src="i/bg-profil.jpg" alt="" />
+	</div>
+</body>
+</html>

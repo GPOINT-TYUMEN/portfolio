@@ -1,0 +1,196 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+		<div class="right"><img src="images/spasskaya.gif" /></div>
+		<div class="info">
+			<div class="social"><a href="#"><img src="images/facebook.gif" /></a> <a href="#"><img src="images/twitter.gif" /></a></div>
+			<div class="block">
+				<div class="language">Язык сайта: <select><option>Русский</option></select></div>
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту" />
+						<span><input type="submit" value="Найти" /></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="content clearfix">
+	<nav>
+	<div class="menu">
+		<ul>
+			<li class="first"><a href="#">Главная</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Об отеле</a></li>
+			<li><a href="#">Номера</a></li>
+			<li><a href="#">Бронирование</a></li>
+			<li><a href="#">Конференц-центр</a></li>
+			<li><a href="#">Рестораны и бары</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li class="active"><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+	</nav>
+	<div class="head">
+		<img src="images/956x204.jpg" />
+		<div class="filter">
+			<form>
+			<ul>
+				<li>
+					<p>Категория номера:</p>
+					<select><option>Одноместный</option></select>
+				</li>
+				<li>
+					<p>Дата заезда:</p>
+					<select class="day"><option>25</option></select>
+					<select class="month"><option>Сентября</option></select>
+					<i></i>
+				</li>
+				<li>
+					<p>Дата выезда:</p>
+					<select class="day"><option>25</option></select>
+					<select class="month"><option>Сентября</option></select>
+					<i></i>
+				</li>
+				<li>
+					<p>Способ оплаты</p>
+					<select><option>Одноместный</option></select>
+				</li>
+				<li>
+					<span><input type="submit" value="Забронировать" /></span>
+				</li>
+			</ul>
+			</form>
+		</div>
+	</div>
+	<div class="columnleft">
+		<nav>
+			<ul>
+				<li><a href="#">Забронировать номер</a></li>
+				<li><a href="#">Наши услуги</a></li>
+				<li><a href="#">Об отеле</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="columnright">
+		<div class="block-contacts">
+			<h1>Контактная информация</h1>
+			<div class="map">
+				<script src="http://api-maps.yandex.ru/1.1/?key=AD5Bsk4BAAAA90KzQAIAYBODXEAINb8S3AA776cnM4mfRusAAAAAAAAAAACeIcuQgbiBSCeUzijGBFahM6bRzA==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+				<script type="text/javascript">
+				    YMaps.jQuery(window).load(function () {
+				        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2236")[0]);
+				        map.setCenter(new YMaps.GeoPoint(65.515079,57.162877), 15, YMaps.MapType.MAP);
+				        map.addControl(new YMaps.Zoom());
+				        map.addControl(new YMaps.ToolBar());
+				        YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+				        map.addControl(new YMaps.TypeControl([
+				            YMaps.MapType.MAP,
+				            YMaps.MapType.SATELLITE,
+				            YMaps.MapType.HYBRID,
+				            YMaps.MapType.PMAP
+				        ], [0, 1, 2, 3]));
+
+				        YMaps.Styles.add("constructor#pmlbmPlacemark", {
+				            iconStyle : {
+				                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmlbm.png",
+				                size : new YMaps.Point(28,29),
+				                offset: new YMaps.Point(-8,-27)
+				            }
+				        });
+
+				       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(65.520462,57.161548), "constructor#pmlbmPlacemark", "Отель «Спасская»"));
+
+				        function createObject (type, point, style, description) {
+				            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+				                index = YMaps.jQuery.inArray( type, allowObjects),
+				                constructor = allowObjects[(index == -1) ? 0 : index];
+				                description = description || "";
+
+				            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+				            object.description = description;
+
+				            return object;
+				        }
+				    });
+				</script>
+
+				<div id="YMapsID-2236" style="width:692px;height:290px"></div>
+				<div style="width:600px;text-align:right;font-family:Arial; display: none;"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+			</div>
+			<div class="contacts">
+				<p><strong>Бронирование отеля в Тюмени</strong><br />Забронировать номер в отеле «Спасская» можно <a href="#">в режиме онлайн на данном сайте</a>, по телефону или отправив письмо по электронной почте.</p>
+				<ul>
+					<li>
+						<span class="left">
+							<strong>Адрес:</strong><br />
+							Отель «Спасская»<br />
+							Ленина, 2А<br />
+							625000 Тюмень, Россия
+						</span>
+						<span class="right">
+							<strong>Отдел бронирования номеров:</strong><br />
+							Тел.: +7 3452 550 007<br />
+							E-mail: <a href="mailto:reservations@bestwestern.ru">reservations@bestwestern.ru</a>
+						</span>
+					</li>
+					<li>
+						<span class="left">
+							Тел.: +7 3452 550 007<br />E-mail: <a href="mailto:info@bestwestern.ru">info@bestwestern.ru</a>
+						</span>
+						<span class="right">
+							<strong>Отдел продаж:</strong><br />
+							Тел.: +7 3452 550 007<br />
+							E-mail: <a href="mailto:sales@bestwestern.ru">sales@bestwestern.ru</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>
+</div>
+<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 Отель Best Western Тюмень.</p>
+			<p>Перепечатка информации только с согласия администратора сайта.</p>
+		</div>
+		<div class="adress">
+			<p>+7 (3452) 550-007, 550-008</p>
+			<p>г. Тюмень, улица Ленина, 2А</p>
+		</div>
+		<div class="dev"><p>Разработка сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p></div>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

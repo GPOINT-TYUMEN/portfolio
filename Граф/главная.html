@@ -1,0 +1,138 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    window.onload = function () {
+        var container = $('div.gallery');
+        var ul = $('ul', container);
+
+        var itemsWidth = ul.innerWidth() - container.outerWidth();
+
+        $('.slider', container).slider({
+            min: 0,
+            max: itemsWidth,
+            handle: '.handle',
+            stop: function (event, ui) {
+                ul.animate({'left' : ui.value * -1}, 500);
+            },
+            slide: function (event, ui) {
+                ul.css('left', ui.value * -1);
+            }
+        });
+    };
+</script>
+
+</head>
+
+<body>
+<header>
+	<div class="header">
+		<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+		<div class="phone">8 (3452) 94-83-00</div>
+	</div>
+</header>
+	<div class="body">
+		<div class="leftcolumn">
+			<nav>
+			<ul class="menu">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Фотостудия</a></li>
+				<li><a href="#">Портфолио</a></li>
+				<li><a href="#">Наши клиенты</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			</nav>
+			<aside>
+			<div class="partner">
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+			</div>
+			</aside>
+		</div>
+		<div class="rightcolumn">
+			<div class="block-carousel" id="container">
+				<div class="gallery">
+					<ul>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+						<li><img src="images/220x210.jpg" /><p><a href="#">Фотоссесия в бизнес журнале</a><br />2011</p></li>
+					</ul>
+					<div class="slider">
+						<span class="arrow-l"></span>
+						<div class="handle"></div>
+						<span class="arrow-r"></span>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="about">
+					<h2>Все что вам необходимо!</h2>
+					<article>
+					<p><a href="#">Рекламная концепция</a> – это тот замысел, который будет заложен в самопредставление Вашей компании, ее товаров и услуг. Это та задумка, на основе которой будет выстраиваться Ваша рекламная кампании. И это тот стержень, который объединит Ваш <a href="#">бренд</a>, <a href="#">логотип</a>, <a href="#">слоган</a>, <a href="#">фирменный стиль</a> и многое другое в единое целое, как цемент, соединяющий кирпичики.</p>
+					<p><a href="#">Рекламная концепция</a> играет первоочередную роль не только в создании бренда и его целостного образа. Она является основой для любой <a href="#">рекламной кампании</a>, поскольку именно благодаря ней происходит продвижение и популяризация бренда.</p>
+					<p><a href="#">Рекламная концепция</a> отвечает на первоочередный вопрос каждого рекламодателя – «как понравиться потребителю». И, поверьте где-где, а в сфере рекламы способов и приемов позволяющих привлечь и заинтересовать клиентов, было разработано великое множество! Можно, конечно придти на все готовое и использовать существующие наработки, опыт мировых брендов и компаний, а можно усовершенствовать существующие методы и выработать собственный, <a href="#">фирменный стиль</a>!</p>
+					<p>Первый шаг на пути разработки рекламной концепции – изучение целевой аудитории, на которую рассчитан Ваш товар. Эффективная реклама – это реклама, создатели которой точно знают к кому они обращаются. Знание своей аудитории позволяет более точно</p>
+					</article>
+				</div>
+				<div class="twitter">
+					<p><a href="#">Аренда фотостудии</a></p>
+				</div>
+				<div class="block-news">
+					<div class="title">Новости</div>
+					<div class="item">
+						<div class="date">28 марта 2012</div>
+						<div class="links"><a href="#">Съёмка в студии, с последующей цифровой обработкой и ретушью. Работа визажиста и парикмахера включена в стоимость.</a></div>
+					</div>
+					<div class="item">
+						<div class="date">28 марта 2012</div>
+						<div class="links"><a href="#">Съёмка в студии, с последующей цифровой обработкой и ретушью. Работа визажиста и парикмахера включена в стоимость.</a></div>
+					</div>
+					<div class="item">
+						<div class="date">28 марта 2012</div>
+						<div class="links"><a href="#">Съёмка в студии, с последующей цифровой обработкой и ретушью. Работа визажиста и парикмахера включена в стоимость.</a></div>
+					</div>
+				</div>
+				<div class="twitter">
+					<div class="tw"><img src="images/219x228.jpg" /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 <a href="#">Дизайн-бюро «Граф»</a></p>
+			<p>Все права принадлежат их правообладателям.</p>
+			<p>Перепечатка материалов только с согласия администратора сайта.</p>
+		</div>
+		<div class="social"></div>
+	</div>
+	</footer>
+
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

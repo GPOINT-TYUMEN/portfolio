@@ -1,0 +1,143 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<title>Аквавиталь</title>
+
+<!-- Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем локальную копию. -->
+<script src="js/jquery.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+<script src="js/cufon-yui.js"></script>
+<script src="js/PT_Serif.font.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+  
+<!-- всё -->
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="block-header">
+	<div class="header">
+		<div class="logo"><a href="#"><img src="images/logo.png" /></a></div>
+		<ul class="menu">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">О воде</a></li>
+			<li><a href="#">Заказ воды</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li class="active"><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+</div>
+<div class="body">
+	<div class="block-contacts">
+		<h2>Контактная информация</h2>
+		<div class="block clearfix">
+			<div class="block-map">
+				<div class="map">
+					<script src="http://api-maps.yandex.ru/1.1/?key=AM0SFE4BAAAAAHiuEAIADzns8s4cpfQPWOXo3mbYvccmKikAAAAAAAAAAADegYgUUqi_V0TpXe3BYgPISROomw==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+					<script type="text/javascript">
+					    YMaps.jQuery(window).load(function () {
+					        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-366")[0]);
+					        map.setCenter(new YMaps.GeoPoint(65.489747,57.234052), 10, YMaps.MapType.MAP);
+					        map.addControl(new YMaps.Zoom());
+					        map.addControl(new YMaps.ToolBar());
+					        YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+					        map.addControl(new YMaps.TypeControl([
+					            YMaps.MapType.MAP,
+					            YMaps.MapType.SATELLITE,
+					            YMaps.MapType.HYBRID,
+					            YMaps.MapType.PMAP
+					        ], [0, 1, 2, 3]));
+
+					        YMaps.Styles.add("constructor#pmlbmPlacemark", {
+					            iconStyle : {
+					                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmlbm.png",
+					                size : new YMaps.Point(28,29),
+					                offset: new YMaps.Point(-8,-27)
+					            }
+					        });
+
+					       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(65.558412,57.182631), "constructor#pmlbmPlacemark", ""));
+
+					        function createObject (type, point, style, description) {
+					            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+					                index = YMaps.jQuery.inArray( type, allowObjects),
+					                constructor = allowObjects[(index == -1) ? 0 : index];
+					                description = description || "";
+
+					            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+					            object.description = description;
+
+					            return object;
+					        }
+					    });
+					</script>
+
+					<div id="YMapsID-366" style="width:630px;height:364px"></div>
+					<div style="width:450px;text-align:right;font-family:Arial;display:none;"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+				</div>
+				<div class="adress">
+					<span class="left">625000, г. Тюмень, ул. Фёдорова, д. 9, офис 444</span>
+					<span class="right"><a href="mailto:info@aquavital.ru">info@aquavital.ru</a></span>
+				</div>
+				<div class="phone"><span>+7(3452)</span>66-66-66</div>
+			</div>
+			<div class="form">
+				<div class="block-info">
+					<div class="top">
+						<div class="info">
+							<div class="block">
+								<form>
+								<div class="item">
+									<h3>Обратная связь</h3>
+										<ul>
+											<li><input type="text" placeholder="Имя" /></li>
+											<li><input type="text" placeholder="E-mail" /></li>
+											<li><textarea placeholder="Текст сообщения"></textarea></li>
+										</ul>
+								</div>
+								<div class="block-price">
+									<div class="order"><input type="submit" value="Отправить" /></div>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="empty"></div>
+</div>
+<div class="block-footer">
+	<div class="footer">
+		<div class="copy">© 2011 «Aquavital»</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Сделать заказ</a></li>
+			</ul>
+		</div>
+		<div class="dev">Сайт сделан в студии «<a href="#">Креатив</a>»</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+$(document).ready(function(){
+    Cufon.replace('.header .block-top .phone .code, .header .block-top .phone .tel, .header .menu-top .menu ul li a, .promo .block .left p, div.left .popular h2, div.right .block-help .head, div.right .block-news .head, .footer .right ul li, .product h2, .specification h2, .reviews .head h2, .catalog h2, .basket-block h2', { fontFamily: 'DaxlinePro-Regular', hover: 'true' });
+});

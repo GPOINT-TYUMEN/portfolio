@@ -1,0 +1,263 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background: url(images/bg.jpg) repeat center; min-width: 1000px; }
+body { margin: 0 auto; font-size: 13px; line-height: 1.231; width: 1000px; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+a { outline: 0; color: #fff; }
+a:hover { text-decoration: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+
+th { font-weight: bold; }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+@font-face {
+    font-family: 'SansRoundedCRegular';
+    src: url('font/sansroundedc-webfont.eot');
+    src: url('font/sansroundedc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sansroundedc-webfont.woff') format('woff'),
+         url('font/sansroundedc-webfont.ttf') format('truetype'),
+         url('font/sansroundedc-webfont.svg#SansRoundedCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.header {
+	background: url(images/bg-header.jpg) no-repeat 134px 0;
+	height: 426px;
+	position: relative;
+	width: 1000px;
+}
+.header .links-index {
+	width: 647px;
+	height: 177px;
+	position: absolute;
+	top: 76px;
+	left: 177px;
+}
+.header .links-index a {
+	display: block;
+	width: 647px;
+	height: 177px;
+}
+.header .links-index span,
+.header .links-huggies span {
+	display: none;
+}
+.header .links-huggies {
+	width: 68px;
+	height: 137px;
+	position: absolute;
+	top: 71px;
+	right: 95px;
+
+}
+.header .links-huggies:hover {
+	background: url(images/huggies.gif) no-repeat;
+}
+
+.header .links-huggies a {
+	display: block;
+	width: 68px;
+	height: 137px;
+}
+
+.header .block-kinder {
+	width: 140px;
+	position: absolute;
+	top: 40px;
+	left: 5px;
+}
+.header .block-kinder .mini {
+	position: absolute;
+	background: url(images/kinder-mini.png) no-repeat;
+	width: 96px;
+	height: 126px;
+	right: 0;
+	top: 54px;
+	cursor: pointer;
+}
+.header .block-kinder .hands {
+	position: absolute;
+	right: -8px;
+	top: 56px;
+}
+.header .block-kinder .kinder {
+	width: 142px;
+	height: 173px;
+	position: absolute;
+	top: -8px;
+	left: -2px;
+	overflow: hidden;
+	background: url(images/kinder.png) no-repeat;
+}
+.header .block-kinder .deg {
+	background: url(images/kinder-deg.png) no-repeat;
+	top: 45px;
+}
+.main {
+	/*padding: 24px;*/
+	/*background: url(../images/bg-main.jpg) no-repeat;*/
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	margin: 0 0 35px;
+}
+.main .main-top {
+	background: url(images/bg-top.jpg) no-repeat top center;
+	padding: 24px 0 0;
+}
+.main .main-bottom {
+	background: url(images/bg-bottom.jpg) no-repeat bottom center;
+	padding: 0 0 24px;
+}
+.main .content {
+	background: url(images/bg-center.jpg) repeat-y center;
+	padding: 30px 54px 30px;
+}
+.block-error {
+	text-align: center;
+}
+.block-error img {
+	margin: 0 0 33px;
+}
+
+.block-error h2 {
+	font: 40px/44px SansRoundedCRegular;
+	color: #1d407d;
+	margin: 0 0 31px;
+}
+.block-error p {
+	font: 14px/18px Arial;
+	color: #000;
+}
+.footer {
+	font: 12px/18px Arial;
+	color: #fff;
+	text-align: center;
+	padding: 0 0 30px;
+}
+</style>
+<!--[if lte IE 8]><link href="css/ie.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+
+<script src="js/script.js"></script>
+</head>
+
+<body>
+<header>
+	<div class="header">
+		<div class="block-kinder" onmouseover="animation_begin()" onmouseout="animation_end()">
+			<div id="children_small" class="mini"></div>
+			<div id="children_normal" class="kinder" style="display: none;left:40px;top:40px;width:92px;"></div>
+			<div id="children_hands" class="hands"><img src="images/hands.png" /></div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="main-top">
+		<div class="main-bottom">
+			<div class="content">
+				<div class="block-error">
+					<img src="images/404.jpg" />
+					<div class="text">
+						<h2>Технические работы на сайте</h2>
+						<p>В данный момент на сайте ведутся технические работы.<br />Скоро мы всё исправим, зайдите к нам немного позже.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<p>© 2012 Huggies. Все права защищены.</p>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

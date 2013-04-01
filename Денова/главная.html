@@ -1,0 +1,510 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+	<header>
+		<div class="header clearfix">
+			<div class="pop-map">
+				<div class="title">Карта объектов</div>
+				<div class="map">
+					<script src="http://api-maps.yandex.ru/1.1/?key=AOhhZE4BAAAAysFxPwIAoF6PBuIZ0fKODpKmqmmgIPaIl0QAAAAAAAAAAACvdWWq7ZV6cHeNIRiS5ZsDgL3Xxg==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+					<script type="text/javascript">
+					    YMaps.jQuery(window).load(function () {
+					        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-4439")[0]);
+					        map.setCenter(new YMaps.GeoPoint(65.496614,57.182629), 10, YMaps.MapType.MAP);
+					        map.addControl(new YMaps.Zoom());
+					        map.addControl(new YMaps.ToolBar());
+					        YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+					        map.addControl(new YMaps.TypeControl([
+					            YMaps.MapType.MAP,
+					            YMaps.MapType.SATELLITE,
+					            YMaps.MapType.HYBRID,
+					            YMaps.MapType.PMAP
+					        ], [0, 1, 2, 3]));
+
+					        function createObject (type, point, style, description) {
+					            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+					                index = YMaps.jQuery.inArray( type, allowObjects),
+					                constructor = allowObjects[(index == -1) ? 0 : index];
+					                description = description || "";
+
+					            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+					            object.description = description;
+
+					            return object;
+					        }
+					    });
+					</script>
+
+					<div id="YMapsID-4439" style="width:918px;height:352px;"></div>
+					<div style="width:600px;text-align:right;font-family:Arial; display: none"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+					</div>
+					<span class="arrow"><a id="arrow" href="javascript:void(0);"></a></span>
+			</div>
+			<div class="logo"><a href="#"><img src="img/logo.gif" /></a></div>
+			<div class="info">
+				<div class="slogan"><em>Профессиональный взляд на недвижимость</em></div>
+				<div class="base">В нашей базе уже <strong>200</strong> объектов! (<a class="dotted" id="arrow" href="javascript:void(0);">смотреть на карте</a>)</div>
+			</div>
+			<div class="phone">
+				<p class="tel"><i></i><span>+7(3452)</span>790-910</p>
+				<p><a href="#">контакты</a> <a href="#">обратный звонок</a></p>
+			</div>
+			<nav>
+			<div class="menu">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Команда</a></li>
+					<li><a href="#">Партнёры</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Библиотека</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="search">
+					<span></span>
+					<input type="text" placeholder="Поиск по сайту" />
+				</div>
+			</div>
+			</nav>
+		</div>
+	</header>
+	<div class="block-section">
+		<div class="item"><a href="#"><i></i>Денова консалтинг</a></div>
+		<div class="item"><a href="#"><i></i>Денова недвижимость</a></div>
+		<div class="item"><a href="#"><i></i>Денова управление</a></div>
+	</div>
+	<div class="body">
+		<div class="leftcolumn">
+			<nav>
+			<div class="menu">
+				<h3>Предложения по продаже<i></i></h3>
+				<ul>
+					<li><a href="#">Продажа офисов</a></li>
+					<li><a href="#">Продажа торговых площадей / магазинов</a></li>
+					<li><a href="#">Продажа помещений свободного назначения</a></li>
+					<li><a href="#">Продажа производственных баз и складов</a></li>
+					<li><a href="#">Продажа элитных квартир</a></li>
+					<li><a href="#">Продажа земельных участков</a></li>
+					<li><a href="#">Продажа готового бизнеса</a></li>
+					<li><a href="#">Продажа магазинов</a></li>
+					<li><a href="#">Продажа зданий</a></li>
+				</ul>
+				<h3>Предложения по аренде<i></i></h3>
+				<ul>
+					<li><a href="#">Арендую офис</a></li>
+					<li><a href="#">Арендую торговое помещение</a></li>
+					<li><a href="#">Арендую склад</a></li>
+				</ul>
+				<h3>Заявки на аренду<i></i></h3>
+				<ul>
+					<li><a href="#">Аренда офисов</a></li>
+					<li><a href="#">Аренда торговых площадей</a></li>
+					<li><a href="#">Аренда складов</a></li>
+				</ul>
+				<h3>Заявки на покупку<i></i></h3>
+				<ul>
+					<li><a href="#">Куплю офис</a></li>
+					<li><a href="#">Куплю магазин</a></li>
+					<li><a href="#">Куплю производственную базу</a></li>
+					<li><a href="#">Куплю земельный участок</a></li>
+				</ul>
+			</div>
+			</nav>
+		</div>
+		<div class="rightcolumn">
+			<div class="block-special">
+				<div class="title">
+					<em>Наши спецпредложения</em>
+					<span class="right">
+						<a class="prev" id="special-prev" href="javascript:void(0);"><span>←</span></a>
+						<div class="pagination" id="special-pag"></div>
+						<a class="next" id="special-next" href="javascript:void(0);"><span>→</span></a>
+					</span>
+				</div>
+				<ul id="special">
+					<li><img src="img/425x220.jpg" /><a href="#">Коттеджный поселок «Лион» Готов к въезду. Только 5 домов со скидкой 16% Успей инвестировать!</a></li>
+					<li><img src="img/425x220.jpg" /><a href="#">Коттеджный поселок «Лион» Готов к въезду. Только 5 домов со скидкой 16% Успей инвестировать!</a></li>
+					<li><img src="img/425x220.jpg" /><a href="#">Коттеджный поселок «Лион» Готов к въезду. Только 5 домов со скидкой 16% Успей инвестировать!</a></li>
+					<li><img src="img/425x220.jpg" /><a href="#">Коттеджный поселок «Лион» Готов к въезду. Только 5 домов со скидкой 16% Успей инвестировать!</a></li>
+					<li><img src="img/425x220.jpg" /><a href="#">Коттеджный поселок «Лион» Готов к въезду. Только 5 домов со скидкой 16% Успей инвестировать!</a></li>
+				</ul>
+			</div>
+			<div class="block-public news">
+				<div class="title"><em>Новости<i></i></em></div>
+				<div class="block">
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-public">
+				<div class="title"><em>Публикации</em></div>
+				<div class="block">
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+					<div class="item">
+						<img src="img/92x66.jpg" />
+						<p><a href="#">Почему основан на опыте PR?</a></p>
+						<p class="date">24 июня 2011</p>
+						<p>К тому же  стратегическое планирование обуславливает анализ зарубежного опыта, полагаясь на инсайдерскую информацию.</p>
+					</div>
+				</div>
+			</div>
+			<div class="block-promo">
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#rent-prev",
+							next: "#rent-next",
+						});
+					});
+					</script>
+					<div class="title">Аренда офисов в бизнес центрах</div>
+						<a class="prev" id="rent-prev" href="javascript:void(0);"></a>
+						<a class="next" id="rent-next" href="javascript:void(0);"></a>
+						<ul id="rent">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent-td").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#renttd-prev",
+							next: "#renttd-next",
+						});
+					});
+					</script>
+					<div class="title">Аренда торговых площадей в ТЦ</div>
+						<a class="prev" id="renttd-prev" href="javascript:void(0);"></a>
+						<a class="next" id="renttd-next" href="javascript:void(0);"></a>
+						<ul id="rent-td">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent-pro").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#rentpro-prev",
+							next: "#rentpro-next",
+						});
+					});
+					</script>
+					<div class="title">Инвестиционные проекты</div>
+						<a class="prev" id="rentpro-prev" href="javascript:void(0);"></a>
+						<a class="next" id="rentpro-next" href="javascript:void(0);"></a>
+						<ul id="rent-pro">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent-bus").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#rentbus-prev",
+							next: "#rentbus-next",
+						});
+					});
+					</script>
+					<div class="title">Продажа готового бизнеса</div>
+						<a class="prev" id="rentbus-prev" href="javascript:void(0);"></a>
+						<a class="next" id="rentbus-next" href="javascript:void(0);"></a>
+						<ul id="rent-bus">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent-ear").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#rentear-prev",
+							next: "#rentear-next",
+						});
+					});
+					</script>
+					<div class="title">Продажа земельных участков</div>
+						<a class="prev" id="rentear-prev" href="javascript:void(0);"></a>
+						<a class="next" id="rentear-next" href="javascript:void(0);"></a>
+						<ul id="rent-ear">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+				<div class="item">
+					<script>
+					$(document).ready(function(){
+						$("#rent-cot").carouFredSel({
+							circular: false,
+							infinite: false,
+							prev: "#rentcot-prev",
+							next: "#rentcot-next",
+						});
+					});
+					</script>
+					<div class="title">Продажа коттеджей</div>
+						<a class="prev" id="rentcot-prev" href="javascript:void(0);"></a>
+						<a class="next" id="rentcot-next" href="javascript:void(0);"></a>
+						<ul id="rent-cot">
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><img src="img/299x178.jpg" /></div>
+								<div class="text">
+									<p>Офисные помещения в Москве от 15 до 180 кв.м., есть охрана, телефония, в прямую аренду. Цена: 18000 руб/кв.м./год.</p>
+									<p class="all"><a href="#">все</a> →</p>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="block-sales">
+				<div class="title">
+					<em>Реализованные проекты</em>
+					<span><a href="#">Все проекты</a> →</span>
+				</div>
+				<script>
+				$(document).ready(function(){
+					$("#completed").carouFredSel({
+						circular: false,
+						infinite: false,
+						width: 682,
+						height: 220,
+						items: {
+							width: 682,
+							height: 220
+						},
+						prev: "#completed-prev",
+						next: "#completed-next"
+					});
+				});
+				</script>
+				<div class="block">
+					<div id="completed">
+					<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>
+					<!--<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="img/299x178.jpg" /></div>
+						<div class="text"><a href="#">Спонсорство концентрирует рекламный блок, не считаясь с затратами</a></div>
+					</div>-->
+					</div>
+				</div>
+				<a href="javascript:void(0);" id="completed-prev" class="prev"></a>
+				<a href="javascript:void(0);" id="completed-next" class="next"></a>
+			</div>
+			<div class="block-oes">
+				<h3>SEO текст</h3>
+				<p>Процесс стратегического планирования, пренебрегая деталями, специфицирует бизнес-план, повышая конкуренцию. Еще Траут показал, что изменение глобальной стратегии экономит комплексный портрет потребителя, опираясь на опыт западных коллег. В общем, повышение жизненных стандартов отражает направленный маркетинг, отвоевывая свою долю рынка. Процесс стратегического планирования, согласно Ф.Котлеру, специфицирует потребительский рекламоноситель, используя опыт предыдущих кампаний. Ценовая стратегия консолидирует конкурент, учитывая современные тенденции.</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="info">
+			<nav>
+			<ul class="menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Команда</a></li>
+				<li><a href="#">Партнёры</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Библиотека</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			</nav>
+			<p class="copy">© 2007—2011 ООО «Денова консалтинг».</p>
+			<p>Компания «Денова консалтинг» предоставляет комплекс услуг на рынке коммерческой недвижимости Тюмени и Тюменской области, проводит исследования рынка торговой и офисной недвижимости Тюмени, управляет объектами коммерческой недвижимости, привлекает инвестиции в бизнес-проекты Тюмени и Тюменской области.</p>
+		</div>
+		<div class="phone">
+			<p class="tel"><i></i><span>+7(3452)</span>790-910</p>
+			<p><a href="#">контакты</a> <a href="#">обратный звонок</a></p>
+		</div>
+	</div>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

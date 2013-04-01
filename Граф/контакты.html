@@ -1,0 +1,116 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery-new.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+
+</head>
+
+<body>
+<header>
+	<div class="header">
+		<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+		<div class="phone">8 (3452) 94-83-00</div>
+	</div>
+</header>
+	<div class="body">
+		<div class="leftcolumn">
+			<nav>
+			<ul class="menu">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Фотостудия</a></li>
+				<li><a href="#">Портфолио</a></li>
+				<li><a href="#">Наши клиенты</a></li>
+				<li class="active"><a href="#">Контакты</a></li>
+			</ul>
+			</nav>
+			<aside>
+			<div class="partner">
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+				<div class="item"><a href="#"><img src="images/partner.gif" /></a></div>
+			</div>
+			</aside>
+		</div>
+		<div class="rightcolumn">
+			<div class="block-portfolio">
+				<div class="block-view">
+					<div class="info">
+						<h1>Где нас можно найти</h1>
+						<p>Дизайн-бюро «Граф»<br />пр. Геологоразведчиков, 28А, офис 105,<br />Тюмень, Тюменская область, 625035</p>
+						<p>Телефон : 8 (3452) 94-83-00<br />Эл. почта: <a href="mailto:adv@design-graf.ru">adv@design-graf.ru</a><br />Режим работы: с 9:00 до 18:00</p>
+						<div class="img"><!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
+<script src="http://api-maps.yandex.ru/1.1/?key=AHB1W04BAAAATdCseAIAkpfl57J51yJUwMTLV-o_aKT8ldkAAAAAAAAAAACCrJDOcyLxF7ANSjKBuyN_jK7a9Q==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+<script type="text/javascript">
+    YMaps.jQuery(window).load(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-1738")[0]);
+        map.setCenter(new YMaps.GeoPoint(65.575685,57.129636), 15, YMaps.MapType.MAP);
+        map.addControl(new YMaps.Zoom());
+        map.addControl(new YMaps.ToolBar());
+        YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+        map.addControl(new YMaps.TypeControl([
+            YMaps.MapType.MAP,
+            YMaps.MapType.SATELLITE,
+            YMaps.MapType.HYBRID,
+            YMaps.MapType.PMAP
+        ], [0, 1, 2, 3]));
+
+        function createObject (type, point, style, description) {
+            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                index = YMaps.jQuery.inArray( type, allowObjects),
+                constructor = allowObjects[(index == -1) ? 0 : index];
+                description = description || "";
+
+            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+            object.description = description;
+
+            return object;
+        }
+    });
+</script>
+
+<div id="YMapsID-1738" style="width:455px;height:390px"></div>
+<div style="width:600px;text-align:right;font-family:Arial;display:none"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) --></div>
+					</div>
+					<div class="social">
+						<p class="vk"><a href="#"><i></i>Наша группа «В контакте»</a></p>
+						<p class="lj"><a href="#"><i></i>Наши новости в ЖЖ</a></p>
+					</div>
+					<div class="twitter">
+						<p><a href="#">Аренда фотостудии</a></p>
+						<div class="tw"><img src="images/219x228.jpg" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 <a href="#">Дизайн-бюро «Граф»</a></p>
+			<p>Все права принадлежат их правообладателям.</p>
+			<p>Перепечатка материалов только с согласия администратора сайта.</p>
+		</div>
+		<div class="social"></div>
+	</div>
+	</footer>
+
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

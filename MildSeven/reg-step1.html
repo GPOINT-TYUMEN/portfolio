@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />	
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+</head>
+
+<body>
+	
+	<img src="i/bg.jpg" class="bg" alt="" />
+
+	<!-- Container -->
+	<div class="page">
+		<div class="wrap">
+			
+			<div class="container">
+				<h3 class="title"><span class="title-inner"><img src="i/titles/reg.png" alt="Регистрация" /></span></h3>
+				<div class="content-container">
+					<div class="content">
+						<form action="" class="content-inner">
+							
+							<!-- Reg Step1 -->
+							<ul class="reg-steps">
+								<li><a href="#"><img src="i/tabs/step1-current.png" alt="Персональная информация" /></a></li>
+								<li><a href="#"><img src="i/tabs/step2.png" alt="Адресная информация" /></a></li>
+								<li><a href="#"><img src="i/tabs/step3.png" alt="Анкета потребителя табачной продукции" /></a></li>
+							</ul>
+							
+							<h1 class="reg-title">Персональная информация</h1>
+
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-fio">Фамилия <sup>*</sup></label>
+									<input type="text" id="f-fio" class="form-field js-placeholder" />
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Фамилия</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+								<div class="form-block">
+									<label for="f-ml">Электронная почта <sup>*</sup></label>
+									<input type="text" id="f-ml" class="form-field js-placeholder" />
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Электронная почта</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-username">Имя <sup>*</sup></label>
+									<input type="text" id="f-username" class="form-field js-placeholder" />
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Имя</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+								<div class="form-block">
+									<label for="f-phone">Телефон <sup>*</sup></label>
+									<input type="text" id="f-phone" class="form-field js-placeholder" />
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Телефон</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-container">
+								<div class="form-block">
+									<label for="f-ot">Отчество</label>
+									<input type="text" id="f-ot" class="form-field js-placeholder" />
+								</div>
+								<div class="form-block">
+									<label for="f-homephone">Домашний телефон</label>
+									<input type="text" id="f-homephone" class="form-field js-placeholder" />
+								</div>
+							</div>
+							
+							<div class="birthday">Дата рождения <sup>*</sup></div>
+
+							<div class="form-container">
+								<div class="form-block form-sel-cont">
+									
+									<div class="select" style="width: 66px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>31</li>
+											<li>1</li>
+										</ul>
+									</div>
+									<div class="select" style="width: 110px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>Сентябрь</li>
+											<li>Январь</li>
+										</ul>
+									</div>
+									<div class="select" style="width: 80px;">
+										<div class="select-current js-select"><div class="select-current-inner"></div></div>
+										<ul class="select-list">
+											<li>1999</li>
+											<li>2222</li>
+										</ul>
+									</div>
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Дата рождения</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+								<div class="form-block">
+									<label for="f-pass1">Пароль <sup>*</sup></label>
+									<input type="password" id="f-pass1" class="form-field js-placeholder" />
+								</div>
+							</div>
+							
+							<div class="form-container">
+								<div class="form-checkbox">
+									<div class="for-male">Пол <sup>*</sup></div>
+									<img src="i/separator.png" class="for-male-separator" alt="" />
+									<ul>
+										<li><label><input type="radio" name="male" />Мужской</label></li>
+										<li><label><input type="radio" name="male" />Женский</label></li>
+									</ul>
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Пол</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+								<div class="form-block">
+									<label for="f-pass2">Повторить пароль <sup>*</sup></label>
+									<input type="password" id="f-pass2" class="form-field js-placeholder" />
+									<div class="error-mes">
+										<div class="error-mes-inner">
+											<b data-field="#id_last_name">Пароль</b>: Обязательное поле.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-buttons form-buttons-right"><div class="button-right"><input type="submit" value="дальше" /></div></div>
+							<!-- END Reg Step1 -->
+
+						</form>
+					</div>
+				</div>
+				<p class="legend">Пункты отмеченные звездочкой <sup>*</sup> обязательны к заполнению</p>
+			</div>
+			
+		</div>
+	</div>
+	<!-- END Container -->
+	
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-inner">
+			<address class="copy">&copy; 2012 Mild Seven</address>
+			<ul class="footer-nav">
+				<li><a href="#">Обратная связь</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+		<img src="i/at.png" class="attention" alt="Минздравсоцразвития России предупреждает: курение вредит вашему здоровью" />
+	</div>
+	<!-- END Footer -->
+		
+</body>
+</html>

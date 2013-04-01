@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+ul { list-style: none; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+blockquote, q { quotes:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; color: #4228c6; }
+a:hover { text-decoration: none;}
+a.dotted { text-decoration: none; border-bottom: 1px dotted;}
+a.dotted:hover { border-bottom: none;}
+table { border-collapse:collapse; border-spacing:0; width: 100%; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+body { margin: 0 auto; width: 948px; font: 12px/18px Arial, Helvetica, sans-serif; *font-size:small; padding: 0 26px;}
+*:first-child+html body { position: relative;}
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+body, select, input, textarea { color: #444; font-family: Arial, Helvetica, sans-serif; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+strong, th { font-weight: bold; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+textarea { overflow: auto; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+/* курсор в виде руки для всех кликабельных элементов input */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+button {  width: auto; overflow: visible; }
+
+.header { overflow: hidden; _height: 100%; background: url(../img/bg363x193.jpg) no-repeat 352px 0; position: relative; margin-bottom: 10px;}
+.header .logo { float: left; margin: 58px 0 0 25px; _margin-left: 12px;}
+.header .icon { float: right; width: 169px; height: 180px; background: #f3f3f3; padding-left: 11px; margin: 29px 0 0 12px; }
+/*IE7*/*:first-child+html .header .icon { position: relative;}
+.header .icon a { display: block; position: relative; float: left; width: 25px; height: 25px; background: url(../img/icon-a.gif) no-repeat 0 0; margin: 83px 0 0 22px; _margin: 83px 11px 0 11px; cursor: pointer;}
+.header .icon a.active { background-position: -25px 0;}
+.header .icon a i { display: block; position: absolute; background: url(../img/sprite-ico.gif) no-repeat 0 0;}
+.header .icon a.home i { background-position: 0 0; width: 10px; height: 9px; top: 8px; left: 8px;}
+.header .icon a.feedback i { background-position: -10px 0; width: 12px; height: 8px; top: 9px; left: 7px;}
+.header .icon a.map i { background-position: -22px 0; width: 9px; height: 12px; top: 7px; left: 9px;}
+.header .phone { float: right; width: 166px; height: 130px; padding: 50px 0 0 14px; margin: 29px 0 0; background: #68af1c url(../img/bg91x52.jpg) no-repeat 0 0; color: #fff;}
+.header .phone .code { font-size: 23px; overflow: hidden; margin-bottom: 1px;}
+.header .phone .tel { font-size: 37px; overflow: hidden; margin-bottom: 5px;}
+.header .phone .adress { font-size: 11px; overflow: hidden; margin-bottom: 8px;}
+.header .phone p a { color: #fff; font-size: 11px;}
+
+.menu { margin: 15px 0 30px;}
+.menu ul { overflow: hidden; height: 100%!ie; margin-left: -4px;}
+.menu ul li { display: block; float: left; background: url(../img/bg149x1.gif) repeat-y; width: 124px; text-align: right; font-size: 11px; margin-left: 7px; padding: 3px 5px 5px 0;}
+.menu ul li a { color: #fff;}
+.menu ul li.about { background: url(../img/li-about.jpg) no-repeat;}
+.menu ul li.about a, .menu ul li.contact a, .menu ul li.news a, .menu ul li.reviews a, .menu ul li.program a { color: #000; text-decoration: none; font-weight: bold;}
+.menu ul li.contact { background: url(../img/li-contact.jpg) no-repeat;} 
+.menu ul li.news { background: #e9e9ea url(../img/li-news.jpg) no-repeat;}
+.menu ul li.reviews { background: url(../img/li-reviews.jpg) no-repeat;}
+.menu ul li.program { background: #f8f7f8 url(../img/li-program.jpg) no-repeat;}
+.menu ul li.photogallery { background: url(../img/li-photogallery.jpg) no-repeat;}
+.menu ul li.photogallery a { text-decoration: none; font-weight: bold;}
+
+.block-index { position: relative; }
+.block-index .line { overflow: hidden; height: 100%!ie; margin: 0 0 10px -12px;}
+.block-index .menu { float: left; position: relative; width: 180px; height: 180px; margin: 0 0 0 12px;}
+.block-index .menu .link { position: absolute; background: url(../img/bg149x1.gif) repeat-y; bottom: 14px; left: 0; width: 139px; height: 22px; padding: 4px 10px 0 0; text-align: right; color: #fff;}
+.block-index .menu .link a { color: #fff; font-size: 11px; line-height: 15px;}
+.block-index .calendar { float: left; margin-left: 12px; width: 180px; height: 180px; background: #f3f3f3 url(../img/bg11x20.gif) repeat-x top left;}
+.block-index .calendar .head { font-size: 14px; overflow: hidden; color: #000; margin: 27px 0 0; text-align: center;}
+.block-index .calendar .head a { color: #000;}
+.block-index .calendar .block { margin: 0 13px 0 13px; text-align: center; overflow: hidden;}
+.block-index .calendar .block p { font-size: 11px; line-height: 15px; font-weight: bold; color: #353535;}
+.block-index .calendar .block p.date { margin-top: -11px;}
+.block-index .calendar .block p.date span { font: 65px/69px Georgia, "Times New Roman", Times, serif; color: #353535;}
+.block-index .calendar .block .link { font-weight: normal; overflow: hidden; height: 46px; margin-top: 4px;}
+.block-index .calendar .block .link a { color: #000;}
+.block-index .promo { float: left; margin-left: 12px; width: 166px; height: 99px; border: 7px solid #eaebec; text-align: center; font: italic 22px/28px Georgia, "Times New Roman", Times, serif; padding-top: 67px;}
+.block-index .promo a { color: #000;}
+.block-index .green { border-color: #68a91c; padding-top: 39px; height: 127px;}
+.block-index .news { float: left; margin-left: 12px; height: 149px; width: 354px; padding: 31px 0 0 18px;}
+.block-index .news div { float: left; width: 177px;}
+.block-index .news div p { line-height: 15px; margin-bottom: 9px;}
+.block-index .news div p span { background: #e5e5e5; color: #4d4d4d; font-size: 11px; padding: 3px 3px;}
+.block-index .news div p a { color: #000; font-size: 11px;}
+.block-index .news .head { float: none; width: auto; margin: 0 0 25px; overflow: hidden; height: 100%!ie;}
+.block-index .news .head h2 { float: left; overflow: hidden; font-size: 22px; color: #000; margin-right: 10px;}
+.block-index .news .head sup { float: left; font-style: italic;}
+.block-index .news .head sup a { color: #909090;}
+.block-index .footer { width: 154px; height: 167px; float: left; background: #dfecc9; margin-left: 12px; font-size: 11px; line-height: 15px; color: #625d5d; padding: 13px 13px 0;}
+.block-index .footer p { margin-bottom: 15px;}
+.block-index .footer p a { color: #625d5d;}
+
+.content { overflow: hidden; height: 100%!ie;}
+.content div.left { float: left; width: 185px; margin-right: 22px; text-align: right;}
+.content div.left h2 { font-size: 24px; overflow: hidden; margin-bottom: 9px; color: #000;}
+.content div.left ul { font-size: 12px; margin-bottom: 30px;}
+.content div.left ul li { margin-bottom: 2px;}
+.content div.left ul a { color: #5f9310;}
+.content div.left ul a.active { color: #000; font-weight: bold; text-decoration: none;}
+.content div.left .block-calendar { text-align: left; font-size: 14px; color: #000;}
+.content div.left .block-calendar select { width: 184px; color: #000; margin: 5px 0 15px;}
+.content div.left .block-calendar .calendar { border: 1px solid #e0e0e0; background: #eeeeee; padding: 2px; margin: 5px 0 25px;}
+.content div.left .block-calendar .calendar .month { border: 1px solid #ed9100; background: #f6a828; text-align: center; color: #fff; font-size: 11px;}
+.content div.left .block-calendar .calendar .week { overflow: hidden; height: 100%!ie; margin-left: -3px;}
+.content div.left .block-calendar .calendar .week div { float: left; font-size: 10px; color: #312e3d; width: 23px; height: 20px; text-align: center; margin-left: 3px;}
+.content div.left .block-calendar .calendar .day { background: #fff; padding-top: 1px; overflow: hidden;}
+.content div.left .block-calendar .calendar .day .background {  overflow: hidden; height: 100%!ie; margin-left: -3px;}
+.content div.left .block-calendar .calendar .day .background div { float: left; width: 19px; color: #2a9dd1; height: 19px; border: 1px solid #dadada; margin: 0 0 1px 3px; text-align: right; font-weight: bold; font-size: 10px; padding: 1px 2px 0 0;}
+.content div.left .block-calendar .calendar .day .background div a { color: #2a9dd1;}
+.content div.left .block-calendar .calendar .day .background .empty { border: none; width: 21px;}
+.content div.left .block-calendar .calendar .day .background div.active { border-color: #fce27e;}
+.content div.left .block-calendar .calendar .day .background div.active a { color: #fbcc48; text-decoration: none;}
+.content div.left .join { text-align: right; font-size: 13px; overflow: hidden; height: 100%!ie; padding: 5px 0;}
+.content div.left .join a { color: #fff; position: relative; display: block; float: right; background: #68a91c; border-style: solid; border-width: 1px; border-color: #a8cd7c #426b12 #2c460c #fff; text-decoration: none; padding: 4px 10px 4px 27px;}
+.content div.left .join a i { display: block; position: absolute; background: url(../img/bg37x37.gif) no-repeat; width: 37px; height: 37px; top: -5px; left: -16px;}
+.content div.right { float: left; width: 740px;}
+.content div.right p { font-size: 14px; margin-bottom: 20px;}
+.content div.right table { margin-bottom: 20px;}
+.content div.right table th { background: #dfecc9; color: #282828; text-align: left; padding: 7px 14px;}
+.content div.right table td { padding: 7px 14px;}
+.content div.right table tr { border-bottom: 1px solid #b5d890;}
+.content div.right blockquote { background: #dfecc9; color: #312e2e; font-style: italic; padding: 10px 12px 12px 90px; margin: 30px 0 20px 0;}
+.content div.right p .download { color: #808080; font-size: 12px;}
+.content div.right p .download a { color: #000; position: relative; margin-left: 20px;}
+.content div.right p .download a i { display: block; position: absolute; background: url(../img/sprite.gif) no-repeat; width: 15px; height: 16px; top: 0; left: -20px;}
+.content div.right .img { float: left; margin-right: 20px;}
+.content div.right .img img { display: block; margin-bottom: 5px;}
+.content div.right .img em { font-size: 11px; line-height: 15px; color: #000;}
+.content div.right .img p { margin: 0;}
+.content div.right .img p a { font-size: 12px; color: #5f9310;}
+.content div.right .block-text { margin-bottom: 20px;}
+.content div.right .block-text p { margin: 0; font-size: 12px;}
+.content div.right .block-text p a { font-size: 14px; color: #000;}
+
+.content div.right .block-news { overflow: hidden; height: 100%!ie; margin-bottom: 40px;}
+.content div.right .block-news .img { float: left; width: 88px; margin-right: 20px;}
+.content div.right .block-news .img img { display: block; margin: 0;}
+.content div.right .block-news .text { float: left; width: 630px;}
+.content div.right .block-news .text p { margin: 0; font-size: 12px; line-height: 17px;}
+.content div.right .block-news .text .link a { font-size: 14px; color: #000;}
+.content div.right .block-news .text .date { font-size: 11px; line-height: 15px; color: #646464; margin-bottom: 6px;}
+.content div.right .view-news h2 { color: #000; font-size: 18px; line-height: 21px;}
+.content div.right .view-news .date { font-size: 11px; color: #646464}
+
+.content div.right .block-reviews .filter { font-size: 14px; color: #000; margin-bottom: 15px;}
+.content div.right .block-reviews .filter select { width: 325px; color: #000;}
+.content div.right .block-reviews .filter a { color: #649913;}
+.content div.right .block-reviews .block { margin-bottom: 20px;}
+.content div.right .block-reviews .block p { margin: 0; font-size: 12px; color: #000;}
+.content div.right .block-reviews .block p em { color: #646464; font-size: 11px;}
+.content div.right .block-reviews .block p strong { font-size: 14px; color: #000;}
+.content div.right .block-reviews .block p.text { overflow: hidden; height: 38px;}
+.content div.right .block-reviews .block p .dotted { font-size: 11px; color: #000;}
+.popup { position: absolute; border: 8px solid #f3f3f3; width: 450px; background: #fff; padding: 19px 15px 19px 15px; -moz-box-shadow: 0 0 30px #666; z-index: 99;}
+.popup .close { display: block; position: absolute; right: 0; top: 0; background: url(../img/close.gif) no-repeat; width: 31px; height: 32px;}
+.popup h2 { font-size: 24px; color: #000; font-weight: normal; line-height: 25px; margin-bottom: 20px;}
+.popup ul { margin: 0;}
+.popup li { margin-bottom: 13px; font-size: 11px; color: #606060;}
+.popup li input { font-size: 14px; padding: 7px; color: #000; width: 210px; margin-right: 8px;}
+.popup li select { font-size: 14px; padding: 7px; color: #000; width: 449px;}
+.popup li textarea { font-size: 14px; height: 120px; padding: 7px; color: #000; width: 433px;}
+.popup p a { font-size: 24px;}
+
+.content div.right .block-program { overflow: hidden; height: 100%!ie; margin-left: -130px;}
+.content div.right .block-program .block { width: 156px; height: 115px; float: left; position: relative; margin: 0 0 42px 130px;}
+.content div.right .block-program .block div { position: absolute; right: 0; bottom: 20px; background: url(../img/bg149x1.gif) repeat-y; width: 125px; text-align: right; font-size: 12px; padding: 3px 5px 5px 0; }
+.content div.right .block-program .block div a { color: #fff;}
+
+.content div.right .block-photo { overflow: hidden; height: 100%!ie; margin-left: -15px;}
+.content div.right .block-photo h2 { font-size: 18px; color: #000; margin-left: 15px; margin-bottom: 14px;}
+.content div.right .block-photo div { float: left; margin: 0 0 15px 15px;}
+
+.content div.right .pag-nav { overflow: hidden; height: 100%!ie;}
+.content div.right .pag-nav a { display: block; float: left; font-size: 18px; color: #000; padding: 9px 6px 5px 6px;}
+.content div.right .pag-nav a.active { color: #fff; background: #649a13; text-decoration: none;}
+
+.footer-block { overflow: hidden; height: 100%!ie; margin: 70px 0 20px 197px;}
+.footer-block .promo { float: left; margin-left: 12px; width: 166px; height: 99px; border: 7px solid #eaebec; text-align: center; font: italic 22px/28px Georgia, "Times New Roman", Times, serif; padding-top: 67px;}
+.footer-block .promo a { color: #000;}
+.footer-block .green { border-color: #68a91c; padding-top: 39px; height: 127px;}
+.footer-block .footer { width: 154px; height: 167px; float: left; background: #dfecc9; margin-left: 12px; font-size: 11px; line-height: 15px; color: #625d5d; padding: 13px 13px 0;}
+.footer-block .footer p { margin-bottom: 15px;}
+.footer-block .footer p a { color: #625d5d;}
