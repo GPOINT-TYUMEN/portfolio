@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="phone" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="form-phone">
+						<a href="javascript:void(0);" onclick="$('#phone').hide();" class="close"></a>
+						<form action="">
+							<ul>
+								<li>
+									<label for="">Имя: <sup>*</sup></label>
+									<input class="error" type="text" placeholder="Введите имя">
+								</li>
+								<li>
+									<label for="">Телефон: <sup>*</sup></label>
+									<input class="error" type="text" placeholder="89220000000">
+									<p>* поля обязательные для заполнения</p>
+									<p class="error">Проверте правильность заполнения полей !</p>
+								</li>
+								<li>
+									<input type="submit" class="button b-white" value="отправить">
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<header>
+				<div class="header">
+					<div class="clearfix">
+						<div class="logo"><a href="#"><img src="img/logo.gif" alt=""></a></div>
+						<div class="phone">
+							<p><span>+7 3452</span> 12-34-56</p>
+							<p><a href="javascript:void(0);" onclick="$('#phone').show();" class="dotted">Заказать обратный звонок</a></p>
+						</div>
+						<div class="question">
+							<p><a class="button b-yellow" href="#">Задать вопрос специалисту</a></p>
+						</div>
+					</div>
+					<nav>
+						<ul class="menu clearfix">
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Полезно знать</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#" class="search">поиск</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="main">
+				<div class="slogan">
+					<p>Сомневаетесь, какое средство гигиены полости рта<br> подойдёт именно вам? <strong>Мы поможем вам с выбором!</strong></p>
+				</div>
+				<div class="block-button">
+					<p>
+						<a href="#" class="button b-blue">Подобрать средство гигиены</a>
+						<span>или</span>
+						<a href="#" class="button b-white">Посмотреть каталог товаров</a>
+					</p>
+				</div>
+				<div class="mens-block">
+					<div class="clearfix">
+						<div class="item">
+							<img src="img/woman.jpg" alt="">
+							<div class="text">
+								<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/man.jpg" alt="">
+							<div class="text">
+								<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты — вопрос, требующий грамотного подхода.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-block">
+					<div class="block">
+						<a href="#" class="prev"></a>
+						<a href="#" class="next"></a>
+						<div id="carousel-block">
+							<div class="item clearfix">
+								<div class="img">
+									<div><img src="img/icon-sprite.jpg" alt=""></div>
+								</div>
+								<div class="text">
+									<div class="name">
+										<p><a href="#">Интернет-витрина</a></p>
+									</div>
+									<div class="info">
+										<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты - вопрос, требующий грамотного подхода.</p>
+										<p>Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img">
+									<div><img src="img/icon-sprite.jpg" alt=""></div>
+								</div>
+								<div class="text">
+									<div class="name">
+										<p><a href="#">Интернет-витрина</a></p>
+									</div>
+									<div class="info">
+										<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты - вопрос, требующий грамотного подхода.</p>
+										<p>Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img">
+									<div><img src="img/icon-sprite.jpg" alt=""></div>
+								</div>
+								<div class="text">
+									<div class="name">
+										<p><a href="#">Интернет-витрина</a></p>
+									</div>
+									<div class="info">
+										<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты - вопрос, требующий грамотного подхода.</p>
+										<p>Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img">
+									<div><img src="img/icon-sprite.jpg" alt=""></div>
+								</div>
+								<div class="text">
+									<div class="name">
+										<p><a href="#">Интернет-витрина</a></p>
+									</div>
+									<div class="info">
+										<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты - вопрос, требующий грамотного подхода.</p>
+										<p>Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img">
+									<div><img src="img/icon-sprite.jpg" alt=""></div>
+								</div>
+								<div class="text">
+									<div class="name">
+										<p><a href="#">Интернет-витрина</a></p>
+									</div>
+									<div class="info">
+										<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст. Выбор пасты - вопрос, требующий грамотного подхода.</p>
+										<p>Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="thumb-block clearfix">
+						<div class="item active">
+							<p><a href="#" class="dotted selection">Подбор средств гигиены полости рта</a></p>
+						</div>
+						<div class="item">
+							<p><a href="#" class="dotted order">Интернет- витрина</a></p>
+						</div>
+						<div class="item">
+							<p><a href="#" class="dotted info">Информация для студентов и врачей</a></p>
+						</div>
+						<div class="item">
+							<p><a href="#" class="dotted video">Видео</a></p>
+						</div>
+						<div class="item">
+							<p><a href="#" class="dotted forum">Форум</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="block-catalog">
+					<h2><a href="#">Каталог товаров</a></h2>
+					<div class="tabs">
+						<ul class="clearfix">
+							<li><a href="#" class="dotted">Зубные пасты</a></li>
+							<li><a href="#" class="dotted">Зубные нити</a></li>
+							<li class="active"><a href="#" class="dotted">Мануальные зубные щётки</a></li>
+							<li><a href="#" class="dotted">Электрические зубные щётки</a></li>
+							<li><a href="#" class="dotted">Ополаскиватели</a></li>
+							<li><a href="#">Все товары</a></li>
+						</ul>
+					</div>
+					<div class="block clearfix">
+						<div class="info">
+							<p><a href="#">Электрические зубные щётки</a></p>
+							<p>Выбор пасты — вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+							<select name="" id="">
+								<option value="">Все подкатегории</option>
+							</select>
+						</div>
+						<div class="list">
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<img src="img/154x154.jpg" alt="">
+								</div>
+								<div class="text">
+									<p><a href="#">Mirafluor C Зубная паста</a></p>
+									<p><strong>174 руб.</strong></p>
+								</div>
+							</div>
+							<div class="more">
+								<p><a href="#">Все товары<br> в категории</a></p>
+								<p><strong>12 562</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-brends">
+					<h2><a href="#">Бренды</a></h2>
+					<div class="clearfix">
+						<div class="item">
+							<div class="img"><img src="img/222x46.jpg" alt=""></div>
+							<div class="link"><p><a href="#">Blend-a-med</a></p></div>
+							<div class="icon">
+								<span><i class="pasta"></i></span>
+								<span><i class="brush"></i></span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img"><img src="img/222x46.jpg" alt=""></div>
+							<div class="link"><p><a href="#">Blend-a-med</a></p></div>
+							<div class="icon">
+								<span><i class="pasta"></i></span>
+								<span><i class="brush"></i></span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img"><img src="img/222x46.jpg" alt=""></div>
+							<div class="link"><p><a href="#">Blend-a-med</a></p></div>
+							<div class="icon">
+								<span><i class="pasta"></i></span>
+								<span><i class="brush"></i></span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img"><img src="img/222x46.jpg" alt=""></div>
+							<div class="link"><p><a href="#">Blend-a-med</a></p></div>
+							<div class="icon">
+								<span><i class="pasta"></i></span>
+								<span><i class="brush"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-information">
+					<div class="clearfix">
+						<div class="sponsor">
+							<h2>Спонсоры</h2>
+							<div class="text">
+								<p><a href="#">Стоматологическая клиника «Доктор – Дент»</a></p>
+								<p>Выбор пасты - вопрос, требующий грамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+							</div>
+						</div>
+						<div class="info">
+							<a href="javascript:void(0);" class="dotted more">ещё</a>
+							<div id="info">
+								<div class="item">
+									<h2>это полезно знать</h2>
+									<p>Выбор пасты - вопрос, требующий рамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+								</div>
+								<div class="item">
+									<h2>это полезно знать</h2>
+									<p>Выбор пасты - вопрос, требующий рамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+								</div>
+								<div class="item">
+									<h2>это полезно знать</h2>
+									<p>Выбор пасты - вопрос, требующий рамотного подхода. Это в равной степени относится как к категории недорогих, так и дорогостоящих зубных паст.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="block clearfix">
+					<div class="copy">
+						<p>© 2013 Доктор Смайл</p>
+						<p>+7 3452 12-34-56</p>
+						<p><a href="#">Контактная информация</a></p>
+					</div>
+					<div class="line-block">
+						<div class="clearfix">
+							<div class="search">
+								<form action=""><input type="submit" value=""><input placeholder="Поиск по каталогу" type="text"></form>
+							</div>
+							<div class="social">
+								<p>
+									<a class="vk" href="#">vkontakte</a>
+									<a class="od" href="#">odniklassniki</a>
+								</p>
+							</div>
+						</div>
+						<div class="button-block">
+							<p>
+								<a class="button" href="#">Подобрать средство гигиены</a>
+								<a class="button" href="#">Задать вопрос специалисту</a>
+								<span>Сделано в <a href="http://www.crtweb.ru" target="_blank">Creative</a></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

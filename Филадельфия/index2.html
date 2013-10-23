@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<header>
+			<div class="block-order" style="top: -285px;">
+				<div class="block clearfix">
+					<form action="">
+						<ul>
+							<li>
+								<p><strong>1. Выберите зал</strong></p>
+								<label><input type="checkbox" name="" id="">Для курящих</label>
+								<label><input type="checkbox" name="" id="">Для некурящих</label>
+							</li>
+							<li>
+								<p><strong>2. Количество человек</strong></p>
+								<div id="slider-range-max"></div>
+								<input type="text" id="amount">
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p><strong>3. Выберите дату</strong></p>
+								<div id="datepicker"></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p><strong>4. Введите время</strong></p>
+								<input type="text">
+							</li>
+							<li>
+								<p><strong>5. Ваше имя:</strong></p>
+								<input type="text">
+							</li>
+							<li>
+								<p><strong>6. Ваш телефон:</strong></p>
+								<input type="tel">
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="submit" value="Готово">
+								<p><em>Все поля формы должны быть заполнены</em></p>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="header">
+				<div class="block clearfix">
+					<div class="logo"><a href="/"><img src="img/logo.gif" alt=""></a></div>
+					<nav>
+						<ul class="menu clearfix">
+							<li class="active"><a href="/">Главная</a></li>
+							<li><a id="js-menu" href="#menu-block">Меню</a></li>
+							<li><a id="js-menu" href="#photo-block">Галерея</a></li>
+							<li><a id="js-menu" href="#block-map">контакты</a></li>
+						</ul>
+					</nav>
+					<div class="order">
+						<p><a id="order" href="javascript:void(0);">Забронировать столик</a></p>
+					</div>
+					<div class="adress">
+						<p>+7 (3452) 55-20-05</p>
+						<p>ул. Ленина  дом 57</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="header-carousel">
+			<div class="pagination-block"><div class="pagination"></div></div>
+			<div id="header-carousel">
+				<div class="item">
+					<img src="img/1280x582.jpg" alt="">
+					<div class="block">
+						<div class="info">
+							<div class="name">
+								<p>Бизнес-ланч</p>
+							</div>
+							<div class="text">
+								<p><em>Подаются в ресторане и китайские паровые пельмени вонтоны из тончайшего теста с тремя видами начинки. И спрингроллы. И утка по-пекински, причём как в салате (430 рублей), так и полной тушкой (2490 рублей) или половиной.</em></p>
+							</div>
+							<div class="price">
+								<p>290.-</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/1280x582.jpg" alt="">
+					<div class="block">
+						<div class="info">
+							<div class="name">
+								<p>Бизнес-ланч</p>
+							</div>
+							<div class="text">
+								<p><em>Подаются в ресторане и китайские паровые пельмени вонтоны из тончайшего теста с тремя видами начинки. И спрингроллы. И утка по-пекински, причём как в салате (430 рублей), так и полной тушкой (2490 рублей) или половиной.</em></p>
+							</div>
+							<div class="price">
+								<p>290.-</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/1280x582.jpg" alt="">
+					<div class="block">
+						<div class="info">
+							<div class="name">
+								<p>Бизнес-ланч</p>
+							</div>
+							<div class="text">
+								<p><em>Подаются в ресторане и китайские паровые пельмени вонтоны из тончайшего теста с тремя видами начинки. И спрингроллы. И утка по-пекински, причём как в салате (430 рублей), так и полной тушкой (2490 рублей) или половиной.</em></p>
+							</div>
+							<div class="price">
+								<p>290.-</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-block">
+			<div id="menu-block"></div>
+			<div class="block-menu">
+				<div class="block">
+					<div class="title-block clearfix b-menu">
+						<h2>Основное меню</h2>
+						<div class="pagination"></div>
+						<a href="#" class="download">Скачать полное меню ресторана</a>
+					</div>
+					<div id="menu">
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Том ям кунг с криветками</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Суп крем из тыквы с имбирем</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат из водорослей</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат сырный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Том ям кунг с криветками</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Суп крем из тыквы с имбирем</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат из водорослей</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат сырный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Том ям кунг с криветками</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Суп крем из тыквы с имбирем</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат из водорослей</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат сырный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Том ям кунг с криветками</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Суп крем из тыквы с имбирем</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат из водорослей</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Салат сырный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">390 р.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="title-block clearfix desserts">
+						<h2>Десерты</h2>
+						<div class="pagination"></div>
+						<a href="#" class="download">Скачать полное меню ресторана</a>
+					</div>
+					<div id="desserts">
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Пуддинг с ягодами</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Мороженное с макаруном</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>чизкейк яблочный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>какао-суфле</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Пуддинг с ягодами</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Мороженное с макаруном</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>чизкейк яблочный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>какао-суфле</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Пуддинг с ягодами</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Мороженное с макаруном</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>чизкейк яблочный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>какао-суфле</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<div class="title">
+									<h3>Пуддинг с ягодами</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>Мороженное с макаруном</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>чизкейк яблочный</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<h3>какао-суфле</h3>
+								</div>
+								<div class="img">
+									<img src="img/248x248.jpg" alt="">
+									<div class="price">220 р.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="title-block clearfix bar">
+						<h2>Карта бара</h2>
+						<div class="pagination"></div>
+						<a href="#" class="download">Скачать полное меню ресторана</a>
+					</div>
+					<div id="bar">
+						<div class="list clearfix">
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list clearfix">
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+									<li>
+										<div class="clearfix">
+											<span>Мохито</span>
+											<span>250 р.</span>
+										</div>
+										<p>(Ром, настоенный на сиропе, содовая, лайм, мята, тросниковый сироп)</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="photo-block"></div>
+		<div class="photo-block">
+			<div class="title">
+				<h2>Галерея</h2>
+			</div>
+			<div class="block clearfix" id="container">
+				<div class="item"><img src="img/images1.jpg" alt=""></div>
+				<div class="item w2"><img src="img/images2.jpg" alt=""></div>
+				<div class="item w3"><img src="img/images3.jpg" alt=""></div>
+				<div class="item w3"><img src="img/images6.jpg" alt=""></div>
+				<div class="item w4"><img src="img/images4.jpg" alt=""></div>
+				<div class="item w5"><img src="img/images5.jpg" alt=""></div>
+				<div class="item w5"><img src="img/images8.jpg" alt=""></div>
+				<div class="item w3"><img src="img/images9.jpg" alt=""></div>
+				<div class="item w4"><img src="img/images7.jpg" alt=""></div>
+			</div>
+		</div>
+		<div id="block-map"></div>
+		<div class="block-map">
+			<div class="block"><script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qz6pip3OciuqmtSQOWDan-MtT5ot24xL&width=100%&height=706"></script></div>
+			<div class="adress">
+				<h3>Контактная информация</h3>
+				<p>ул. Ленина  дом 57 <br> +7 (3452) 55-20-05</p>
+			</div>
+		</div>
+		<footer>
+			<div class="footer clearfix">
+				<div class="social">
+					<ul class="clearfix">
+						<li class="vk"><a href="#">Мы в контакте</a></li>
+						<li class="in"><a href="#">Мы в instagramm</a></li>
+						<li class="button"><a href="#">Рассказать друзьям в контакте</a></li>
+					</ul>
+				</div>
+				<div class="dev">
+					<a href="http://www.crtweb.ru" target="_blank"><img src="img/logo-dev.png" alt=""></a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/masonry.pkgd.min.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/vendor/jquery.malihu.PageScroll2id.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#header-carousel").carouFredSel({
+					responsive: true,
+					scroll: {
+						fx: "crossfade"
+					},
+					items: {
+						visible: 1,
+						width: 1280,
+						height: "45%"
+					},
+					pagination: ".header-carousel .pagination"
+				});
+
+				$("#menu").carouFredSel({
+					width: 1080,
+					height: 295,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 1080,
+						height: 295
+					},
+					scroll: 1,
+					auto: false,
+					pagination: ".b-menu .pagination"
+				});
+				
+				$("#desserts").carouFredSel({
+					width: 1080,
+					height: 295,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 1080,
+						height: 295
+					},
+					scroll: 1,
+					auto: false,
+					pagination: ".desserts .pagination"
+				});
+
+				$("#bar").carouFredSel({
+					width: 1080,
+					height: 295,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 1080,
+						height: 295
+					},
+					scroll: 1,
+					auto: false,
+					pagination: ".bar .pagination"
+				});
+
+				$.datepicker.regional['ru'] = {
+					renderer: $.ui.datepicker.defaultRenderer,
+					monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+					'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+					monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+					'Июл','Авг','Сен','Окт','Ноя','Дек'],
+					dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+					dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+					dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+					dateFormat: 'dd.mm.yyyy',
+					firstDay: 1,
+					prevText: '&#x3c;Пред', prevStatus: '',
+					prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+					nextText: 'След&#x3e;', nextStatus: '',
+					nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+					currentText: 'Сегодня', currentStatus: '',
+					todayText: 'Сегодня', todayStatus: '',
+					clearText: '-', clearStatus: '',
+					closeText: 'Закрыть', closeStatus: '',
+					yearStatus: '', monthStatus: '',
+					weekText: 'Wk', weekStatus: '',
+					dayStatus: 'DD d MM',
+					defaultStatus: '',
+					isRTL: false
+				};
+				$("#datepicker").datepicker($.datepicker.regional['ru']);
+
+				$('input').styler();
+
+			});
+
+			$("#order").click(function() {
+				if ( $(".block-order").hasClass("openblock") ) {
+					$(".block-order").animate({
+					top: -285
+					}, 700);
+					$(this).animate({
+						top: 0
+					}, 700);
+					$(".block-order").removeClass("openblock");
+				} else {
+					$(".block-order").animate({
+					top: 0
+					}, 700);
+					$(".block-order").addClass("openblock");
+					$(this).animate({
+						top: 285
+					}, 700);
+				}
+			});
+
+			$(window).load(function() {
+				$("#slider-range-max").slider({
+					range: "max",
+					min: 1,
+					max: 10,
+					value: 2,
+					slide: function( event, ui ) {
+						$("#amount").val(ui.value);
+					}
+				});
+				$("input#amount").appendTo(".ui-slider-handle");
+				$("#amount").val(2);
+
+				$("#js-menu").mPageScroll2id({
+					scrollSpeed: 1000
+				});
+
+				$("#container").masonry({
+					"columnWidth": 6,
+					itemSelector: '.item'
+				});
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,357 @@
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	background: url(../images/bg.gif) repeat top center;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* тут стили для ретина дисплея */
+}
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+.header {
+	padding: 45px 0 0;
+}
+
+.header .phone {
+	float: right;
+	width: 220px;
+}
+
+.header .phone p {
+	margin: 0 0 7px;
+	font: 1.1em/1em "PT Sans";
+	color: #323232;
+}
+
+.header .phone .tel {
+	font: 1.8em/1.1em "PT Sans bold";
+	margin: 0;
+}
+
+.header .phone .tel mark {
+	color: #969696;
+	background: none;
+}
+
+.header .logo {
+	text-align: center;
+	margin: 0 0 45px;
+}
+
+.text {
+	text-align: center;
+	font: 1.4em/1.25em "PT Sans";
+	color: #323232;
+	letter-spacing: .033em;
+	margin: 0 0 8px;
+}
+
+.text p {
+	margin: 0;
+}
+
+.text p mark {
+	color: #646464;
+	background: none;
+}
+
+.info {
+	text-align: center;
+	font: 1.4em/1.25em "PT Sans";
+	color: #323232;
+}
+
+.info p {
+	margin: 0 0 8px;
+}
+
+.info p mark {
+	color: #646464;
+	background: none;
+}
+
+.title {
+	text-align: center;
+}
+
+.title h2 {
+	font: 1.4em/1.25em "PT Sans bold";
+	color: #323232;
+	display: inline-block;
+	position: relative;
+	padding: 0 25px;
+}
+
+.title h2:before,
+.title h2:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 380px;
+	top: 12px;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	background: #969696;
+}
+
+.title h2:before {
+	left: -380px;
+}
+
+.title h2:after {
+	right: -380px;
+}
+
+.left {
+	float: left;
+	width: 460px;
+	text-align: center;
+	margin: 0 0 65px;
+}
+
+.right {
+	float: right;
+	width: 460px;
+	text-align: center;
+	margin: 0 0 65px;
+}
+
+.button {
+	text-align: center;
+	margin: 0 0 25px;
+}
+
+.button figure {
+	display: inline-block;
+	margin: 0 0 0 60px;
+}
+
+.button figure:first-child {
+	margin: 0;
+}
+
+.button a {
+	display: block;
+	background: #009fe3;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOWZlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDQ3ODciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #009fe3 0%, #004787 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009fe3), color-stop(100%,#004787));
+	background: -webkit-linear-gradient(top,  #009fe3 0%,#004787 100%);
+	background: -o-linear-gradient(top,  #009fe3 0%,#004787 100%);
+	background: -ms-linear-gradient(top,  #009fe3 0%,#004787 100%);
+	background: linear-gradient(to bottom,  #009fe3 0%,#004787 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fe3', endColorstr='#004787',GradientType=0 );
+	width: 300px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font: 1.4em/1.25em "PT Sans bold";
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 11px 0 8px;
+	letter-spacing: .04em;
+}
+
+.mini {
+	text-align: center;
+	font: .7em/1.2em "PT Sans";
+	color: #323232;
+	letter-spacing: .04em;
+	margin: 25px 0 0;
+}
+
+.mini p {
+	margin: 0;
+}
+
+aside {
+	position: absolute;
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+	height: 100%;
+	background: #e1e0e0;
+	right: -100px;
+	padding-top: 135px;
+}
+
+footer {
+	padding: 0 0 40px;
+}
+

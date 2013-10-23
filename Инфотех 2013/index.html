@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		
+		<script src="js/vendor/modernizr.js"></script>
+		<script>
+		<!-- Yandex.Metrika counter -->
+		(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+		try {
+		w.yaCounter21760906 = new Ya.Metrika({id:21760906,
+		webvisor:true,
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true});
+		} catch(e) { }
+		});
+		var n = d.getElementsByTagName("script")[0],
+		s = d.createElement("script"),
+		f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+		if (w.opera == "[object Opera]") {
+		d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+		<!-- /Yandex.Metrika counter -->
+		</script>
+
+	</head>
+	<body>
+		<div class="popup" id="popup" style="display: none;">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="avatar"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+						<div class="text">
+							<p>Впервые в рамках форума планируется проведение секции «Информационно-коммуникационные технологии в образовании», соорганизатором которой выступает филиал Президентской библиотеки.</p>
+						</div>
+						<div class="name">Массух Илья Иссович</div>
+						<div class="post">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+						<a href="javascript:void(0);" onclick="$('#popup').hide();" class="close"><i></i>Закрыть</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<header>
+				<div class="header">
+					<nav>
+						<div class="menu">
+							<ul>
+								<li><a href="#">О форуме</a></li>
+								<li><a href="#">Участники</a></li>
+								<li><a href="#">Программа</a></li>
+								<li><a href="#">СМИ о нас</a></li>
+								<li><a href="#">Партнёры</a></li>
+								<li><a href="#">О выставке</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Фотогалерея</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">регистрация</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="logotype">
+					<div class="clearfix">
+						<div class="left">
+							<img src="img/logo-tyumen.png" alt="" width="87" height="67" />
+							<p>Правительство Тюменской<br />области</p>
+						</div>
+						<div class="logo">
+							<a href="/"><img src="img/logo-infotex.png" alt="" width="243" height="201" /></a>
+						</div>
+						<div class="right">
+							<p>Контакт-центр</p>
+							<p class="phone">+7 3452 56-00-56</p>
+							<div class="date">
+								<p>11–12 сентября</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper">
+				<div class="block-form">
+					<div class="clearfix">
+						<div class="left">
+							<p><strong>ИНФОТЕХ</strong></p>
+							<a href="#"><i></i></a>
+							<p>промо-ролик</p>
+						</div>
+						<div class="form">
+							<ul class="link">
+								<li><a href="#">Концепция</a></li>
+								<li><a href="#">Программа</a></li>
+								<li><a href="#">Партнёрам</a></li>
+								<li><a href="#">Условия участия</a></li>
+							</ul>
+							<div class="text">
+								<p>Приглашаем вас принять участие в главном событии IT индустрии региона «Инфотех». <br /> Целью мероприятия является создание эффективной площадки обмена опытом<br /> федеральных и региональных ИТ-проектов, взаимодействия регионов<br /> и ИТ-компаний для распространения наиболее успешных практик<br /> в сфере информационных технологий, в том числе по реализации перевода<br />государственных и муниципальных услуг в электронный вид.</p>
+							</div>
+							<div class="button">
+								<a href="javascript:void(0);" class="registration">зарегистрироваться</a>
+								<a href="javascript:void(0);" style="display: none;" class="active">зарегистрироваться</a>
+							</div>
+							<div class="info">
+								<p><em>Для участия в мероприятии подача заявки на сайте обязательна.</em></p>
+							</div>
+							<div class="block" id="block" style="display: none;">
+								<h2>Заявка на участие</h2>
+								<form action="send.php" method="POST">
+									<ul>
+										<li>
+											<label for="">Фамилия <sup>*</sup></label>
+											<input name="last_name" type="text" />
+										</li>
+										<li>
+											<label for="">Имя <sup>*</sup></label>
+											<input name="name" type="text" />
+										</li>
+										<li>
+											<label for="">Отчество</label>
+											<input name="middle_name" type="text" />
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<label for="">Организация <sup>*</sup></label>
+											<input name="agency" type="text" />
+										</li>
+										<li>
+											<label for="">Должность <sup>*</sup></label>
+											<input name="position" type="text" />
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<label for="">Регион <sup>*</sup></label>
+											<select name="region" id="">
+												<option value="">Тюменская область</option>
+												<option value="">Ханты-Мансийский АО</option>
+												<option value="">Ямало-Ненецкий АО</option>
+												<option value="">Другой регион</option>
+											</select>
+										</li>
+										<li>
+											<label for="">Город <sup>*</sup></label>
+											<input name="city" type="text" />
+										</li>
+										<li>
+											<label for="">Телефон <sup>*</sup></label>
+											<input name="phone" type="tel" placeholder="+7 961 111-22-33" />
+										</li>
+										<li>
+											<label for="">Эл. почта <sup>*</sup></label>
+											<input name="email" type="email" />
+										</li>
+									</ul>
+									<div class="checkbox">
+										<p>Планируете ли вы выступать с докладом</p>
+										<label><input type="radio" value="no" name="doc" id="" /> Нет</label>
+										<label><input type="radio" value="yes" name="doc" id="" /> Да</label>
+										<ul id="doc" style="display: none;">
+											<li>
+												<label for="">Секция, в которой вы планируете принять участие</label>
+												<select name="section" id="">
+													<option value="">Секция 1</option>
+													<option value="">Секция 2</option>
+												</select>
+											</li>
+											<li>
+												<label for="">Тема доклада</label>
+												<input name="theme" class="topic" type="text" />
+											</li>
+											<li>
+												<label for="">Необходимое количество минут для доклада</label>
+												<input class="time" name="time" type="text" />
+												<span>мин.</span>
+											</li>
+										</ul>
+									</div>
+									<div class="checkbox">
+										<p>Планируете ли вы экспонироваться на выставке</p>
+										<label><input type="radio" value="no" name="exhibition" id="" /> Нет</label>
+										<label><input type="radio" value="yes" name="exhibition" id="" /> Да</label>
+										<ul id="exhibition" style="display: none;">
+											<li>
+												<label for="">Форма участия</label>
+												<select name="shape" id="">
+													<option value="">Очная</option>
+													<option value="">Заочная</option>
+												</select>
+											</li>
+											<li>
+												<label for="">Выставочная площадь</label>
+												<input type="text" name="length_1" class="length" placeholder="Длина" />
+												<span>м</span>
+												<strong>×</strong>
+												<input type="text" name="length_2" class="length" placeholder="Ширина" />
+												<span>м</span>
+											</li>
+											<li>
+												<label for="">Комментарий</label>
+												<textarea name="comment" id="" cols="30" rows="10"></textarea>
+											</li>
+										</ul>
+									</div>
+									<div class="checkbox last">
+										<p>Нуждаетесь ли вы в услугах гостиницы и трансферте </p>
+										<label><input type="radio" value="no" name="hotel" id="" /> Нет</label>
+										<label><input type="radio" value="yes" name="hotel" id="" /> Да</label>
+										<ul id="hotel" style="display: none;">
+											<li>
+												<label for="">Укажите дополнительную информацию по необходимой услуге</label>
+												<textarea name="transfer_text" id="" cols="30" rows="10"></textarea>
+											</li>
+										</ul>
+									</div>
+									<ul>
+										<li>
+											<label for="">Откуда вы узнали о мероприятии</label>
+											<input name="question" type="text" />
+										</li>
+										<li>
+											<label for="">Комментарий</label>
+											<textarea name="message" id="" cols="30" rows="10"></textarea>
+										</li>
+									</ul>
+									<div class="bottom">
+										<div class="button"><input type="submit" value="отправить заявку" /></div>
+										<p>Уважаемые дамы и господа, после отправки нам заполненной анкеты,<br /> менеджер пришлёт подтверждение регистрации вашего участия.</p>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="right">
+							<p><strong>Онлайн<br />трансляция</strong></p>
+							<a href="#"></a>
+							<p>Станет доступна<br />11 сентября 2013 года</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-archive">
+				<div class="block">
+					<p>
+						Архив мероприятия: 
+						<a href="http://2012.infotex72.ru" target="_blank">2012</a>
+						<a href="http://2011.infotex72.ru/" target="_blank">2011</a>
+						<a href="http://2010.infotex72.ru/" target="_blank">2010</a>
+						<a href="http://www.admtyumen.ru/it" target="_blank">2009</a>
+					</p>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="block-news">
+					<h2>Новости мероприятия</h2>
+					<div class="block">
+						<div class="clearfix">
+							<div class="item">
+								<div class="img"><a href="#"><img src="img/296x180.jpg" alt="" width="296" height="180" /></a></div>
+								<div class="date">
+									<p>29 ноября 2012, 16:25</p>
+								</div>
+								<div class="text">
+									<p><a href="#">Названы лучшие муниципалитеты по реализации программы «Расширяя горизонты» в 2012 году</a></p>
+									<p>28 ноября в рамках V форума «Электронное правительство. Механизм управления регионом» прошло награждение органов местного самоуправления, активно продвигающих компьютерные курсы по программе Губернатора Тюменской области.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="img/296x180.jpg" alt="" width="296" height="180" /></a></div>
+								<div class="date">
+									<p>29 ноября 2012, 16:25</p>
+								</div>
+								<div class="text">
+									<p><a href="#">Названы лучшие муниципалитеты по реализации программы «Расширяя горизонты» в 2012 году</a></p>
+									<p>28 ноября в рамках V форума «Электронное правительство. Механизм управления регионом» прошло награждение органов местного самоуправления, активно продвигающих компьютерные курсы по программе Губернатора Тюменской области.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="img/296x180.jpg" alt="" width="296" height="180" /></a></div>
+								<div class="date">
+									<p>29 ноября 2012, 16:25</p>
+								</div>
+								<div class="text">
+									<p><a href="#">Названы лучшие муниципалитеты по реализации программы «Расширяя горизонты» в 2012 году</a></p>
+									<p>28 ноября в рамках V форума «Электронное правительство. Механизм управления регионом» прошло награждение органов местного самоуправления, активно продвигающих компьютерные курсы по программе Губернатора Тюменской области.</p>
+								</div>
+							</div>
+						</div>
+						<div class="more"><span><a href="#">Все новости</a></span></div>
+					</div>
+				</div>
+				<div class="block-users">
+					<h2>Спикеры</h2>
+					<div class="block">
+						<a href="javascript:void(0);" class="prev-users"></a>
+						<a href="javascript:void(0);" class="next-users"></a>
+						<div id="users">
+							<div class="item quotes">
+								<div class="img">
+									<img src="img/124x124.jpg" alt="" width="124" height="124" />
+									<a href="#" class="quote">
+										<p>цитата</p>
+										<p>спикера</p>
+									</a>
+								</div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="img/124x124.jpg" alt="" width="124" height="124" /></div>
+								<div class="name"><strong>Массух</strong> Илья Иссович</div>
+								<div class="text">первый заместитель директора макрорегионального филиала "Урал" ОАО "Ростелеком"</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-program">
+				<div class="block">
+					<h2>Программа форума</h2>
+					<div class="tabs">
+						<div class="item active"><a onclick="$('#text_2').hide();$('#text_1').show();" href="javascript:void(0);"><span>11 сентября</span></a></div>
+						<div class="item"><a onclick="$('#text_1').hide();$('#text_2').show();" href="javascript:void(0);"><span>12 сентября</span></a></div>
+					</div>
+					<div class="text" id="text_1">
+						<p>Секция "Электронное правительство"</p>
+					</div>
+					<div class="text" id="text_2" style="display: none;">
+						<p>Секция "Электронный регион"</p>
+						<p>Секция "Информационные технологии и телекоммуникации"</p>
+						<p>Секция "Информационные технологии на службе у бизнеса"</p>
+						<p>Секция "Опыт внедрения информационных технологий в деятельности мировых судей"</p>
+						<p>Секция "Многофункциональный центр: опыт внедрения и перспективы"</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="partners-block">
+					<h2>Организаторы форума</h2>
+					<div class="organizer clearfix">
+						<div class="item">
+							<img src="img/logo-tyumen.gif" alt="" width="135" height="101" />
+							<p>Департамент информатизации Тюменской области</p>
+						</div>
+						<div class="item">
+							<img src="img/logo-aritto.gif" alt="" width="135" height="101" />
+							<p>Ассоциация по развитию информационных технологий Тюменской области</p>
+						</div>
+					</div>
+					<div class="partners">
+						<h2>Партнёры</h2>
+						<table cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<td colspan="6">
+										<span><a href="#" class="img"><img src="img/rostelecom.gif" alt="" width="169" height="54" /></a></span>
+										<!-- TODO: здесь логотип может быть по размеру каким угодно -->
+										<p>генеральный партнёр</p>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+									<td>
+										<span><a href="#" class="img"><img src="img/sistematic.gif" alt="" width="103" height="37" /></a></span>
+										<!-- TODO: максимальная ширина 150px, а максимальная высота 61px -->
+										<p>Официальный партнёр</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="more"><a href="#">Как стать партнёром</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="block-maps">
+				<h2>Где будет проходить мероприятие</h2>
+				<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=AA3c9WP9fP6S52xCj6m8BctTpF_qAE5w&width=100%&height=407"></script>
+			</div>
+		</div>
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#users").carouFredSel({
+					circular: false,
+					infinite: false,
+					width: 978,
+					height: 270,
+					items: {
+						width: 242,
+						height: 270
+					},
+					scroll: 1,
+					auto: false,
+					prev: {
+						button: ".block-users .prev-users",
+						key: "left"
+					},
+					next: {
+						button: ".block-users .next-users",
+						key: "right"
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

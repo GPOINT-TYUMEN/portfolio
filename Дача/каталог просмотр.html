@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.jqzoom.css">
+	<link rel="stylesheet" href="css/jquery.rating.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header clearfix">
+				<div class="logo"><a href="/"><img src="images/logo.gif" alt="" width="88" height="124" /></a></div>
+				<div class="profiles">
+					<div class="clearfix">
+						<div class="avatar"><img src="images/48x48.gif" alt="48x48" width="48" height="48" /></div>
+						<div class="link"><a href="javascript:void(0);" onclick="$('.profiles').toggleClass('active');"><i></i></a></div>
+					</div>
+				</div>
+				<div class="basket" style="display: none"><!-- если нет товаров  -->
+					<i></i>
+					<p>Ваша корзина пуста.</p>
+				</div>
+				<div class="basket on"><!-- если есть товары -->
+					<i></i>
+					<span>43</span>
+					<p><a href="#">В корзине</a> <strong>42</strong> товара<br />на сумму <strong>10 435 руб.</strong></p>
+				</div>
+				<div class="social">
+					<p>Мы в соцсетях</p>
+					<ul class="clearfix">
+						<li class="vk"><a href="#"><i></i></a></li>
+						<li class="fc"><a href="#"><i></i></a></li>
+						<li class="lj"><a href="#"><i></i></a></li>
+						<li class="ph"><a href="#"><i></i></a></li>
+					</ul>
+				</div>
+				<div class="block-phone">
+					<p>Наш телефон</p>
+					<span>+7 3452</span> <strong>98-86-98</strong>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="block clearfix">
+					<ul class="clearfix">
+						<li class="active"><a href="#">Магазин</a></li>
+						<li><a href="#">акции</a></li>
+						<li>
+							<a href="#">сообщество</a>
+							<ul class="submenu">
+								<li><a href="#">сообщество</a></li>
+								<li><a href="#">блог</a></li>
+								<li><a href="#">tea now</a></li>
+								<li><a href="#">новости</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+							<ul class="submenu"> <!-- это рыба, не обращай внимание -->
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">блог</a></li>
+								<li><a href="#">tea now</a></li>
+								<li><a href="#">новости</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="search">
+						<form action=""><input type="submit" value="" /><input type="text" /></form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="pages">
+			<div class="banner">
+				<a href="#"><img src="images/940x110.jpg" alt="" width="940" height="110" /></a>
+			</div>
+			<div class="clumbs">
+				<a href="#">Главная</a> →
+				Магазин
+			</div>
+			<div class="clearfix">
+				<aside>
+					<div class="menu">
+						<ul>
+							<li><a href="#">популярное</a></li>
+							<li><a href="#">Рассыпной чай</a></li>
+							<li class="submenu">
+								<a href="#">Прессованный чай</a>
+								<ul>
+									<li class="active"><a href="#">шу пуэр</a></li>
+									<li><a href="#">шэн пуэр</a></li>
+									<li><a href="#">белый чай</a></li>
+									<li><a href="#">красный чай</a></li>
+									<li><a href="#">Лю Пао</a></li>
+									<li><a href="#">Хунаньский чай</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Фасованный чай</a></li>
+							<li><a href="#">Посуда</a></li>
+							<li><a href="#">Фен-шуй</a></li>
+							<li><a href="#">мебель</a></li>
+							<li><a href="#">украшения</a></li>
+							<li><a href="#">чайная атрибутика</a></li>
+							<li><a href="#">сопутствующие товары</a></li>
+						</ul>
+					</div>
+				</aside>
+				<div class="content">
+					<div class="block-product">
+						<div class="view">
+							<div class="clearfix">
+								<div class="left">
+									<div class="images">
+										<div class="img">
+											<span class="sale">-30%</span>
+											<a href="images/470x470.jpg"><img src="images/large/img1.jpg" width="340" height="340" /></a>
+										</div>
+										<div class="thumbnails clearfix">
+											<div class="item"><a href="#"><img src="images/100x100.jpg" alt="" width="100" height="100" /></a></div>
+											<div class="item"><a href="#"><img src="images/100x100.jpg" alt="" width="100" height="100" /></a></div>
+										</div>
+									</div>
+									<div class="looked">
+										<div class="title">недавно просмотренные товары</div>
+										<div class="clearfix">
+											<div class="item">
+												<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+												<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+												<div class="rate clearfix">
+													<input class="star required" type="radio" name="test-1-rating-5" value="1"/>
+													<input class="star" type="radio" name="test-1-rating-5" value="2"/>
+													<input class="star" type="radio" name="test-1-rating-5" value="3"/>
+													<input class="star" type="radio" name="test-1-rating-5" value="4"/>
+													<input class="star" type="radio" name="test-1-rating-5" value="5"/>
+												</div>
+											</div>
+											<div class="item">
+												<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+												<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+												<div class="rate clearfix">
+													<input class="star required" type="radio" name="test-2-rating-5" value="1"/>
+													<input class="star" type="radio" name="test-2-rating-5" value="2"/>
+													<input class="star" type="radio" name="test-2-rating-5" value="3"/>
+													<input class="star" type="radio" name="test-2-rating-5" value="4"/>
+													<input class="star" type="radio" name="test-2-rating-5" value="5"/>
+												</div>
+											</div>
+											<div class="item">
+												<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+												<p><a href="#">Лун Цзин, весна 2012 г.</a></p>
+												<div class="rate clearfix">
+													<input class="star required" type="radio" name="test-3-rating-5" value="1"/>
+													<input class="star" type="radio" name="test-3-rating-5" value="2"/>
+													<input class="star" type="radio" name="test-3-rating-5" value="3"/>
+													<input class="star" type="radio" name="test-3-rating-5" value="4"/>
+													<input class="star" type="radio" name="test-3-rating-5" value="5"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<h3>Хуан Цзин Гу, весна 2012 г.</h3>
+									<div class="price-block">
+										<div class="price">450 руб. <span>/ 100 г</span></div>
+										<div class="old">700 руб.</div>
+									</div>
+									<div class="rate clearfix">
+										<input class="star required" type="radio" name="test-4-rating-5" value="1"/>
+										<input class="star" type="radio" name="test-4-rating-5" value="2"/>
+										<input class="star" type="radio" name="test-4-rating-5" value="3"/>
+										<input class="star" type="radio" name="test-4-rating-5" value="4"/>
+										<input class="star" type="radio" name="test-4-rating-5" value="5"/>
+									</div>
+									<div class="block-text" id="block-text">
+										<p>Даосский пуэр из Вэйшань, безусловно, впитал всю силу гор. Деревья из листьев, которых был произведен это чай, произрастали на высоте 2500 метров, горе Вэйбаошань. Здесь в этом экологически чистом месте располагается множество даосских храмов.</p>
+										<p>Даосский пуэр из Вэйшань, безусловно, впитал всю силу гор. Деревья из листьев, которых был произведен это чай, произрастали на высоте 2500 метров, горе Вэйбаошань. Здесь в этом экологически чистом месте располагается множество даосских храмов.</p>
+										<p>Даосский пуэр из Вэйшань, безусловно, впитал всю силу гор. Деревья из листьев, которых был произведен это чай, произрастали на высоте 2500 метров, горе Вэйбаошань. Здесь в этом экологически чистом месте располагается множество даосских храмов.</p>
+									</div>
+									<div class="block-order">
+										<ul class="available">
+											<li>
+												<span class="left"><label for="">Наличие:</label></span>
+												<span class="right">Есть в наличии</span>
+											</li>
+											<li>
+												<span class="left"><label for="">Вес:</label></span>
+												<span class="right">
+													<select name="" id="">
+														<option value="">300 г</option>
+													</select>
+												</span>
+											</li>
+											<li>
+												<span class="left"><label for="">Количество:</label></span>
+												<span class="right">
+													<select name="" id="">
+														<option value="">8</option>
+													</select>
+												</span>
+											</li>
+											<li>
+												<span class="left"><label for="">Итого:</label></span>
+												<span class="right">
+													<strong>13 920 руб.</strong>
+												</span>
+											</li>
+											<li>
+												<input type="submit" class="button" value="Купить" />
+											</li>
+										</ul>
+									</div>
+									<div class="social"></div>
+								</div>
+							</div>
+							<div class="bought">
+								<div class="title">Уже купили этот товар</div>
+								<div class="item"><a href=""><i></i>Александр</a></div>
+								<div class="item"><a href=""><i></i>Александр</a></div>
+								<div class="item"><a href=""><i></i>Александр</a></div>
+								<div class="item"><a href=""><i></i>Александр</a></div>
+								<div class="item"><a href=""><i></i>Александр</a></div>
+							</div>
+							<div class="overall-rating">
+								<div class="title">общий рейтинг</div>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-3-rating-8" value="1"/>
+									<input class="star" type="radio" name="test-3-rating-8" value="2"/>
+									<input class="star" type="radio" name="test-3-rating-8" value="3"/>
+									<input class="star" type="radio" name="test-3-rating-8" value="4"/>
+									<input class="star" type="radio" name="test-3-rating-8" value="5"/>
+									<strong>4,8</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-comments">
+				<div class="title">
+					<h2>комментарии к товару <span>(42)</span></h2>
+				</div>
+				<div class="block">
+					<div class="item clearfix">
+						<div class="avatar"><img src="images/48x48.gif" alt="" width="48" height="48" /></div>
+						<div class="name">Инна Сидорова</div>
+						<div class="date">14 декабря, 11:34</div>
+						<div class="text">However, with an expected price tag of .4 billion per flight, or around  million per person, the trek would likely be out of reach for all but the wealthiest moonwalkers.</div>
+					</div>
+					<div class="item clearfix">
+						<div class="avatar"><img src="images/48x48.gif" alt="" width="48" height="48" /></div>
+						<div class="name">Инна Сидорова</div>
+						<div class="date">14 декабря, 11:34</div>
+						<div class="text">However, with an expected price tag of .4 billion per flight, or around  million per person, the trek would likely be out of reach for all but the wealthiest moonwalkers.</div>
+					</div>
+					<div class="item clearfix">
+						<div class="avatar"><img src="images/48x48.gif" alt="" width="48" height="48" /></div>
+						<div class="name">Инна Сидорова</div>
+						<div class="date">14 декабря, 11:34</div>
+						<div class="text">However, with an expected price tag of .4 billion per flight, or around  million per person, the trek would likely be out of reach for all but the wealthiest moonwalkers.</div>
+					</div>
+				</div>
+				<div class="more"><a href="#">Загрузить ещё комментарии</a></div>
+			</div>
+			<div class="add-comments">
+				<div class="title">
+					<h2>оставить комментарий</h2>
+				</div>
+				<form action="">
+					<ul class="clearfix">
+						<li><textarea name="" id="" cols="30" placeholder="Текст комментария" rows="10"></textarea></li>
+						<li><img src="images/48x48.gif" alt="" width="48" height="48" /></li>
+					</ul>
+					<input type="submit" value="Отправить" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="block">
+				<div class="clearfix">
+					<ul>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Рассыпной чай</a></li>
+						<li><a href="#">Прессованный чай</a></li>
+						<li><a href="#">Посуда</a></li>
+						<li><a href="#">Чайная атрибутика</a></li>
+						<li><a href="#">Сувениры и подарки</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Миссия и ценности</a></li>
+						<li><a href="#">Почему удобно покупать чай у нас</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Наши чайные магазины</a></li>
+						<li><a href="#">Что пишут о нас</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Сообщество</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Tea Now</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Помощь по сайту</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="social">
+						<p>Мы в соцсетях</p>
+						<ul>
+							<li class="vk"><a href="#"><i></i></a></li>
+							<li class="fc"><a href="#"><i></i></a></li>
+							<li class="lj"><a href="#"><i></i></a></li>
+							<li class="ph"><a href="#"><i></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom clearfix">
+					<div class="copy">
+						<p>© 2012 Чайный магазин «Дача». Все права защищены.</p>
+					</div>
+					<div class="dev">Сделано в <a href="http://www.crtweb.ru" target="_blank">Creative</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.rating.pack.js"></script>
+	<script src="js/jquery.jqzoom.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".images .img a").jqzoom({
+				zoomType: 'standard',
+				zoomWidth: 340,
+				zoomHeight: 340,
+				position:'right'
+			});
+			$("select").styler();
+		});
+		$(window).load(function(){
+			$("#block-text").mCustomScrollbar();
+		});
+	</script>
+</body>
+</html>

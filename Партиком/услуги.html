@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<div class="share-block">
+		<ul>
+			<li class="specials"><a href="#"><i class="sprite-png"></i><span>Внимание!</span></a></li>
+			<li class="like"><a href="#"><i class="sprite-png"></i></a></li>
+			<li class="feedback"><a href="javascript:void(0);" onclick="$('#popup').show();"><i class="sprite-png"></i><span>Мы на связи!</span></a></li>
+		</ul>
+	</div>
+	<div class="popup" id="service" style="display: block;">
+		<div class="table">
+			<div class="tr">
+				<div class="block">
+					<a href="javascript:void(0);" id="close" onclick="$('#service').hide();" class="close sprite"></a>
+					<h2>Заказ услуги</h2>
+					<form action="">
+						<div class="clearfix">
+							<ul class="left">
+								<li>
+									<label for="">Как вас зовут</label>
+									<input class="error" type="text" />
+								</li>
+								<li>
+									<label for="">Ваша эл. почта</label>
+									<input type="email" />
+									<p>На этот адрес мы отправим вам информацию</p>
+								</li>
+								<li>
+									<label for="">Ваш телефон</label>
+									<input type="tel" />
+								</li>
+								<li>
+									<label for="">Удобное вам время для<br />звонка</label>
+									<select name="" id="">
+										<option value="">17:00</option>
+									</select>
+									—
+									<select name="" id="">
+										<option value="">20:00</option>
+									</select>
+								</li>
+								<li>
+									<label for="">Категория</label>
+									<label><input type="radio" name="" id="" />Частное лицо</label>
+									<label><input type="radio" name="" id="" />Компания</label>
+								</li>
+							</ul>
+							<fieldset>
+								<legend>Какие услуги вам интересны?</legend>
+								<p><strong>Дворец спорта «ПАРТИКОМ»</strong></p>
+								<label><input type="checkbox" name="" id="" />Массовые катания</label>
+								<label><input type="checkbox" name="" id="" />Универсальный спортивный зал</label>
+								<label><input type="checkbox" name="" id="" />Хоккей</label>
+								<label><input type="checkbox" name="" id="" />Размещение рекламы</label>
+								<label><input type="checkbox" name="" id="" />Мини-футбол</label>
+								<label><input type="checkbox" name="" id="" />Организация мероприятий</label>
+								<p><strong>Спортивно-оздоровительный комплекс «ПАРТИКОМ»</strong></p>
+								<label><input type="checkbox" name="" id="" />Бассейн, сауна, хаммам</label>
+								<label><input type="checkbox" name="" id="" />Групповые фитнес программы</label>
+								<label><input type="checkbox" name="" id="" />Зал каратэ</label>
+								<label><input type="checkbox" name="" id="" />Кафе и боулинг</label>
+								<label><input type="checkbox" name="" id="" />Тренажерный зал</label>
+								<label><input type="checkbox" name="" id="" />Массаж</label>
+							</fieldset>
+						</div>
+						<ul>
+							<li>
+								<label for="">Ваши<br />пожелания<br />или<br />комментарии</label>
+								<textarea name="" id="" cols="30" rows="10" style="width: 774px;"></textarea>
+							</li>
+							<li>
+								<span class="button"><input type="submit" value="Заказать услугу" /></span>
+								<label><input type="checkbox" name="" id="" />Хочу получать информацию о новостях и акциях Территории спорта «ПАРТИКОМ»</label>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header">
+				<div class="block">
+					<div class="top clearfix">
+						<div class="logo"><a href="#"><img src="images/logo.png" alt="Партиком — территория спорта" width="541" height="24" /></a></div>
+						<div class="search">
+							<form action=""><input type="submit" class="sprite" value="" /><input type="search" name="" id="" placeholder="Поиск по сайту" /></form>
+						</div>
+						<div class="link"><a href="#"><i class="sprite"></i>Схема проезда</a></div>
+					</div>
+					<nav>
+						<div class="menu">
+							<ul class="clearfix">
+								<li>
+									<a class="decoration" href="#"><span class="dotted">О нас</span></a>
+									<ul class="submenu" style="display: none">
+										<li><a href="#">Наши объекты</a></li>
+										<li><a href="#">Наша команда</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">Реклама у нас</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="decoration" href="#"><span class="dotted">Услуги</span></a>
+									<!-- ul.submenu-services>li-->
+								</li>
+								<li class="active"><a href="#"><span>Новости и акции</span></a></li>
+								<li><a href="#"><span>Фото</span></a></li>
+								<li><a href="#"><span>Видео</span></a></li>
+								<li><a href="#"><span>Контакты</span></a></li>
+								<li class="last"><a href="#"><i class="sprite-png"></i>Корпоративным клиентам</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="pages">
+			<div class="clubms"><a href="#">Главная</a> → <a href="#">Услуги</a> → <span>Массаж</span></div>
+			<div class="title">
+				<h2>Массаж</h2>
+			</div>
+			<div class="block-services">
+				<div class="clearfix">
+					<div class="img"><img src="images/390x244.jpg" alt="" width="390" height="244" /></div>
+					<div class="text">
+						<p>Весомым показателем уровня спортивного комплекса является то, каким образом он предлагает организовывать процесс восстановления и релаксации. Спортивно-оздоровительный комплекс «ПАРТИКОМ» предусмотрел возможность получения массажных процедур, которые можно делать как перед началом тренировки, так и после нее.</p>
+						<div class="block-button">
+							<p><a href="#" class="button blue">Скачать прайс-лист</a> <em>Excel, 242 КБ</em></p>
+							<p><a href="javascript:void(0);" class="button">Заказать услугу</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services-pag clearfix">
+				<div class="item">
+					<p>← <a href="#">Кафе и боулинг</a></p>
+				</div>
+				<div class="item">
+					<p><a href="#">Кафе и боулинг</a> →</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer clearfix">
+			<div class="copy">
+				<p><span>© 2013</span> Автономная некоммерческая организация «Спортивный клуб «Витязь» 625000, г. Тюмень, проезд Воронинские горки, 101</p>
+				<p><a href="#"><i class="sprite"></i>Схема проезда</a></p>
+			</div>
+			<div class="contacts">
+				<p>Эл. почта: <a href="#">pr@particom-sport.ru</a></p>
+				<p>Мы в социальных сетях:<br />Партиком Арена<br />Партиком Спорт</p>
+			</div>
+			<div class="dev">
+				<p>Сделано в <a href="http://www.crtweb.ru" target="_blank"><i class="sprite"></i>Creative</a></p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+</body>
+</html>

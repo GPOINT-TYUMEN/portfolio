@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?96"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: API_ID, onlyWidgets: true});
+	</script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="share-block">
+		<ul>
+			<li class="specials"><a href="#"><i class="sprite-png"></i><span>Внимание!</span></a></li>
+			<li class="like">
+				<span class="button-like">
+					<i class="sprite-png"></i>
+					<span class="fc"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div></span>
+					<span class="vk">
+						<div id="vk_like"></div>
+						<script type="text/javascript">
+						VK.Widgets.Like("vk_like", {type: "mini", height: 20});
+						</script>
+					</span>
+				</span>
+			</li>
+			<li class="feedback"><a href="javascript:void(0);" onclick="$('#popup').show();"><i class="sprite-png"></i><span>Мы на связи!</span></a></li>
+		</ul>
+	</div>
+	<div class="popup" id="popup" style="display: none;">
+		<div class="table">
+			<div class="tr">
+				<div class="block">
+					<a href="javascript:void(0);" id="close" onclick="$('#popup').hide();" class="close sprite"></a>
+					<h2>Напишите нам</h2>
+					<form action="">
+						<ul>
+							<li>
+								<label for="">Как вас зовут <abbr>*</abbr></label><input class="error" type="text" />
+							</li>
+							<li>
+								<label for="">Эл. почта <abbr>*</abbr></label><input type="email" />
+							</li>
+							<li>
+								<label for="">Телефон</label><input type="tel" />
+							</li>
+							<li>
+								<label for="">Категория <abbr>*</abbr></label><input type="text" />
+							</li>
+							<li>
+								<label for="">Сообщение <abbr>*</abbr></label><textarea name="" id="" cols="30" rows="10"></textarea>
+							</li>
+							<li>
+								<span class="button"><input type="submit" value="Отправить" /></span>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header">
+				<div class="block">
+					<div class="top clearfix">
+						<div class="logo"><a href="#"><img src="images/logo.png" alt="Партиком — территория спорта" width="541" height="24" /></a></div>
+						<div class="search">
+							<form action=""><input type="submit" class="sprite" value="" /><input type="search" name="" id="" placeholder="Поиск по сайту" /></form>
+						</div>
+						<div class="link"><a href="#"><i class="sprite"></i>Схема проезда</a></div>
+					</div>
+					<nav>
+						<div class="menu">
+							<ul class="clearfix">
+								<li class="active">
+									<a class="decoration" href="#"><span class="dotted">О нас</span></a>
+									<ul class="submenu">
+										<li><a href="#">Наши объекты</a></li>
+										<li><a href="#">Наша команда</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">Реклама у нас</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="decoration" href="#"><span class="dotted">Услуги</span></a>
+									<ul class="submenu-services">
+										<li>
+											<p><a href="#">Дворец спорта «ПАРТИКОМ»</a></p>
+											<span><a href="#">Массовые катания</a></span>
+											<span><a href="#">Хоккей</a></span>
+											<span><a href="#">Мини-футбол</a></span>
+											<span><a href="#">Кафе с зоной Wi-Fi</a></span>
+											<span><a href="#">Реклама у нас</a></span>
+											<span><a href="#">Мероприятия </a></span>
+										</li>
+										<li>
+											<p><a href="#">Спортивно-оздоровительный комплекс «ПАРТИКОМ»</a></p>
+											<span><a href="#">Каратэ</a></span>
+											<span><a href="#">Тренажерный зал</a></span>
+											<span><a href="#">Бассейн</a></span>
+											<span><a href="#">Сауна и хаммам</a></span>
+											<span><a href="#">Фитнес</a></span>
+											<span><a href="#">Массаж</a></span>
+											<span><a href="#">Боулинг и кафе</a></span>
+										</li>
+									</ul>
+								</li>
+								<li class="active"><a href="#"><span>Новости и акции</span></a></li>
+								<li><a href="#"><span>Фото</span></a></li>
+								<li><a href="#"><span>Видео</span></a></li>
+								<li><a href="#"><span>Контакты</span></a></li>
+								<li class="last active"><a href="#"><i class="sprite-png"></i>Корпоративным клиентам</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="carousel-top">
+				<a href="javascript:void(0);" class="prev"><i></i></a>
+				<a href="javascript:void(0);" class="next"><i></i></a>
+				<div id="carousel-top">
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Массовые катания</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Мини- футбол</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Тренажёр- ный зал</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Бассейн</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Сауна и хаммам</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Боулинг</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Массаж</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Кафе</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Массовые катания</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Мини- футбол</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Тренажёр- ный зал</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Бассейн</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Сауна и хаммам</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Боулинг</a></div>
+					<div class="item"><a href="#"><img src="images/75x75.jpg" alt="" width="75" height="75" />Массаж</a></div>
+				</div>
+			</div>
+			<div class="main-carousel">
+				<div id="main-carousel">
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+					<div class="item"><a href="#"><img src="images/976x418.jpg" alt="" width="976" height="418" /></a></div>
+				</div>
+				<div class="pagination" id="pagination"></div>
+			</div>
+			<div class="block-banner clearfix">
+				<div class="item"><a href="#"><img src="images/banner-arena.png" alt="" width="269" height="78" /></a></div>
+				<div class="item"><a href="#"><img src="images/banner-sport.png" alt="" width="264" height="48" /></a></div>
+				<div class="item"><a href="#"><i></i>Партнёры</a></div>
+			</div>
+			<div class="info-block">
+				<h2><a href="">Управляющая компания «ПАРТИКОМ»</a></h2>
+				<p>представляет <strong>уникальную территорию спорта и здорового образа жизни</strong>. Современные спортивные комплексы, расположенные в <span>экологически чистом</span> районе города Тюмень, охватывают широкий комплекс услуг для вас и ваших детей: <a href="#">ледовая арена</a>, <a href="#">универсальный спортивный зал</a>, <a href="#">зал каратэ</a>, <a href="#">мини-футбольные поля</a>, <a href="#">бассейн</a>, <a href="#">тренажерный зал</a>, <a href="#">фитнес</a>, <a href="#">кафе</a>, <a href="#">боулинг</a>, <a href="#">конференц-зал</a> и <a href="#">многое другое</a>.</p>
+			</div>
+			<div class="banner"><a href="#"><img src="images/978x140.jpg" alt="" width="978" height="140" /></a></div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer clearfix">
+			<div class="copy">
+				<p><span>© 2013</span> Автономная некоммерческая организация «Спортивный клуб «Витязь» 625000, г. Тюмень, проезд Воронинские горки, 101</p>
+				<p><a href="#"><i class="sprite"></i>Схема проезда</a></p>
+			</div>
+			<div class="contacts">
+				<p>Эл. почта: <a href="#">pr@particom-sport.ru</a></p>
+				<p>Мы в социальных сетях:<br />Партиком Арена<br />Партиком Спорт</p>
+			</div>
+			<div class="dev">
+				<p>Сделано в <a href="http://www.crtweb.ru" target="_blank"><i class="sprite"></i>Creative</a></p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.carouFredSel.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#carousel-top").carouFredSel({
+				circular: false,
+				infinite: false,
+				width: 840,
+				height: 125,
+				items: {
+					visible: 8,
+					minimum: 8,
+					width: 105,
+					height: 125
+				},
+				scroll: 3,
+				auto: false,
+				prev: {
+					button: ".carousel-top .prev",
+					key: "left"
+				},
+				next: {
+					button: ".carousel-top .next",
+					key: "right"
+				}
+			});
+			$("#main-carousel").carouFredSel({
+				width: 976,
+				height: 418,
+				items: {
+					visible: 1,
+					minimum: 1,
+					width: 976,
+					height: 418
+				},
+				scroll: 1,
+				auto: 3000,
+				pagination: "#pagination"
+			});
+		})
+	</script>
+</body>
+</html>

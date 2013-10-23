@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body class="index">
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<header>
+			<div class="block-order" style="top: -285px;">
+				<div class="block clearfix">
+					<form action="">
+						<ul>
+							<li>
+								<p><strong>1. Выберите зал</strong></p>
+								<label><input type="checkbox" name="" id="">Для курящих</label>
+								<label><input type="checkbox" name="" id="">Для некурящих</label>
+							</li>
+							<li>
+								<p><strong>2. Количество человек</strong></p>
+								<div id="slider-range-max"></div>
+								<input type="text" id="amount">
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p><strong>3. Выберите дату</strong></p>
+								<div id="datepicker"></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p><strong>4. Введите время</strong></p>
+								<input type="text">
+							</li>
+							<li>
+								<p><strong>5. Ваше имя:</strong></p>
+								<input type="text">
+							</li>
+							<li>
+								<p><strong>6. Ваш телефон:</strong></p>
+								<input type="tel">
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="submit" value="Готово">
+								<p><em>Все поля формы должны быть заполнены</em></p>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="header">
+				<div class="block clearfix">
+					<div class="order">
+						<p><a id="order" href="javascript:void(0);">Забронировать столик</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="img">
+				<img src="img/main.png" alt="">
+			</div>
+		</div>
+		<div class="block-more">
+			<div class="clearfix">
+				<div class="left"><p>+7 (3452) 55-20-05</p></div>
+				<div class="center"><p><a href="/index2.html">посмотреть Меню</a></p></div>
+				<div class="right"><p>ул. Ленина  дом 57</p></div>
+			</div>
+		</div>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$.datepicker.regional['ru'] = {
+					renderer: $.ui.datepicker.defaultRenderer,
+					monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+					'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+					monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+					'Июл','Авг','Сен','Окт','Ноя','Дек'],
+					dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+					dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+					dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+					dateFormat: 'dd.mm.yyyy',
+					firstDay: 1,
+					prevText: '&#x3c;Пред', prevStatus: '',
+					prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+					nextText: 'След&#x3e;', nextStatus: '',
+					nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+					currentText: 'Сегодня', currentStatus: '',
+					todayText: 'Сегодня', todayStatus: '',
+					clearText: '-', clearStatus: '',
+					closeText: 'Закрыть', closeStatus: '',
+					yearStatus: '', monthStatus: '',
+					weekText: 'Wk', weekStatus: '',
+					dayStatus: 'DD d MM',
+					defaultStatus: '',
+					isRTL: false
+				};
+				$("#datepicker").datepicker($.datepicker.regional['ru']);
+
+				$('input').styler();
+
+			});
+
+			$("#order").click(function() {
+				if ( $(".block-order").hasClass("openblock") ) {
+					$(".block-order").animate({
+					top: -285
+					}, 700);
+					$(this).animate({
+						top: 0
+					}, 700);
+					$(".block-order").removeClass("openblock");
+				} else {
+					$(".block-order").animate({
+					top: 0
+					}, 700);
+					$(".block-order").addClass("openblock");
+					$(this).animate({
+						top: 285
+					}, 700);
+				}
+			});
+
+			$(window).load(function() {
+				$("#slider-range-max").slider({
+					range: "max",
+					min: 1,
+					max: 10,
+					value: 2,
+					slide: function( event, ui ) {
+						$("#amount").val(ui.value);
+					}
+				});
+				$("input#amount").appendTo(".ui-slider-handle");
+				$("#amount").val(2);
+			})
+		</script>
+	</body>
+</html>

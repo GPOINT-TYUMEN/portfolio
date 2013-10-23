@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="wrapper">
+			<div class="wrapper-block">
+				<header>
+					<div class="header">
+						<div class="clearfix">
+							<div class="logo">
+								<a href="#"><img src="img/logo.gif" alt=""></a>
+							</div>
+							<div class="block-city">
+								<p><a href="#">Санкт-Петербург</a></p>
+							</div>
+							<div class="block-basket">
+								<p><a href="#">Моя копилка</a></p>
+							</div>
+							<div class="block-phone">
+								<p><span>999-33-66</span>Единый телефон для брони<br><em>+7 (821)</em></p>
+							</div>
+						</div>
+					</div>
+					<nav>
+						<div class="menu">
+							<ul class="clearfix">
+								<li class="active"><a href="#">ГЛАВНАЯ</a></li>
+								<li><a href="#">БАРЫ</a></li>
+								<li><a href="#">МЕНЮ</a></li>
+								<li><a href="#">АКЦИИ</a></li>
+								<li><a href="#">КАЛЕНДАРЬ</a></li>
+								<li><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<div class="page-block">
+					<div class="calendar-block clearfix">
+						<div class="block-calendar">
+							<div class="select-month">
+								<ul>
+									<li>ФЕВРАЛЬ</li>
+									<li>
+										<select name="" id="">
+											<option value="">МАРТ</option>
+										</select>
+									</li>
+									<li>АПРЕЛЬ</li>
+								</ul>
+							</div>
+							<div class="block clearfix">
+								<div class="name">
+									<p>ПН</p>
+								</div>
+								<div class="name">
+									<p>ВТ</p>
+								</div>
+								<div class="name">
+									<p>СР</p>
+								</div>
+								<div class="name">
+									<p>ЧТ</p>
+								</div>
+								<div class="name">
+									<p>ПТ</p>
+								</div>
+								<div class="name">
+									<p>СБ</p>
+								</div>
+								<div class="name">
+									<p>ВС</p>
+								</div>
+								<div class="line-block">
+									<div class="item event">
+										<div class="date">
+											<p>25</p>
+										</div>
+									</div>
+									<div class="item event">
+										<div class="date">
+											<p>26</p>
+										</div>
+									</div>
+									<div class="item event">
+										<div class="date">
+											<p>27</p>
+										</div>
+									</div>
+									<div class="item active">
+										<div class="date">
+											<p>28</p>
+										</div>
+									</div>
+									<div class="item event">
+										<div class="date">
+											<p>01</p>
+										</div>
+									</div>
+									<div class="item holiday event">
+										<div class="date">
+											<p>02</p>
+										</div>
+									</div>
+									<div class="item holiday event">
+										<div class="date">
+											<p>03</p>
+										</div>
+									</div>
+									<!-- TODO: этот блок должен подгружаться AJAX в конец блока .line -->
+									<div class="block-event">
+										<a href="javascript:void(0);" class="close"></a>
+										<div class="date-block">
+											<div class="title">
+												<p>Суббота, 02 Марта 2013</p>
+											</div>
+											<h2>КАЛЕНДАРЬ СОБЫТИЙ ВО Всей сети</h2>
+										</div>
+										<div class="tabs" id="tabs">
+											<ul class="clearfix">
+												<li><a href="#soccer">Футбол <em>(2)</em></a></li>
+												<li><a href="#concert">КОнцерты <em>(5)</em></a></li>
+												<li><a href="#disco">ДИСКОТЕКА <em>(18)</em></a></li>
+												<li><a href="#open">ОТКРЫТИЕ БАРА <em>(1)</em></a></li>
+											</ul>
+											<div id="soccer">
+												<div class="events">
+													<div class="head">
+														<p>ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+													</div>
+													<div class="clearfix">
+														<div class="time">
+															<p>17:30</p>
+														</div>
+														<div class="content">
+															<div class="img"><img src="img/400x237.jpg" alt=""></div>
+															<div class="list-shop">
+																<h4>Где?</h4>
+																<p>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="events">
+													<div class="head">
+														<p>ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+													</div>
+													<div class="clearfix">
+														<div class="time">
+															<p>17:30</p>
+														</div>
+														<div class="content">
+															<div class="img"><img src="img/400x237.jpg" alt=""></div>
+															<div class="list-shop">
+																<h4>Где?</h4>
+																<p>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="concert">
+												<div class="events">
+													<div class="head">
+														<p>ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+													</div>
+													<div class="clearfix">
+														<div class="time">
+															<p>17:30</p>
+														</div>
+														<div class="content">
+															<div class="img"><img src="img/400x237.jpg" alt=""></div>
+															<div class="list-shop">
+																<h4>Где?</h4>
+																<p>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="disco">
+												<div class="events">
+													<div class="head">
+														<p>ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+													</div>
+													<div class="clearfix">
+														<div class="time">
+															<p>17:30</p>
+														</div>
+														<div class="content">
+															<div class="img"><img src="img/400x237.jpg" alt=""></div>
+															<div class="list-shop">
+																<h4>Где?</h4>
+																<p>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="open">
+												<div class="events">
+													<div class="head">
+														<p>ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+													</div>
+													<div class="clearfix">
+														<div class="time">
+															<p>17:30</p>
+														</div>
+														<div class="content">
+															<div class="img"><img src="img/400x237.jpg" alt=""></div>
+															<div class="list-shop">
+																<h4>Где?</h4>
+																<p>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Арбатская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Бауманская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Тверская-Ямская</a>
+																	<a href="#"><strong>SПБ-M 03</strong>, Ленинградский пр.</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- TODO: end -->
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>04</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>05</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>06</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>07</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>08</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>09</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>10</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>11</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>12</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>13</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>14</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>15</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>16</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>17</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>18</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>19</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>20</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>21</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>22</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>23</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>24</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>25</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>26</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>27</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>28</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="date">
+										<p>29</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>30</p>
+									</div>
+								</div>
+								<div class="item holiday">
+									<div class="date">
+										<p>31</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-calendar">
+							<div class="select-place">
+								<h2>ВЫБЕРИТЕ МЕСТО</h2>
+								<ul>
+									<li>
+										<select name="" id="">
+											<option value="">SПБ - 04 Ярослава Гашека, 5</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+							<div class="filter">
+								<h2>ЧТО ПОЖЕЛАЕТЕ?</h2>
+								<ul>
+									<li class="active"><a href="#">Все события</a></li>
+									<li><a href="#">Футбол</a></li>
+									<li><a href="#">Концерты</a></li>
+									<li><a href="#">Дискотека</a></li>
+									<li><a href="#">Открытие бара</a></li>
+								</ul>
+							</div>
+							<div class="news">
+								<h2>КОРОТКО О ГЛАВНОМ</h2>
+								<div class="block">
+									<div class="item">
+										<div class="title">
+											<p>Футбол</p>
+										</div>
+										<div class="img"><img src="img/180x105.jpg" alt=""></div>
+										<div class="text">
+											<p class="date"><strong>Пятница, 15 марта 2013</strong></p>
+											<p><strong>17:30</strong> ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+										</div>
+										<div class="more">
+											<p><a href="#">Подробно</a></p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="title">
+											<p>Футбол</p>
+										</div>
+										<div class="img"><img src="img/180x105.jpg" alt=""></div>
+										<div class="text">
+											<p class="date"><strong>Пятница, 15 марта 2013</strong></p>
+											<p><strong>17:30</strong> ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+										</div>
+										<div class="more">
+											<p><a href="#">Подробно</a></p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="title">
+											<p>Футбол</p>
+										</div>
+										<div class="img"><img src="img/180x105.jpg" alt=""></div>
+										<div class="text">
+											<p class="date"><strong>Пятница, 15 марта 2013</strong></p>
+											<p><strong>17:30</strong> ЗЕНИТ-СПАРТАК (ПРЕМЬЕР-ЛИГА)</p>
+										</div>
+										<div class="more">
+											<p><a href="#">Подробно</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="block-place">
+				<div class="block clearfix">
+					<div class="place">
+						<h2>НОВЫЕ МЕСТА</h2>
+						<div class="clearfix">
+							<div class="item">
+								<div class="city">
+									<p>Санкт-Петербург</p>
+								</div>
+								<div class="img"><a href="#"><img src="img/60x60.jpg" alt=""></a></div>
+								<div class="text">
+									<p><strong>SПБ - 19 NEW!</strong>Коломяжский пр. 15 Пионерская</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="city">
+									<p>Санкт-Петербург</p>
+								</div>
+								<div class="img"><a href="#"><img src="img/60x60.jpg" alt=""></a></div>
+								<div class="text">
+									<p><strong>SПБ - 19 NEW!</strong>Коломяжский пр. 15 Пионерская</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="city">
+									<p>Москва</p>
+								</div>
+								<div class="img"><a href="#"><img src="img/60x60.jpg" alt=""></a></div>
+								<div class="text">
+									<p><strong>SПБ - 19 NEW!</strong>Коломяжский пр. 15 Пионерская</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="city">
+									<p>Киев</p>
+								</div>
+								<div class="img"><a href="#"><img src="img/60x60.jpg" alt=""></a></div>
+								<div class="text">
+									<p><strong>SПБ - 19 NEW!</strong>Коломяжский пр. 15 Пионерская</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews">
+						<h2>О НАС ГОВОРЯТ</h2>
+						<a href="#" class="prev"></a>
+						<a href="#" class="next"></a>
+						<div id="reviews">
+							<div class="item">
+								<p><a href="#">Охранник Анатолий Лукин лучший охранник спб!!! С хорошим чувством юмора и всегда хорошим настроением!!)) спасибо , что всегда нас ждете и помните :)</a></p>
+								<p class="name"><i></i>Даня, <span>САНКТ-ПЕТЕРБУРГ</span></p>
+							</div>
+							<div class="item">
+								<p><a href="#">Охранник Анатолий Лукин лучший охранник спб!!! С хорошим чувством юмора и всегда хорошим настроением!!)) спасибо , что всегда нас ждете и помните :)</a></p>
+								<p class="name"><i></i>Даня, <span>САНКТ-ПЕТЕРБУРГ</span></p>
+							</div>
+							<div class="item">
+								<p><a href="#">Охранник Анатолий Лукин лучший охранник спб!!! С хорошим чувством юмора и всегда хорошим настроением!!)) спасибо , что всегда нас ждете и помните :)</a></p>
+								<p class="name"><i></i>Даня, <span>САНКТ-ПЕТЕРБУРГ</span></p>
+							</div>
+							<div class="item">
+								<p><a href="#">Охранник Анатолий Лукин лучший охранник спб!!! С хорошим чувством юмора и всегда хорошим настроением!!)) спасибо , что всегда нас ждете и помните :)</a></p>
+								<p class="name"><i></i>Даня, <span>САНКТ-ПЕТЕРБУРГ</span></p>
+							</div>
+							<div class="item">
+								<p><a href="#">Охранник Анатолий Лукин лучший охранник спб!!! С хорошим чувством юмора и всегда хорошим настроением!!)) спасибо , что всегда нас ждете и помните :)</a></p>
+								<p class="name"><i></i>Даня, <span>САНКТ-ПЕТЕРБУРГ</span></p>
+							</div>
+						</div>
+						<div class="more">
+							<p><a href="#">Смотреть больше<br> отзывов</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="double-menu">
+				<nav>
+					<div class="block">
+						<ul class="clearfix">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Бары</a></li>
+							<li><a href="#">Меню</a></li>
+							<li><a href="#">Календарь</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Фотогалерея</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="footer">
+				<div class="block clearfix">
+					<div class="left">
+						<div class="clearfix">
+							<ul>
+								<li><strong>Офис в Санкт-Петербурге</strong>8 (812) 335-33-16<br>office@barspb.ru</li>
+								<li><strong>Бухгалтерия</strong>8 (812) 385-10-10</li>
+								<li><strong>Производство<br> Санкт-Петербург</strong>fabrika@barspb.ru</li>
+							</ul>
+							<ul>
+								<li><strong>Офис в Москве</strong>8 (495) 787-35-10<br>office-msk@barspb.ru</li>
+								<li><strong>Бухгалтерия</strong>8 (812) 385-10-10<br>(через СПб)</li>
+								<li><strong>Производство Москва</strong>fabrika_msk@barspb.ru</li>
+							</ul>
+							<ul>
+								<li><strong>Офис в Казани</strong>(по всем вопросам)<br>8 (843) 258-00-33<br>8 (960) 048-00-33</li>
+							</ul>
+							<ul>
+								<li><strong>Офис в Киеве</strong>(по всем вопросам)<br>(81038)(097) 953-44-01</li>
+							</ul>
+						</div>
+						<div class="text"><p>© 2007–2013 Сеть Пивных Баров «SПб»</p></div>
+					</div>
+					<div class="right">
+						<div class="social">
+							<p>
+								<a class="fc" href="#">facebook</a>
+								<a class="tw" href="#">twitter</a>
+								<a class="vk" href="#">vkontakte</a>
+							</p>
+						</div>
+						<div class="text">
+							<p><strong>Отдел рекламы сети</strong>pr@barspb.ru</p>
+							<p><strong>Отдел развития сети</strong>remneva@barspb.ru</p>
+						</div>
+						<div class="button">
+							<p><a href="#">Написать отзыв</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/tabs.js"></script>
+		<script src="js/all.js"></script>
+		<script src="js/styler.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+</html>

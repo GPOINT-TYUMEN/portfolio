@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.rating.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<div class="popup" id="login" style="display: block;">
+		<div class="table">
+			<div class="tr">
+				<div class="block">
+					<a href="javascript:void(0);" onclick="$('#login').hide();" class="close" id="close"><i></i></a>
+					<div class="title">
+						<h2>Заказ оформлен</h2>
+					</div>
+					<div class="block-text">
+						<p>Спасибо за ваш заказ в нашем интернет-магазине. <br /> Скоро с вами свяжется наш менеджер, чтобы уточнить <br /> детали заказа.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header clearfix">
+				<div class="logo"><a href="/"><img src="images/logo.gif" alt="" width="88" height="124" /></a></div>
+				<div class="profiles">
+					<div class="clearfix">
+						<div class="avatar"><img src="images/avatar-blank.png" alt="48x48" width="48" height="48" /></div>
+						<div class="link"><a href="javascript:void(0);" onclick="$('.profiles').toggleClass('active');"><i></i></a></div>
+					</div>
+				</div>
+				<div class="basket" style="display: none"><!-- если нет товаров  -->
+					<i></i>
+					<p>Ваша корзина пуста.</p>
+				</div>
+				<div class="basket on"><!-- если есть товары -->
+					<i></i>
+					<span>43</span>
+					<p><a href="#">В корзине</a> <strong>42</strong> товара<br />на сумму <strong>10 435 руб.</strong></p>
+				</div>
+				<div class="social">
+					<p>Мы в соцсетях</p>
+					<ul class="clearfix">
+						<li class="vk"><a href="#"><i></i></a></li>
+						<li class="fc"><a href="#"><i></i></a></li>
+						<li class="lj"><a href="#"><i></i></a></li>
+						<li class="ph"><a href="#"><i></i></a></li>
+					</ul>
+				</div>
+				<div class="block-phone">
+					<p>Наш телефон</p>
+					<span>+7 3452</span> <strong>98-86-98</strong>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="block clearfix">
+					<ul class="clearfix">
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">акции</a></li>
+						<li>
+							<a href="#">сообщество</a>
+							<ul class="submenu">
+								<li><a href="#">сообщество</a></li>
+								<li><a href="#">блог</a></li>
+								<li><a href="#">tea now</a></li>
+								<li><a href="#">новости</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+							<ul class="submenu"> <!-- это рыба, не обращай внимание -->
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">блог</a></li>
+								<li><a href="#">tea now</a></li>
+								<li><a href="#">новости</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="search">
+						<form action=""><input type="submit" value="" /><input type="text" /></form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="pages">
+			<div class="block-step">
+				<div class="item done">
+					<span>1</span>
+					<p><a href="#">Корзина</a></p>
+				</div>
+				<div class="item done">
+					<span>2</span>
+					<p><a href="#">Личные данные</a></p>
+				</div>
+				<div class="item done">
+					<span>3</span>
+					<p><a href="#">Доставка и оплата</a></p>
+				</div>
+				<div class="item active">
+					<span>4</span>
+					<p>Подтверждение заказа</p>
+				</div>
+			</div>
+			<div class="block-cart">
+				<form action="">
+					<div class="table">
+						<div class="th">
+							<div class="td name">наименование</div>
+							<div class="td weight">вес</div>
+							<div class="td number">кол-во</div>
+							<div class="td">стоимость</div>
+						</div>
+						<div class="tr">
+							<div class="td name"><span>1</span><a href="#">Одинокая пихта (Дан Кон) эксклюзив</a></div>
+							<div class="td weight">
+								<select name="" id="">
+									<option value="">300 г</option>
+								</select>
+							</div>
+							<div class="td number">
+								<select name="" id="">
+									<option value="">8</option>
+								</select>
+							</div>
+							<div class="td price">13 920 руб.</div>
+							<div class="td delete"><a href="javascript:void();" class="dotted"><i></i>Удалить</a></div>
+						</div>
+						<div class="tr">
+							<div class="td name"><span>2</span><a href="#">Одинокая пихта (Дан Кон) эксклюзив</a></div>
+							<div class="td weight">
+								<select name="" id="">
+									<option value="">300 г</option>
+								</select>
+							</div>
+							<div class="td number">
+								<select name="" id="">
+									<option value="">2</option>
+								</select>
+							</div>
+							<div class="td price">13 920 руб.</div>
+							<div class="td delete"><a href="javascript:void();" class="dotted"><i></i>Удалить</a></div>
+						</div>
+						<div class="tr">
+							<div class="td name"><span>3</span><a href="#">Одинокая пихта (Дан Кон) эксклюзив</a></div>
+							<div class="td weight"></div>
+							<div class="td number">
+								<select name="" id="">
+									<option value="">1</option>
+								</select>
+							</div>
+							<div class="td price">13 920 руб.</div>
+							<div class="td delete"><a href="javascript:void();" class="dotted"><i></i>Удалить</a></div>
+						</div>
+					</div>
+					<div class="total-block clearfix">
+						<div class="more">
+							<p>Добавьте ещё два товара в корзину и получите скидку 10% на весь заказ, а также бесплатную доставку по городу.</p>
+							<p><a href="#">Перейти в каталог</a> или выбрать что-нибудь <strong>из списка ниже</strong> ↓</p>
+						</div>
+						<div class="total">
+							<div class="text">доставка:</div>
+							<div class="price">400 руб.</div>
+						</div>
+						<div class="total">
+							<div class="text">итого:</div>
+							<div class="price">26 560 руб.</div>
+						</div>
+					</div>
+					<div class="block-data">
+						<h3>личные данные</h3>
+						<div class="clearfix">
+							<ul>
+								<li>
+									<strong>Фамилия, имя и отчество</strong><br />
+									Константинопольский Константин Константинович
+								</li>
+								<li>
+									<strong>Телефон</strong><br />
+									+71234567890
+								</li>
+								<li>
+									<strong>E-mail</strong><br />
+									ivanov_petr@mail.ru
+								</li>
+								<li>
+									<strong>Комментарий к заказу</strong><br />
+									Доставку осуществить после 19:00
+								</li>
+								<li><a href="#">Изменить личные данные</a></li>
+							</ul>
+							<ul>
+								<li>
+									<strong>Область или регион</strong><br />
+									Тюменская область
+								</li>
+								<li>
+									<strong>Населённый пункт</strong><br />
+									Тюмень
+								</li>
+								<li>
+									<strong>Индекс</strong><br />
+									62500
+								</li>
+								<li>
+									<strong>Адрес</strong><br />
+									Республики 46
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix">
+							<ul>
+								<h3>способ доставки</h3>
+								<li>
+									Почта России
+								</li>
+								<li><a href="#">Изменить способ доставки</a></li>
+							</ul>
+							<ul>
+								<h3>способ оплаты</h3>
+								<li>
+									Наложенный платёж
+								</li>
+								<li><a href="#">Изменить способ оплаты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="looked">
+						<div class="title">недавно просмотренные товары</div>
+						<div class="clearfix">
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-1-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-1-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-1-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-1-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-1-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-2-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-2-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-2-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-2-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-2-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Лун Цзин, весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-3-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-3-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-3-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-3-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-3-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-4-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-4-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-4-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-4-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-4-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Да Хун Пао (большой красный халат), весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-5-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-5-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-5-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-5-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-5-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+							<div class="item">
+								<div class="img"><a href="#"><img src="images/100.jpg" alt="" width="100" height="100" /></a></div>
+								<p><a href="#">Лун Цзин, весна 2012 г.</a></p>
+								<div class="rate clearfix">
+									<input class="star required" type="radio" name="test-6-rating-5" value="1"/>
+									<input class="star" type="radio" name="test-6-rating-5" value="2"/>
+									<input class="star" type="radio" name="test-6-rating-5" value="3"/>
+									<input class="star" type="radio" name="test-6-rating-5" value="4"/>
+									<input class="star" type="radio" name="test-6-rating-5" value="5"/>
+								</div>
+								<div class="price">450 руб. <span>/ 100 г</span></div>
+								<div class="order"><a href="#" class="button">Купить</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="order-block">
+						<p><a href="#">Подтвердить заказ</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="block">
+				<div class="clearfix">
+					<ul>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Рассыпной чай</a></li>
+						<li><a href="#">Прессованный чай</a></li>
+						<li><a href="#">Посуда</a></li>
+						<li><a href="#">Чайная атрибутика</a></li>
+						<li><a href="#">Сувениры и подарки</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Миссия и ценности</a></li>
+						<li><a href="#">Почему удобно покупать чай у нас</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Наши чайные магазины</a></li>
+						<li><a href="#">Что пишут о нас</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Сообщество</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Tea Now</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Помощь по сайту</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="social">
+						<p>Мы в соцсетях</p>
+						<ul>
+							<li class="vk"><a href="#"><i></i></a></li>
+							<li class="fc"><a href="#"><i></i></a></li>
+							<li class="lj"><a href="#"><i></i></a></li>
+							<li class="ph"><a href="#"><i></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom clearfix">
+					<div class="copy">
+						<p>© 2012 Чайный магазин «Дача». Все права защищены.</p>
+					</div>
+					<div class="dev">Сделано в <a href="http://www.crtweb.ru" target="_blank">Creative</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.rating.pack.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("select").styler();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,893 @@
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	background: url(../img/bg-body.png) no-repeat top center;
+}
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Image replacement
+*/
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+	* {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	box-shadow: none !important;
+	text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	/*
+	* Don't show links for images, or javascript/internal links
+	*/
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+.wrapper {
+	max-width: 1024px;
+	min-width: 1000px;
+	margin: 0 auto;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+	background: #fff;
+	border-top: 8px solid #a3c32d;
+}
+
+.header {
+	margin: 25px auto 16px;
+	width: 978px;
+}
+
+.header .logo {
+	float: left;
+}
+
+.header .block-phone {
+	float: right;
+	background: #683a7c;
+	box-shadow: 3px 3px 0 #50355c;
+	padding: 8px 13px;
+	margin: 19px 0 0;
+}
+
+.header .block-phone span {
+	font: 1.2em/1.2em "PFDinTextPro";
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 4px 15px 5px 0;
+	border-right: 1px solid #50355c;
+	margin: 0 13px 0 0;
+}
+
+.header .block-phone a {
+	color: #fff;
+	font: bold 1em/1.2em "PFDinTextPro";
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: .04em;
+}
+
+.menu {
+	width: 978px;
+	margin: 0 auto 32px;
+	position: relative;
+}
+
+.menu ul {
+	margin: 0 0 0 -8px;
+	padding: 0;
+	list-style: none;
+	display: table;
+	width: 808px;
+	float: left;
+}
+
+.menu ul li {
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	font: 1em/1em "PFDinTextPro";
+	vertical-align: middle;
+	text-align: left;
+	padding: 16px 8px 0;
+	height: 32px;
+}
+
+.menu ul li:hover {
+	background: #683a7c;
+}
+
+.menu ul li a {
+	color: #683a7c;
+}
+
+.menu ul li:hover a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu ul:last-child {
+	width: 175px;
+	float: right;
+	margin: 0 3px 0 0;
+}
+
+.menu ul:last-child li {
+	text-align: center;
+	display: table-cell;
+	float: none;
+	padding: 0;
+}
+
+.menu ul:last-child li a {
+	display: block;
+	background: #9bbe17;
+	text-decoration: none;
+	box-shadow: 3px 3px 0 #809d13;
+	color: #fff;
+	font-weight: bold;
+	padding: 17px 0 15px;
+}
+
+.menu ul li .submenu {
+	float: none;
+	width: 942px;
+	margin: 0;
+	background: #683a7c;
+	position: absolute;
+	left: 0;
+	padding: 13px 18px 0;
+	z-index: 1;
+	top: 100%;
+	display: none;
+}
+
+.menu ul li .submenu li {
+	display: inline-block;
+	text-align: left;
+	height: auto;
+	margin: 0 23px 14px 0;
+}
+
+.menu ul li .submenu li a {
+	display: inline-block;
+	padding: 0;
+	background: none;
+	box-shadow: 0 0 0 #000;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+.menu ul li .submenu li a:hover {
+	text-decoration: none;
+}
+
+.menu ul li:hover .submenu {
+	display: block;
+}
+
+.carousel {
+	position: relative;
+	margin: 0 0 26px;
+}
+
+.carousel .item {
+	float: left;
+	position: relative;
+}
+
+.carousel .item img {
+	width: 100%;
+}
+
+.carousel .item span {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 82px;
+	background: #683a7c;
+	padding: 24px 23px 23px;
+	color: #fff;
+	text-transform: uppercase;
+	font: 1.8em/1em "PFDinTextPro";
+	letter-spacing: .05em;
+}
+
+.carousel .pagination {
+	position: absolute;
+	left: 24px;
+	bottom: 34px;
+	z-index: 1;
+}
+
+.carousel .pagination a {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin: 0 12px 0 0;
+	background: #fff;
+}
+
+.carousel .pagination .selected {
+	background: #9bbe17;
+	box-shadow: 0 0 0 2px #fff;
+}
+
+.carousel .pagination span {
+	display: none;
+}
+
+.main {
+	margin: 0 auto;
+	width: 978px;
+}
+
+.block-news {
+	padding: 0 0 27px;
+	border-bottom: 8px solid #a3c32d;
+	margin: 0 0 30px;
+}
+
+.block-news .item {
+	float: left;
+	width: 474px;
+	margin: 0 0 12px 30px;
+}
+
+.block-news .item:first-child {
+	margin: 0;
+}
+
+.block-news .item .title {
+	margin: 0 0 20px;
+}
+
+.block-news .item .title p {
+	font: 1em/1em "PFDinTextPro";
+}
+
+.block-news .item .img {
+	float: left;
+	border: 5px solid #d0d8d8;
+	margin: 0 29px 0 0;
+}
+
+.block-news .item .text {
+	overflow: hidden;
+}
+
+.block-news .item .text p {
+	font: .8em/1.5em "Tahoma";
+	color: #4d4351;
+	margin: 0 0 10px;
+}
+
+.block-news .item .text .date {
+	color: #7f7f82;
+	font-size: .7em;
+}
+
+.block-news .more p {
+	font: .9em/1em "PFDinTextPro";
+}
+
+.blocks .block {
+	margin: 0 0 0 -25px;
+}
+
+.blocks .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 306px;
+	margin: 0 0 0 25px;
+	min-height: 375px;
+	padding: 0 0 20px;
+}
+
+.blocks .links {
+	min-height: 48px;
+	padding: 0;
+}
+
+.blocks .item .img {
+	border: 5px solid #d0d8d8;
+	margin: 0 0 17px;
+}
+
+.blocks .item .text p {
+	font: .8em/1.6em "Tahoma";
+	color: #4d4351;
+}
+
+.blocks .item a.vk,
+.blocks .item a.fc,
+.blocks .item a.tw {
+	display: block;
+	text-transform: uppercase;
+	font: bold 1em/1em "PFDinTextPro";
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 3px 13px 0;
+	padding: 17px 0 15px;
+}
+
+.blocks .item a.vk {
+	background: #6283a1;
+	box-shadow: 3px 3px 0 #4f6980;
+}
+
+.blocks .item a.fc {
+	background: #758ab7;
+	box-shadow: 3px 3px 0 #566687;
+}
+
+.blocks .item a.tw {
+	background: #64b7db;
+	box-shadow: 3px 3px 0 #5295b2;
+}
+
+.blocks .item .form {
+	margin: 25px 0 0;
+}
+
+.blocks .item .form p {
+	font: 1em/1em "PFDinTextPro";
+	color: #676771;
+	margin: 0 0 10px;
+}
+
+.blocks .item .form input[type=text] {
+	width: 159px;
+	height: 25px;
+	background-color: #fff;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.17);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.17);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.17);
+	border: solid 1px #ababab;
+	padding: 0 10px;
+	font: italic .9em/1em "PFDinTextPro";
+	vertical-align: middle;
+	margin: 0 7px 0 0;
+}
+
+.blocks .item .form input[type=submit] {
+	font: bold .8em/1em "PFDinTextPro";
+	color: #fff;
+	border: none;
+	width: 110px;
+	height: 31px;
+	background: #9bbe17;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	box-shadow: 2px 2px 0 #809d13;
+	vertical-align: middle;
+}
+
+.blocks .item .form input[type=submit]:active {
+	box-shadow: 0 0 0 #000;
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+
+.blocks .links a {
+	display: block;
+	text-align: center;
+	color: #fff;
+	font: bold 1em/1em "PFDinTextPro";
+	text-decoration: none;
+	background: #9bbe17;
+	text-transform: uppercase;
+	margin: 0 3px 0 0;
+	box-shadow: 3px 3px 0 #809d13;
+	padding: 17px 0 15px;
+	letter-spacing: .05em;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+}
+
+.popup .table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.popup .table .tr {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+
+.popup .block {
+	display: inline-block;
+	text-align: left;
+	padding: 36px 25px 25px 50px;
+	box-shadow: 0 3px 24px rgba(0,0,0,.75);
+	background: url(../img/7x198.gif) top left, url(../img/7x198.gif) top right;
+	background-repeat: repeat-y;
+	background-color: #fff;
+	position: relative;
+}
+
+.popup .block .close {
+	position: absolute;
+	top: 22px;
+	right: 26px;
+	display: block;
+	background: url(../img/sprite.gif) no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.popup .block ul {
+	margin: 0;
+	padding: 0 23px 0 0;
+	list-style: none;
+	float: left;
+	width: 402px;
+	border-right: 1px solid #cfc0c0;
+}
+
+.popup .block ul li {
+	margin: 0 0 38px;
+}
+
+.popup .block ul label {
+	display: inline-block;
+	font: .9em/1em "PFDinTextPro";
+	color: #393939;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.popup .block ul label sup {
+	font-size: 1em;
+	color: #cf0772;
+	top: -.3em;
+}
+
+.popup .block ul input[type=text],
+.popup .block ul input[type=tel],
+.popup .block ul input[type=email] {
+	border: none;
+	border-bottom: 1px solid #393939;
+	vertical-align: middle;
+}
+
+.popup .block ul li:first-child input {
+	width: 358px;
+}
+
+.popup .block ul li:nth-child(2) input {
+	width: 264px;
+}
+
+.popup .block ul li:nth-child(3) input {
+	width: 350px;
+}
+
+.popup .block ul li:nth-child(4) input {
+	width: 278px;
+}
+
+.popup .block ul li:last-child label {
+	display: block;
+}
+
+.popup .block ul li textarea {
+	border: none;
+	width: 402px;
+	height: 93px;
+	min-height: 93px;
+	background: url(../img/1x31.gif) repeat top center;
+	font: 1.2em/1.6em "PFDinTextPro";
+}
+
+.popup .block .button {
+	float: left;
+	width: 175px;
+	margin: 280px 0 0 14px;
+	text-align: center;
+}
+
+.popup .block .button p {
+	font: .9em/1.3em "PFDinTextPro";
+	color: #393939;
+	text-align: left;
+	margin: 0 0 20px;
+}
+
+.popup .block .button p sup {
+	font-size: 1em;
+	color: #cf0772;
+}
+
+.popup .block .button input[type=submit] {
+	width: 145px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font: bold 1em/1em "PFDinTextPro";
+	border: none;
+	background: #cf0772;
+	letter-spacing: .04em;
+	box-shadow: 3px 3px 0 #940a54;
+	padding: 11px 0 10px;
+}
+
+.popup .block .button input[type=submit]:active {
+	box-shadow: 0 0 0 #000;
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+
+.page {
+	margin: 0 auto;
+	width: 978px;
+}
+
+.head {
+	background: #db0575;
+	margin: 0 0 20px;
+	padding: 11px 27px;
+}
+
+.head p {
+	font: 1.4em/1em "PFDinTextPro";
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.clumbs {
+	padding: 0 20px;
+	margin: 0 0 20px;
+}
+
+.clumbs p {
+	font: .9em/1.2em "PFDinTextPro";
+	color: #58505c;
+	text-transform: uppercase;
+}
+
+.clumbs p a {
+	font-weight: bold;
+	color: #58505c;
+}
+
+.block-services .block {
+	margin: 0 0 0 -30px;
+}
+
+.block-services .item {
+	float: left;
+	width: 464px;
+	height: 247px;
+	border: 5px solid #d0d8d8;
+	margin: 0 0 30px 30px;
+	position: relative;
+}
+
+.block-services .item span {
+	display: block;
+	position: absolute;
+	left: -5px;
+	bottom: 19px;
+	background: #db0575;
+	font: bold 1em/1.4em "PFDinTextPro";
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: .05em;
+	padding: 4px 22px 3px;
+}
+
+.block-order {
+	text-align: center;
+}
+
+.block-order a {
+	display: inline-block;
+	width: 262px;
+	background: #ed812d;
+	box-shadow: 3px 3px 0 #cc6f26;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font: bold 1em/1.2em "PFDinTextPro";
+	padding: 14px 0 11px;
+	letter-spacing: .05em;
+}
+
+footer {
+	border-bottom: 8px solid #a3c32d;
+}
+
+.footer {
+	margin: 37px auto 33px;
+	width: 978px;
+}
+
+.footer p {
+	font: .8em/1.4em "Tahoma";
+	color: #4d4351;
+}
+
+.footer .left {
+	float: left;
+	width: 335px;
+}
+
+.footer .right {
+	float: right;
+	width: 390px;
+}
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="popup" style="display: none;">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<h1>доставка карты</h1>
+						<a href="javascript:void(0);" onclick="$('#popup').hide('clip',1000);" class="close"></a>
+						<div class="clearfix">
+							<form action="">
+								<ul>
+									<li>
+										<label for="">Имя <sup>*</sup></label>
+										<input type="text">
+									</li>
+									<li>
+										<label for="">Номер телефона <sup>*</sup></label>
+										<input type="tel">
+									</li>
+									<li>
+										<label for="">E-mail</label>
+										<input type="email" name="" id="">
+									</li>
+									<li>
+										<label for="">Куда доставить</label>
+										<input type="text">
+									</li>
+									<li>
+										<label for="">Комментарий</label>
+										<textarea name="" id="" cols="30" rows="10"></textarea>
+									</li>
+								</ul>
+								<div class="button">
+									<p><sup>*</sup> - Поля обязательные для заполнения</p>
+									<input type="submit" value="заказать">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<haeder>
+				<div class="header clearfix">
+					<div class="logo"><a href="#"><img src="img/logo.gif" alt=""></a></div>
+					<div class="block-phone">
+						<span>+7 3452 67-80-90</span>
+						<a href="#">Заказать звонок</a>
+					</div>
+				</div>
+				<nav>
+					<div class="menu clearfix">
+						<ul>
+							<li><a href="#">Почему Fitberri</a></li>
+							<li>
+								<a href="#">услуги</a>
+								<ul class="submenu">
+									<li><a href="#">ОЖИВЛЯЮЩИЙ БАССЕЙН</a></li>
+									<li><a href="#">УВЛЕКАТЕЛЬНЫЙ ТРЕНАЖЕРНЫЙ ЗАЛ</a></li>
+									<li><a href="#">МАСТЕР ОСАНКИ - СТУДИЯ КИНЕЗИС</a></li>
+									<li><a href="#">СПЕЦИАЛИЗИРОВАННАЯ СТУДИЯ ЙОГИ И МЯГКОГО ФИТНЕСА</a></li>
+									<li><a href="#">САЙКЛ-СТУДИЯ НОВОГО ПОКОЛЕНИЯ</a></li>
+									<li><a href="#">ОГРОМНЫЙ ЗАЛ ГРУППОВЫХ ПРОГРАММ</a></li>
+									<li><a href="#">УБОЙНАЯ СТУДИЯ БОЕВЫХ ИСКУССТВ</a></li>
+									<li><a href="#">ДЕТСКИЙ КЛУБ «ФИТБЕРЁНОК»</a></li>
+									<li><a href="#">ФИТНЕС-БАР «ОАЗИС» (WI-FI FREE)</a></li>
+									<li><a href="#">ДЛЯ КРАСИВЫХ ЛЮДЕЙ</a></li>
+									
+								</ul>
+							</li>
+							<li><a href="#">расписание</a></li>
+							<li><a href="#">карты</a></li>
+							<li><a href="#">Бонусы от Fitberri</a></li>
+							<li><a href="#">Фото/видео</a></li>
+							<li><a href="#">как доехать</a></li>
+						</ul>
+						<ul>
+							<li><a href="javascript:void(0);" onclick="$('#popup').show('clip',1000);">доставка карты</a></li>
+						</ul>
+					</div>
+				</nav>
+			</haeder>
+			<div class="carousel">
+				<div id="carousel">
+					<div class="item"><img src="img/1024x400.jpg" alt=""><span>увлекательный тренажёрный зал</span></div>
+					<div class="item"><img src="img/1024x400.jpg" alt=""><span>увлекательный тренажёрный зал</span></div>
+					<div class="item"><img src="img/1024x400.jpg" alt=""><span>увлекательный тренажёрный зал</span></div>
+					<div class="item"><img src="img/1024x400.jpg" alt=""><span>увлекательный тренажёрный зал</span></div>
+					<div class="item"><img src="img/1024x400.jpg" alt=""><span>увлекательный тренажёрный зал</span></div>
+				</div>
+				<div class="pagination"></div>
+			</div>
+			<div class="main">
+				<div class="block-news">
+					<h2>Новости клуба</h2>
+					<div class="clearfix">
+						<div class="item">
+							<div class="title"><p><a href="">Конкурс на лучший пресс в фитнес-центре FITBERRI</a></p></div>
+							<div class="img"><img src="img/212x129.jpg" alt=""></div>
+							<div class="text">
+								<p>«Фитберри» - это современный фитнес центр общей площадью 3190 м.кв. Такие внушительные размеры позволяют сделать фитнес для Вас максимально интересным, полезным и результативным.</p>
+								<p class="date">24 мая</p>
+								<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="vkontakte,facebook,twitter"></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title"><p><a href="">Конкурс на лучший пресс в фитнес-центре FITBERRI</a></p></div>
+							<div class="img"><img src="img/212x129.jpg" alt=""></div>
+							<div class="text">
+								<p>«Фитберри» - это современный фитнес центр общей площадью 3190 м.кв. Такие внушительные размеры позволяют сделать фитнес для Вас максимально интересным, полезным и результативным.</p>
+								<p class="date">24 мая</p>
+								<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="vkontakte,facebook,twitter"></div>
+							</div>
+						</div>
+					</div>
+					<div class="more"><p><a href="#">Все новости</a></p></div>
+				</div>
+				<div class="blocks">
+					<div class="block">
+						<div class="item">
+							<h3>Клубные карты и Бонусы «Фитберри»</h3>
+							<div class="img"><a href="#"><img src="img/296x182.jpg" alt=""></a></div>
+							<div class="text">
+								<p>FitFashion - это гибкая политика скидок для наших клиентов и различные виды клубных карт, чтобы максимально удовлетворить потребности наших гостей.</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>Фотогалерея</h3>
+							<div class="img"><a href="#"><img src="img/296x182.jpg" alt=""></a></div>
+							<div class="text">
+								<p>FitFashion «Ginza Fitness» - это стильный дизайнерский интерьер, современное оборудование ведущих производителей, высококвалифицированный персонал, инновационные технологии, индивидуальный подход, высокий уровень сервиса.</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>Виртуальный тур</h3>
+							<div class="img"><a href="#"><img src="img/296x182.jpg" alt=""></a></div>
+							<div class="text">
+								<p>Основу сети FitFashion составляет мощное стратегическое объединение фитнес – инноваций с наиболее ценными достижениями других направлений бизнеса и науки. «Кадры решают все»!</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>Звезды Фитберри</h3>
+							<div class="img"><a href="#"><img src="img/296x182.jpg" alt=""></a></div>
+							<div class="text">
+								<p>FitFashion поддерживает главный жизненный принцип всего прогрессивного человечества наиболее четко выраженный в призыве «Be fit»- «Будь в форме!» Особая атмосфера в клубе и энергетика тренерского состава создают позитивное настроение и стремление к новым достижениям!</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>Афиша мероприятий</h3>
+							<div class="img"><a href="#"><img src="img/296x182.jpg" alt=""></a></div>
+							<div class="text">
+								<p>FitFashion «Ginza Fitness» проводит множество спортивных мероприятий, как для женщин, так и для мужчин. Победители соревнований получают ценные призы! Если Вы хотите попробовать что-то новое, получить море позитивных эмоций, улучшить свое тело, следите за новостями и, возможно, именно Вы станете участником одного из проектов!</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>Присоединяйтесь к нам</h3>
+							<p>
+								<a href="#" class="vk">вконтакте</a>
+								<a href="#" class="fc">facebook</a>
+								<a href="#" class="tw">twitter</a>
+							</p>
+							<form action="">
+								<div class="form">
+									<p>Подписка на рассылку</p>
+									<input type="text" placeholder="Ваш E-mail">
+									<input type="submit" value="подписаться">
+								</div>
+							</form>
+						</div>
+						<div class="item links">
+							<p><a href="#">реклама и партнёры</a></p>
+						</div>
+						<div class="item links">
+							<p><a href="#">заморозка карты</a></p>
+						</div>
+						<div class="item links">
+							<p><a href="#">карьера</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer">
+					<div class="clearfix">
+						<div class="left">
+							<p>© 2012,<br><a href="#">Фитнес-центр «Фитберри»</a><br>Все права защищены.</p>
+						</div>
+						<div class="right">
+							<p>Адрес: г.Тюмень, ул. 30 лет Победы, 52, строение 1 <a href="#">Карта проезда</a></p>
+							<p>Тел. +7 (3452) 67-80-80, 67-80-60, 67-80-61</p>
+							<p>Часы работы клуба: Ежедневно с 06:00 – 24:00</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

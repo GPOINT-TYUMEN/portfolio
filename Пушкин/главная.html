@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="popup" id="popup" style="display: none;">
+		<div class="table">
+			<div class="tr">
+				<div class="block">
+					<a href="javascript:void(0);" onclick="$('#popup').hide();" class="close"></a>
+					<iframe width="640" height="360" src="http://www.youtube.com/embed/4C1CWdlVqdk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header">
+				<div class="clearfix">
+					<div class="logo"><a href="#"><img src="images/logo.gif" alt="" width="118" height="84" /></a></div>
+					<div class="area">Осталось<span>42</span>участка</div>
+					<div class="social clearfix">
+						<div class="item"><a class="vk" href="#"><i></i>ВКонтакте</a></div>
+						<div class="item"><a class="fc" href="#"><i></i>Facebook</a></div>
+					</div>
+					<div class="block-phone">
+						<div class="phone">
+							<p><span>+7 3452</span> 12-34-56</p>
+						</div>
+						<div class="callback">
+							<a href="javascript:void(0);" onclick="$('#form').toggle();" class="dotted"><i></i>Заказать обратный звонок</a>
+							<div class="form" id="form" style="display: none;">
+								<h3>обратный звонок</h3>
+								<a href="javascript:void(0);" onclick="$('#form').hide();" class="close"></a>
+								<form action="">
+									<ul>
+										<li>
+											<label for="">Как вас зовут</label>
+											<input class="error" type="text" />
+										</li>
+										<li>
+											<label for="">Ваш номер телефона</label>
+											<input type="tel" />
+										</li>
+									</ul>
+									<input type="submit" class="button" value="отправить" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="menu" id="menu">
+					<ul>
+						<li>
+							<a href="#">О ЖК «Пушкин»<i></i></a>
+							<ul>
+								<li><a href="#">Инфраструктура ЖК</a></li>
+								<li><a href="#">Прилегающая инфраструктура</a></li>
+								<li><a href="#">Особенности</a></li>
+								<li><a href="#">Фото</a></li>
+								<li><a href="#">Видео</a></li>
+								<li><a href="#">документы</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Выбрать участок</a></li>
+						<li><a href="#">Выбрать проект дома</a></li>
+						<li><a href="#">Акции и новости</a></li>
+						<li><a href="#">Фото</a></li>
+						<li><a href="#">видео</a></li>
+						<li><a href="#">публикации</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="carousel">
+			<div id="carousel">
+				<div class="item video"><a href="#"><span><img src="images/large/img1.jpg" alt="" /></span></a></div>
+				<div class="item"><a href="#"><span><img src="images/large/img1.jpg" alt="" /></span></a></div>
+			</div>
+			<div class="thumbnails" id="thumbnails"></div>
+		</div>
+		<div class="main">
+			<div class="clearfix">
+				<div class="leftcolumn">
+					<div class="about">
+						<div class="title">
+							<h2>Жилой комплекс «Пушкин»</h2>
+						</div>
+						<div class="text">
+							<p>Городская жизнь заставляет нас бежать: на работу, за покупками, гнаться в бешеном темпе мегаполиса, не оставляя времени на себя, на общение с детьми. Нет того заветного уголка, где можно в тишине и спокойствии насладиться гармонией с природой и самим собой, видеть вокруг себя не угрюмые лица, на которых написаны проблемы, а прекрасный пейзаж.</p>
+							<p><a href="">Подробнее о жилом комплексе</a></p>
+						</div>
+					</div>
+					<div class="list-services">
+						<ul>
+							<li class="visa">
+								<p><a href="#">Прописка</a></p>
+								<p>Древняя платформа с сильно разрушенными складчатыми образованиями параллельна. Пингвин просветляет уличный абориген.</p>
+							</li>
+							<li class="remoteness">
+								<p><a href="#">Удаленность от городского шума</a></p>
+								<p>Небольшой парк с дикими животными к юго-западу от Манамы изменяем. Бамбук представляет собой храмовый комплекс.</p>
+							</li>
+							<li class="communications">
+								<p><a href="#">Коммуникации</a></p>
+								<p>Коневодство, по определению, представляет собой знаменитый<br /> Фогель-маркет на Оудевард-плаатс.</p>
+							</li>
+							<li class="nature">
+								<p><a href="#">Экорайон. Нетронутый<br />уголок природы</a></p>
+								<p>Закрытый аквапарк надкусывает шведский<br /> бальнеоклиматический курорт, здесь часто<br /> встречаются лапша с творогом.</p>
+							</li>
+							<li class="infrastructure">
+								<p><a href="#">Инфраструктура</a></p>
+								<p>Древняя платформа с сильно разрушенными<br /> складчатыми образованиями параллельна.</p>
+							</li>
+							<li class="company">
+								<p><a href="#">Управляющая компания</a></p>
+								<p>Небольшой парк с дикими животными<br />к юго-западу от Манамы изменяем.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="project">
+						<a href="#"><strong>Выбрать проект дома</strong><br /><span>от 35 тыс. руб. за м2</span><br /><span class="remained">из 15 вариантов</span></a>
+					</div>
+				</div>
+				<div class="rightcolumn">
+					<div class="block-action">
+						<h3>Новости</h3>
+						<div class="block">
+							<a href="javascript:void(0);" class="prev"></a>
+							<a href="javascript:void(0);" class="next"></a>
+							<div id="action">
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="more"><a href="#">Все новости</a></div>
+						</div>
+					</div>
+					<div class="block-action">
+						<h3>Акции</h3>
+						<div class="block">
+							<a href="javascript:void(0);" id="prev" class="prev"></a>
+							<a href="javascript:void(0);" id="next" class="next"></a>
+							<div id="action2">
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="img"><a href="#"><img src="images/264x162.jpg" alt="" width="264" height="162" /></a></div>
+									<div class="date">1 апреля</div>
+									<div class="link">
+										<p><a href="#">"Промсвязьбанк" снижает ставки по ипотеке! Качественное жилье по низким ипотечным процентам!</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="more"><a href="#">Все акции</a></div>
+						</div>
+					</div>
+					<div class="selection">
+						<a href="#"><strong>Выбрать участок</strong><br /><span>от 60 тыс. руб. за сотку</span><br /><span class="remained">Осталось 42</span></a>
+					</div>
+					<div class="list-services">
+						<ul>
+							<li class="watercourse">
+								<p><a href="#">Рядом речка и озёра</a></p>
+								<p>Коневодство, по определению,<br /> представляет собой знаменитый<br /> Фогель-маркет на Оудевард-плаатс.</p>
+							</li>
+							<li class="size">
+								<p><a href="#">Адекватный размер участков</a></p>
+								<p>Закрытый аквапарк надкусывает шведский<br /> бальнеоклиматический курорт.</p>
+							</li>
+							<li class="contract">
+								<p><a href="#">Сразу с подрядами</a></p>
+								<p>Коневодство, по определению, представляет собой<br /> знаменитый Фогель-маркет на Оудевард-плаатс.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="block-partners">
+				<div class="title">
+					<h2>Партнёры проекта</h2>
+					<a href="javascript:void(0);" class="prev"></a>
+					<a href="javascript:void(0);" class="next"></a>
+				</div>
+				<div class="partners">
+					<div id="partners">
+						<div class="item"><img src="images/logo-sbr.jpg" alt="" width="206" height="51" /></div>
+						<div class="item"><img src="images/logo-mcb.jpg" alt="" width="209" height="51" /></div>
+						<div class="item"><img src="images/logo-zskb.jpg" alt="" width="203" height="51" /></div>
+						<div class="item"><img src="images/logo-pb.jpg" alt="" width="214" height="51" /></div>
+						<div class="item"><img src="images/logo-sbr.jpg" alt="" width="206" height="51" /></div>
+						<div class="item"><img src="images/logo-mcb.jpg" alt="" width="209" height="51" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="block-books">
+				<div class="title">
+					<h2>Жилой комплекс «Пушкин»</h2>
+				</div>
+				<div class="clearfix">
+					<div class="left">
+						<p>Городская жизнь заставляет нас бежать: на работу, за покупками, гнаться в бешеном темпе мегаполиса, не оставляя времени на себя, на общение с детьми. Нет того заветного уголка, где можно в тишине и спокойствии насладиться гармонией с природой и самим собой, видеть вокруг себя не угрюмые лица, на которых написаны проблемы, а прекрасный пейзаж. Узнали себя? Вам пора в поселок таунхаусов, где есть все то, чего вам так не хватает.</p>
+						<p>В этом уютном городке течет размеренная жизнь в комфортабельных домах, которые выполнены в едином архитектурном стиле, но оставляют за вами выбор планировки на свой вкус.</p>
+					</div>
+					<div class="right">
+						<p>Жилой комплекс «Пушкин» – это не глухая деревня без развлечений и всех прелестей цивилизации – это коттеджный поселок по Калужскому шоссе, который порадует вас детскими и спортивными площадками, парковыми зонами для прогулок всей семьей, рынком с натуральными продуктами буквально с грядки, рестораном с изысканной кухней и отличным обслуживанием, и даже ледовой ареной для катания на коньках или игры в хоккей.</p>
+						<p>Вы можете в любое время отправиться на прогулку к озеру, расположиться на берегу и устроить пикник или просто прогуляться по набережной!</p>
+					</div>
+				</div>
+			</div>
+			<div class="likes">
+				<ul>
+					<li>
+						<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+					</li>
+					<li>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</li>
+					<li>
+						<!-- Place this tag where you want the +1 button to render. -->
+						<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+						<!-- Place this tag after the last +1 button tag. -->
+						<script type="text/javascript">
+						  window.___gcfg = {lang: 'ru'};
+						  (function() {
+						    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						    po.src = 'https://apis.google.com/js/plusone.js';
+						    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						  })();
+						</script>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="block">
+				<div class="clearfix">
+					<div class="about">
+						<p><span>+7 3452</span> 12-34-56</p>
+						<span class="about">© 2013 Жилой комплекс «Пушкин»</span>
+					</div>
+					<div class="social clearfix">
+						<div class="item"><a class="vk" href="#"><i></i>ВКонтакте</a></div>
+						<div class="item"><a class="fc" href="#"><i></i>Facebook</a></div>
+					</div>
+					<div class="dev">
+						<p>Сделано в <a href="http://www.crtweb.ru" target="_blank">Creative</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.carouFredSel.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#carousel").carouFredSel({
+				items: {
+					visible: 1,
+					width: 1000,
+					height: "33%"
+				},
+				responsive: true,
+				scroll: {
+					fx: "crossfade"
+				},
+				auto: false,
+				pagination: {
+					container: "#thumbnails",
+					anchorBuilder: function( nr ) {
+						var src = $("img", this).attr( "src" );
+							src = src.replace( "/large/", "/small/");
+						return '<span><img src="' + src + '" /></span>';
+					}
+				}
+			});
+			$("#action").carouFredSel({
+				circular: false,
+				infinite: false,
+				width: 266,
+				height: "auto",
+				items: {
+					visible: 1,
+					minimum: 1,
+					width: 266,
+					height: "variable"
+				},
+				scroll: 1,
+				auto: false,
+				prev: {
+					button: ".block-action .prev",
+					key: "left"
+				},
+				next: {
+					button: ".block-action .next",
+					key: "right"
+				}
+			});
+			$("#action2").carouFredSel({
+				circular: false,
+				infinite: false,
+				width: 266,
+				height: "auto",
+				items: {
+					visible: 1,
+					minimum: 1,
+					width: 266,
+					height: "variable"
+				},
+				scroll: 1,
+				auto: false,
+				prev: {
+					button: "#prev",
+					key: "left"
+				},
+				next: {
+					button: "#next",
+					key: "right"
+				}
+			});
+			$("#partners").carouFredSel({
+				circular: false,
+				infinite: false,
+				width: 978,
+				height: 51,
+				items: {
+					visible: 4,
+					minimum: 4,
+					width: 252,
+					height: 51
+				},
+				scroll: 1,
+				auto: false,
+				prev: {
+					button: ".block-partners .prev",
+					key: "left"
+				},
+				next: {
+					button: ".block-partners .next",
+					key: "right"
+				}
+			});
+		})
+	</script>
+</body>
+</html>
