@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="question" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#question').hide();" class="close"></a>
+								<h2>Мы с удовольствием ответим на ваши вопросы!</h2>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Ваша эл. почта</label><input type="email"></li>
+									<li><label>Ваш вопрос</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Отправить вопрос">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="question_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#question_end').hide();" class="close"></a>
+							<h2>Спасибо за ваш вопрос!</h2>
+							<p>В ближайшее время мы ответим вам по указанной эл. почте.</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#question_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="phone" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#phone').hide();" class="close"></a>
+								<h2>Бесплатный обратный звонок</h2>
+								<p>Укажите ваш контактный номер телефона и наши менеджеры перезвонят вам прямо сейчас!</p>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Контактный телефон</label><input type="tel"></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Заказать обратный звонок">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="phone_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#phone_end').hide();" class="close"></a>
+							<h2>Спасибо!</h2>
+							<p>Наши менеджеры перезвонят вам прямо сейчас!</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#phone_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="subscription" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#subscription').hide();" class="close"></a>
+								<h2>Узнай первым!</h2>
+								<p>Вы стали собственником участка в одном из коттеджных поселков? Или собираетесь им стать? Тогда подпишитесь на ежемесячный электронный журнал «Вести с полей» и вы сможете: получать самые актуальные фотографии и свежие новости о ходе работ в вашем поселке, первыми узнавать о сезонных акциях, спецпредложениях и новых проектах. Только полезная и интересная вам информация!</p>
+								<ul class="clearfix checkbox">
+									<p>Хочу получать новости посёлков</p>
+									<li><label><input type="checkbox" name="" id="">Я-Ку-Ши 1</label></li>
+									<li><label><input type="checkbox" name="" id="">Радужный</label></li>
+									<li><label><input type="checkbox" name="" id="">Усадьба Есаулова</label></li>
+									<li><label><input type="checkbox" name="" id="">Килки</label></li>
+									<li><label><input type="checkbox" name="" id="">Якуши-3</label></li>
+									<li><label><input type="checkbox" name="" id="">Княжево</label></li>
+									<li><label><input type="checkbox" name="" id="">Высокий Берег</label></li>
+									<li><label><input type="checkbox" name="" id="">Теремки</label></li>
+									<li><label><input type="checkbox" name="" id="">Станица Криводанова</label></li>
+									<li><label><input type="checkbox" name="" id="">Золотой лес</label></li>
+									<li><label><input type="checkbox" name="" id="">Я-Ку-Ши 2</label></li>
+									<li><label><input type="checkbox" name="" id="">Солнечный день</label></li>
+								</ul>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Ваша эл. почта</label><input type="email"></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Подписаться на рассылку">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="subscription_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#subscription_end').hide();" class="close"></a>
+							<h2>Спасибо!</h2>
+							<p>Ваш электронный адрес добавлен в нашу рассылку. Ждите новостей от "ИнвестФонда"!</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#subscription_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header clearfix">
+				<div class="logo"><a href="#"><img src="img/logo.gif" alt=""></a></div>
+				<div class="sale">
+					<span>Продается: <strong>500 участков.</strong></span>
+					<span>Продано: <strong>28 участков.</strong></span>
+				</div>
+				<div class="call">
+					<p><a class="dotted" href="javascript:void(0);" onclick="$('#phone').show();">Заказать звонок</a></p>
+					<p><a class="dotted" href="javascript:void(0);" onclick="$('#subscription').show();">Подписаться на новости</a></p>
+				</div>
+				<div class="phone">
+					<p>Контактный телефон</p>
+					<p><span>+ 7 (812) 450-50-66</span></p>
+				</div>
+			</div>
+			<nav>
+				<div class="block-menu">
+					<div class="menu">
+						<ul>
+							<li><a href="#">поселки</a></li>
+							<li class="active"><a href="#">Коммерческая недвижимость</a></li>
+							<li><a href="#">Ипотека</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Агентам</a></li>
+							<li><a href="#">Строительство</a></li>
+							<li><a href="#">о компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="page-block">
+			<div class="news-block">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block-bottom">
+							<div class="block">
+								<div class="block-title">
+									<div class="clumbs"><a href="">Главная</a></div>
+									<h1>Новости</h1>
+								</div>
+								<div class="block-filter">
+									<ul class="clearfix">
+										<li>
+											<span>Показать новости по проекту:</span>
+											<select name="" id="">
+												<option value="">Все проекты</option>
+											</select>
+										</li>
+										<li>
+											<span>Темы новостей:</span>
+											<label><input type="checkbox" name="" id="">электричество</label>
+											<label><input type="checkbox" name="" id="">дороги</label>
+											<label><input type="checkbox" name="" id="">газ</label>
+										</li>
+									</ul>
+								</div>
+								<div class="news">
+									<div class="item clearfix">
+										<div class="img"><img src="img/215x132.jpg" alt=""></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+									<div class="item clearfix">
+										<div class="img"></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+									<div class="item clearfix">
+										<div class="img"><img src="img/215x132.jpg" alt=""></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+									<div class="item clearfix">
+										<div class="img"><img src="img/215x132.jpg" alt=""></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+									<div class="item clearfix">
+										<div class="img"><img src="img/215x132.jpg" alt=""></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+									<div class="item clearfix">
+										<div class="img"><img src="img/215x132.jpg" alt=""></div>
+										<div class="text">
+											<p><em>1 сентября</em></p>
+											<p><a href="">Акция Рассрочка и точка</a></p>
+											<p>В период с 01 сентября 2013 до 01 октября 2013 проводиться Акция. Во время действия Акции любой участок в поселках на Старом Тобольском тракте вы можете купить в рассрочку на 10 месяцев. Основные условия: Первоначальный взнос - 30% от стоимости.</p>
+										</div>
+									</div>
+								</div>
+								<div class="pag-nav">
+									<ul class="clearfix">
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>
+										<li><a href="#">7</a></li>
+										<li><a href="#">8</a></li>
+										<li><a href="#">9</a></li>
+										<li><a href="#">10</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-block">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block-bottom">
+							<div class="block clearfix">
+								<div class="text">
+									<h2>Инвестиции и строительство</h2>
+									<p>Компания «GreenWood» продает земельные участки под строительство торговых точек, расположенные на территории загородных коттеджных поселков. Земельные участки оформляются в собственность. Продажа земельных участков под строительство и коммерческую деятельность - приоритетное направление деятельности компании. Реализация участков производится на основании передачи права собственности.</p>
+								</div>
+								<div class="help">
+									<div class="title">
+										<p>Есть вопросы?</p>
+									</div>
+									<div class="txt">
+										<p><strong>Отправьте запрос</strong><br>консультанту.</p>
+										<p><a href="#" class="dotted">Напишите нам</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block">
+							<nav>
+								<div class="menu">
+									<ul class="clearfix">
+										<li><a href="#">Поселки</a></li>
+										<li class="active"><a href="#">Коммерческая недвижимость</a></li>
+										<li><a href="#">Строительство</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Онлайн консультация</a></li>
+										<li><a href="#">Агентам</a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</nav>
+							<div class="clearfix">
+								<div class="social">
+									<a href="#" class="tw">twitter</a>
+									<a href="#" class="vk">vkontakte</a>
+									<a href="#" class="fc">facebook</a>
+									<a href="#" class="od">odnoklassniki</a>
+								</div>
+								<div class="copy">
+									<p>2008-2013 © ООО «ИнвестФонд» -  реализация недвижимости коттеджных поселков.</p>
+									<p>Все права компании защищены.</p>
+								</div>
+								<div class="search">
+									<form action="">
+										<input type="text" placeholder="Поиск по сайту">
+										<input type="submit" value="">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#news").carouFredSel({
+					width: 230,
+					height: 100,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 230,
+						height: 100
+					},
+					scroll: 1,
+					auto: false,
+					prev: ".block-news .prev",
+					next: ".block-news .next"
+				});
+
+				$("#privilege").carouFredSel({
+					width: 225,
+					height: 105,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 225,
+						height: 105
+					},
+					scroll: 1,
+					auto: false,
+					pagination: ".block-privilege .pagination"
+				});
+			})
+		</script>
+	</body>
+</html>

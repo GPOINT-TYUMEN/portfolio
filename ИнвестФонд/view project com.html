@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="question" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#question').hide();" class="close"></a>
+								<h2>Мы с удовольствием ответим на ваши вопросы!</h2>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Ваша эл. почта</label><input type="email"></li>
+									<li><label>Ваш вопрос</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Отправить вопрос">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="question_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#question_end').hide();" class="close"></a>
+							<h2>Спасибо за ваш вопрос!</h2>
+							<p>В ближайшее время мы ответим вам по указанной эл. почте.</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#question_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="phone" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#phone').hide();" class="close"></a>
+								<h2>Бесплатный обратный звонок</h2>
+								<p>Укажите ваш контактный номер телефона и наши менеджеры перезвонят вам прямо сейчас!</p>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Контактный телефон</label><input type="tel"></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Заказать обратный звонок">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="phone_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#phone_end').hide();" class="close"></a>
+							<h2>Спасибо!</h2>
+							<p>Наши менеджеры перезвонят вам прямо сейчас!</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#phone_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="subscription" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<form action="">
+							<div class="info">
+								<a href="javascript:void(0);" onclick="$('#subscription').hide();" class="close"></a>
+								<h2>Узнай первым!</h2>
+								<p>Вы стали собственником участка в одном из коттеджных поселков? Или собираетесь им стать? Тогда подпишитесь на ежемесячный электронный журнал «Вести с полей» и вы сможете: получать самые актуальные фотографии и свежие новости о ходе работ в вашем поселке, первыми узнавать о сезонных акциях, спецпредложениях и новых проектах. Только полезная и интересная вам информация!</p>
+								<ul class="clearfix checkbox">
+									<p>Хочу получать новости посёлков</p>
+									<li><label><input type="checkbox" name="" id="">Я-Ку-Ши 1</label></li>
+									<li><label><input type="checkbox" name="" id="">Радужный</label></li>
+									<li><label><input type="checkbox" name="" id="">Усадьба Есаулова</label></li>
+									<li><label><input type="checkbox" name="" id="">Килки</label></li>
+									<li><label><input type="checkbox" name="" id="">Якуши-3</label></li>
+									<li><label><input type="checkbox" name="" id="">Княжево</label></li>
+									<li><label><input type="checkbox" name="" id="">Высокий Берег</label></li>
+									<li><label><input type="checkbox" name="" id="">Теремки</label></li>
+									<li><label><input type="checkbox" name="" id="">Станица Криводанова</label></li>
+									<li><label><input type="checkbox" name="" id="">Золотой лес</label></li>
+									<li><label><input type="checkbox" name="" id="">Я-Ку-Ши 2</label></li>
+									<li><label><input type="checkbox" name="" id="">Солнечный день</label></li>
+								</ul>
+								<ul class="clearfix">
+									<li><label>Как вас зовут</label><input type="text"></li>
+									<li><label>Ваша эл. почта</label><input type="email"></li>
+								</ul>
+							</div>
+							<div class="button">
+								<input type="submit" class="a-button" value="Подписаться на рассылку">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="subscription_end" style="display: none">
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="info">
+							<a href="javascript:void(0);" onclick="$('#subscription_end').hide();" class="close"></a>
+							<h2>Спасибо!</h2>
+							<p>Ваш электронный адрес добавлен в нашу рассылку. Ждите новостей от "ИнвестФонда"!</p>
+						</div>
+						<div class="button">
+							<input type="submit" onclick="$('#subscription_end').hide();" class="a-button" value="Закрыть это окно">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header clearfix">
+				<div class="logo"><a href="#"><img src="img/logo.gif" alt=""></a></div>
+				<div class="sale">
+					<span>Продается: <strong>500 участков.</strong></span>
+					<span>Продано: <strong>28 участков.</strong></span>
+				</div>
+				<div class="call">
+					<p><a class="dotted" href="javascript:void(0);" onclick="$('#phone').show();">Заказать звонок</a></p>
+					<p><a class="dotted" href="javascript:void(0);" onclick="$('#subscription').show();">Подписаться на новости</a></p>
+				</div>
+				<div class="phone">
+					<p>Контактный телефон</p>
+					<p><span>+ 7 (812) 450-50-66</span></p>
+				</div>
+			</div>
+			<nav>
+				<div class="block-menu">
+					<div class="menu">
+						<ul>
+							<li><a href="#">поселки</a></li>
+							<li class="active"><a href="#">Коммерческая недвижимость</a></li>
+							<li><a href="#">Ипотека</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Агентам</a></li>
+							<li><a href="#">Строительство</a></li>
+							<li><a href="#">о компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="page-block">
+			<div class="view-project" style="margin-top: -17px">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block-bottom">
+							<div class="block">
+								<div class="block-title" style="background-image: url(img/bg-title.jpg)">
+									<div class="clumbs"><a href="">Главная</a> / <a href="#">Посёлки</a></div>
+									<h1>Коттеджный поселок «Высокий Берег» <span><strong>123</strong> участка, из них <strong>21</strong> ещё свободен!</span></h1>
+								</div>
+								<div class="clearfix">
+									<div class="text-block">
+										<p>Компания «ИнвестФонд» представляет новый коттеджный поселок на Московском тракте «Золотой лес».</p>
+										<blockquote>Отличное сочетание престижного направления и доступной цены.</blockquote>
+										<p>Золотой лес – это поселок для тех, кто готов строиться уже в этом году, и предпочитает загородный простор душному городу.</p>
+										<div class="images">
+											<a href="javascript:void(0);" class="prev"></a><a href="javascript:void(0);" class="next"></a>
+											<div id="images">
+												<div class="item"><img src="img/625x384/img.jpg" alt=""></div>
+												<div class="item"><img src="img/625x384/img.jpg" alt=""></div>
+												<div class="item"><img src="img/625x384/img.jpg" alt=""></div>
+												<div class="item"><img src="img/625x384/img.jpg" alt=""></div>
+											</div>
+											<div class="foo_pag" id="foo_pag"></div>
+										</div>
+										<p>Здесь каждый член вашей семьи найдет занятие по душе. Лес для прогулки за грибами старшему поколению, река для рыбной ловли мужчинам, речные прогулки на лодке для романтичных  вечеров, свежий воздух для детей, открытый простор и максимум удовольствия для друзей.</p>
+										<p>Запись на просмотр участков по тел.: (3452) 500-310. Также не упустите возможность получить подарок, приобретая участок в КП «Золотой лес»: диск с готовыми проектами домов из самых надежных материалов! Также Вас ждет бесплатная консультация специалиста по строительству!</p>
+									</div>
+									<div class="info-block">
+										<div class="button-block">
+											<p><a class="a-button" href="#">Распечатать страницу</a></p>
+										</div>
+										<div class="action">
+											<h2>Текущие акции</h2>
+											<div class="clearfix">
+												<div class="img"><img src="img/76x52.jpg" alt=""></div>
+												<div class="link">
+													<p><a href="#">Участок в рассрочку за 20 тыс. руб. в месяц!</a></p>
+												</div>
+											</div>
+										</div>
+										<div class="info">
+											<ul>
+												<li>
+													Категория земель
+													<p>земли населенных пунктов</p>
+												</li>
+												<li>
+													Разрешенное использование
+													<p>под личное подсобное хозяйство</p>
+												</li>
+												<li>
+													Правовой статус
+													<p>собственность</p>
+												</li>
+												<li>
+													Количество участков
+													<p>92</p>
+												</li>
+												<li>
+													Размер участков
+													<p>7-15 соток</p>
+												</li>
+												<li>
+													Удаленность от города
+													<p>35 км.</p>
+												</li>
+												<li>
+													Коммуникации
+													<p>газ и электричество проходят по границе комплекса (подключение оплачивается отдельно).</p>
+												</li>
+												<li>
+													Инфраструктура
+													<p>запланирована застройка объектов социального значения (магазин, зона с игровыми площадками).</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="block-maps">
+									<h2>Расположение поселка</h2>
+									<div class="maps"><script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ay_ctpJVuyBS7eaUSi5qvOMwzGlAzH8p&width=900&height=278"></script></div>
+								</div>
+								<div class="button">
+									<a href="#" class="a-button download">Скачать прайс-лист (jpg, 1.21 МБ)</a>
+									<a href="#" class="a-button print">Распечатать прайс-лист</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="actual-block">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block-bottom">
+							<div class="block">
+								<div class="title">
+									<h2>Похожие посёлки</h2>
+								</div>
+								<div class="clearfix">
+									<div class="item">
+										<a href="#"><img src="img/303x141.jpg" alt=""><span>Поселок «Килки»</span></a>
+										<div class="sale">
+											<p>50</p>
+										</div>
+										<a href="#" class="hover">
+											<p><strong>Поселок «Высокий Берег»</strong></p>
+											<p>15-й километр Старого Тобольского тракта (285 участков)</p>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#"><img src="img/303x141.jpg" alt=""><span>Поселок «Килки»</span></a>
+										<div class="sale">
+											<p>50</p>
+										</div>
+										<a href="#" class="hover">
+											<p><strong>Поселок «Высокий Берег»</strong></p>
+											<p>15-й километр Старого Тобольского тракта (285 участков)</p>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#"><img src="img/303x141.jpg" alt=""><span>Поселок «Килки»</span></a>
+										<div class="sale">
+											<p>50</p>
+										</div>
+										<a href="#" class="hover">
+											<p><strong>Поселок «Высокий Берег»</strong></p>
+											<p>15-й километр Старого Тобольского тракта (285 участков)</p>
+										</a>
+									</div>
+								</div>
+								<div class="more-project"><a href="#"><em>Смотреть все проекты</em></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-block">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block-bottom">
+							<div class="block clearfix">
+								<div class="text">
+									<h2>Инвестиции и строительство</h2>
+									<p>Компания «GreenWood» продает земельные участки под строительство торговых точек, расположенные на территории загородных коттеджных поселков. Земельные участки оформляются в собственность. Продажа земельных участков под строительство и коммерческую деятельность - приоритетное направление деятельности компании. Реализация участков производится на основании передачи права собственности.</p>
+								</div>
+								<div class="help">
+									<div class="title">
+										<p>Есть вопросы?</p>
+									</div>
+									<div class="txt">
+										<p><strong>Отправьте запрос</strong><br>консультанту.</p>
+										<p><a href="#" class="dotted">Напишите нам</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="block-center">
+					<div class="block-top">
+						<div class="block">
+							<nav>
+								<div class="menu">
+									<ul class="clearfix">
+										<li><a href="#">Поселки</a></li>
+										<li class="active"><a href="#">Коммерческая недвижимость</a></li>
+										<li><a href="#">Строительство</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Онлайн консультация</a></li>
+										<li><a href="#">Агентам</a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</nav>
+							<div class="clearfix">
+								<div class="social">
+									<a href="#" class="tw">twitter</a>
+									<a href="#" class="vk">vkontakte</a>
+									<a href="#" class="fc">facebook</a>
+									<a href="#" class="od">odnoklassniki</a>
+								</div>
+								<div class="copy">
+									<p>2008-2013 © ООО «ИнвестФонд» -  реализация недвижимости коттеджных поселков.</p>
+									<p>Все права компании защищены.</p>
+								</div>
+								<div class="search">
+									<form action="">
+										<input type="text" placeholder="Поиск по сайту">
+										<input type="submit" value="">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#images").carouFredSel({
+					width: 631,
+					height: 390,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 631,
+						height: 390
+					},
+					scroll: {
+						items: 1,
+						fx: "fade"
+					},
+					pagination  : {
+						container: "#foo_pag",
+						anchorBuilder: function( nr ) {
+							var src = $("img", this).attr( "src" );
+							src = src.replace( "/625x384/", "/95x64/");
+							return '<span><img src="' + src + '" /></span>';
+						}
+					},
+					auto: false,
+					prev: ".images .prev",
+					next: ".images .next"
+				});
+
+				$("#features").carouFredSel({
+					width: 297,
+					height: 169,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 297,
+						height: 169
+					},
+					scroll: 1,
+					auto: false,
+					prev: ".block-features .prev",
+					next: ".block-features .next"
+				});
+			})
+		</script>
+	</body>
+</html>
