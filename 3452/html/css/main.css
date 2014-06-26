@@ -1,0 +1,1091 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #f1f1f1;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.before,
+.after {
+    display: inline-block;
+    position: relative;
+}
+
+.before:before,
+.after:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.gif) no-repeat;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.header {
+    background: #e0e0e0;
+}
+
+.header .wrapper {
+    background: #f0f0f0;
+}
+
+.header__top {
+    padding: 0 30px;
+}
+
+.heeader__item {
+    float: left;
+}
+
+.header__contacts {
+    width: 255px;
+}
+
+.header__contacts p,
+.header__phone p {
+    font: 12px/20px Arial;
+    margin: 0 0 8px;
+}
+
+.header__contacts,
+.header__phone {
+    margin: 45px 0 0;
+}
+
+.header__logo {
+    margin: 28px 0 23px;
+    width: 392px;
+}
+
+.header__phone {
+    float: right;
+}
+
+.header__phone p {
+    text-align: right;
+    margin: 0;
+}
+
+.header__phone .phone {
+    font: bold 18px/24px "PT Sans";
+    margin: 0 0 5px;
+}
+
+.header__phone .phone span {
+    color: #a5a5a5;
+}
+
+.header__logo .logo {
+    text-align: center;
+    margin: 0 0 20px;
+    height: 134px;
+    width: 100%;
+}
+
+.header__logo .slogan p {
+    text-align: center;
+    font: 18px/22px "PT Sans";
+}
+
+.header__logo .slogan em {
+    position: relative;
+}
+
+.header__logo .slogan em:before,
+.header__logo .slogan em:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 51px;
+    height: 1px;
+    background: #363636;
+    top: 11px;
+}
+
+.header__logo .slogan em:before {
+    left: -65px;
+}
+
+.header__logo .slogan em:after {
+    right: -65px;
+}
+
+.header__menu {
+    padding: 0 0 31px;
+}
+
+.header__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+}
+
+.header__menu li {
+    display: table-cell;
+    text-align: center;
+    font: bold 14px/16px "PT Sans";
+    text-transform: uppercase;
+}
+
+.header__menu li a {
+    color: #363636;
+    text-decoration: none;
+    display: block;
+    border-left: 1px solid #bebebe;
+}
+
+.header__menu li:first-child a {
+    border-left: none;
+}
+
+.main__order .wrapper {
+    background: #fff;
+}
+
+.main__carousel {
+    float: left;
+    width: 574px;
+    height: 481px;
+    position: relative;
+}
+
+.main__carousel .prev,
+.main__carousel .next {
+    display: block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    left: 0;
+    z-index: 30;
+}
+
+.main__carousel .prev:before,
+.main__carousel .next:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.gif) no-repeat;
+    width: 13px;
+    height: 8px;
+    left: 14px;
+}
+
+.main__carousel .prev {
+    top: 60px;
+}
+
+.main__carousel .prev:before {
+    top: 15px;
+    background-position: 0 0;
+}
+
+.main__carousel .next {
+    bottom: 60px;
+}
+
+.main__carousel .next:before {
+    bottom: 15px;
+    background-position: 0 -8px;
+}
+
+.main__carousel .pagination {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 13px;
+    height: 361px;
+    line-height: 361px;
+    padding: 0 14px;
+    background: #814648;
+    z-index: 20;
+}
+
+.main__carousel #pagination {
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main__carousel .pagination span {
+    display: none;
+}
+
+.main__carousel .pagination a {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 0 7px;
+}
+
+.main__carousel .pagination .selected {
+    border-color: #f6dabd;
+    background: #f6dabd;
+}
+
+.main__carousel .pagination a:last-child {
+    margin: 0;
+}
+
+.main__carousel .item_carousel {
+    float: left;
+    width: 574px;
+    height: 481px;
+}
+
+.main__order .block__order {
+    float: right;
+    width: 297px;
+    border-right: 6px solid #814648;
+    margin: 60px 0 0;
+}
+
+.main__order .block__order h2 {
+    font: bold 20px/27px "PT Sans";
+    color: #363636;
+    margin: 0 0 8px;
+}
+
+.main__order .block__order ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main__order .block__order li {
+    margin: 0 0 8px;
+}
+
+.main__order .block__order label,
+.block_calculation label {
+    display: block;
+    font: 12px/20px Arial;
+    color: #525151;
+    margin: 0 0 10px;
+}
+
+.main__order .block__order input[type=text],
+.block_calculation input[type=text] {
+    text-align: right;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    height: 43px;
+    padding: 0 14px;
+    width: 145px;
+    font: italic 13px/43px "PT Sans", sans-serif;
+    color: #a9a9a9;
+    vertical-align: middle;
+}
+
+.main__order .block__order .ui-datepicker-trigger {
+    cursor: pointer;
+}
+
+.main__order .block__order .jq-selectbox {
+    width: 221px;
+}
+
+.main__order .block__order input[type=submit] {
+    width: 221px;
+    border: none;
+    background: #ff5f64;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 12px/50px "PT Sans";
+    height: 50px;
+}
+
+.main__promo {
+    margin: 71px 0 72px;
+}
+
+.main__promo h2 {
+    text-align: center;
+    font: bold italic 24px/27px "PT Sans";
+    color: #363636;
+    margin: 0 0 34px;
+}
+
+.item__promo {
+    float: left;
+    width: 225px;
+    text-align: center;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+
+.item__promo:before,
+.item__promo:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.item__promo:before {
+    width: 23px;
+    height: 23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #e0e0e0;
+    top: 59px;
+    right: -20px;
+}
+
+.item__promo:after {
+    background: url(../img/sprite.gif) no-repeat -13px -7px;
+    width: 5px;
+    height: 7px;
+    top: 67px;
+    right: -11px;
+}
+
+.item__promo:last-child:before,
+.item__promo:last-child:after {
+    display: none;
+}
+
+.item__promo:first-child {
+    margin: 0;
+}
+
+.img__promo {
+    background: url(../img/bg-promo.gif) no-repeat center;
+    width: 125px;
+    height: 140px;
+    margin: 0 0 24px 48px;
+    position: relative;
+}
+
+.img__promo span {
+    position: absolute;
+    background: url(../img/icons.gif) no-repeat;
+}
+
+.item__promo .kitchen span {
+    width: 86px;
+    height: 55px;
+    background-position: 0 0;
+    left: 18px;
+    top: 41px;
+}
+
+.item__promo .comfortably span {
+    width: 50px;
+    height: 66px;
+    background-position: -87px 0;
+    left: 37px;
+    top: 35px;
+}
+
+.item__promo .quality span {
+    width: 65px;
+    height: 68px;
+    background-position: -137px 0;
+    left: 30px;
+    top: 35px;
+}
+
+.item__promo .profit span {
+    width: 68px;
+    height: 74px;
+    background-position: -202px 0;
+    left: 28px;
+    top: 30px;
+}
+
+.title__promo {
+    margin: 0 0 10px;
+}
+
+.title__promo p {
+    font: bold 17px/20px "PT Sans";
+    color: #363636;
+}
+
+.text__promo p {
+    font: 12px/20px Arial;
+    color: #525151;
+}
+
+.main__offers {
+    margin: 0 0 79px;
+}
+
+.main__offers h2 {
+    font: italic 26px/28px "PT Sans";
+    color: #363636;
+    text-align: center;
+    margin: 0 0 13px;
+}
+
+.main__offers .clearfix {
+    margin: 34px 0 0;
+}
+
+.main__offers p {
+    font: 12px/20px Arial;
+    color: #525151;
+    text-align: center;
+}
+
+.item__offers {
+    float: left;
+    width: 240px;
+    background: #fff;
+    height: 749px;
+}
+
+.item__offers:hover {
+    background: #814648;
+}
+
+.img__offers {
+    position: relative;
+    width: 240px;
+    height: 390px;
+}
+
+.img__offers a {
+    display: none;
+}
+
+.item__offers:hover .img__offers a {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background: rgba(129,70,72,.7);
+}
+
+.item__offers:hover .img__offers a:before {
+    background: url(../img/sprite.png) no-repeat;
+    width: 57px;
+    height: 57px;
+    left: 92px;
+    top: 172px;
+}
+
+.text__offers {
+    padding: 0 30px 40px;
+}
+
+.text__offers p {
+    text-align: left;
+}
+
+.title__offers {
+    position: relative;
+    padding: 17px 0 0;
+    margin: 0 0 10px;
+}
+
+.title__offers:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 81px;
+    height: 5px;
+    background: #82484a;
+    top: 0;
+    left: 0;
+}
+
+.title__offers p,
+.adress__offers p {
+    font: 11px/20px Tahoma, Verdana, Segoe, sans-serif;
+    color: #ff5f64;
+}
+
+.adress__offers {
+    margin: 0 0 11px;
+}
+
+.item__offers:hover .title__offers:before {
+    background: #622d2e;
+}
+
+.item__offers:hover .title__offers p,
+.item__offers:hover .adress__offers p,
+.item__offers:hover .price__offers p,
+.item__offers:hover .price__offers span  {
+    color: #f3e3d3;
+}
+
+.name__offers {
+    margin: 0 0 8px;
+    max-height: 40px;
+}
+
+.name__offers p,
+.price__offers p {
+    font: bold 17px/20px "PT Sans";
+    color: #363636;
+}
+
+.item__offers:hover .name__offers p,
+.item__offers:hover .description__offers p {
+    color: #fff;
+}
+
+.adress__offers p {
+    color: #969696;
+}
+
+.price__offers {
+    margin: 0 0 18px;
+}
+
+.price__offers p {
+    color: #ff5f64;
+}
+
+.price__offers span {
+    color: #363636;
+}
+
+.description__offers {
+    max-height: 79px;
+    margin: 0 0 26px;
+}
+
+.description__offers p {
+    font: 12px/20px Arial;
+    color: #363636;
+}
+
+.button__offers p {
+    font: bold 12px/50px "PT Sans";
+    text-transform: uppercase;
+}
+
+.button__offers a {
+    display: block;
+    background: #ff5f64;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #ff5f64;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    width: 137px;
+    text-align: center;
+}
+
+.main_block {
+    margin: 0 0 81px;
+}
+
+.item__main {
+    float: left;
+    width: 182px;
+    height: 193px;
+    padding: 28px 29px 0;
+    background: #fff;
+    position: relative;
+}
+
+.item__main h3 {
+    font: bold 17px/20px "PT Sans";
+    color: #363636;
+    margin: 0 0 10px;
+}
+
+.item__main p {
+    font: 12px/20px Arial;
+    color: #363636;
+}
+
+.item__main span {
+    background: url(../img/img-icon.gif) no-repeat;
+    position: absolute;
+}
+
+.main_block .travel {
+    background: #ff5f64;
+}
+
+.main_block .travel span {
+    background-position: 0 0;
+    width: 110px;
+    height: 112px;
+    left: 63px;
+    top: 56px;
+}
+
+.main_block .business {
+    background: #814648;
+}
+
+.main_block .business span {
+    background-position: -110px 0;
+    width: 103px;
+    height: 110px;
+    left: 71px;
+    top: 55px;
+}
+
+.main_block .students {
+    background: #f6dabd;
+}
+
+.main_block .students span {
+    background-position: -213px 0;
+    width: 165px;
+    height: 106px;
+    left: 39px;
+    top: 57px;
+}
+
+.block_calculation {
+    background: #fff;
+    padding: 70px 0 77px;
+}
+
+.block_calculation h2 {
+    font: italic 26px/28px "PT Sans";
+    color: #363636;
+    text-align: center;
+    margin: 0 0 26px;
+}
+
+.block_calculation p {
+    font: 13px/15px "PT Sans";
+    color: #a9a9a9;
+    text-align: center;
+}
+
+.block_calculation ul {
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.block_calculation li {
+    float: left;
+    margin: 0 0 0 25px;
+}
+
+.block_calculation li:first-child {
+    margin: 0;
+}
+
+.block_calculation .jqselect {
+    width: 303px;
+}
+
+.block_calculation input[type=text] {
+    width: 274px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.block_calculation input[type=submit] {
+    width: 303px;
+    height: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    background: #ff5f64;
+    text-transform: uppercase;
+    color: #fff;
+    font: bold 12px/50px "PT Sans";
+}
+
+.block_calculation .button {
+    text-align: center;
+    margin: 0 0 28px;
+}
+
+.review_block {
+    padding: 71px 0 80px;
+}
+
+.review_block h2 {
+    text-align: center;
+    font: italic 26px/28px "PT Sans";
+    color: #363636;
+    margin: 0 0 34px;
+}
+
+.item__review {
+    float: left;
+    width: 300px;
+    margin: 0 0 0 30px;
+    position: relative;
+    padding: 29px 0 0;
+}
+
+.item__review:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 57px;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: #ff5f64;
+}
+
+.item__review:first-child {
+    margin: 0;
+}
+
+.text_review p {
+    font: 12px/20px Arial;
+}
+
+.people__review {
+    padding: 12px 0 0;
+}
+
+.people__review .name {
+    float: right;
+    margin: 11px 0 0;
+}
+
+.people__review .name p {
+    font: italic 14px/18px "PT Sans";
+    color: #a9a9a9;
+    text-align: right;
+}
+
+.people__review .name strong {
+    font-size: 15px;
+    color: #ff5f64;
+}
+
+.people__review .avatar {
+    float: right;
+    margin: 0 0 0 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.people__review .avatar img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.footer {
+    padding: 28px 0 10px;
+    background: #fff;
+}
+
+.footer__item {
+    float: left;
+}
+
+.footer__item p {
+    font: 11px/18px Tahoma, Verdana, Segoe, sans-serif;
+    color: #363636;
+    margin: 0 0 16px;
+}
+
+.footer__item span {
+    color: #a9a9a9;
+}
+
+.footer__copy {
+    width: 325px;
+}
+
+.footer__dev {
+    float: right;
+}
+
+.footer__dev p {
+    text-align: right;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

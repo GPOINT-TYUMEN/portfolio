@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Продающие страницы. Разработка продающих страниц, лендингов, страниц захвата от интернет-агентства Creative.</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/timeTo.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="order" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Новая заявка</h2>
+						<ul>
+							<li><label for="">Как вас зовут</label><input type="text"><br /><em>Например, Виктор Степанович</em></li>
+							<li><label for="">Телефон</label><input type="tel"><br /><em>Например, 89021234567</em></li>
+							<li><label for="">Эл. почта</label><input type="email"><br /><em>Например, ivanovsergey@mail.ru</em></li>
+							<li><label for="">Комментарий</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+							<li><input class="button" type="submit" value="Отправить заявку"><p>Обещаем, что не будем рассылать спам и не передадим<br /> ваш e-mail злоумышленникам.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="order_end" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Спасибо</h2>
+						<p>Наш менеджер свяжется с вами в ближайшее<br />время по указанному телефону или эл. почте.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="callback" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Заказ обратного звонка</h2>
+						<ul>
+							<li><label for="">Как вас зовут</label><input type="text"><br /><em>Например, Виктор Степанович</em></li>
+							<li><label for="">Телефон</label><input type="tel"><br /><em>Например, 89021234567</em></li>
+							<li><input class="button" type="submit" value="Заказать звонок"><p>Мы не будем надоедать вам с рекламными SMS и мы<br />не передадим ваш номер телефона злоумышленникам.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="callback_end" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Спасибо</h2>
+						<p>Наш менеджер свяжется с вами в ближайшее<br />время.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header before">
+				<div class="block before">
+					<div class="top clearfix">
+						<div class="logo"><img src="img/logo.png" alt=""></div>
+						<div class="block-button">
+							<a class="button" onclick="callback_show()" href="javascript:void(0);">Заказать звонок</a>
+							<a class="button" onclick="order_show()" href="javascript:void(0);">Отправить заявку</a>
+						</div>
+						<div class="phone">
+							<p><span>+7 3452</span> 69-56-89</p>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="info-block">
+							<h1>Техническая<br />поддержка сайтов</h1>
+							<p>Решаем все вопросы, касаемые корректной работы<br />и любых обновлений сайтов наших клиентов</p>
+							<p><a href="#" class="button">Узнать стоимость</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="content">
+				<div class="block-promo">
+					<img src="img/schedule.gif" alt="" />
+					<div class="clearfix">
+						<div class="item">
+							<p>Мы, как и&nbsp;вы, верим в&nbsp;то, что сайт может приносить своим владельцам <strong>доход</strong> и&nbsp;привлекать потенциальных клиентов.</p>
+						</div>
+						<div class="item">
+							<p>Если информация на&nbsp;сайте не&nbsp;актуальна, содержит ошибки или вовсе периодически не&nbsp;работает, то&nbsp;это ставит под серьезную <strong>угрозу</strong> имидж компании и&nbsp;ведет к&nbsp;<strong>потере</strong> потенциальных клиентов.</p>
+						</div>
+						<div class="item">
+							<p>Мы&nbsp;сможем обеспечить <strong>профессиональную</strong> техническую и&nbsp;информационную поддержку вашего сайта, сохранить ваш имидж и&nbsp;доход.</p>
+						</div>
+					</div>
+				</div>
+				<div class="block-form">
+					<div class="clearfix">
+						<div class="block">
+							<h2>Поможем в решении всех проблем с сайтом:</h2>
+							<ul>
+								<li><label><input type="checkbox" name="" id="">Нужно <strong>продлить домен и хостинг</strong></label></li>
+								<li><label><input type="checkbox" name="" id="">Сайт ни с того ни с сего просто <strong>перестал работать</strong>?</label></li>
+								<li><label><input type="checkbox" name="" id="">Вам нужно <strong>поправить дизайн</strong>?</label></li>
+								<li><label><input type="checkbox" name="" id="">Клиенты жалуются, что все очень <strong>sдолго открывается</strong>?</label></li>
+								<li><label><input type="checkbox" name="" id="">Нужно превратить каталог в <strong>интернет-магазин</strong>?</label></li>
+								<li><label><input type="checkbox" name="" id="">Вам нужно <strong>изменить цены</strong> в прайс-листе, а вы не знаете как это сделать?</label></li>
+								<li><label><input type="checkbox" name="" id="">Любой другой вопрос, касаемый работы <strong>вашего сайта</strong>.</label></li>
+								<li><a href="#" class="button">Отправить заявку</a></li>
+							</ul>
+							<h2>Наши принципы</h2>
+							<ul>
+								<li>
+									<h3>Фокусировка</h3>
+									<p>У&nbsp;большинства компаний услуги технической поддержки оказываются попутно. Для нас&nbsp;&mdash; это то, что мы&nbsp;действтельно любим и&nbsp;это наш основной профиль деятельности.</p>
+								</li>
+								<li>
+									<h3>Профессионализм</h3>
+									<p>Мы&nbsp;укомплектованы специалистами по&nbsp;самым различным технологиям, которые готовы решить любые задачи.</p>
+								</li>
+								<li>
+									<h3>Сервис</h3>
+									<p>Нам удалось сделать техническую поддержку простой и&nbsp;понятной. Никакой сложной терминологии&nbsp;&mdash; только результаты.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="form">
+							<form action="">
+								<h2>Дать нам тестовое задание</h2>
+								<p>Пришлите нам любую задачу по вашему сайту или опишите проблему и мы поможем вам совершенно бесплатно!<sup>*</sup></p>
+								<div id="countdown"></div>
+								<ul>
+									<li>
+										<label>Описание проблемы или задачи:</label>
+										<textarea name="" id="" cols="30" rows="10"></textarea>
+										<em>Например: на нашем сайте перестала работать фотогалерея</em>
+									</li>
+									<li>
+										<label>Адрес сайта:</label>
+										<input type="text" />
+									</li>
+									<li>
+										<label>Как вас зовут?:</label>
+										<input type="text" />
+									</li>
+									<li>
+										<label>Телефон:</label>
+										<input type="tel" />
+									</li>
+									<li>
+										<label>E-mail:</label>
+										<input type="email" name="" id="" />
+									</li>
+									<li>
+										<input class="button" type="submit" value="Отправить заявку" />
+									</li>
+								</ul>
+								<p><em>Мы гарантируем, что ваши личные данные не будут переданы злоумышленникам!</em></p>
+								<p><em><sup>*</sup>В рамках тарифа "Разовое обращение"</em></p>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="block-price">
+					<h2>Стоимость</h2>
+					<div class="block">
+						<p>Укажите желаемое количество часов работы наших специалистов. Чем больше пакет часов вы покупаете, тем дешевле становится стоимость одного часа. Мы предоставляем детализированные отчеты по потраченным часам и вы сможете четко контролировать расход времени.</p>
+						<p><strong>Количество часов:</strong> <input type="hidden" id="hidden1" /> <span class="amount"></span></p>
+						<div id="slider"></div>
+						<ul class="time">
+							<li>1</li>
+							<li>5</li>
+							<li>10</li>
+							<li>15</li>
+							<li>20</li>
+							<li>30</li>
+							<li>50</li>
+							<li>100</li>
+						</ul>
+						<div class="clearfix">
+							<div class="item">
+								<p>Стоимость часа:</p>
+								<strong><span id="price_item">1100</span> P</strong>
+							</div>
+							<div class="item">
+								<p>Срок действия<sup>*</sup>:</p>
+								<strong id="validity">1 месяц</strong>
+							</div>
+							<div class="item">
+								<p>Сумма:</p>
+								<strong><span id="total">5500</span> P</strong>
+							</div>
+						</div>
+						<p>
+							<a href="#" class="button">Отправить заявку</a>
+							<em>* Все часы в рамках пакетного предложения должны быть израсходованы<br />в определенный период времени</em>
+						</p>
+					</div>
+				</div>
+				<div class="about-block">
+					<h2>Как потратить часы<sup>*</sup></h2>
+					<img src="img/bg-about.jpg" alt="" />
+					<p><sup>*</sup> <em>Указаны примерные значения, в каждом конкретном случае время расчитывается индивидуально</em></p>
+				</div>
+				<div class="block-project">
+					<h2>Наши клиенты</h2>
+					<div class="clearfix">
+						<div class="item"><a href="http://kobilkin.ru/" target="_blank"><img src="img/img-p1.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://правительство.янао.рф/" target="_blank"><img src="img/img-p2.jpg" alt=""></a></div>
+						<div class="item"><a href="http://ms11.ru/" target="_blank"><img src="img/img-p3.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://grnhouse.ru/" target="_blank"><img src="img/img-p4.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://dcha.ru/" target="_blank"><img src="img/img-p5.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://fitberri72.ru/" target="_blank"><img src="img/img-p6.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://slbank.ru/" target="_blank"><img src="img/img-p7.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://assorti-rest.ru/" target="_blank"><img src="img/img-p8.jpg" alt="" /></a></div>
+						<div class="item"><a href="http://hotel-spasskaya.ru/" target="_blank"><img src="img/img-p9.jpg" alt="" /></a></div>
+					</div>
+				</div>
+				<div class="block-dev">
+					<h2>Разбираемся в технологиях</h2>
+					<div class="block"><img src="img/img-dev.jpg" alt=""></div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="block-adress">
+					<h2>Как нас найти</h2>
+					<div class="clearfix">
+						<div class="info">
+							<p class="before">г. Тюмень, ул. Николая Федорова, 9, офис 3</p>
+							<p class="tel"><strong><span>+7 3452</span> 69-56-89</strong></p>
+							<p><a href="javascript:void(0);" onclick="order_show()" class="button">Отправить заявку</a></p>
+							<p><a href="javascript:void(0);" onclick="callback_show()" class="button">Заказать звонок</a></p>
+							<p>
+								<a href="img/14_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g1.jpg" alt=""></a>
+								<a href="img/4_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g2.jpg" alt=""></a>
+								<a href="img/5_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g3.jpg" alt=""></a>
+								<a href="img/17_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g4.jpg" alt=""></a>
+							</p>
+						</div>
+						<div class="maps"><script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HTOkVaPK7IMCtAABEA6QgM9j6XdyhUzU&width=548&height=306"></script></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/vendor/steppedRangeSlider.jquery.js"></script>
+		<script src="js/vendor/jquery.fancybox.pack.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/vendor/jquery.timeTo.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			slider_values_array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
+			true_values_array = [1,2,3,4,5,6,7,8,9,10,12,15,17,20,25,30,40,50,60,70,80,90,100];
+
+			mask_array = [1,"2 - минимальный пакет","3 - минимальный пакет","4 - минимальный пакет","5 - минимальный пакет","6 - оптимальное решение", "7 - оптимальное решение","8 - оптимальное решение","9 - оптимальное решение","10 - оптимальное решение","12 - выгодное предложение","15 - выгодное предложение","17 - выгодное предложение","20 - выгодное предложение",25,30,40,50,60,70,80,90,100];
+
+			var stepPrice_one = "1500";
+			var stepPrice_two = "1100";
+			var stepPrice_three = "1000";
+			var stepPrice_four = "950";
+			var stepPrice_five = "900";
+			var validity_one = "Разовая заявка";
+			var validity_two = "1 месяц";
+			var validity_three = "2 месяца";
+			var validity_four = "4 месяца";
+			var pricaItem = $("#price_item");
+			var validityItem = $("#validity");
+			var totalItem = $("#total");
+
+			$(document).ready(function() {
+				$('input, select').styler();
+
+				$('#countdown').timeTo({
+					timeTo: new Date(new Date('Wed Feb 19 2014 09:00:00 GMT+0600 (YEKT)')),
+					displayDays: 2,
+					displayCaptions: true,
+					fontSize: 35,
+					captionSize: 12,
+					lang: "ru"
+				});
+
+				$("#slider").steppedRangeSlider({
+					slider_values: slider_values_array,
+					true_values: mask_array,
+					display_area_class: "amount",
+					values: [4],
+					hidden_fields: ["hidden1"]
+				});
+
+				$("#hidden1").change(function() {
+					var price = parseInt($(this).val());
+					if (price >= 2 && price <= 5) {
+						pricaItem.empty();
+						validityItem.empty();
+						totalItem.empty();
+						pricaItem.append(stepPrice_two);
+						validityItem.append(validity_two);
+						totalItem.append(price*parseInt(stepPrice_two));
+					} else if (price >= 5 && price <= 10) {
+						pricaItem.empty();
+						validityItem.empty();
+						totalItem.empty();
+						pricaItem.append(stepPrice_three);
+						validityItem.append(validity_three);
+						totalItem.append(price*parseInt(stepPrice_three));
+					} else if (price >= 10 && price <= 30) {
+						pricaItem.empty();
+						validityItem.empty();
+						totalItem.empty();
+						pricaItem.append(stepPrice_four);
+						validityItem.append(validity_three);
+						totalItem.append(price*parseInt(stepPrice_four));
+					} else if (price >= 30 && price <= 100) {
+						pricaItem.empty();
+						validityItem.empty();
+						totalItem.empty();
+						pricaItem.append(stepPrice_five);
+						validityItem.append(validity_four);
+						totalItem.append(price*parseInt(stepPrice_five));
+					} else {
+						pricaItem.empty();
+						validityItem.empty();
+						totalItem.empty();
+						pricaItem.append(stepPrice_one);
+						validityItem.append(validity_one);
+						totalItem.append(price*parseInt(stepPrice_one));
+					}
+				});
+			})
+
+		</script>
+	</body>
+</html>

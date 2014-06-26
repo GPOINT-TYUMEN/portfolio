@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup new-report" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<p>New report</p>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">close</a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+										<th>
+											<p>
+												Choose project for report <span>1 of 2 steps</span>
+											</p>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+									<tr>
+										<td>Definite</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<p>New report</p>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">close</a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+										<th>
+											<p>
+												Fight lab / <em>details</em> <span>2 of 2 steps</span>
+											</p>
+										</th>
+									</tr>
+								</thead>
+							</table>
+							<form action="">
+								<div class="datepiker-block">
+									<p><strong>Report period</strong></p>
+									<ul class="clearfix">
+										<li><label>From <input type="text" id="from" name="from" /></label></li>
+										<li><label>to <input type="text" id="to" name="to" /></label></li>
+									</ul>
+									<p><strong>Report type</strong></p>
+									<p class="detailed">Detailed / <a href="#" class="dotted">Short</a></p>
+								</div>
+								<div class="efficiency-block">
+									<p><strong>Efficiency per day</strong></p>
+									<table>
+										<thead>
+											<tr>
+												<th>Day</th>
+												<th>Persents</th>
+												<th>Hours</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>29.01 <span>Mon</span></td>
+												<td>72<span>%</span></td>
+												<td>4:20</td>
+											</tr>
+											<tr>
+												<td>7 <span>Days</span></td>
+												<td>67<span>%</span></td>
+												<td>21:43</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="button"><input type="submit" value="Send" /></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="clearfix">
+				<div class="aside-block column">
+					<aside>
+						<div class="logo"><a href="#">In<strong>Control</strong></a></div>
+						<div class="menu">
+							<ul>
+								<li class="overview"><a class="sprite" href="#">Overview</a></li>
+								<li class="reports active"><a class="sprite" href="#">Reports</a></li>
+								<li class="activities"><a class="sprite" href="#">Activities</a></li>
+								<li class="projects"><a class="sprite" href="#">Projects</a></li>
+								<li class="productivity"><a class="sprite" href="#">Productivity</a></li>
+							</ul>
+							<ul class="tips">
+								<li><sup>*</sup><a href="#" class="dotted">Tips</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<div class="center-block column">
+					<header>
+						<div class="block-user clearfix">
+							<div class="block">
+								<p><a href="#"><img src="img/28x28.gif" alt="" />J. Oliver</a></p>
+								<div class="user-menu">
+									<ul>
+										<li><a href="#">Settings</a></li>
+										<li><a href="#">Sign out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+					<section>
+						<div class="block-filter-button clearfix">
+							<div class="sort">
+								<p>Sort by <a href="#" class="dotted">date</a></p>
+							</div>
+							<div class="button">
+								<p><a href="javascript:void(0)" onclick="show_report()" class="sprite">New report</a></p>
+							</div>
+							<div class="search">
+								<p><a href="#" class="sprite">Search</a></p>
+							</div>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Project</th>
+									<th>Hours</th>
+									<th>Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+								<tr>
+									<td>Definite</td>
+									<td>4:20</td>
+									<td>24 Jan</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<footer>
+						<div class="footer">
+							<p>© 2014 In<strong>ctrl</strong>.io</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(window).on("load", function() {
+				var maxheight = 0;
+				$("div.column").each(function() {
+				  if($(this).height() > maxheight) { maxheight = $(this).height(); }
+				});
+
+				$("div.column").height(maxheight);
+			});
+			
+			$(document).ready(function() {
+
+				$("#from").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 2,
+					onClose: function( selectedDate ) {
+						$("#to").datepicker("option","minDate", selectedDate);
+					}
+				});
+				$("#to").datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 2,
+					onClose: function( selectedDate ) {
+						$("#from").datepicker("option","maxDate", selectedDate);
+					}
+				});
+			})
+
+			function close_popup() {
+				$("body").removeClass("no-scroll");
+				$(".popup").fadeOut(500);
+			}
+
+			function show_report() {
+				$("body").addClass("no-scroll");
+				$(".new-report").fadeIn(500);
+			}
+		</script>
+	</body>
+</html>

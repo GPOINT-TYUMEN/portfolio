@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body class="main">
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup callback" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>обратный звонок</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="text">
+							<p>Оставьте свои контактые данные и наши менеджеры перезвонят вам в удобное время. <br />Звонок совершенно бесплатный.</p>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><label>Как вас зовут</label><input type="text" /></li>
+									<li class="time">
+										<label>Удобное время для звонка</label>
+										<select name="" id="">
+											<option value="">10:00</option>
+										</select>
+										—
+										<select name="" id="">
+											<option value="">23:00</option>
+										</select>
+										<label><input type="checkbox" name="" id="">Не звонить в выходные</label>
+									</li>
+									<li><label>Ваш номер телефона</label><input type="tel" /></li>
+									<li><input type="submit" value="отправить заявку" class="link-border" /></li>
+								</ul>
+							</form>
+						</div>
+						<div class="last-text">
+							<p><em>Мы не будем надоедать вам рекламными sms и не передадим <br />ваш номер телефона злоумышленникам.</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup write" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>запись на просмотр</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="text">
+							<p>Лучше один раз увидеть, чем сто раз услышать. <br />Уже сегодня вы можете записаться на бесплатный просмотр своего будущего жилья. <br />Поверьте, в живую все выглядит более привлекательно, чем на картинке!</p>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><label>Как вас зовут</label><input type="text" /></li>
+									<li class="time">
+										<label>Удобное время для просмотра</label>
+										<select name="" id="">
+											<option value="">10:00</option>
+										</select>
+										—
+										<select name="" id="">
+											<option value="">23:00</option>
+										</select>
+										<label><input type="checkbox" name="" id="">Только не в выходные</label>
+									</li>
+									<li><label>Ваша эл. почта</label><input type="email" /></li>
+									<li><label>Ваш номер телефона</label><input type="tel" /></li>
+									<li><label>Комментарий</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+									<li><input type="submit" value="отправить заявку" class="link-border" /></li>
+								</ul>
+							</form>
+						</div>
+						<div class="last-text">
+							<p><em>Мы не будем рассылать спам и не передадим ваш e-mail <br />злоумышленникам.</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup login" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>вход</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><label>Логин (e-mail)</label><input type="email" /></li>
+									<li><label>Пароль <a href="javascript:void(0);" onclick="show_recovery()">Забыли пароль?</a></label><input type="password" /></li>
+									<li><input type="submit" value="войти" class="link-border" /> <a href="javascript:void(0);" onclick="show_registration()">Регистрация</a></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup password" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>Восстановлени пароля</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><label>Логин (e-mail)</label><input type="email" /></li>
+									<li><input type="submit" value="Восстановить" class="link-border" /> <a href="javascript:void(0);"  onclick="show_login()">Назад</a></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup registration" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>регистрация</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="text">
+							<p>Все поля обязательны для заполнения.</p>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><label>Как вас зовут</label><input type="text" /></li>
+									<li><label>Агентство</label><input type="text" /></li>
+									<li><label>Ваш номер телефона</label><input type="tel" /></li>
+									<li><label>Ваша эл. почта</label><input type="email" /></li>
+									<li><input type="submit" value="зарегистрироваться" class="link-border" /></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup registration_end" style="display: none;">
+			<div class="bg" onclick="close_popup()"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<div class="title">
+							<h3>регистрация</h3>
+							<a href="javascript:void(0);" onclick="close_popup()" class="close">закрыть</a>
+						</div>
+						<div class="text">
+							<p>Дождитесь уведомительного письма об активации личного кабинета на вашей электронной почте.</p>
+							<p>Рады сотрудничеству!</p>
+						</div>
+						<div class="form">
+							<form action="">
+								<ul>
+									<li><a href="javascript:void(0);" onclick="close_popup()" class="link-border">закрыть окно</a></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header>
+			<div class="header">
+				<div class="top-header">
+					<div class="block clearfix">
+						<div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+						<div class="phone-block">
+							<p><span>+7 3452</span> 55-00-00, 56-55-54</p>
+						</div>
+						<div class="button-block">
+							<p>
+								<a href="javascript:void(0);" onclick="show_write()" class="button">записаться на просмотр</a>
+								<a href="javascript:void(0);" onclick="show_callback()" class="button">вам перезвонить?</a>
+							</p>
+						</div>
+					</div>
+					<div class="menu">
+						<ul class="clearfix">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">проекты</a></li>
+							<li><a href="#">отдел продаж</a></li>
+							<li><a href="#">концепция «эко»</a></li>
+							<li><a href="#">пресс-центр</a></li>
+							<li><a href="#">контакты</a></li>
+							<li>
+								<a href="#" class="fc i-rhombus">facebook<i></i></a>
+								<a href="#" class="vk i-rhombus">vkontakte<i></i></a>
+								<a href="#" class="yt i-rhombus">youtube<i></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="carousel-header">
+					<div class="pagination"></div>
+					<div id="carousel-header">
+						<div class="item" style="background-image: url(img/header-img.jpg)">
+							<div class="block">
+								<div class="info">
+									<h3>апрель</h3>
+									<p>территория комфорта</p>
+									<p><a href="#" class="link-border">узнать подробнее</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/header-img.jpg)">
+							<div class="block">
+								<div class="info">
+									<h3>апрель</h3>
+									<p>территория комфорта</p>
+									<p><a href="#" class="link-border">узнать подробнее</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/header-img.jpg)">
+							<div class="block">
+								<div class="info">
+									<h3>апрель</h3>
+									<p>территория комфорта</p>
+									<p><a href="#" class="link-border">узнать подробнее</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="background-image: url(img/header-img.jpg)">
+							<div class="block">
+								<div class="info">
+									<h3>апрель</h3>
+									<p>территория комфорта</p>
+									<p><a href="#" class="link-border">узнать подробнее</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<section>
+				<div class="main-block">
+					<div class="clearfix">
+						<div class="column-left">
+							<div class="block-about">
+								<h2>о застройщике</h2>
+								<p>«Поревит-девелопмент» разрабатывает и реализует инвестиционные проекты в области девелопмента.</p>
+								<blockquote>мы создаём новый формат городской жизни,</blockquote>
+								<p>основанный на экологичности загородного жилья, удобстве городского и безусловной полезности каждого квадратного метра.</p>
+								<p><a href="" class="link-border">узнать подробнее</a></p>
+							</div>
+						</div>
+						<div class="column-right">
+							<div class="block-items">
+								<h2>почему мы</h2>
+								<div class="clearfix">
+									<div class="item">
+										<div class="img rhombus">
+											<a href="#"><img src="img/168x137.jpg" alt="" /></a>
+										</div>
+										<div class="text">
+											<h4>Экологично</h4>
+											<p>Основой для конструктива стен является силикатный блок "<a href="#">Поревит</a>". В домах из поревита всегда тепло, тихо и комфортно.</p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="img rhombus">
+											<a href="#"><img src="img/168x137.jpg" alt="" /></a>
+										</div>
+										<div class="text">
+											<h4>надёжно</h4>
+											<p>Опираемся на 20-летний опыт строительства холдинга "<a href="#">Партнер</a>".</p>
+										</div>
+									</div>
+									<div class="item">
+										<div class="img rhombus">
+											<a href="#"><img src="img/168x137.jpg" alt="" /></a>
+										</div>
+										<div class="text">
+											<h4>новый формат жизни</h4>
+											<p>Современная концепция городской и пригородной <a href="#">застройки «ЭКО»</a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="banners-carousel">
+								<div class="pag"></div>
+								<div id="banners-carousel">
+									<div class="item"><a href="#"><img src="img/564x120.jpg" alt="" /></a></div>
+									<div class="item"><a href="#"><img src="img/564x120.jpg" alt="" /></a></div>
+									<div class="item"><a href="#"><img src="img/564x120.jpg" alt="" /></a></div>
+									<div class="item"><a href="#"><img src="img/564x120.jpg" alt="" /></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="column-left">
+							<div class="info-banner">
+								<h2>Концепция «эко»</h2>
+								<div class="block">
+									<a href="#">
+										<img src="img/366x228.jpg" alt="" />
+										<span>экологично<br />комфортно<br />оптимально</span>
+										<em class="button">узнать подробнее</em>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column-right">
+							<div class="block-new">
+								<h2>что нового</h2>
+								<div class="clearfix">
+									<div class="item">
+										<p>
+											<a href="#">
+												<span>последние штрихи</span>
+												<span>генплана Тюмени обсудят на публичной лекции.</span>
+												<em class="date">30 декабря</em>
+											</a>
+										</p>
+									</div>
+									<div class="item">
+										<p>
+											<a href="#">
+												<span>график работы</span>
+												<span>офиса продаж в праздничные и выходные дни.</span>
+												<em class="date">30 декабря</em>
+											</a>
+										</p>
+									</div>
+									<div class="item">
+										<p>
+											<a href="#">
+												<span>открыты продажи</span>
+												<span>в третьей очереди комплексной застройки района Ожогино.</span>
+												<em class="date">30 декабря</em>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="more-block clearfix">
+									<div class="more">
+										<p><a href="#">Все события</a></p>
+									</div>
+									<div class="subscribe">
+										<p>Узнайте первыми <a href="#" class="link-border">подписаться на рассылку</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="column-left">
+							<div class="block-promo">
+								<h2>интересные факты</h2>
+								<ul>
+									<li>
+										<strong>1200</strong>квадратных метров продано только за май 2014 года.
+									</li>
+									<li>
+										<strong>210</strong>счастливых семей заселилось за 2014 год.
+									</li>
+									<li>
+										<strong>110</strong>ипотечных кредитов одобрено нашим покупателям.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="column-right">
+							<div class="block-about">
+								<h2>о проекте</h2>
+								<p>Приобретение участка под застройку – весьма ответственное и непростое мероприятие, требующее учета мельчайших нюансов. Многое здесь зависит от компании, занимающейся реализацией земли и юридическим оформлением сделки – насколько откровенно ее представители проинформируют клиента об особенностях расположения участка, насколько профессионально и грамотно будет проведено документальное оформление.</p>
+								<p>Для нашей компании продажа земельных участков – основное направление деятельности. Мы с предельным вниманием относимся к каждому потенциальному покупателю и стремимся предоставить наиболее выгодные и удобные для него условия сотрудничества.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="block">
+					<div class="menu">
+						<ul class="clearfix">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">проекты</a></li>
+							<li><a href="#">отдел продаж</a></li>
+							<li><a href="#">концепция «эко»</a></li>
+							<li><a href="#">пресс-центр</a></li>
+							<li><a href="#">контакты</a></li>
+							<li><a href="javascript:void(0);" class="link-border" onclick="show_login()">личный кабинет</a></li>
+						</ul>
+					</div>
+					<div class="clearfix">
+						<div class="left">
+							<blockquote>дома не выше сосен — <span>новый формат городской жизни</span></blockquote>
+							<p>Обращаем Ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой. Застройщик имеет право изменять стоимость объектов.</p>
+							<p>© 2013–2014 ООО «Поревит-Девелопмент»<br />Все права защищены.</p>
+						</div>
+						<div class="right">
+							<p class="phone"><strong><span>+7 3452</span> 55-00-00<br />56-55-54</strong></p>
+							<p>Разработка и дизайн сайта — <a href="http://www.crtweb.ru" target="_balnk">агентство Creative</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, select').styler();
+
+				$("#carousel-header").carouFredSel({
+					responsive: true,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 1280,
+						height: "40%"
+					},
+					scroll: 1,
+					auto: false,
+					pagination: ".pagination"
+				});
+
+				$("#banners-carousel").carouFredSel({
+					width: 564,
+					height: 120,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 564,
+						height: 120
+					},
+					scroll: 1,
+					pagination: ".banners-carousel .pag"
+				});
+			})
+
+			function close_popup() {
+				$(".popup").fadeOut(800);
+				$("body").removeClass("no-scroll");
+			}
+
+			function show_callback() {
+				$(".callback").fadeIn(800);
+			}
+
+			function show_write() {
+				$(".write").fadeIn(800);
+				$("body").addClass("no-scroll");
+			}
+
+			function show_login() {
+				$(".popup").fadeOut(800);
+				$(".login").fadeIn(800);
+			}
+
+			function show_recovery() {
+				$(".popup").fadeOut(800);
+				$(".password").fadeIn(800);
+			}
+
+			function show_registration() {
+				$(".popup").fadeOut(800);
+				$(".registration").fadeIn(800);
+			}
+		</script>
+	</body>
+</html>

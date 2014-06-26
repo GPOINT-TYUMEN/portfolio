@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="header clearfix">
+                <div class="header__item header__logo"><a href="#"><img src="img/logo.gif" alt="" /></a></div>
+                <div class="header__item">
+                    <div class="header__city">
+                        <p><a href="javascript:void(0)" onclick="select_city()" class="dotted">Санкт-Петербург</a></p>
+                        <div class="city__menu" id="city__menu">
+                            <p><a href="javascript:void(0)" onclick="select_city()" class="dotted">Санкт-Петербург</a></p>
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Архангельск</a></li>
+                                    <li><a href="#">Астрахань</a></li>
+                                    <li><a href="#">Барнаул</a></li>
+                                    <li><a href="#">Белгород</a></li>
+                                    <li><a href="#">Бийск</a></li>
+                                    <li><a href="#">Благовещенск</a></li>
+                                    <li><a href="#">Братск</a></li>
+                                    <li><a href="#">Брянск</a></li>
+                                    <li><a href="#">Великий Новгород</a></li>
+                                    <li><a href="#">Владивосток</a></li>
+                                    <li><a href="#">Владимир</a></li>
+                                    <li><a href="#">Вологда</a></li>
+                                    <li><a href="#">Геленджик</a></li>
+                                    <li><a href="#">Городец</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Дмитров</a></li>
+                                    <li><a href="#">Дубна</a></li>
+                                    <li><a href="#">Егорьевск</a></li>
+                                    <li><a href="#">Екатеринбург</a></li>
+                                    <li><a href="#">Звенигород</a></li>
+                                    <li><a href="#">Иваново</a></li>
+                                    <li><a href="#">Ижевск</a></li>
+                                    <li><a href="#">Йошкар-Ола</a></li>
+                                    <li class="active"><a href="#">Казань</a></li>
+                                    <li><a href="#">Калининград</a></li>
+                                    <li><a href="#">Калуга</a></li>
+                                    <li><a href="#">Краснодар</a></li>
+                                    <li><a href="#">Красноярск</a></li>
+                                    <li><a href="#">Курск</a></li>
+                                    <li><a href="#">Киров</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Можайск</a></li>
+                                    <li><a href="#">Москва</a></li>
+                                    <li><a href="#">Мурманск</a></li>
+                                    <li><a href="#">Муром</a></li>
+                                    <li><a href="#">Мытищи</a></li>
+                                    <li><a href="#">Нижний Новгород</a></li>
+                                    <li><a href="#">Нижний тагил</a></li>
+                                    <li><a href="#">Новороссийск</a></li>
+                                    <li><a href="#">Новосибирск</a></li>
+                                    <li><a href="#">Омск</a></li>
+                                    <li><a href="#">Орёл</a></li>
+                                    <li><a href="#">Оренбург</a></li>
+                                    <li><a href="#">Пенза</a></li>
+                                    <li><a href="#">Пермь</a></li>
+                                    <li><a href="#">Подольск</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" class="twiiter"></a>
+                        <a href="#" class="fc"></a>
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="od"></a>
+                        <a href="#" class="mail"></a>
+                        <a href="#" class="plus"></a>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__contacts">
+                        <p>
+                            <span class="before">8 800 700 41 92 <em>| поддержка</em></span>
+                            <a href="mailto:support@taxinado.ru" class="before">support@taxinado.ru</a>
+                        </p>
+                    </div>
+                    <div class="header__menu">
+                        <div class="clearfix">
+                            <nav>
+                                <ul class="clearfix">
+                                    <li class="active"><a href="#">Заказ такси</a></li>
+                                    <li><a href="#">Водителям</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li><a href="#">О сервисе</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__login">
+                                <p><a href="javascript:void(0)" onclick="login_menu()" class="before">Вход</a></p>
+                                <div class="login__menu" id="login__menu">
+                                    <p class="menu_title"><a href="javascript:void(0)" onclick="login_menu()" class="before">Вход</a></p>
+                                    <form action="">
+                                        <input type="tel" class="phone__input">
+                                        <input type="submit" value="Получить код">
+                                    </form>
+                                    <form action="" style="display: none;">
+                                        <p>Введите пароль<br /> из смс-сообщения</p>
+                                        <input type="text" placeholder="Пароль">
+                                        <input type="submit" value="Войти">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="main_block">
+                <div class="wrapper">
+                    <h1>Заказ такси одной кнопкой с выбором цены поездки</h1>
+                    <div class="clearfix">
+                        <div class="form__orders" style="width: 832px;"><!-- TODO: ставим style="width: 832px;" на втором шаге -->
+                            <!-- TODO: Первый шаг -->
+                            <div id="tabs" style="display: none">
+                                <ul class="form__tabs clearfix">
+                                    <li><a href="#tabs-1">Заказать такси</a></li>
+                                    <li><a href="#tabs-2">Арендовать такси</a></li>
+                                </ul>
+                                <div class="form__item" id="tabs-1">
+                                    <ul>
+                                        <li>
+                                            <label class="before form__input">
+                                                <input type="text" placeholder="Адрес, заведение" />
+                                                <a href="javascript:void(0)" onclick="railway_menu(this)" class="railway"></a>
+                                                <a href="javascript:void(0)" onclick="railway_menu(this)" class="air"></a>
+                                            </label>
+                                            <span>
+                                                <a href="javascript:void(0)" onclick="live_menu(this)" class="before live"></a>
+                                                <ul class="live_menu">
+                                                    <li>Дом<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Работа<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Фитнес-зал<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Бабушка<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Ваня<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Съемная квартира<a href="javascript:void(0)" class="before close"></a></li>
+                                                </ul>
+                                            </span>
+                                            <div class="adress__form">
+                                                <form action="">
+                                                    <ul>
+                                                        <li class="min">
+                                                            <input type="text" placeholder="Дом">
+                                                            <input type="text" placeholder="Строение">
+                                                            <input type="text" placeholder="Корпус">
+                                                            <input type="text" placeholder="Подъезд">
+                                                        </li>
+                                                        <li>
+                                                            <textarea placeholder="Комментарий" name="" id="" cols="30" rows="10"></textarea>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" name="" id="">Сохранить в любимые адреса</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="text" placeholder="Название любимого места">
+                                                        </li>
+                                                        <li>
+                                                            <input type="submit" value="Готово">
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            <div class="railway__menu">
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label class="before form__where">
+                                                <input type="text" placeholder="Куда" />
+                                                <a href="javascript:void(0)" onclick="railway_menu(this)" class="railway"></a>
+                                                <a href="javascript:void(0)" onclick="railway_menu(this)" class="air"></a>
+                                            </label>
+                                            <span>
+                                                <a href="javascript:void(0)" onclick="live_menu(this)" class="before live"></a>
+                                                <ul class="live_menu">
+                                                    <li>Дом<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Работа<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Фитнес-зал<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Бабушка<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Ваня<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Съемная квартира<a href="javascript:void(0)" class="before close"></a></li>
+                                                </ul>
+                                            </span>
+                                            <div class="adress__form">
+                                                <form action="">
+                                                    <ul>
+                                                        <li class="min">
+                                                            <input type="text" placeholder="Дом">
+                                                            <input type="text" placeholder="Строение">
+                                                            <input type="text" placeholder="Корпус">
+                                                            <input type="text" placeholder="Подъезд">
+                                                        </li>
+                                                        <li>
+                                                            <textarea placeholder="Комментарий" name="" id="" cols="30" rows="10"></textarea>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" name="" id="">Сохранить в любимые адреса</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="text" placeholder="Название любимого места">
+                                                        </li>
+                                                        <li>
+                                                            <input type="submit" value="Готово">
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            <div class="railway__menu" onclick="adress_form(this)">
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item" onclick="adress_form(this)">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p>Промежуточные и дополнительные адреса сообщайте<br />водителю (тарифы будут указаны в предложениях)</p>
+                                    <div class="form__time clearfix">
+                                        <div class="time__item">
+                                            <p><a href="javascript:void(0)" class="before dotted">Сейчас</a></p>
+                                        </div>
+                                        <div class="time__item">
+                                            <a href="javascript:void(0)" class="before quont-minus btn"></a>
+                                            <input type="text" value="1">
+                                            <span>чел.</span>
+                                            <a href="javascript:void(0)" class="before quont-plus btn"></a>
+                                        </div>
+                                    </div>
+                                    <div class="form__wishes">
+                                        <p>Особые пожелания</p>
+                                        <a class="before car" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before bagadge" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before cigarette" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before conditioner" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before animals" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before child" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before radio" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                    </div>
+                                    <div class="button__block"><input type="submit" value="Заказать" /></div>
+                                </div>
+                                <div class="form__item form__rent" id="tabs-2">
+                                    <ul>
+                                        <li>
+                                            <p class="form__text">Откуда</p>
+                                            <label class="before form__input">
+                                                <input type="text" onclick="adress_form(this)" placeholder="Адрес, заведение" />
+                                            </label>
+                                            <span>
+                                                <a href="javascript:void(0)" onclick="live_menu(this)" class="before live"></a>
+                                                <ul class="live_menu">
+                                                    <li>Дом<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Работа<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Фитнес-зал<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Бабушка<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Ваня<a href="javascript:void(0)" class="before close"></a></li>
+                                                    <li>Съемная квартира<a href="javascript:void(0)" class="before close"></a></li>
+                                                </ul>
+                                            </span>
+                                            <div class="adress__form">
+                                                <form action="">
+                                                    <ul>
+                                                        <li class="min">
+                                                            <input type="text" placeholder="Дом">
+                                                            <input type="text" placeholder="Строение">
+                                                            <input type="text" placeholder="Корпус">
+                                                            <input type="text" placeholder="Подъезд">
+                                                        </li>
+                                                        <li>
+                                                            <textarea placeholder="Комментарий" name="" id="" cols="30" rows="10"></textarea>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" name="" id="">Сохранить в любимые адреса</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="text" placeholder="Название любимого места">
+                                                        </li>
+                                                        <li>
+                                                            <input type="submit" value="Готово">
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            <div class="railway__menu">
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                                <div class="railway__item">
+                                                    <p>Казанский вокзал</p>
+                                                    <span>ул. Строителей, 22</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p>Промежуточные и дополнительные адреса сообщайте<br />водителю (тарифы будут указаны в предложениях)</p>
+                                    <div class="form__time first__time clearfix">
+                                        <div class="time__item">
+                                            <p>На <a href="javascript:void(0)" class="before dotted">30 минут</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="form__time clearfix">
+                                        <div class="time__item">
+                                            <p><a href="javascript:void(0)" class="before dotted">Сейчас</a></p>
+                                        </div>
+                                        <div class="time__item">
+                                            <a href="javascript:void(0)" class="before quont-minus btn"></a>
+                                            <input type="text" value="1">
+                                            <span>чел.</span>
+                                            <a href="javascript:void(0)" class="before quont-plus btn"></a>
+                                        </div>
+                                    </div>
+                                    <div class="form__wishes">
+                                        <p>Особые пожелания</p>
+                                        <a class="before car" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before bagadge" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before cigarette" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before conditioner" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before animals" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before child" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                        <a class="before radio" onclick="wishes_select(this)" href="javascript:void(0)"></a>
+                                    </div>
+                                    <div class="button__block"><input type="submit" value="Заказать" /></div>
+                                </div>
+                            </div>
+                            <!-- TODO: Шаг второй -->
+                            <div class="form__item form_step_two">
+                                <div class="title__form">
+                                    <p><a href="#" class="before back"></a>Выбор водителя <span>/ Этап 2 из 3</span></p>
+                                </div>
+                                <div class="head__list clearfix">
+                                    <div class="head__item">
+                                        <p>Фото</p>
+                                    </div>
+                                    <div class="head__item">
+                                        <p>ФИО/Марка авто</p>
+                                    </div>
+                                    <div class="head__item">
+                                        <p>Время приезда</p>
+                                    </div>
+                                    <div class="head__item">
+                                        <p>Цена</p>
+                                    </div>
+                                    <div class="head__item">
+                                        <p>Рейтинг</p>
+                                    </div>
+                                </div>
+                                <div class="list_body">
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="#">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="#">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="#">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="#">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="list__item clearfix">
+                                        <div class="avatar"><img src="img/60x60.jpg" alt=""></div>
+                                        <div class="name">
+                                            <p>Константинопольский Константин Владимирович</p>
+                                            <p><span>Toyota Camry</span></p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10 мин.</p>
+                                        </div>
+                                        <div class="price">
+                                            <p><span class="before">220 <span class="rur">p<span>уб.</span></span></p>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating_list"></div>
+                                            <p><a href="#">22 отзыва</a></p>
+                                        </div>
+                                        <div class="select">
+                                            <p><a href="#">Выбрать</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TODO: Третий шаг -->
+                            <div class="form__item form_step_three" style="display: none">
+                                <div class="title__form">
+                                    <p>Вход в систему <span>/ Этап 3 из 3</span></p>
+                                </div>
+                                <form action="">
+                                    <ul>
+                                        <li class="tel">
+                                            <label>
+                                                <p>Ваш номер телефона</p>
+                                                <input class="phone__input" type="tel">
+                                            </label>
+                                            <a href="#" class="before ok"></a>
+                                        </li>
+                                        <li class="name">
+                                            <label>
+                                                <p>Регистрация нового номера</p>
+                                                <input type="text" placeholder="Ваше имя">
+                                            </label>
+                                            <p>Если Вы пользуетесь услугами первый раз -<br />нужно подтвердить Ваш номер телефона, для<br />этого мы отправим SMS с кодом подтверждения.<br />Полученный код введите ниже:</p>
+                                        </li>
+                                        <li class="code">
+                                            <label>
+                                                <p>Код подтверждения</p>
+                                                <input type="text" placeholder="34588">
+                                            </label>
+                                            <a href="#">Отправить код повторно</a>
+                                        </li>
+                                    </ul>
+                                    <div class="button__block"><input type="submit" value="Заказать" /></div>
+                                </form>
+                            </div>
+                            <!-- TODO: Четвёртый шаг -->
+                            <div class="form__item form_step_four" style="display: none">
+                                <div class="title__form">
+                                    <p>Выполнение заказа</p>
+                                </div>
+                                <p>Как только водитель будет рядом с вами, вам поступит СМС-уведомление.</p>
+                                <p>Так же вы можете следить за движением такси по карте.</p>
+                                <div class="info__form">
+                                    <ul>
+                                        <li>
+                                            <p>Место назначения</p>
+                                            <span class="before place">Ресторан «Русская изба»</span>
+                                        </li>
+                                        <li>
+                                            <p>Ваш водитель</p>
+                                            <div class="clearfix">
+                                                <div class="avatar"><img src="img/60x60.jpg" alt="" /></div>
+                                                <div class="info">
+                                                    <div class="name">
+                                                        <p>Конышев Владимир Степанович</p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                        <div class="rating">
+                                                            <div id="rating"></div>
+                                                            <div class="review">
+                                                                <p><a href="#">10 отзывов</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="car">
+                                                            <p>Renault Logan</p>
+                                                            <p>С 191 СТ (72)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="total">
+                                            <span class="before tel">Телефон водителя: <strong>8 910 200 35 22</strong></span>
+                                            <span class="before time">Такси прибудет к вам: <strong>10 мин.</strong></span>
+                                            <span class="before price">Стоимость поездки: <strong>220 руб.</strong></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="button__block"><input type="submit" value="Отменить заказ" /></div>
+                            </div>
+                        </div>
+                        <div class="maps__block maps__mini"><!-- TODO: Подставляем класс maps__mini на втором шаге -->
+                            <div class="maps__button">
+                                <a href="javascript:void(0)" id="map_more" onclick="maps_more()" class="before">Развернуть</a>
+                                <a href="javascript:void(0)" style="display: none;" id="map_close" onclick="maps_close()" class="before">Свернуть</a>
+                            </div>
+                            <div class="maps__info clearfix">
+                                <div class="item__info">
+                                    <p><span class="before">Вы</span></p>
+                                </div>
+                                <div class="item__info">
+                                    <p><span class="before">Свободное такси</span></p>
+                                </div>
+                                <div class="item__info">
+                                    <p><span class="before">Занятое такси</span></p>
+                                </div>
+                                <div class="item__info clearfix">
+                                    <div class="more__taxi">
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>6</span>
+                                    </div>
+                                    <div class="info__text">
+                                        <p>Такси<br />на связи</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="google__maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34636.097944491165!2d65.55875677784762!3d57.14123139319464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1400652015334" width="100%" height="420" frameborder="0" style="border:0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="main_footer">
+                        <div class="wrapper">
+                            <div class="clearfix">
+                                <div class="video__link">
+                                    <p><a class="before" href="#">Первый раз?<br />Посмотрите, как это работает!</a></p>
+                                </div>
+                                <div class="button__link">
+                                    <a class="before" href="#">Доступно в <span>App Store</span></a>
+                                    <a class="before" href="#">Доступно в <span>Google Play</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <section>
+            <div class="social__like">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </section>  
+        <section>
+            <div class="title_page">
+                <p>Наши преимущества</p>
+            </div>
+            <div class="wrapper">
+                <div class="main_items">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="img/icon-time.gif" alt="" />
+                            <p>Экономьте время</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-rating.gif" alt="" />
+                            <p>Оценивайте водителей</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-mobile.gif" alt="" />
+                            <p>Вызывайте такси через мобильное приложение</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-map.gif" alt="" />
+                            <p>Наблюдайте за движением такси на карте</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-stat.gif" alt="" />
+                            <p>Просматривайте статистику поездок</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-select.gif" alt="" />
+                            <p>Выбирайте водителя и автомобиль</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-pay.gif" alt="" />
+                            <p>Оплачивайте услуги как угодно</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/icon-bonus.gif" alt="" />
+                            <p>Получите бонусные баллы с каждой поездки</p>
+                            <p><span>Рыба в веб-дизайне - временное наполнение макета страницы для имитации ее вида.</span></p>
+                        </li>
+                    </ul>
+                    <div class="button_main">
+                        <p><a href="#">Как пользоваться сервисом?</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_block">
+                <div class="wrapper clearfix">
+                    <div class="footer__item footer__social">
+                        <a href="#" class="twiiter"></a>
+                        <a href="#" class="fc"></a>
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="od"></a>
+                        <a href="#" class="mail"></a>
+                        <a href="#" class="plus"></a>
+                    </div>
+                    <div class="footer__item footer__menu">
+                        <nav>
+                            <ul class="clearfix">
+                                <li class="active"><a href="#">Заказ такси</a></li>
+                                <li><a href="#">Водителям</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li><a href="#">О сервисе</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item footer__copy">
+                        <p>© 2014 taxinado.ru</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/vendor/jquery.mask.min.js"></script>
+        <script src="js/vendor/jquery.formstyler.min.js"></script>
+        <script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/vendor/jquery.raty.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            var city = $("#city__menu");
+            var login = $("#login__menu");
+            var adress = $(".adress__form");
+            var railway = $(".railway__menu");
+
+            function select_city() { // Открытие меню со списком городов
+                city.toggle(); 
+            }
+
+            function login_menu() { // Открытие окошка входа
+                login.toggle();
+            }
+
+            function maps_more() { // Развернуть карту, по клику на кнопку карты
+                $(".maps__block").animate({
+                    width: 944
+                }, 800);
+                $(".form__orders").addClass("hide").animate({
+                    width: 0,
+                    padding: "16px 0 18px"
+                }, 800, function(){
+                    $(this).hide();
+                });
+                $("#map_more").hide();
+                $("#map_close").show();
+            }
+
+            function maps_close() { // Свернуть карту, по клику на кнопку карты
+                $(".maps__block").animate({
+                    width: 531
+                }, 800);
+                $(".form__orders").show().animate({
+                    width: 346,
+                    padding: "16px 18px 18px"
+                }, 800, function(){
+                    $(this).removeClass("hide");
+                });
+                $("#map_more").show();
+                $("#map_close").hide();
+            }
+
+            function live_menu(el) { // Открытие и закрытие меню любимых мест назначения
+                $(el).closest("span").find(".live_menu").toggle();
+                $(el).toggleClass("active");
+            }
+
+            function adress_form(el) { // Открытие формы для ввода подробного адреса
+                $(".railway__menu").hide();
+                $(".railway").removeClass("active");
+                $(".air").removeClass("active");
+                $(el).closest("li").find(".adress__form").addClass("active").show();
+                $(el).closest("li").find("label").addClass("active");
+            }
+
+            function railway_menu(el) { // Открытие списка адресов вокзалов
+                $(el).closest("li").find(".railway__menu").addClass("active").show();
+                $(el).addClass("active");
+            }
+
+            function wishes_select(el) {
+                $(el).toggleClass("active");
+            }
+
+            $(document).mouseup(function(e) { // Функция закрытия попапов по клику вне попапа
+                if (city.css('display') == 'block') { // Закрытие меню со списком городов
+                    if (!city.is(e.target)
+                    && city.has(e.target).length === 0)
+                    {   
+                        city.hide();
+                    }
+                }
+
+                if (login.css('display') == 'block') { // Закрытие окошка входа
+                    if (!login.is(e.target)
+                    && login.has(e.target).length === 0)
+                    {   
+                        login.hide();
+                    }
+                }
+
+                if (adress.hasClass('active')) { // Закрытие формы для ввода подробного адреса
+                    if (!adress.is(e.target)
+                    && adress.has(e.target).length === 0)
+                    {   
+                        adress.hide().removeClass("active");
+                        $(".form__input").removeClass("active");
+                        $(".form__where").removeClass("active");
+                    }
+                }
+
+                if (railway.hasClass('active')) { // Закрытие списка адресов вокзалов
+                    if (!railway.is(e.target)
+                    && railway.has(e.target).length === 0)
+                    {   
+                        railway.hide().removeClass("active");
+                        $(".railway").removeClass("active");
+                        $(".air").removeClass("active");
+                    }
+                }
+            });
+
+            $(document).ready(function() {
+                $(".phone__input").mask("+7 (999) 999-99-99",{placeholder:"+7 (   )"}); // Плагин для поля телефона
+
+                $("#tabs").tabs(); // Плагин табов переключения форм заказа такси "Заказать такси" и "Арендовать такси"
+
+                $('input, select').styler(); // Плагин для нестандартных чекбоксов и селектов
+
+                $('.quont-minus').click(function () { // Плюс и минус
+                    var $input = $(this).parent().find('input');
+                    var count = parseInt($input.val()) - 1;
+                    count = count < 1 ? 1 : count;
+                    $input.val(count);
+                    $input.change();
+                    return false;
+                });
+
+                $('.quont-plus').click(function () { // Плюс и минус
+                    var $input = $(this).parent().find('input');
+                    $input.val(parseInt($input.val()) + 1);
+                    $input.change();
+                    return false;
+                });
+
+                $('#rating').raty({
+                    space: false,
+                    path: 'img/'
+                });
+
+                $('.rating_list').raty({
+                    space: false,
+                    path: 'img/'
+                });
+            });
+
+            $(window).load(function() { // Плагин нестандартного скролла
+                $(".railway__menu").mCustomScrollbar();
+                $(".list_body").mCustomScrollbar();
+            })
+        </script>
+    </body>
+</html>

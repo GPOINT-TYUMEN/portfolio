@@ -1,0 +1,1061 @@
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	min-height: 740px;
+	height: 100%;
+	font-size: 1em;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	padding: 0.2em 0;
+	background: #ccc;
+	color: #000;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Image replacement
+*/
+
+.ir {
+	overflow: hidden;
+	border: 0;
+	background-color: transparent;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	display: block;
+	width: 0;
+	height: 150%;
+	content: "";
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	border: 0;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	position: static;
+	overflow: visible;
+	clip: auto;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	display: table; /* 2 */
+	content: " "; /* 1 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+textarea:focus,
+input:focus {
+	outline: 0;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+	* {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	/*
+	* Don't show links for images, or javascript/internal links
+	*/
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+.onepage-pagination {
+	display: none;
+}
+
+.header {
+	position: fixed;
+	top: 40px;
+	left: 0;
+	z-index: 100;
+	min-width: 1000px;
+	width: 100%;
+}
+
+.header .block {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.header .logo {
+	float: left;
+}
+
+.header .logo .onepage-pagination {
+	display: block;
+	margin: 0!important;
+	padding: 0;
+	list-style: none;
+}
+
+.header .logo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header .menu {
+	float: right;
+	margin: 10px 0 0;
+}
+
+.header .menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header .menu li {
+	float: right;
+	margin: 0 0 0 25px;
+	letter-spacing: .056em;
+	font: 1.125em/1em "Helvetica Neue Light";
+}
+
+.header .menu li .active {
+	font-family: "Helvetica Neue Light";
+}
+
+.viewing-page-1 .header .menu .work {
+	display: none;
+}
+
+.header .menu li a {
+	color: #fff;
+	text-decoration: none;
+	opacity: .6;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.header .menu li a:hover {
+	opacity: 1;
+}
+
+.header .menu li .active {
+	border-bottom: 1px solid rgba(255,255,255,.8);
+	opacity: 1;
+}
+
+.wrapper {
+	display: block;
+	width: 100%;
+	height: 100%!important;
+}
+
+.wrapper section {
+	min-height: 740px;
+	height: 100%;
+}
+
+.block-main {
+	margin: 0 auto;
+	display: table;
+	width: 1000px;
+	min-height: 740px;
+	height: 100%;
+}
+
+.block-main .block {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.block-main .slogan {
+	margin: 0 0 135px;
+}
+
+.block-main .slogan p {
+	opacity: .7;
+}
+
+.block-main .slogan p,
+.block-team .team .slogan p,
+.block-contacts .slogan p {
+	color: #fff;
+	text-align: center;
+	font: 1.875em/1.2664em "Helvetica Neue Light";
+}
+
+.block-main .work {
+	margin: 0 0 160px;
+	text-align: center;
+}
+
+.block-main .work .item {
+	display: inline-block;
+	margin: 0 42px;
+	width: 170px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.block-main .work .item .img {
+	margin: 0 0 17px;
+	height: 85px;
+	line-height: 85px;
+}
+
+.block-main .work .item .img img {
+	vertical-align: middle;
+}
+
+.block-main .work .item p {
+	color: #fff;
+	font: 1.375em/1.227em "Helvetica Neue Light";
+}
+
+.block-main .onepage-pagination {
+	display: block;
+	margin: 0!important;
+	padding: 0;
+	list-style: none;
+}
+
+.block-main .onepage-pagination li {
+	text-align: center;
+	letter-spacing: .03em;
+	font: 1.5em/1em "Helvetica Neue Light";
+}
+
+.block-main .onepage-pagination a {
+	border-bottom: 1px solid rgba(255,255,255,.4);
+	color: #fff;
+	text-decoration: none;
+	opacity: .7;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-main .onepage-pagination a:hover {
+	opacity: 1;
+	border-bottom-color: #fff;
+}
+
+.block-carousel {
+	position: relative;
+	min-height: 740px;
+	width: 100%;
+	height: 100%;
+}
+
+.block-carousel:before,
+.block-team:before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	display: block;
+	width: 100%;
+	height: 60%;
+	background: #fff;
+	content: "";
+}
+
+.block-carousel .block {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.block-carousel .carousel {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.block-carousel .carousel .item {
+	float: left;
+	height: 570px;
+}
+
+.block-carousel .carousel .description {
+	float: left;
+	padding: 0 57px 0 18px;
+	width: 300px;
+	height: 570px;
+	line-height: 570px;
+}
+
+@media screen and (max-width: 1090px) {
+	.block-carousel .carousel .description {
+		padding-left: 58px;
+		width: 260px;
+	}
+}
+
+.block-carousel .carousel .description .text {
+	display: inline-block;
+	padding: 0 0 100px;
+	vertical-align: bottom;
+	line-height: 1em;
+}
+
+.block-carousel .carousel .description h3 {
+	margin: 0 0 21px;
+	font: 1.875em/1em "Helvetica Neue Light";
+}
+
+.block-carousel .carousel .description p {
+	margin: 0 0 15px;
+	color: #838D99;
+	font: 1.25em/1.3em "Helvetica Neue Light";
+}
+
+.block-carousel .carousel .description a {
+	position: relative;
+	display: inline-block;
+	padding: 0 13px 0 0;
+	color: #009BDB;
+	text-decoration: none;
+	font-size: .9em;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+}
+
+.block-carousel .carousel .description .blue {
+	color: #009BDB;
+}
+
+.block-carousel .carousel .description .green {
+	color: #34971d;
+}
+
+.block-carousel .carousel .description .gray {
+	color: #59616c;
+}
+
+.block-carousel .carousel .description .red {
+	color: #db3838;
+}
+
+.block-carousel .carousel .description a:before {
+	position: absolute;
+	top: 11px;
+	right: 0;
+	display: block;
+	width: 4px;
+	height: 7px;
+	background: url(../img/sprite.gif) no-repeat 0 -23px;
+	content: "";
+}
+
+.block-carousel .carousel .description .blue:before {
+	background-position: 0 -23px;
+}
+
+.block-carousel .carousel .description .green:before {
+	background-position: -4px -23px;
+}
+
+.block-carousel .carousel .description .gray:before {
+	background-position: -8px -23px;
+}
+
+.block-carousel .carousel .description .red:before {
+	background-position: -12px -23px;
+}
+
+.block-carousel .carousel .description a:hover {
+	padding-right: 18px;
+}
+
+
+.block-carousel .carousel .images {
+	float: left;
+	width: 625px;
+	text-align: center;
+}
+
+.block-carousel .prev,
+.block-carousel .next {
+	position: absolute;
+	top: 50%;
+	z-index: 50;
+	margin-top: -25px;
+	width: 49px;
+	height: 128px;
+	border: 1px solid #e8e8e9;
+	background: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-carousel .prev {
+	left: 0;
+	border-left: none;
+}
+
+.block-carousel .next {
+	right: 0;
+	border-right: 0;
+}
+
+.block-carousel .prev:before,
+.block-carousel .next:before {
+	position: absolute;
+	top: 53px;
+	display: block;
+	width: 12px;
+	height: 23px;
+	background: url(../img/sprite.gif) no-repeat;
+	content: "";
+	opacity: .5;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-carousel .prev:before {
+	left: 18px;
+	background-position: -62px 0;
+}
+
+.block-carousel .next:before {
+	right: 18px;
+	background-position: -74px 0;
+}
+
+.block-carousel .prev:hover,
+.block-carousel .next:hover {
+	border-color: #AAAFB6;
+}
+
+.block-carousel .prev:hover:before {
+	opacity: 1;
+}
+
+.block-carousel .next:hover:before {
+	opacity: 1;
+}
+
+.block-carousel .pagination {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+}
+
+.block-carousel .pagination a {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #c7cdd6;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-carousel .pagination a:hover {
+	border-color: #009bdb;
+}
+
+.block-carousel .pagination a:first-child {
+	margin: 0;
+}
+
+.block-carousel .pagination .selected {
+	border-color: #009bdb;
+	background: #009bdb;
+}
+
+.block-carousel .pagination .selected.color1 {
+	border-color: #009bdb;
+	background: #009bdb;
+}
+
+.block-carousel .pagination .selected.color2 {
+	border-color: #34971d;
+	background: #34971d;
+}
+
+.block-carousel .pagination .selected.color3 {
+	border-color: #59616c;
+	background: #59616c;
+}
+
+.block-carousel .pagination .selected.color4 {
+	border-color: #db3838;
+	background: #db3838;
+}
+
+.block-team,
+.block-contacts {
+	position: relative;
+	min-height: 740px;
+	width: 100%;
+	height: 100%;
+}
+
+.block-team .block,
+.block-contacts .block {
+	display: table;
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
+
+.block-team .team,
+.block-contacts .contacts {
+	position: relative;
+	z-index: 50;
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.block-team .team .slogan {
+	margin: 0 0 75px;
+}
+
+.block-team .team .items {
+	margin: 0 0 15px;
+}
+
+.block-team .team .items .item {
+	display: inline-block;
+	margin: 0 0 0 80px;
+	width: 176px;
+	vertical-align: top;
+}
+
+.block-team .team .items .item:first-child {
+	margin: 0;
+}
+
+.block-team .team .items .item .img {
+	margin: 0 0 18px;
+}
+
+.block-team .team .items .item .name {
+	margin: 0 0 8px;
+}
+
+.block-team .team .items .item .name p {
+	color: #4A4A4A;
+	font: 1.375em/1.091em "Helvetica Neue Light";
+}
+
+.block-team .team .items .item .post p {
+	color: #838D99;
+	letter-spacing: .05em;
+	font: 1em/1.375em "Helvetica Neue Light";
+}
+
+.block-team .reviews {
+	position: relative;
+	padding: 0 0 43px;
+}
+
+.block-team .reviews .item {
+	float: left;
+	width: 735px;
+	line-height: 160px;
+}
+
+.block-team .reviews .item p {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1em;
+}
+
+.block-team .reviews .item span {
+	display: inline-block;
+	width: 505px;
+	color: #838D99;
+	vertical-align: middle;
+	text-align: center;
+	letter-spacing: .05em;
+	font: italic 1.375em/1.273em "Helvetica Neue Light";
+}
+
+.block-team .reviews .item span em {
+	color: #39393A;
+}
+
+.block-team .reviews .item .name {
+	padding: 0 0 0 3px;
+	width: 222px;
+	text-align: left;
+	font-size: 1em;
+}
+
+.block-team .reviews .item .name em {
+	color: #4A4A4A;
+}
+
+.block-team .reviews .next {
+	position: absolute;
+	top: 50%;
+	right: 135px;
+	display: block;
+	margin-top: -39px;
+	width: 38px;
+	height: 36px;
+	background: url(../img/sprite.gif) no-repeat -86px 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	opacity: .5;
+}
+
+.block-team .reviews .next:hover {
+	opacity: 1;
+}
+
+.block-team .reviews .pagination {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.block-team .reviews .pagination span {
+	display: none;
+}
+
+.block-team .reviews .pagination a {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #c7cdd6;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-team .reviews .pagination a:hover {
+	border-color: #838B97;
+}
+
+.block-team .reviews .pagination a:first-child {
+	margin: 0;
+}
+
+.block-team .reviews .pagination .selected {
+	border-color: #8e939c;
+	background: #8e939c;
+}
+
+.block-contacts .block {
+	width: 325px;
+}
+
+.block-contacts .slogan {
+	margin: 0 0 87px;
+}
+
+.block-contacts .form {
+	margin: 0 0 48px;
+}
+
+.block-contacts .form ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.block-contacts .form li {
+	margin: 0 0 15px;
+}
+
+.block-contacts .form input[type=text],
+.block-contacts .form input[type=email],
+.block-contacts .form textarea {
+	padding: 0 10px;
+	width: 302px;
+	height: 38px;
+	border: 1px solid #979797;
+	background: transparent;
+	background: none;
+	color: #fff;
+	letter-spacing: .05em;
+	font: 1.125em/1em "Helvetica Neue Light";
+	opacity: .7;
+}
+
+.block-contacts .form textarea {
+	padding: 10px;
+	min-height: 113px;
+	height: 113px;
+}
+
+.block-contacts .form input[type=text]:focus,
+.block-contacts .form input[type=email]:focus,
+.block-contacts .form textarea:focus {
+	opacity: 1;
+}
+
+.block-contacts .form input[type=submit] {
+	padding: 0;
+	width: 325px;
+	height: 50px;
+	border: none;
+	background: #fff;
+	color: #4A4A4A;
+	text-align: center;
+	letter-spacing: .05em;
+	font: 1.125em/1em "Helvetica Neue Light";
+	opacity: .7;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-contacts .form input[type=submit]:hover {
+	opacity: 1;
+}
+
+.block-contacts .contact p {
+	text-align: center;
+	letter-spacing: .03em;
+	font: 1em/1em "Helvetica Neue Light";
+}
+
+.block-contacts .contact a {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	opacity: .6;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-contacts .contact a:hover {
+	opacity: 1;
+}
+
+.block-contacts .contact a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: url(../img/sprite.png) no-repeat;
+	content: "";
+}
+
+.block-contacts .contact .email {
+	margin: 0 26px 0 0;
+	padding: 0 0 0 33px;
+}
+
+.block-contacts .contact .skype {
+	padding: 0 0 0 31px;
+}
+
+.block-contacts .contact .email:before {
+	width: 22px;
+	height: 17px;
+	background-position: 0 0;
+}
+
+.block-contacts .contact .skype:before {
+	top: -3px;
+	width: 24px;
+	height: 24px;
+	background-position: -22px 0;
+}
+
+.lb_label {
+	padding: 0 10px;
+	color: #fff;
+	letter-spacing: .05em;
+	font: 1.125em/1em "Helvetica Neue Light";
+}
+
+.footer {
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	min-width: 1000px;
+	width: 100%;
+}
+
+@media screen and (max-height: 740px) {
+	.footer {
+		top: 705px;
+		bottom: 0;
+	}
+}
+
+.footer .block {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.footer .block .item:first-child {
+	float: left;
+}
+
+.footer .block .item:last-child {
+	float: right;
+}
+
+.footer .block p {
+	letter-spacing: .02em;
+	font: .813em/1em "Helvetica Neue Light";
+}
+
+.footer .block p,
+.footer .block a {
+	color: #4A4A4A;
+}
+
+.viewing-page-1 .footer .block p,
+.viewing-page-1 .footer .block a {
+	color: #D4D4D4;
+}
+
+.viewing-page-4 .footer .block p,
+.viewing-page-4 .footer .block a {
+	color: #D4D4D4;
+}
+
+.viewing-page-4 .footer .block .item:first-child {
+	display: none;
+}
+
+.footer .block a {
+	text-decoration: none;
+}

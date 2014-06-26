@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="header">
+                <div class="wrapper">
+                    <div class="header__top">
+                        <div class="clearfix">
+                            <div class="heeader__item header__contacts">
+                                <p>
+                                    Российская Федерация, Тюменская область,<br />Тюмень,  <strong>ул. 50 лет ВЛКСМ, 13,корп. 3</strong>
+                                </p>
+                                <p><a href="#" class="dotted">Показать дом на карте</a></p>
+                            </div>
+                            <div class="heeader__item header__logo">
+                                <div class="logo"><a href="#"><img src="img/logo.gif" alt="" /></a></div>
+                                <div class="slogan">
+                                    <p><em>Комфорт, удобство и гостепреимство!</em></p>
+                                </div>
+                            </div>
+                            <div class="heeader__item header__phone">
+                                <p>Отдел бронирования</p>
+                                <p class="phone"><span>+7 (3452)</span> 60-72-64</p>
+                                <p><a href="#" class="dotted">Заказать обратный звонок</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">НОМЕРА</a></li>
+                                <li><a href="#">УСЛУГИ</a></li>
+                                <li><a href="#">КАФЕ</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Мнение о нас</a></li>
+                                <li><a href="#">Клиентам</a></li>
+                                <li><a href="#">Для бизнеса</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <section>
+                    <div class="main__order">
+                        <div class="wrapper clearfix">
+                            <div class="main__carousel">
+                                <a href="javascript:void(0);" class="prev"></a>
+                                <a href="javascript:void(0);" class="next"></a>
+                                <div class="pagination">
+                                    <div id="pagination"></div>
+                                </div>
+                                <div id="main__carousel">
+                                    <div class="item_carousel"><img src="img/574x481.jpg" alt="" /></div>
+                                    <div class="item_carousel"><img src="img/574x481.jpg" alt="" /></div>
+                                    <div class="item_carousel"><img src="img/574x481.jpg" alt="" /></div>
+                                    <div class="item_carousel"><img src="img/574x481.jpg" alt="" /></div>
+                                    <div class="item_carousel"><img src="img/574x481.jpg" alt="" /></div>
+                                </div>
+                            </div>
+                            <div class="block__order">
+                                <h2>Бронирование</h2>
+                                <form action="">
+                                    <ul>
+                                        <li>
+                                            <label>Категория номера:</label>
+                                            <select name="" id="">
+                                                <option value="">Стандартный</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label>Дата заезда:</label>
+                                            <input class="datepicker" type="text">
+                                        </li>
+                                        <li>
+                                            <label>Дата выезда:</label>
+                                            <input class="datepicker" type="text">
+                                        </li>
+                                        <li class="checkbox"><label><input type="checkbox" name="" id="">Перезвонить после бронирования </label></li>
+                                        <li>
+                                            <input type="submit" value="Забронировать номер">
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <section>
+            <div class="main__promo">
+                <div class="wrapper">
+                    <h2>Почему стоит остановиться именно<br />в наших апартаментах?</h2>
+                    <div class="clearfix">
+                        <div class="item__promo">
+                            <div class="img__promo kitchen"><span class="before"></span></div>
+                            <div class="title__promo">
+                                <p>Кухня в каждых<br />апартаментах</p>
+                            </div>
+                            <div class="text__promo">
+                                <p>Возможновсь готовить по своему<br />вкусу в любое время</p>
+                            </div>
+                        </div>
+                        <div class="item__promo">
+                            <div class="img__promo comfortably"><span class="before"></span></div>
+                            <div class="title__promo">
+                                <p>Удобное<br />расположение жилья</p>
+                            </div>
+                            <div class="text__promo">
+                                <p>Возможность выбора доступного<br />жилья в самом центре нашего города</p>
+                            </div>
+                        </div>
+                        <div class="item__promo">
+                            <div class="img__promo quality"><span class="before"></span></div>
+                            <div class="title__promo">
+                                <p>Качественный<br />гостиничный сервис</p>
+                            </div>
+                            <div class="text__promo">
+                                <p>Оказываемый уровень обслуживания<br />несомненно удивит даже самого<br />требовательного клиента</p>
+                            </div>
+                        </div>
+                        <div class="item__promo">
+                            <div class="img__promo profit"><span class="before"></span></div>
+                            <div class="title__promo">
+                                <p>Выгодная<br />стоимость аренды</p>
+                            </div>
+                            <div class="text__promo">
+                                <p>Цена проживания значительно<br />ниже чем, в гостиницах!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main__offers">
+                <div class="wrapper">
+                    <h2>Лучшие предложения нашего дома апартаментов</h2>
+                    <p>Центральный дом апартаментов располагает 125 просторными номерами.<br />Компания предлагает 6 возможных вариантов размещения.</p>
+                    <div class="clearfix">
+                        <div class="item__offers">
+                            <div class="img__offers"><img src="img/240x390.jpg" alt="" /><a href="#" class="before"></a></div>
+                            <div class="text__offers">
+                                <div class="title__offers">
+                                    <p>Спецпредложение</p>
+                                </div>
+                                <div class="name__offers">
+                                    <p>Однокомнатные  апартаменты</p>
+                                </div>
+                                <div class="adress__offers">
+                                    <p>50 лет ВЛКСМ, 09, корп. 4</p>
+                                </div>
+                                <div class="price__offers">
+                                    <p>3000 руб<span class="span">/сутки</span></p>
+                                </div>
+                                <div class="description__offers">
+                                    <p>Апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей</p>
+                                </div>
+                                <div class="button__offers">
+                                    <p><a href="#">Забронировать</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__offers">
+                            <div class="img__offers"><img src="img/240x390.jpg" alt="" /><a href="#" class="before"></a></div>
+                            <div class="text__offers">
+                                <div class="title__offers">
+                                    <p>Спецпредложение</p>
+                                </div>
+                                <div class="name__offers">
+                                    <p>Однокомнатные  апартаменты</p>
+                                </div>
+                                <div class="adress__offers">
+                                    <p>50 лет ВЛКСМ, 09, корп. 4</p>
+                                </div>
+                                <div class="price__offers">
+                                    <p>3000 руб<span class="span">/сутки</span></p>
+                                </div>
+                                <div class="description__offers">
+                                    <p>Апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей</p>
+                                </div>
+                                <div class="button__offers">
+                                    <p><a href="#">Забронировать</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__offers">
+                            <div class="img__offers"><img src="img/240x390.jpg" alt="" /><a href="#" class="before"></a></div>
+                            <div class="text__offers">
+                                <div class="title__offers">
+                                    <p>Спецпредложение</p>
+                                </div>
+                                <div class="name__offers">
+                                    <p>Однокомнатные  апартаменты</p>
+                                </div>
+                                <div class="adress__offers">
+                                    <p>50 лет ВЛКСМ, 09, корп. 4</p>
+                                </div>
+                                <div class="price__offers">
+                                    <p>3000 руб<span class="span">/сутки</span></p>
+                                </div>
+                                <div class="description__offers">
+                                    <p>Апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей</p>
+                                </div>
+                                <div class="button__offers">
+                                    <p><a href="#">Забронировать</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__offers">
+                            <div class="img__offers"><img src="img/240x390.jpg" alt="" /><a href="#" class="before"></a></div>
+                            <div class="text__offers">
+                                <div class="title__offers">
+                                    <p>Спецпредложение</p>
+                                </div>
+                                <div class="name__offers">
+                                    <p>Однокомнатные  апартаменты</p>
+                                </div>
+                                <div class="adress__offers">
+                                    <p>50 лет ВЛКСМ, 09, корп. 4</p>
+                                </div>
+                                <div class="price__offers">
+                                    <p>3000 руб<span class="span">/сутки</span></p>
+                                </div>
+                                <div class="description__offers">
+                                    <p>Апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей</p>
+                                </div>
+                                <div class="button__offers">
+                                    <p><a href="#">Забронировать</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main_block">
+                <div class="wrapper clearfix">
+                    <div class="item__main">
+                        <h3>Кому это подходит?</h3>
+                        <p>Дом апартаментов создан специально для тех, кто подолгу задерживается в областной столице, но не готов мириться с дискомфортом и высокими ценами гостиниц.</p>
+                    </div>
+                    <div class="item__main travel">
+                        <span class="before"></span>
+                    </div>
+                    <div class="item__main business">
+                        <span class="before"></span>
+                    </div>
+                    <div class="item__main students">
+                        <span class="before"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="block_calculation">
+                <div class="wrapper">
+                    <h2>Расчет стоимости проживания</h2>
+                    <form action="">
+                        <ul class="clearfix">
+                            <li>
+                                <label>Количество гостей:</label>
+                                <select name="" id="">
+                                    <option value="">Больше пяти</option>
+                                </select>
+                            </li>
+                            <li><label>Период проживания (суток):</label><input type="text"></li>
+                            <li>
+                                <label>Питание:</label>
+                                <select name="" id="">
+                                    <option value="">Больше пяти</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <div class="button"><input type="submit" value="Расчитать стоимость проживания"></div>
+                    </form>
+                    <p><em>Расчет носит предварительный характер подробности узнавайте по телефонам: +7 (3452) 60-72-46</em></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="review_block">
+                <div class="wrapper">
+                    <h2>Мнения наших клиентов и партнеров</h2>
+                    <div class="clearfix">
+                        <div class="item__review">
+                            <div class="text_review">
+                                <p>Все апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей. В каждом номере есть кухня, полный набор мебели, посуды, постельного белья и ванных принадлежностей, апартаменты не сдают для проведения вечеринок и праздников — именно поэтому здесь всегда идеальная чистота.</p>
+                            </div>
+                            <div class="people__review">
+                                <div class="clearfix">
+                                    <div class="avatar"><img src="img/60x60.gif" alt="" /></div>
+                                    <div class="name">
+                                        <p><strong>Алиса Иванова</strong><br />Главный бухгалтер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__review">
+                            <div class="text_review">
+                                <p>Все апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей. В каждом номере есть кухня, полный набор мебели, посуды, постельного белья и ванных принадлежностей, апартаменты не сдают для проведения вечеринок и праздников — именно поэтому здесь всегда идеальная чистота.</p>
+                            </div>
+                            <div class="people__review">
+                                <div class="clearfix">
+                                    <div class="avatar"><img src="img/60x60.gif" alt="" /></div>
+                                    <div class="name">
+                                        <p><strong>Алиса Иванова</strong><br />Главный бухгалтер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__review">
+                            <div class="text_review">
+                                <p>Все апартаменты обладают большими площадями: даже самые малые из них могут вместить до 4 гостей. В каждом номере есть кухня, полный набор мебели, посуды, постельного белья и ванных принадлежностей, апартаменты не сдают для проведения вечеринок и праздников — именно поэтому здесь всегда идеальная чистота.</p>
+                            </div>
+                            <div class="people__review">
+                                <div class="clearfix">
+                                    <div class="avatar"><img src="img/60x60.gif" alt="" /></div>
+                                    <div class="name">
+                                        <p><strong>Алиса Иванова</strong><br />Главный бухгалтер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="wrapper clearfix">
+                    <div class="footer__item footer__copy">
+                        <p>
+                            2012-2014 © Аренда апартаментов в Тюмени<br /><span>Все права защищены</span>
+                        </p>
+                        <p><a href="#">Корпоративный сайт</a></p>
+                    </div>
+                    <div class="footer__item footer__contacts">
+                        <p><strong>Контакты офиса:</strong><br />625002, Российская Федерация, Тюменская область,<br />Тюмень, ул. 50 лет ВЛКСМ, д.13/3, оф.1</p>
+                        <p><strong>Отдел бронирования:</strong> 8 (3452) 60-72-64</p>
+                    </div>
+                    <div class="footer__item footer__dev">
+                        <p>Разработка и поддержка сайта<br /><a href="http://www.crtweb.ru" target="_blank">Агенство Creative</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/vendor/jquery.formstyler.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#main__carousel").carouFredSel({
+                    direction: "up",
+                    width: 574,
+                    height: 481,
+                    items: {
+                        visible: 1,
+                        minimum: 1,
+                        width: 574,
+                        height: 481
+                    },
+                    scroll: 1,
+                    auto: false,
+                    prev: ".main__carousel .prev",
+                    next: ".main__carousel .next",
+                    pagination: ".main__carousel #pagination"
+                });
+
+                $('input, select').styler();
+
+                $(".datepicker").datepicker({
+                    showOn: "both",
+                    buttonImage: "img/calendar.gif",
+                    buttonImageOnly: true,
+                    dateFormat: "d MM yy"
+                });
+            })
+        </script>
+    </body>
+</html>

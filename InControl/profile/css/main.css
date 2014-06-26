@@ -1,0 +1,1400 @@
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	height: 100%;
+}
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Image replacement
+*/
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+	* {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	box-shadow: none !important;
+	text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	/*
+	* Don't show links for images, or javascript/internal links
+	*/
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+a.sprite {
+	display: inline-block;
+	position: relative;
+}
+
+.sprite:before {
+	background: url(../img/sprite.gif) no-repeat;
+	display: block;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.no-scroll .popup {
+	overflow-y: scroll;
+}
+
+.popup .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.popup .table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.popup .table .tr {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.popup .block {
+	display: inline-block;
+	background: #fff;
+	text-align: left;
+	position: relative;
+	z-index: 20;
+	min-width: 580px;
+}
+
+.popup .block .title {
+	padding: 14px 30px 10px;
+	border-bottom: 1px solid #b8c1ca;
+	background: #f8fafd;
+	position: relative;
+}
+
+.popup .block .title p {
+	font-size: 1.25em;
+	color: #676E75;
+}
+
+.popup .block .title .close {
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+	background: url(../img/sprite.gif) no-repeat -112px 0;
+	width: 17px;
+	height: 17px;
+	top: 19px;
+	right: 19px;
+}
+
+.popup .block .content {
+	padding: 20px 30px;
+}
+
+.popup .block .content th {
+	font-size: 1.375em;
+	color: #48545E;
+	font-weight: 600;
+	position: relative;
+}
+
+.popup .block .content th em {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.popup .block .content th p {
+	position: relative;
+}
+
+.popup .block .content th span {
+	position: absolute;
+	display: inline-block;
+	color: #929DA7;
+	top: 5px;
+	right: 0;
+	font-size: .818em;
+	font-weight: normal;
+}
+
+.popup .datepiker-block {
+	margin: 31px 0 38px;
+}
+
+.popup .datepiker-block p,
+.popup .efficiency-block p {
+	margin: 0 0 12px;
+	color: #48545E;
+}
+
+.popup .datepiker-block .detailed {
+	color: #929DA7;
+}
+
+.popup .datepiker-block ul {
+	margin: 0 0 40px;
+	padding: 0;
+	list-style: none;
+}
+
+.popup .datepiker-block li {
+	float: left;
+	position: relative;
+	width: 200px;
+	font-size: 1em;
+	color: #48545E;
+}
+
+.popup .datepiker-block li label {
+	position: relative;
+	display: inline-block;
+}
+
+.popup .datepiker-block li input {
+	z-index: 9999;
+	position: relative;
+	border: 1px solid #9b9b9b;
+	width: 108px;
+	padding: 0 10px;
+	height: 28px;
+	margin: 0 0 0 6px;
+	color: #676E75;
+	font-size: 1em;
+}
+
+.popup .datepiker-block li label:before {
+	display: block;
+	position: absolute;
+	content: "";
+	background: url(../img/sprite.gif) no-repeat -129px 0;
+	width: 16px;
+	height: 16px;
+	top: 7px;
+	right: 8px;
+	z-index: 99991;
+}
+
+.popup .efficiency-block table td,
+.popup .efficiency-block table th {
+	border: none;
+}
+
+.popup .efficiency-block table th:first-child {
+	width: 197px;
+}
+
+.popup .efficiency-block table th:nth-child(2) {
+	width: 131px;
+}
+
+.popup .efficiency-block table th {
+	font-size: .875em!important;
+	color: #929DA7!important;
+}
+
+.popup .efficiency-block table td span {
+	color: #929DA7;
+	font-size: .875em;
+}
+
+.popup .efficiency-block table tr:last-child td {
+	font-size: 1.25em!important;
+}
+
+.popup .efficiency-block table tr:last-child td span {
+	font-size: .8em;
+}
+
+.popup .button {
+	text-align: right;
+	margin: 30px 0 0;
+}
+
+.popup .button input[type=submit] {
+	border: 1px solid #8da5c1;
+	background: #d3e7ff;
+	width: 144px;
+	height: 40px;
+	padding: 0;
+	font-size: 1.125em;
+	color: #687A8F;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 100%;
+	position: relative;
+	min-height: 100%;
+}
+
+.wrapper:before {
+	display: block;
+	position: absolute;
+	content: "";
+	background: #f9f9f9;
+	width: 100%;
+	height: 100%;
+	left: -78%;
+	top: 0;
+	z-index: 0;
+}
+
+.aside-block {
+	float: left;
+	background: #F9F9F9;
+	width: 197px;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+
+.center-block {
+	float: right;
+	width: 696px;
+	padding: 0 20px 0 0;
+}
+
+.aside-block .logo {
+	font: 1.875em/1em "Myriad Pro", "MyriadPro";
+	margin: 22px 0 45px;
+}
+
+.aside-block .logo a {
+	text-decoration: none;
+	color: #3E4449;
+}
+
+.aside-block .menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.aside-block .menu li {
+	position: relative;
+	font: 1.125em/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	margin: 0 0 18px;
+	letter-spacing: .034em;
+}
+
+.aside-block .menu li a {
+	color: #676E75;
+	text-decoration: none;
+}
+
+.aside-block .menu .active {
+	font-weight: 600;
+}
+
+.aside-block .menu li .sprite {
+	padding: 0 0 0 28px;
+}
+
+.aside-block .menu .overview a:before {
+	background-position: 0 0;
+	width: 16px;
+	height: 18px;
+	left: 2px;
+	top: -1px;
+}
+
+.aside-block .menu .reports a:before {
+	background-position: -16px 0;
+	width: 16px;
+	height: 18px;
+	left: 2px;
+	top: -1px;
+}
+
+.aside-block .menu .activities a:before {
+	background-position: -32px 0;
+	width: 18px;
+	height: 18px;
+	top: -2px;
+}
+
+.aside-block .menu .projects a:before {
+	background-position: -50px 0;
+	width: 18px;
+	height: 16px;
+	left: 1px;
+}
+
+.aside-block .menu .productivity a:before {
+	background-position: -68px 0;
+	width: 14px;
+	height: 18px;
+	left: 3px;
+	top: -3px;
+}
+
+.aside-block .menu .tips {
+	margin: 43px 0 0;
+}
+
+.aside-block .menu .tips li:last-child,
+.aside-block .menu .tips li:nth-child(2) {
+	font-weight: normal;
+	padding-left: 27px;
+	font-size: .875em;
+}
+
+.aside-block .menu .tips li:last-child strong,
+.aside-block .menu .tips li:nth-child(2) strong {
+	position: relative;
+	left: -10px;
+	color: #48545E;
+}
+
+.aside-block .menu .tips li:only-child {
+	padding: 0 0 0 12px;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.aside-block .menu .tips li sup {
+	font: 300 2.25em/1em "Helvetica Neue";
+	top: 9px;
+}
+
+.aside-block .block-remove {
+	border: 1px dashed #b7b7b7;
+	width: 153px;
+	height: 183px;
+	text-align: center;
+	margin: 46px 0 30px;
+}
+
+.aside-block .block-remove p {
+	font-size: .875em;
+	color: #888E94;
+	margin: 73px 0 0;
+}
+
+.block-user {
+	margin: 10px 0 17px;
+}
+
+.block-user .block {
+	float: right;
+	position: relative;
+	margin: 0 -17px 0 0;
+}
+
+.block-user .block a {
+	text-decoration: none;
+}
+
+.block-user .block p a {
+	display: block;
+	padding: 12px 17px 21px 20px;
+}
+
+.block-user .block:hover p a {
+	border: 1px solid #c5cdd5;
+	padding: 11px 16px 20px 19px;
+}
+
+.block-user .block img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin: 0 9px 0 0;
+}
+
+.block-user .block ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.block-user .block .user-menu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	border: 1px solid #c5cdd5;
+	border-top: none;
+	width: calc(100% - 2px);
+	display: none;
+	z-index: 99;
+	background: #fff;
+}
+
+.block-user .block:hover .user-menu {
+	display: block;
+}
+
+.block-user .block .user-menu li {
+	padding: 7px 14px 5px;
+	border-bottom: 1px solid #c5cdd5;
+	font-size: .875em;
+}
+
+.block-user .block .user-menu li:last-child {
+	border-bottom: none;
+}
+
+.block-filter-button {
+	margin: 0 0 35px;
+}
+
+.block-filter-button .sort {
+	float: left;
+	margin: 8px 0 0;
+}
+
+.block-filter-button .sort p {
+	color: #676E75;
+	font-size: .875em;
+}
+
+.block-filter-button .sort a {
+	color: #48545E;
+}
+
+.block-filter-button .search {
+	float: right;
+	margin: 8px 0 0;
+}
+
+.block-filter-button .search p {
+	font-size: .875em;
+}
+
+.block-filter-button .search a {
+	padding: 0 0 0 29px;
+	text-decoration: none;
+	color: #676E75;
+}
+
+.block-filter-button .search a:before {
+	background-position: -94px 0;
+	width: 18px;
+	height: 18px;
+	top: -1px;
+}
+
+.block-filter-button .button {
+	float: right;
+	margin: 0 0 0 63px;
+}
+
+.block-filter-button .button a {
+	display: block;
+	border: 1px solid #c5cdd5;
+	background: #f1f5fa;
+	text-decoration: none;
+	padding: 7px 8px 3px 30px;
+	font-size: .875em;
+	color: #676E75;
+	box-shadow: 0 1px 2px rgba(0,0,0,.06)
+}
+
+.block-filter-button .button a:before {
+	background-position: -82px 0;
+	width: 12px;
+	height: 12px;
+	left: 8px;
+	top: 9px;
+}
+
+table {
+	width: 100%;
+	border: none;
+}
+
+table th {
+	text-align: left;
+	border-bottom: 1px solid #c5cdd5;
+	padding: 8px 0 5px;
+	color: #929DA7;
+	font-size: .875em;
+}
+
+table th:first-child {
+	width: 456px;
+}
+
+table th:nth-child(2) {
+	width: 130px;
+}
+
+table td {
+	font-size: 1em;
+	color: #48545E;
+	border-bottom: 1px solid #c5cdd5;
+	padding: 8px 0 5px;
+}
+
+.block-project .new-project {
+	float: left;
+	width: 80px;
+}
+
+.block-project .new-project a {
+	display: block;
+	width: 78px;
+	height: 78px;
+	background: #f7fff9;
+	border: 1px dashed #96bca1;
+	position: relative;
+}
+
+.block-project .new-project a:before {
+	display: block;
+	position: absolute;
+	content: "";
+	background: url(../img/sprite.gif) no-repeat -145px 0;
+	width: 21px;
+	height: 21px;
+	left: 29px;
+	top: 29px;
+}
+
+.block-project .new-project p {
+	font-size: .875em;
+	color: #676E75;
+	text-align: center;
+	margin: 7px 0 0;
+}
+
+.block-project .block {
+	float: right;
+	width: 568px;
+}
+
+.block-project .block .item {
+	float: left;
+	width: 143px;
+	height: 152px;
+	padding: 7px 15px 14px;
+	border: 1px solid #B8C1CA;
+	background: #fafcfd;
+	margin: 0 0 21px 21px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	position: relative;
+}
+
+.block-project .block .item:first-child,
+.block-project .block .item:nth-child(3n+4) {
+	margin-left: 0;
+}
+
+.block-project .block .item .name {
+	margin: 0 0 3px;
+}
+
+.block-project .block .item .name p {
+	font-size: 1em;
+	font-weight: 600;
+	color: #48545E;
+}
+
+.block-project .block .item .date p {
+	font-size: .875em;
+	color: #929DA7;
+}
+
+.block-project .block .users {
+	position: absolute;
+	left: 15px;
+	bottom: 14px;
+	width: 143px;
+}
+
+.block-project .block .users .avatar {
+	float: left;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	margin: 4px 4px 0 0;
+}
+
+.block-project .block-archive {
+	margin: 50px 0 0;
+}
+
+.block-project .block-archive p {
+	text-align: right;
+	font-size: .875em;
+}
+
+.block-project .block-archive a {
+	color: #676E75;
+}
+
+.block-items-activities .block {
+	margin: 0 0 39px;
+}
+
+.block-items-activities h3 {
+	font: 600 23px/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+	margin: 0 0 24px;
+	position: relative;
+	display: inline-block;
+}
+
+.block-items-activities h3 .remove {
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 14px;
+	background: url(../img/sprite.gif) no-repeat -166px 0;
+	right: -23px;
+	top: 4px;
+}
+
+.block-items-activities .item {
+	float: left;
+	width: 84px;
+	height: 114px;
+	margin: 0 0 0 19px;
+	position: relative;
+	border: 1px solid #b8c1ca;
+	padding: 0 7px 7px;
+}
+
+.block-items-activities .item img {
+	display: block;
+	position: relative;
+	margin: -8px -8px 11px;
+}
+
+.block-items-activities .item:first-child {
+	margin-left: 0;
+}
+
+.block-items-activities .item p {
+	font: 12px/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	margin: 0 0 10px;
+}
+
+.block-items-activities .progressbar {
+	width: 56px;
+	display: block;
+	background: #f3f3f3;
+	border-radius: 0;
+	height: 8px;
+	border: none;
+	position: relative;
+	overflow: visible;
+}
+
+.block-items-activities .progressbar:before {
+	display: block;
+	position: absolute;
+	content: attr(aria-valuenow);
+	right: -23px;
+	top: -1px;
+	font: 12px/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+}
+
+.block-items-activities .progressbar:after {
+	display: block;
+	position: absolute;
+	content: "%";
+	right: -30px;
+	font: 8px/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	top: 2px;
+}
+
+.block-items-activities .progressbar .ui-progressbar-value {
+	border-radius: 0;
+	background: #9eca6e;
+	border: none;
+	margin: 0;
+}
+
+.block-items-activities .delete {
+	border: 1px solid #ffc566;
+	background: #fff2dd;
+	padding: 12px 15px 10px;
+	position: relative;
+}
+
+.block-items-activities .delete p {
+	color: #7D8388;
+	font: 600 16px/1em "Myriad Pro", "MyriadPro";
+}
+
+.block-items-activities .delete p strong {
+	font-weight: 600;
+	color: #48545E;
+}
+
+.block-items-activities .delete .cancel {
+	display: inline-block;
+	position: absolute;
+	right: 13px;
+	font-weight: normal;
+	color: #48545E;
+}
+
+.block-items-activities .title,
+.block-items-productivity .title {
+	margin: 0 0 42px;
+}
+
+.block-items-activities .title .hours,
+.block-items-productivity .title .hours {
+	float: left;
+}
+
+.block-items-activities .title .hours p,
+.block-items-productivity .title .hours p {
+	font: 22px/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	letter-spacing: .038em;
+}
+
+.block-items-activities .title .hours span,
+.block-items-productivity .title .hours span {
+	color: #48545E;
+}
+
+.block-items-activities .title .date {
+	float: right;
+	position: relative;
+	margin: 0 15px 0 0;
+}
+
+.block-items-activities .title .date p {
+	font: 20px/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	letter-spacing: .034em;
+}
+
+.block-items-activities .title .date a {
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 10px;
+	background: url(../img/sprite.gif) no-repeat;
+	top: 3px;
+}
+
+.block-items-activities .title .date .prev {
+	background-position: -182px 0;
+	left: -15px;
+}
+
+.block-items-activities .title .date .next {
+	background-position: -189px 0;
+	right: -15px;
+}
+
+.block-items-activities .title .project {
+	margin: 34px 0 0;
+}
+
+.block-items-activities .title .project p {
+	font: 1em/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	letter-spacing: .034em;
+}
+
+.block-items-productivity .title .filter {
+	float: right;
+}
+
+.block-items-productivity .title .filter p {
+	font: 14px/1em "Myriad Pro", "MyriadPro";
+	color: #929DA7;
+}
+
+.block-items-productivity .block {
+	margin: 0 0 83px;
+}
+
+.block-items-productivity .tabs .graph {
+	float: left;
+	width: 550px;
+}
+
+.block-items-productivity .tabs .info {
+	float: right;
+	width: 145px;
+	text-align: center;
+}
+
+.block-items-productivity .tabs .info p {
+	font: 18px/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+	margin: 0 0 31px;
+}
+
+.block-items-productivity .tabs .info .time {
+	font: 50px/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+	margin: 0 0 4px;
+}
+
+.block-items-productivity .tabs .info .time span {
+	font-size: 30px;
+}
+
+.block-items-productivity .tabs .info .percent {
+	font: 44px/1em "Myriad Pro", "MyriadPro";
+	color: #929DA7;
+}
+
+.block-items-productivity .tabs .info .percent span {
+	font-size: 28px;
+}
+
+.block-items-productivity .head {
+	margin: 0 0 15px;
+	padding: 0 0 2px;
+}
+
+.block-items-overview .head {
+	border-bottom: 1px solid #C5CDD5;
+	margin: 0 0 20px;
+}
+
+.block-items-productivity .head h3 {
+	font: 600 22px/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+	float: left;
+	margin: 0;
+}
+
+.block-items-productivity .weekly .head h3 {
+	font-size: 18px;
+}
+
+.block-items-productivity .head a {
+	display: inline-block;
+	float: right;
+	font: 20px/1em "Myriad Pro", "MyriadPro";
+	text-decoration: none;
+	color: #676E75;
+	padding: 0 18px 0 0;
+	position: relative;
+}
+
+.block-items-productivity .weekly .head a {
+	font-size: 16px;
+}
+
+.block-items-productivity .head a:before {
+	display: block;
+	position: absolute;
+	content: "";
+	background: url(../img/sprite.gif) no-repeat -182px -10px;
+	width: 10px;
+	height: 6px;
+	right: 0;
+	top: 5px;
+}
+
+.block-items-productivity ul {
+	margin: 0 0 22px;
+	padding: 0;
+	list-style: none;
+}
+
+.block-items-productivity .ui-tabs-nav li {
+	border-bottom: 1px solid #b8c1ca;
+	float: left;
+	font: 1em/1em "Myriad Pro", "MyriadPro";
+}
+
+.block-items-productivity .ui-tabs-nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 14px 18px 9px;
+	color: #929DA7;
+}
+
+.block-items-productivity .ui-tabs-nav .ui-tabs-active {
+	border: 1px solid #b8c1ca;
+	border-bottom: none;
+}
+
+.block-items-productivity .ui-tabs-nav .ui-tabs-active a {
+	padding: 13px 17px 10px;
+	color: #48545E;
+}
+
+.block-items-overview table th {
+	font-weight: 600;
+}
+
+.block-items-overview table th:first-child {
+	width: 305px;
+}
+
+.block-items-overview table th:nth-child(2) {
+	width: 130px;
+}
+
+.block-items-overview table th:nth-child(3) {
+	width: 135px;
+}
+
+.block-items-overview table td span {
+	color: #929DA7;
+	font-size: .75em;
+}
+
+.header-profile {
+	margin: 0 0 52px;
+}
+
+.header-profile .avatar {
+	float: left;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 18px 0 0;
+}
+
+.header-profile .info {
+	float: left;
+	overflow: hidden;
+}
+
+.header-profile .info p {
+	font: 1.375em/1.273em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	letter-spacing: .03em;
+}
+
+.header-profile .info p:last-child {
+	line-height: .818em;
+}
+
+.header-profile .info strong {
+	font-weight: 600;
+	color: #48545E;
+}
+
+.header-profile .info em {
+	color: #929DA7;
+	font-style: normal;
+	font-size: .727em;
+}
+
+.block-form .head {
+	border-bottom: 1px solid #c5cdd5;
+	padding: 0 0 1px;
+	margin: 0 0 27px;
+}
+
+.block-form .head p {
+	font: 600 1.125em/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+}
+
+.block-form .block.clearfix .form {
+	float: left;
+	width: 501px;
+}
+
+.block-form .block .avatar {
+	float: right;
+	width: 110px;
+}
+
+.block-form .block .avatar .img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 110px;
+	height: 110px;
+	margin: 0 0 26px;
+}
+
+.block-form .block .avatar .text {
+	margin: 0 0 15px;
+}
+
+.block-form .block .avatar .text p {
+	font: .875em/1em "Myriad Pro", "MyriadPro";
+	color: #929DA7;
+	text-align: center;
+	letter-spacing: .034em;
+	margin: 0 0 7px;
+}
+
+.block-form .block .avatar .remove {
+	display: block;
+	border: 1px solid #c5cdd5;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	background: #fff;
+	text-align: center;
+	text-decoration: none;
+	font: .875em/2.143em "Myriad Pro", "MyriadPro";
+	margin: 5px 0 0;
+}
+
+.block-form .block {
+	margin: 0 0 54px;
+}
+
+.block-form .block ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.block-form .block li {
+	margin: 0 0 24px;
+}
+
+.block-form .block li label {
+	display: inline-block;
+	width: 110px;
+	text-align: right;
+	font: 1em/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	margin: 0 20px 0 0;
+}
+
+.block-form .block li input[type=text],
+.block-form .block li input[type=email],
+.block-form .block li input[type=password] {
+	border: 1px solid #c5cdd5;
+	padding: 0 10px;
+	height: 36px;
+	width: 349px;
+	font: 1.125em/1em "Myriad Pro", "MyriadPro";
+	color: #48545E;
+}
+
+.block-form .block li .jq-selectbox__select-text {
+	width: 330px;
+}
+
+.block-form .block li input[type=text]:focus,
+.block-form .block li input[type=email]:focus,
+.block-form .block li input[type=password]:focus {
+	border-color: #9098a0;
+}
+
+.block-form .block .checkbox {
+	margin: 0 0 12px;
+}
+
+.block-form .block .checkbox strong {
+	color: #676E75;
+	font: bold 1em/1em "Myriad Pro", "MyriadPro";
+}
+
+.block-form .block .checkbox label {
+	width: auto;
+	text-align: left;
+	cursor: pointer;
+}
+
+.block-form .button {
+	text-align: center;
+}
+
+.block-form .button input[type=submit] {
+	border: 1px solid #C5CDD5;
+	background: #F1F5FA;
+	width: 138px;
+	height: 36px;
+	font: 1em/1em "Myriad Pro", "MyriadPro";
+	color: #676E75;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.footer {
+	text-align: right;
+	margin: 90px 0 0;
+	padding: 0 0 35px;
+}
+
+.footer p {
+	font-size: 1em;
+	color: #676E75;
+}
+

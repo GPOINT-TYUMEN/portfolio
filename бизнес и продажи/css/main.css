@@ -1,0 +1,830 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    min-width: 1000px;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header {
+    height: 553px;
+    background: url(../img/bg-header.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 0 43px;
+}
+
+.hedaer__date {
+    margin: 0 0 32px;
+    padding: 37px 0 0;
+}
+
+.header__logo {
+    margin: 0 0 54px;
+}
+
+.header__slogan {
+    margin: 0 0 48px;
+}
+
+.hedaer__date,
+.header__logo,
+.header__slogan,
+.header__button {
+    text-align: center;
+}
+
+.hedaer__date p,
+.header__slogan p,
+.header__button .button__item span {
+    font: 1.125em/1.333em "PT Sans", sans-serif;
+    color: #fff;
+}
+
+.header__slogan h2,
+.header__button h3 {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.header__button h3 {
+    margin: 0 0 12px;
+}
+
+.header__button .button__item {
+    display: inline-block;
+    width: 271px;
+}
+
+.header__button .button__item a,
+.program__item .button__item a,
+.price__item .button__item a,
+.marketing-text .button__item a {
+    display: block;
+    background: #36c02a;
+    height: 33px;
+    box-shadow: 0 5px 0 #38a52e;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold 1.25em/1em "PT Sans", sans-serif;
+    padding: 15px 0 0;
+    margin: 0 0 15px;
+}
+
+.header__button .button__item:first-child {
+    margin: 0 78px 0 0;
+}
+
+.video-block {
+    margin: 0 0 25px;
+}
+
+.video-block .video {
+    float: left;
+    width: 452px;
+}
+
+.video-block .video__text {
+    float: right;
+    width: 530px;
+}
+
+.video__text p {
+    font: .937em/1.6em "PT Sans", sans-serif;
+    color: #272727;
+    margin: 0 0 17px;
+}
+
+.video__text blockquote {
+    margin: 0;
+    padding: 0;
+    font: 1.75em/1.214em "PT Sans", sans-serif;
+    color: #50b548;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin: 0 0 17px;
+}
+
+.title__head {
+    margin: 0 0 46px;
+}
+
+.title__head h2 {
+    font: 300 5em/1em "PFAgoraSansPro";
+    color: #6b7275;
+}
+
+.program {
+    border-left: 1px solid #c2cdd3;
+    border-right: 1px solid #c2cdd3;
+    margin: 0 0 40px;
+}
+
+.program__item {
+    float: left;
+    width: 449px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.program__item:first-child {
+    border-right: 1px solid #c2cdd3;
+}
+
+.program__title {
+    margin: 0 0 14px;
+}
+
+.program__title p {
+    font: 1.625em/1em "PT Sans", sans-serif;
+}
+
+.program__title strong {
+    text-transform: uppercase;
+    color: #2f7fa6;
+}
+
+.program__title span {
+    color: #9cb3be;
+}
+
+.program__item ol,
+.program__item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.program__item ul {
+    list-style: none;
+}
+
+.program__item li {
+    font: 1em/1.375em "PT Sans", sans-serif;
+    color: #272727;
+    position: relative;
+}
+
+.program__item ol > li {
+    margin: 0 0 18px 22px;
+    font-weight: bold;
+}
+
+.program__item ul > li:before,
+.marketing-text li:before,
+.popup__text li:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #272727;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: -15px;
+    top: 9px;
+}
+
+.program__item .button__item {
+    text-align: center;
+}
+
+.program__item .button__item a {
+    height: 26px;
+    display: inline-block;
+    width: 240px;
+    font-size: 1.125em;
+    padding: 12px 0 0;
+}
+
+.teams {
+    margin: 0 0 60px;
+}
+
+.teams__item {
+    float: left;
+    width: 157px;
+    margin: 0 0 0 114px;
+    position: relative;
+    padding: 68px 0 0;
+}
+
+.teams__item:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../img/bg-teams.gif) no-repeat;
+    width: 157px;
+    height: 67px;
+    left: 57px;
+    top: 0;
+}
+
+.teams__item:first-child {
+    margin: 0;
+}
+
+.teams__item .teams__img {
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 0 19px;
+}
+
+.teams__item .teams__name p {
+    font: bold .984em/1em "PT Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.teams__item .teams__name a {
+    color: #494949;
+}
+
+.marketing-text {
+    background: url(../img/bg-marketing.jpg) repeat center;
+    padding: 20px 0 23px;
+    margin: 0 0 28px;
+}
+
+.marketing-text .title__head h2 {
+    color: #fff;
+}
+
+.marketing-text ul {
+    float: left;
+    margin: 0 0 0 34px;
+    padding: 0;
+    list-style: none;
+    width: 310px;
+}
+
+.marketing-text ul:first-child {
+    margin: 0;
+}
+
+.marketing-text li {
+    color: #fff;
+    font: 1.063em/1.118em "PT Sans", sans-serif;
+    padding: 0 0 0 12px;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.marketing-text li:before {
+    background: #fff;
+    left: 0;
+    top: 6px;
+}
+
+.marketing-text li:first-child {
+    font-weight: bold;
+    padding: 0;
+}
+
+.marketing-text li:first-child:before {
+    display: none;
+}
+
+.price {
+    margin: 0 0 40px;
+}
+
+.price__item {
+    float: left;
+    width: 311px;
+    background: #dfe7eb;
+    text-align: center;
+    margin: 0 0 0 33px;
+    position: relative;
+    padding: 0 0 25px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.24);
+}
+
+.price__item:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.png) no-repeat;
+    left: 50%;
+}
+
+.price__item:first-child {
+    margin: 0;
+}
+
+.price__item:first-child:before {
+    background-position: 0 0;
+    width: 86px;
+    height: 99px;
+    margin-left: -42px;
+    top: -37px;
+}
+
+.price__item:nth-child(2):before {
+    background-position: -86px 0;
+    width: 82px;
+    height: 96px;
+    margin-left: -40px;
+    top: -42px;
+}
+
+.price__item:nth-child(3):before {
+    background-position: -168px 0;
+    width: 109px;
+    height: 116px;
+    margin-left: -34px;
+    top: -54px;
+}
+
+.price__text {
+    height: 131px;
+    padding: 90px 30px 0;
+}
+
+.price__text h4 {
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+
+.price__text p {
+    font: 1.063em/1.118em "PT Sans", sans-serif;
+    color: #494949;
+}
+
+.price__block {
+    background: #e53535;
+    padding: 9px 0 10px;
+    margin: 0 0 21px;
+}
+
+.price__block p {
+    font: bold 1.875em/1em "PT Sans", sans-serif;
+    color: #fff;
+}
+
+.price__item .button__item a {
+    width: 150px;
+    display: inline-block;
+    margin: 0;
+}
+
+.partners {
+    margin: 0 0 57px;
+}
+
+.partners__item {
+    float: left;
+    width: 309px;
+    height: 144px;
+    border: 1px solid #dfe7eb;
+    margin: 0 0 20px 33px;
+}
+
+.partners__item:first-child,
+.partners__item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.marketing-text blockquote {
+    text-align: center;
+    font: italic 1.5em/1.417em "PT Sans", sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 50px;
+}
+
+.marketing-text .button__item {
+    text-align: center;
+    padding: 0 0 15px;
+}
+
+.marketing-text .button__item a {
+    display: inline-block;
+    width: 271px;
+}
+
+.maps {
+    position: relative;
+}
+
+.maps__adress {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: #2f7fa6;
+    padding: 20px;
+    width: 240px;
+    z-index: 100;
+}
+
+.maps__adress p {
+    color: #fff;
+    font: 1.125em/1.333em "PT Sans", sans-serif;
+    margin: 0 0 20px;
+}
+
+.maps__adress a {
+    color: #fff;
+}
+
+.maps__adress .phone {
+    font-size: 1.75em;
+    margin: 0;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+
+.popup__hide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.popup__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.popup__block {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.popup__middle {
+    display: inline-block;
+    text-align: left;
+    width: 655px;
+    background: #e4edf2;
+    box-shadow: 0 1px 3px rgba(0,0,0,.44);
+    position: relative;
+    z-index: 20;
+}
+
+.popup__name {
+    padding: 20px 22px 15px;
+    background: #2f7fa6;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.popup__name p {
+    font: bold 1em/1em "PT Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.popup__name .close {
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    color: #fff;
+    ont: 1em/1em "PT Sans", sans-serif;
+}
+
+.popup__text {
+    padding: 0  22px 20px;
+}
+
+.popup__text p,
+.popup__text li {
+    font: 1em/1.375em "PT Sans", sans-serif;
+    color: #262626;
+}
+
+.popup__text ul {
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.popup__text li {
+    position: relative;
+    padding: 0 0 0 11px;
+}
+
+
+.popup__text li:before {
+    left: 0;
+    top: 9px;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+    padding: 0 15px 0 0;
+}
+
+.no-scroll .popup {
+    overflow-y: scroll;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font: 1em/1.375em "PT Sans", sans-serif;
+    color: #262626;
+}
+
+.footer a {
+    color: #36C02A;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

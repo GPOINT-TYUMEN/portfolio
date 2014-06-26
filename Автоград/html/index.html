@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="popup" id="form-1" style="display: none">
+          <div class="popup__bg" onclick="close_popup()"></div>
+          <div class="wrapper__popup">
+            <div class="block__popup">
+              <div class="block">
+                <a href="javascript:void(0)" class="close" onclick="close_popup()">×</a>
+                <form class="webform-client-form webform-hints" enctype="multipart/form-data" action="/top-form" method="post" id="webform-client-form-2" accept-charset="UTF-8">
+                  <div>
+                    <div class="form-item webform-component webform-component-select" id="webform-component-body-car">
+                      <label class="element-invisible" for="edit-submitted-body-car">Выберите тип кузова... </label>
+                      <select id="edit-submitted-body-car" name="submitted[body_car]" class="form-select">
+                        <option value="" selected="selected">- Выберите тип кузова... -</option>
+                        <option value="1">Хетчбек</option>
+                        <option value="2">Седан</option>
+                        <option value="3">Универсал</option>
+                      </select>
+                    </div>
+                    <div class="form-item webform-component webform-component-select" id="webform-component-mod">
+                      <label class="element-invisible" for="edit-submitted-mod">Комплектация? </label>
+                      <select id="edit-submitted-mod" name="submitted[mod]" class="form-select">
+                        <option value="" selected="selected">- Комплектация? -</option>
+                        <option value="0">Не определился...</option>
+                        <option value="1">Ambiente</option>
+                        <option value="2">Ambiente Plus</option>
+                        <option value="3">Trend</option>
+                        <option value="4">Sport Limited Edition</option>
+                        <option value="5">Trend Sport</option>
+                        <option value="6">Titanium</option>
+                      </select>
+                    </div>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-extra">
+                      <label class="element-invisible" for="edit-submitted-extra">Дополнительные пожелания? </label>
+                      <input title="Дополнительные пожелания?" class="webform-hints-field form-text" placeholder="Дополнительные пожелания?" type="text" id="edit-submitted-extra" name="submitted[extra]" value="" size="60" maxlength="128">
+                    </div>
+                    <div class="form-item webform-component webform-component-radios" id="webform-component-offer">
+                      <label for="edit-submitted-offer">Выберите предложение: </label>
+                      <div id="edit-submitted-offer" class="form-radios">
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-1" name="submitted[offer]" value="1" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-1">Получение индивидуальной  скидки </label>
+                        </div>
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-2" name="submitted[offer]" value="2" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-2">Кредит 0% </label>
+                        </div>
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-3" name="submitted[offer]" value="3" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-3">Хочу воспользоваться обоими  предложениями </label>
+                        </div>
+                      </div>
+                    </div>
+                    <fieldset class="webform-component-fieldset form-wrapper" id="webform-component-contacts">
+                      <div class="fieldset-wrapper"></div>
+                    </fieldset>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-tel">
+                      <label class="element-invisible" for="edit-submitted-tel">Номер телефона для связи? <span class="form-required" title="Обязательное поле">*</span></label>
+                      <input title="Номер телефона для связи? (required)" class="webform-hints-field form-text required" placeholder="Номер телефона для связи? (required)" type="text" id="edit-submitted-tel" name="submitted[tel]" value="" size="60" maxlength="128">
+                    </div>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
+                      <label class="element-invisible" for="edit-submitted-name">Ваше Имя? </label>
+                      <input title="Ваше Имя?" class="webform-hints-field form-text" placeholder="Ваше Имя?" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="60" maxlength="128">
+                    </div>
+                    <fieldset class="captcha form-wrapper">
+                      <div class="fieldset-wrapper">
+                        <input type="hidden" value="9339" name="captcha_sid">
+                        <input type="hidden" value="5b4d5d03597641c9cd55da04593952fe" name="captcha_token">
+                        <img width="120" height="60" title="CAPTCHA на основе изображений" alt="CAPTCHA на основе изображений" src="/image_captcha?sid=9339&amp;ts=1403069372">
+                        <div class="form-item form-type-textfield form-item-captcha-response">
+                          <label for="edit-captcha-response--4">Код на картинке? <span title="Обязательное поле" class="form-required">*</span></label>
+                          <input type="text" class="form-text required" maxlength="128" size="15" value="" name="captcha_response" id="edit-captcha-response--4">
+                          <div class="description">Введите код с картинки</div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <input type="hidden" name="details[sid]">
+                    <input type="hidden" name="details[page_num]" value="1">
+                    <input type="hidden" name="details[page_count]" value="1">
+                    <input type="hidden" name="details[finished]" value="0">
+                    <input type="hidden" name="form_build_id" value="form-m5CbUCtHp5o8PGT5E1tMqUVLuPHKXhAA5Ia5zOU2odw">
+                    <input type="hidden" name="form_token" value="L-Ra2RPuhU2RMGAXR0aXdhVgLYPVJ4SuUbdaPfXHuh8">
+                    <input type="hidden" name="form_id" value="webform_client_form_2">
+                    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Заказать" class="form-submit"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="form-2" style="display: none">
+          <div class="popup__bg" onclick="close_popup()"></div>
+          <div class="wrapper__popup">
+            <div class="block__popup">
+              <div class="block">
+                <a href="javascript:void(0)" class="close" onclick="close_popup()">×</a>
+                <form class="webform-client-form webform-hints" enctype="multipart/form-data" action="/top-form" method="post" id="webform-client-form-2" accept-charset="UTF-8">
+                  <div>
+                    <div class="form-item webform-component webform-component-select" id="webform-component-body-car">
+                      <label class="element-invisible" for="edit-submitted-body-car">Выберите тип кузова... </label>
+                      <select id="edit-submitted-body-car" name="submitted[body_car]" class="form-select">
+                        <option value="" selected="selected">- Выберите тип кузова... -</option>
+                        <option value="1">Хетчбек</option>
+                        <option value="2">Седан</option>
+                        <option value="3">Универсал</option>
+                      </select>
+                    </div>
+                    <div class="form-item webform-component webform-component-select" id="webform-component-mod">
+                      <label class="element-invisible" for="edit-submitted-mod">Комплектация? </label>
+                      <select id="edit-submitted-mod" name="submitted[mod]" class="form-select">
+                        <option value="" selected="selected">- Комплектация? -</option>
+                        <option value="0">Не определился...</option>
+                        <option value="1">Ambiente</option>
+                        <option value="2">Ambiente Plus</option>
+                        <option value="3">Trend</option>
+                        <option value="4">Sport Limited Edition</option>
+                        <option value="5">Trend Sport</option>
+                        <option value="6">Titanium</option>
+                      </select>
+                    </div>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-extra">
+                      <label class="element-invisible" for="edit-submitted-extra">Дополнительные пожелания? </label>
+                      <input title="Дополнительные пожелания?" class="webform-hints-field form-text" placeholder="Дополнительные пожелания?" type="text" id="edit-submitted-extra" name="submitted[extra]" value="" size="60" maxlength="128">
+                    </div>
+                    <div class="form-item webform-component webform-component-radios" id="webform-component-offer">
+                      <label for="edit-submitted-offer">Выберите предложение: </label>
+                      <div id="edit-submitted-offer" class="form-radios">
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-1" name="submitted[offer]" value="1" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-1">Получение индивидуальной  скидки </label>
+                        </div>
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-2" name="submitted[offer]" value="2" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-2">Кредит 0% </label>
+                        </div>
+                        <div class="form-item form-type-radio form-item-submitted-offer">
+                          <input type="radio" id="edit-submitted-offer-3" name="submitted[offer]" value="3" class="form-radio">
+                          <label class="option" for="edit-submitted-offer-3">Хочу воспользоваться обоими  предложениями </label>
+                        </div>
+                      </div>
+                    </div>
+                    <fieldset class="webform-component-fieldset form-wrapper" id="webform-component-contacts">
+                      <div class="fieldset-wrapper"></div>
+                    </fieldset>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-tel">
+                      <label class="element-invisible" for="edit-submitted-tel">Номер телефона для связи? <span class="form-required" title="Обязательное поле">*</span></label>
+                      <input title="Номер телефона для связи? (required)" class="webform-hints-field form-text required" placeholder="Номер телефона для связи? (required)" type="text" id="edit-submitted-tel" name="submitted[tel]" value="" size="60" maxlength="128">
+                    </div>
+                    <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
+                      <label class="element-invisible" for="edit-submitted-name">Ваше Имя? </label>
+                      <input title="Ваше Имя?" class="webform-hints-field form-text" placeholder="Ваше Имя?" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="60" maxlength="128">
+                    </div>
+                    <fieldset class="captcha form-wrapper">
+                      <div class="fieldset-wrapper">
+                        <input type="hidden" value="9339" name="captcha_sid">
+                        <input type="hidden" value="5b4d5d03597641c9cd55da04593952fe" name="captcha_token">
+                        <img width="120" height="60" title="CAPTCHA на основе изображений" alt="CAPTCHA на основе изображений" src="/image_captcha?sid=9339&amp;ts=1403069372">
+                        <div class="form-item form-type-textfield form-item-captcha-response">
+                          <label for="edit-captcha-response--4">Код на картинке? <span title="Обязательное поле" class="form-required">*</span></label>
+                          <input type="text" class="form-text required" maxlength="128" size="15" value="" name="captcha_response" id="edit-captcha-response--4">
+                          <div class="description">Введите код с картинки</div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <input type="hidden" name="details[sid]">
+                    <input type="hidden" name="details[page_num]" value="1">
+                    <input type="hidden" name="details[page_count]" value="1">
+                    <input type="hidden" name="details[finished]" value="0">
+                    <input type="hidden" name="form_build_id" value="form-m5CbUCtHp5o8PGT5E1tMqUVLuPHKXhAA5Ia5zOU2odw">
+                    <input type="hidden" name="form_token" value="L-Ra2RPuhU2RMGAXR0aXdhVgLYPVJ4SuUbdaPfXHuh8">
+                    <input type="hidden" name="form_id" value="webform_client_form_2">
+                    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Заказать" class="form-submit"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="form-3" style="display: none">
+          <div class="popup__bg" onclick="close_popup()"></div>
+          <div class="wrapper__popup">
+            <div class="block__popup">
+              <div class="block">
+                <a href="javascript:void(0)" class="close" onclick="close_popup()">×</a>
+                <h2>Продан 1 Ford Focus 3</h2>
+                <p><script language="javascript" type="text/javascript"><!--
+                  var d = new Date();
+                  
+                  var month=new Array("января","февраля","марта","апреля","мая","июня",
+                  "июля","августа","сентября","октября","ноября","декабря");
+                  
+                  document.write(d.getDate()+ " " + month[d.getMonth()]
+                  + " " + d.getFullYear());
+                  //-->
+              </script>
+              куплен Focus 3 VIN: X9FMXXEEBMEY62... МКПП Trend Sport Седан. Начальная стоимость: <strong>809 500р.</strong><br />Продан за: <strong>704 500р.</strong> Выгода составила: <strong>105 000р.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header>
+          <div class="header">
+            <div class="wrapper clearfix">
+              <div class="header__item header__logo">
+                <div class="clearfix">
+                  <div class="logo"><img src="img/logo.gif" /></div>
+                  <div class="slogan">
+                    <p><strong>Автоград.</strong>Официальный дилер Ford в Тюмени</p>
+                  </div>
+                </div>
+              </div>
+              <div class="header__item header__phone">
+                <p><a href="tel:88002500844">8 800 2500 844</a></p>
+                <span>звонок бесплатный</span>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div id="menu" class="header__menu">
+              <div class="wrapper">
+                <ul id="nav">
+                  <li><a href="#content-1">Гарантия качества</a></li>
+                  <li><a href="#content-2">Спец. предложение</a></li>
+                  <li><a href="#content-3">Проданные автомобили</a></li>
+                  <!--<li><a href="#content-4">Видео</a></li>-->
+                  <li><a href="#content-5">Кредит 0%</a></li>
+                  <li><a href="#content-6">Заявка</a></li> 
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section>
+          <div class="header__auto">
+            <div class="wrapper clearfix">
+              <div class="auto__text">
+                <h1>Распродажа <span>Ford Focus 3</span></h1>
+                <p>по себестоимости от завода.</p>
+                <p>На заказ <strong>от 599 тыс. руб.</strong></p>
+                <p class="price">Выгода на Ford Focus 3 в наличии<br /><strong>до 150 000 руб.</strong></p>
+                <p class="button"><a onclick="more()" href="javascript:void(0)">Узнать подробнее</a></p>
+              </div>
+              <div class="auto__img hiddenopacity">
+                <div class="text">
+                  <p>осталось<br /><strong>19</strong>автомобилей<br /><span>звоните</span></p>
+                </div>
+                <div class="img"><img src="img/img-ford.png" /></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="content-1">
+          <div class="block_test">
+            <div class="test__line">
+              <h2>Ford Focus 3</h2>
+              <p>Проверено и доказано!</p>
+            </div>
+            <div class="bg_test">
+              <div class="wrapper clearfix">
+                <div class="test__item">
+                  <div class="img"><img src="img/logo-ford.png" /></div>
+                  <div class="img_text"><p>Исследовательский центр<br />имени Генри Форда в Англии</p></div>
+                  <div class="test__text">
+                    <h3>Ford Focus 3</h3>
+                    <p><strong>Оценка «5»</strong> по пятибалльной<br />шкале в самых суровых испытаниях.</p>
+                  </div>
+                </div>
+                <div class="test__item">
+                  <div class="img"><img src="img/logo-euro.png" /></div>
+                  <div class="img_text"><p>Европейская независимая<br />организация авто-экспертов</p></div>
+                  <div class="test__text">
+                    <h3>Ford Focus 3</h3>
+                    <p><strong>лучший в своем классе</strong><br />семейный автомобиль.</p>
+                  </div>
+                </div>
+                <div class="test__item">
+                  <div class="img"><img src="img/logo-nhtsa.png" /></div>
+                  <div class="img_text"><p>Национальная администрация<br />безопасности дорожного движения</p></div>
+                  <div class="test__text">
+                    <h3>Ford Focus 3</h3>
+                    <p><strong>Максимальный</strong><br />рейтинг безопасности.</p>
+                  </div>
+                </div>
+                <div class="test__item">
+                  <div class="img"><img src="img/logo-drom.png" /></div>
+                  <div class="img_text"><p>Всероссийский портал<br />автомобилистов</p></div>
+                  <div class="test__text">
+                    <h3>Ford Focus 3</h3>
+                    <p><strong>91% положительных отзывов</strong><br />от владельцев Ford Focus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="content-2">
+          <div class="offer_block">
+            <div class="offer__text">
+              <h2>Сегодня лучшее время для Ford Focus 3!</h2>
+              <p>Только на Ford Focus 3 до 30.06.2014 года, одновременно действуют сразу 2 предложения</p>
+            </div>
+            <div class="offer_bg">
+              <div class="wrapper">
+                <div class="item__offer clearfix">
+                  <div class="item__text">
+                    <div class="head__text">
+                      <h3>Ford Focus 3 по себестоимости</h3>
+                      <p><span>На заказ от завода изготовителя</span></p>
+                    </div>
+                    <div class="body__text">
+                      <p>Мы распродаем Ford Focus 3. Прямо сейчас Вы моежете<br />заказать автомобиль по его себестоимости с завода.</p>
+                      <p><span>Отдыхайте летом на новом Ford Focus 3</span></p>
+                    </div>
+                    <div class="button">
+                      <p><a onclick="open_form1()" href="javascript:void(0);">Запросить информацию о сроках доставки</a></p>
+                    </div>
+                    <div class="footer__text">
+                      <p>Узнать подробности  Вы можете в нашем call-центре по номеру<br />8 800 2500 844. Звонок бесплатный.</p>
+                    </div>
+                  </div>
+                  <div class="item__img"><img src="img/img-offset1.png" /></div>
+                </div>
+                <div class="item__offer clearfix">
+                  <div class="item__img"><img src="img/img-offset2.png" /></div>
+                  <div class="item__text">
+                    <div class="head__text">
+                      <h3>Ford Focus 3  с выгодой до 150 000 руб.</h3>
+                      <p>На автомобили в наличии в г. Тюмень</p>
+                    </div>
+                    <div class="body__text">
+                      <p>В связи с перенасыщением склада автомобилей в г. Тюмени, реальная выгода<br />до 150 000 руб. на Ford Focus 3 для каждого покупателя.</p>
+                      <p><span>Полученное предложение закрепляется за вами до 30.06.2014 г.</span></p>
+                    </div>
+                    <div class="button">
+                      <p><a onclick="open_form2()" href="javascript:void(0);">Узнать размер скидки</a></p>
+                    </div>
+                    <div class="footer__text">
+                      <p>О размере Вашей выгоды на автомобиль и кредитных программах<br />сроком от 1 до 5 лет с процентной ставкой от 6%, Вы можете узнать<br />в нашем Call-центрепо номеру <strong>8 800 2500 844</strong>. Звонок бесплатный</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="content-3">
+          <div class="table_block">
+            <div class="wrapper">
+              <h2>Эти Ford Focus 3 <span>купили</span> <strong>вчера:</strong></h2>
+              <p>
+                Последнее обновление
+                <script language="javascript" type="text/javascript"><!--
+                  var d = new Date();
+                  
+                  var month=new Array("января","февраля","марта","апреля","мая","июня",
+                  "июля","августа","сентября","октября","ноября","декабря");
+                  
+                  document.write(d.getDate()+ " " + month[d.getMonth()]
+                  + " " + d.getFullYear());
+                  //-->
+              </script>
+              </p>
+              <table cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Автомобиль</th>
+                    <th></th>
+                    <th>Стоимость</th>
+                    <th></th>
+                    <th>Цена продажи</th>
+                    <th></th>
+                    <th>Скидка</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Ford Focus 3 седан в комплектации Trand  АКПП</td>
+                    <td></td>
+                    <td>873 400 руб.</td>
+                    <td></td>
+                    <td>Продана за 651 000 руб.</td>
+                    <td></td>
+                    <td>120 000 руб.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="test__line">
+              <div class="button">
+                <p><a onclick="open_form1()" href="javascript:void(0);">Получите выгоду до 150 000 руб. на Ford Focus 3 уже сейчас</a></p>
+              </div>
+              <div class="link"><p><a onclick="open_form2()" href="javascript:void(0);">или сделайте заказ на автомобиль по себестоимости</a></p></div>
+            </div>
+        </section>
+        <section id="content-5">
+          <div class="credit_block">
+            <div class="wrapper">
+              <div class="credit__title"><p>У вас есть 50% стоимости автомобиля? <strong>Тогла для Вас кредит 0%!</strong></p></div>
+              <div class="credit__text"><p>Вместе с нашими банками – партнёрами мы разработали специальный кредит 0%<br />на Ford Focus 3. При п. взн. 50% сроком на 1 год. Без комиссий и всего по двум документам.</p></div>
+              <div class="credit__img"><img src="img/img-pecent.jpg" /></div>
+              <div class="button"><p><a onclick="open_form1()" href="javascript:void(0);">Получить предложение и расчитать ежемесячный платеж</a></p></div>
+            </div>
+          </div>
+        </section>
+        <!--<section id="content-4">
+          <div class="video_block">
+            <div class="wrapper">
+              <h2>Ford Focus 3</h2>
+              <p>Возможности автомобиля, в видео-презентации</p>
+              <div class="video">
+                <iframe width="789" height="493" src="http://www.youtube.com/embed/07ERXuQb26Y" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>-->
+        <section id="content-6">
+          <div class="form_block">
+            <div class="wrapper">
+              <h2>Прямо сейчас Вы можете выбрать один из Ford Focus 3<br /><span>уже в наличии</span></h2>
+              <p>На котором Вы уедите из салона уже завтра</p>
+              <div class="clearfix">
+                <div class="form__text">
+                  <p>Специалисты горячей линии уже готовы ответить на все<br />Ваши вопросы об условиях приобретения и наличии автомобилей.</p>
+                  <p class="phone"><strong>8 800 2500 844</strong><br /><span>звонок бесплатный</span></p>
+                  <p class="form">или отправьте запрос<br />с помощью формы:</p>
+                </div>
+                <div class="item__form">
+                  <form class="webform-client-form webform-hints" enctype="multipart/form-data" action="/top-form" method="post" id="webform-client-form-2" accept-charset="UTF-8">
+                    <div>
+                      <div class="form-item webform-component webform-component-select" id="webform-component-body-car">
+                        <label class="element-invisible" for="edit-submitted-body-car">Выберите тип кузова... </label>
+                        <select id="edit-submitted-body-car" name="submitted[body_car]" class="form-select">
+                          <option value="" selected="selected">- Выберите тип кузова... -</option>
+                          <option value="1">Хетчбек</option>
+                          <option value="2">Седан</option>
+                          <option value="3">Универсал</option>
+                        </select>
+                      </div>
+                      <div class="form-item webform-component webform-component-select" id="webform-component-mod">
+                        <label class="element-invisible" for="edit-submitted-mod">Комплектация? </label>
+                        <select id="edit-submitted-mod" name="submitted[mod]" class="form-select">
+                          <option value="" selected="selected">- Комплектация? -</option>
+                          <option value="0">Не определился...</option>
+                          <option value="1">Ambiente</option>
+                          <option value="2">Ambiente Plus</option>
+                          <option value="3">Trend</option>
+                          <option value="4">Sport Limited Edition</option>
+                          <option value="5">Trend Sport</option>
+                          <option value="6">Titanium</option>
+                        </select>
+                      </div>
+                      <div class="form-item webform-component webform-component-textfield" id="webform-component-extra">
+                        <label class="element-invisible" for="edit-submitted-extra">Дополнительные пожелания? </label>
+                        <input title="Дополнительные пожелания?" class="webform-hints-field form-text" placeholder="Дополнительные пожелания?" type="text" id="edit-submitted-extra" name="submitted[extra]" value="" size="60" maxlength="128">
+                      </div>
+                      <div class="form-item webform-component webform-component-radios" id="webform-component-offer">
+                        <label for="edit-submitted-offer">Выберите предложение: </label>
+                        <div id="edit-submitted-offer" class="form-radios">
+                          <div class="form-item form-type-radio form-item-submitted-offer">
+                            <input type="radio" id="edit-submitted-offer-1" name="submitted[offer]" value="1" class="form-radio">
+                            <label class="option" for="edit-submitted-offer-1">Получение индивидуальной  скидки </label>
+                          </div>
+                          <div class="form-item form-type-radio form-item-submitted-offer">
+                            <input type="radio" id="edit-submitted-offer-2" name="submitted[offer]" value="2" class="form-radio">
+                            <label class="option" for="edit-submitted-offer-2">Кредит 0% </label>
+                          </div>
+                          <div class="form-item form-type-radio form-item-submitted-offer">
+                            <input type="radio" id="edit-submitted-offer-3" name="submitted[offer]" value="3" class="form-radio">
+                            <label class="option" for="edit-submitted-offer-3">Хочу воспользоваться обоими  предложениями </label>
+                          </div>
+                        </div>
+                      </div>
+                      <fieldset class="webform-component-fieldset form-wrapper" id="webform-component-contacts">
+                        <div class="fieldset-wrapper"></div>
+                      </fieldset>
+                      <div class="form-item webform-component webform-component-textfield" id="webform-component-tel">
+                        <label class="element-invisible" for="edit-submitted-tel">Номер телефона для связи? <span class="form-required" title="Обязательное поле">*</span></label>
+                        <input title="Номер телефона для связи? (required)" class="webform-hints-field form-text required" placeholder="Номер телефона для связи? (required)" type="text" id="edit-submitted-tel" name="submitted[tel]" value="" size="60" maxlength="128">
+                      </div>
+                      <div class="form-item webform-component webform-component-textfield" id="webform-component-name">
+                        <label class="element-invisible" for="edit-submitted-name">Ваше Имя? </label>
+                        <input title="Ваше Имя?" class="webform-hints-field form-text" placeholder="Ваше Имя?" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="60" maxlength="128">
+                      </div>
+                      <fieldset class="captcha form-wrapper">
+                        <div class="fieldset-wrapper">
+                          <input type="hidden" value="9339" name="captcha_sid">
+                          <input type="hidden" value="5b4d5d03597641c9cd55da04593952fe" name="captcha_token">
+                          <img width="120" height="60" title="CAPTCHA на основе изображений" alt="CAPTCHA на основе изображений" src="/image_captcha?sid=9339&amp;ts=1403069372">
+                          <div class="form-item form-type-textfield form-item-captcha-response">
+                            <label for="edit-captcha-response--4">Код на картинке? <span title="Обязательное поле" class="form-required">*</span></label>
+                            <input type="text" class="form-text required" maxlength="128" size="15" value="" name="captcha_response" id="edit-captcha-response--4">
+                            <div class="description">Введите код с картинки</div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <input type="hidden" name="details[sid]">
+                      <input type="hidden" name="details[page_num]" value="1">
+                      <input type="hidden" name="details[page_count]" value="1">
+                      <input type="hidden" name="details[finished]" value="0">
+                      <input type="hidden" name="form_build_id" value="form-m5CbUCtHp5o8PGT5E1tMqUVLuPHKXhAA5Ia5zOU2odw">
+                      <input type="hidden" name="form_token" value="L-Ra2RPuhU2RMGAXR0aXdhVgLYPVJ4SuUbdaPfXHuh8">
+                      <input type="hidden" name="form_id" value="webform_client_form_2">
+                      <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Заказать" class="form-submit"></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="img_auto"><img src="img/img-ford.png" /></div>
+                <div class="img_man hiddenopacity"><img src="img/img-man.png" /></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="footer">
+            <div class="wrapper">
+              <div class="clearfix">
+                <div class="footer__item footer__logo">
+                  <img src="img/logo-footer.gif" />
+                  <p><span>Официальный дилер Ford в Тюмени.</span><br />ул. Республики 278.</p>
+                </div>
+                <div class="footer__item footer__phone">
+                  <p><a href="tel:88002500844">8 800 2500 844</a></p>
+                  <span>звонок бесплатный</span>
+                </div>
+                <div class="footer__item footer__agrad">
+                  <img src="img/logo-agrad.gif" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="development">
+            <p><a href="#">Разработка студии эффективных решений “Sells”</a></p>
+          </div>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.cookie.js"></script>
+        <script src="js/vendor/viewportchecker.js"></script>
+        <script src="js/vendor/jquery.nav.js"></script>
+        <script src="js/vendor/jquery.formstyler.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

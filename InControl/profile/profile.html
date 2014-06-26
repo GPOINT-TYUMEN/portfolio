@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="wrapper">
+			<div class="clearfix">
+				<div class="aside-block column">
+					<aside>
+						<div class="logo"><a href="#">In<strong>Control</strong></a></div>
+						<div class="menu">
+							<ul>
+								<li class="overview"><a class="sprite" href="#">Overview</a></li>
+								<li class="reports"><a class="sprite" href="#">Reports</a></li>
+								<li class="activities"><a class="sprite" href="#">Activities</a></li>
+								<li class="projects"><a class="sprite" href="#">Projects</a></li>
+								<li class="productivity"><a class="sprite" href="#">Productivity</a></li>
+							</ul>
+							<ul class="tips">
+								<li><sup>*</sup><a href="#" class="dotted">Tips</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<div class="center-block column">
+					<header>
+						<div class="block-user clearfix">
+							<div class="block">
+								<p><a href="#"><img src="img/28x28.gif" alt="" />J. Oliver</a></p>
+								<div class="user-menu">
+									<ul>
+										<li><a href="#">Settings</a></li>
+										<li><a href="#">Sign out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</header>
+					<section>
+						<div class="header-profile clearfix">
+							<div class="avatar"><img src="img/46x46.jpg" alt="" /></div>
+							<div class="info">
+								<div class="name">
+									<p><strong>Jamie Oliver</strong> | <span>profile</span></p>
+									<p><em>Edit your name, notifications, password, etc.</em></p>
+								</div>
+							</div>
+						</div>
+						<div class="block-form">
+							<form action="">
+								<div class="head">
+									<p>Profile</p>
+								</div>
+								<div class="block clearfix">
+									<div class="form">
+										<ul>
+											<li><label>Name</label><input type="text"></li>
+											<li><label>Username</label><input type="text"></li>
+											<li><label>Email</label><input type="email"></li>
+											<li>
+												<label>Location</label>
+												<select name="" id="">
+													<option value="">GMT +05:00, Ekaterinburg</option>
+												</select>
+											</li>
+										</ul>
+									</div>
+									<div class="avatar">
+										<div class="img"><img src="img/110x110.jpg" alt="" /></div>
+										<div class="text">
+											<p>PNG, JPG or GIF.</p>
+											<p>Max size of 1Mb.</p>
+										</div>
+										<input type="file" name="" id="">
+										<a href="#" class="remove">Delete</a>
+									</div>
+								</div>
+								<div class="head">
+									<p>Password</p>
+								</div>
+								<div class="block">
+									<div class="form">
+										<ul>
+											<li><label>Old</label><input type="password" name="" id=""></li>
+											<li><label>New</label><input type="password" name="" id=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="head">
+									<p>Notifications</p>
+								</div>
+								<div class="block">
+									<div class="form">
+										<ul>
+											<li class="checkbox"><strong>Email me about...</strong></li>
+											<li class="checkbox"><label><input type="checkbox" name="" id="">daily reports</label></li>
+											<li class="checkbox"><label><input type="checkbox" name="" id="">monthly reports</label></li>
+										</ul>
+									</div>
+								</div>
+								<div class="button"><input type="submit" value="Save changes"></div>
+							</form>
+						</div>
+					</section>
+					<footer>
+						<div class="footer">
+							<p>© 2014 In<strong>ctrl</strong>.io</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(window).on("load", function() {
+				var maxheight = 0;
+				$("div.column").each(function() {
+				  if($(this).height() > maxheight) { maxheight = $(this).height(); }
+				});
+
+				$("div.column").height(maxheight);
+			});
+
+			$(document).ready(function() {
+				$('input, select').styler({
+					fileBrowse: "Change avatar"
+				});
+			})
+		</script>
+	</body>
+</html>

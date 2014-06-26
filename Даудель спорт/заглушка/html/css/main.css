@@ -1,0 +1,632 @@
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Image replacement
+*/
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+	* {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	box-shadow: none !important;
+	text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	/*
+	* Don't show links for images, or javascript/internal links
+	*/
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+.header {
+	background: #fff;
+}
+
+.header .block {
+	width: 960px;
+	margin: 0 auto;
+	height: 115px;
+}
+
+.header p {
+	color: #222;
+}
+
+.header .logo {
+	float: left;
+	margin: 31px 70px 0 0;
+}
+
+.header .phone {
+	float: left;
+	margin: 43px 0 0;
+}
+
+.header .phone p {
+	font: bold 1.875em/1em "Trebuchet MS";
+}
+
+.header .adress {
+	float: right;
+	text-align: right;
+	margin: 38px 0 0;
+}
+
+.header .adress p {
+	font: bold 1.375em/1em "Trebuchet MS";
+}
+
+.header .adress a {
+	font-size: .5451em;
+	font-weight: normal;
+}
+
+.banner {
+	background: url(../img/bg-header.jpg) no-repeat top center;
+	height: 290px;
+	background-size: cover;
+	border-bottom: 9px solid #222;
+}
+
+.banner .block {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.banner .item {
+	background: url(../img/bg-header.png) no-repeat;
+	width: 415px;
+	height: 260px;
+	padding: 30px 0 0 98px;
+	margin: 0 0 0 131px;
+}
+
+.banner .item h3 {
+	font: bold 1.25em/1.5em "Trebuchet MS";
+	color: #222;
+	text-transform: uppercase;
+	margin: 0 0 18px;
+}
+
+.banner .item p {
+	font: 1em/1.375em "Trebuchet MS";
+	color: #222;
+	margin: 0 0 19px;
+}
+
+.banner .item span {
+	display: inline-block;
+	background: #e50011;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 14px 14px 15px;
+	text-transform: uppercase;
+	font: bold 1.125em/1em "RodeoC";
+	letter-spacing: .05em;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 1000px;
+	background: #fff;
+}
+
+.content {
+	margin: 0 auto;
+	width: 960px;
+	padding: 33px 0 50px;
+}
+
+.column {
+	float: left;
+}
+
+.c-410 {
+	width: 410px;
+}
+
+.c-550 {
+	width: 550px;
+}
+
+.content h3 {
+	font: 2.25em/1em "RodeoC";
+	color: #222;
+	margin: 0 0 28px;
+}
+
+.content .item {
+	margin: 0 0 27px;
+	position: relative;
+}
+
+.content p {
+	font: .937em/1.4em "Trebuchet MS";
+	margin: 0 0 8px;
+}
+
+.c-410 .item {
+	padding: 0 0 0 82px;
+}
+
+.c-410 .item:before,
+.c-550 .item strong:before {
+	display: block;
+	position: absolute;
+	content: "";
+	background: url(../img/sprite.gif) no-repeat;
+}
+
+.c-410 .item p strong {
+	font-size: 1.2em;
+}
+
+.c-410 .item:nth-child(2):before {
+	background-position: 0 0;
+	width: 58px;
+	height: 50px;
+	left: 0;
+	top: 0;
+}
+
+.c-410 .item:nth-child(3):before {
+	background-position: -58px 0;
+	width: 58px;
+	height: 23px;
+	left: 0;
+	top: 0;
+}
+
+.c-410 .item:nth-child(4):before {
+	background-position: -116px 0;
+	width: 40px;
+	height: 47px;
+	left: 10px;
+	top: 0;
+}
+
+.c-410 .item:nth-child(5):before {
+	background-position: -156px 0;
+	width: 54px;
+	height: 54px;
+	left: 2px;
+	top: 0;
+}
+
+.c-410 .item:nth-child(6):before {
+	background-position: -210px 0;
+	width: 40px;
+	height: 42px;
+	left: 9px;
+	top: 0;
+}
+
+.c-550 .item {
+	float: left;
+	width: 263px;
+}
+
+.c-550 .item strong {
+	color: #e50011;
+	position: relative;
+}
+
+.c-550 .item:nth-child(2),
+.c-550 .item:nth-child(4),
+.c-550 .item:nth-child(6) {
+	margin-left: 24px;
+}
+
+.c-550 .item:nth-child(1) strong:before {
+	background-position: -58px -23px;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	right: -24px;
+}
+
+.c-550 .item:nth-child(2) strong:before {
+	background-position: -96px -23px;
+	width: 15px;
+	height: 16px;
+	top: 1px;
+	right: -22px;
+}
+
+.c-550 .item:nth-child(3) strong:before {
+	background-position: -72px -23px;
+	width: 16px;
+	height: 16px;
+	top: 0;
+	right: -22px;
+}
+
+.c-550 .item:nth-child(4) strong:before {
+	background-position: -58px -38px;
+	width: 10px;
+	height: 16px;
+	top: 1px;
+	right: -21px;
+}
+
+.c-550 .item:nth-child(5) strong:before {
+	background-position: -88px -23px;
+	width: 8px;
+	height: 16px;
+	top: 1px;
+	right: -16px;
+}
+
+.c-550 .item:nth-child(6) {
+	background-color: #dadcdd;
+	background-image: -webkit-linear-gradient(left, #d9dada, #e6e7e7 50%, #d9dada);
+	background-image: -moz-linear-gradient(left, #d9dada, #e6e7e7 50%, #d9dada);
+	background-image: -o-linear-gradient(left, #d9dada, #e6e7e7 50%, #d9dada);
+	background-image: linear-gradient(to right, #d9dada, #e6e7e7 50%, #d9dada);
+	padding: 13px 0 13px 17px;
+	width: 246px;
+}
+
+.c-550 .item:nth-child(6) p {
+	font: bold .75em/1.5em "Trebuchet MS";
+	color: #000;
+	text-transform: uppercase;
+}
+
+.c-550 .item:nth-child(6) p img {
+	margin: -6px 10px 0 5px;
+}
+
+.c-550 .item:nth-child(6) ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.c-550 .item:nth-child(6) ul li {
+	float: left;
+	width: 105px;
+	font: .687em/1em "Trebuchet MS";
+	color: #222;
+	margin: 0 0 5px;
+}
+
+.c-550 .item:nth-child(6) ul li:last-child {
+	width: 141px;
+}
+
+.schema .img {
+	float: left;
+	width: 386px;
+}
+
+.schema .text {
+	float: right;
+	width: 140px;
+}
+
+.schema .text ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.schema .text ul > li {
+	font: 1.063em/1em "Trebuchet MS";
+	color: #222;
+	margin: 0 0 10px;
+}
+
+.schema .text ul li ul {
+	margin: 10px 0 0;
+}
+
+.schema .text ul li li {
+	font-size: .765em;
+	margin: 0 0 5px;
+}
+
+.footer {
+	background: #222;
+}
+
+.footer .block {
+	margin: 0 auto;
+	width: 960px;
+	padding: 17px 0;
+}
+
+.footer p {
+	color: #777;
+	font: .75em/1em Arial;
+}
+
+.footer .copy {
+	float: left;
+	width: 328px;
+	margin: 10px 0 0;
+}
+
+.footer .dev {
+	float: left;
+	margin: 10px 0 0;
+}
+
+.footer .social {
+	float: right;
+}
+
+.footer .social a {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 28px;
+	height: 28px;
+	background: url(../img/sprite.gif) no-repeat;
+	margin: 0 0 0 10px;
+	vertical-align: middle;
+}
+
+.footer .social .fc {
+	background-position: -250px 0;
+}
+
+.footer .social .vk {
+	background-position: -278px 0;
+}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>OK_icon</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="OK_icon" sketch:type="MSArtboardGroup">
+            <g id="Rectangle-966-+-Rectangle-965-+-Rectangle-966-+-Oval-141" sketch:type="MSLayerGroup" transform="translate(3.000000, 2.000000)">
+                <path d="M6.26201995,6.53193718 C5.55289041,6.6779391 4.39143294,6.7087316 3.69007189,6.526091 L1.93108206,5.96201255 C1.41685964,5.7793553 1,6.08053545 1,6.63294683 L1,6.95964727 C1,7.51285129 1.41659874,8.11843081 1.9298084,8.30455342 L3.73099204,8.88493465 C4.43184578,9.01825166 5.57862228,9.05344956 6.28863236,8.87925679 L8.06972702,8.30455342 C8.5835026,8.11498628 9,7.51205864 9,6.95964727 L9,6.63294683 C9,6.07974281 8.57413398,5.78358768 8.05996449,5.96201255 L6.26201995,6.53193718 Z" id="Rectangle-966" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <g id="Rectangle-965-+-Rectangle-966" transform="translate(5.000000, 10.000000) scale(1, -1) translate(-5.000000, -10.000000) translate(0.000000, 7.000000)" fill="#D8D8D8" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-966" transform="translate(6.500000, 3.000000) scale(-1, 1) rotate(12.000000) translate(-6.500000, -3.000000) " x="4" y="2" width="5" height="2" rx="4"></rect>
+                    <rect id="Rectangle-967" transform="translate(3.500000, 3.000000) rotate(12.000000) translate(-3.500000, -3.000000) " x="1" y="2" width="5" height="2" rx="4"></rect>
+                </g>
+                <circle id="Oval-140" stroke="#D8D8D8" stroke-width="2" sketch:type="MSShapeGroup" cx="5" cy="3" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

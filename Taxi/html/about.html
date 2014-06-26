@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="header clearfix">
+                <div class="header__item header__logo"><a href="#"><img src="img/logo.gif" alt="" /></a></div>
+                <div class="header__item">
+                    <div class="header__city">
+                        <p><a href="javascript:void(0)" onclick="select_city()" class="dotted">Санкт-Петербург</a></p>
+                        <div class="city__menu" id="city__menu">
+                            <p><a href="javascript:void(0)" onclick="select_city()" class="dotted">Санкт-Петербург</a></p>
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Архангельск</a></li>
+                                    <li><a href="#">Астрахань</a></li>
+                                    <li><a href="#">Барнаул</a></li>
+                                    <li><a href="#">Белгород</a></li>
+                                    <li><a href="#">Бийск</a></li>
+                                    <li><a href="#">Благовещенск</a></li>
+                                    <li><a href="#">Братск</a></li>
+                                    <li><a href="#">Брянск</a></li>
+                                    <li><a href="#">Великий Новгород</a></li>
+                                    <li><a href="#">Владивосток</a></li>
+                                    <li><a href="#">Владимир</a></li>
+                                    <li><a href="#">Вологда</a></li>
+                                    <li><a href="#">Геленджик</a></li>
+                                    <li><a href="#">Городец</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Дмитров</a></li>
+                                    <li><a href="#">Дубна</a></li>
+                                    <li><a href="#">Егорьевск</a></li>
+                                    <li><a href="#">Екатеринбург</a></li>
+                                    <li><a href="#">Звенигород</a></li>
+                                    <li><a href="#">Иваново</a></li>
+                                    <li><a href="#">Ижевск</a></li>
+                                    <li><a href="#">Йошкар-Ола</a></li>
+                                    <li class="active"><a href="#">Казань</a></li>
+                                    <li><a href="#">Калининград</a></li>
+                                    <li><a href="#">Калуга</a></li>
+                                    <li><a href="#">Краснодар</a></li>
+                                    <li><a href="#">Красноярск</a></li>
+                                    <li><a href="#">Курск</a></li>
+                                    <li><a href="#">Киров</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Можайск</a></li>
+                                    <li><a href="#">Москва</a></li>
+                                    <li><a href="#">Мурманск</a></li>
+                                    <li><a href="#">Муром</a></li>
+                                    <li><a href="#">Мытищи</a></li>
+                                    <li><a href="#">Нижний Новгород</a></li>
+                                    <li><a href="#">Нижний тагил</a></li>
+                                    <li><a href="#">Новороссийск</a></li>
+                                    <li><a href="#">Новосибирск</a></li>
+                                    <li><a href="#">Омск</a></li>
+                                    <li><a href="#">Орёл</a></li>
+                                    <li><a href="#">Оренбург</a></li>
+                                    <li><a href="#">Пенза</a></li>
+                                    <li><a href="#">Пермь</a></li>
+                                    <li><a href="#">Подольск</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" class="twiiter"></a>
+                        <a href="#" class="fc"></a>
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="od"></a>
+                        <a href="#" class="mail"></a>
+                        <a href="#" class="plus"></a>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <div class="header__contacts">
+                        <p>
+                            <span class="before">8 800 700 41 92 <em>| поддержка</em></span>
+                            <a href="mailto:support@taxinado.ru" class="before">support@taxinado.ru</a>
+                        </p>
+                    </div>
+                    <div class="header__menu">
+                        <div class="clearfix">
+                            <nav>
+                                <ul class="clearfix">
+                                    <li><a href="#">Заказ такси</a></li>
+                                    <li><a href="#">Водителям</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li class="active"><a href="#">О сервисе</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__login">
+                                <p><a href="javascript:void(0)" onclick="login_menu()" class="before">Вход</a></p>
+                                <div class="login__menu" id="login__menu">
+                                    <p class="menu_title"><a href="javascript:void(0)" onclick="login_menu()" class="before">Вход</a></p>
+                                    <form action="">
+                                        <input type="tel" class="phone__input">
+                                        <input type="submit" value="Получить код">
+                                    </form>
+                                    <form action="" style="display: none;">
+                                        <p>Введите пароль<br /> из смс-сообщения</p>
+                                        <input type="text" placeholder="Пароль">
+                                        <input type="submit" value="Войти">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="about_block">
+                <div class="wrapper clearfix">
+                    <div class="about__text">
+                        <div class="item__text">
+                            <p><strong>ТаксиНадо</strong> — это<br />сервис заказа безопасного такси<br />с социальной составляющей, объединяющий частных, легальных водителей и клиентов.</p>
+                            <p>Возможность совершать заказ такси через сайт,<br />мобильное приложение, выбирая параметры<br />автомобиля и водителя</p>
+                        </div>
+                        <div class="item__text">
+                            <p><span>Наша миссия</span><br />
+                            Создать сервис заказа такси, при работе<br />с которым будут довольны как клиенты,<br />так и водители. Создать такие условия<br />для работы, чтобы нелегальным перевозчикам стало выгодно работать легально.</p>
+                        </div>
+                    </div>
+                    <div class="about__img">
+                        <img src="img/mbp.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section>
+            <div class="wrapper">
+                <div class="contacts_block clearfix">
+                    <div class="contacts__item">
+                        <h3>Контактная информация</h3>
+                        <p>Республика Татарстан, г. Казань,<br />ул. Петербургская д. 52 (IT парк)</p>
+                        <ul>
+                            <p>Для справок</p>
+                            <li><span class="before">8 800 123 2233</span></li>
+                            <li><a href="#" class="before">info@taxinado.ru</span></a>
+                        </ul>
+                    </div>
+                    <div class="contacts__item contacts__maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d138421.3728720223!2d65.5719995!3d57.174086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1400840769746" width="470" height="295" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_block">
+                <div class="wrapper clearfix">
+                    <div class="footer__item footer__social">
+                        <a href="#" class="twiiter"></a>
+                        <a href="#" class="fc"></a>
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="od"></a>
+                        <a href="#" class="mail"></a>
+                        <a href="#" class="plus"></a>
+                    </div>
+                    <div class="footer__item footer__menu">
+                        <nav>
+                            <ul class="clearfix">
+                                <li class="active"><a href="#">Заказ такси</a></li>
+                                <li><a href="#">Водителям</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li><a href="#">О сервисе</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item footer__copy">
+                        <p>© 2014 taxinado.ru</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/vendor/jquery.mask.min.js"></script>
+        <script src="js/vendor/jquery.formstyler.min.js"></script>
+        <script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/vendor/jquery.raty.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            var city = $("#city__menu");
+            var login = $("#login__menu");
+            var adress = $(".adress__form");
+            var railway = $(".railway__menu");
+
+            function select_city() { // Открытие меню со списком городов
+                city.toggle(); 
+            }
+
+            function login_menu() { // Открытие окошка входа
+                login.toggle();
+            }
+
+            function maps_more() { // Развернуть карту, по клику на кнопку карты
+                $(".maps__block").animate({
+                    width: 944
+                }, 800);
+                $(".form__orders").addClass("hide").animate({
+                    width: 0,
+                    padding: "16px 0 18px"
+                }, 800, function(){
+                    $(this).hide();
+                });
+                $("#map_more").hide();
+                $("#map_close").show();
+            }
+
+            function maps_close() { // Свернуть карту, по клику на кнопку карты
+                $(".maps__block").animate({
+                    width: 531
+                }, 800);
+                $(".form__orders").show().animate({
+                    width: 346,
+                    padding: "16px 18px 18px"
+                }, 800, function(){
+                    $(this).removeClass("hide");
+                });
+                $("#map_more").show();
+                $("#map_close").hide();
+            }
+
+            function live_menu(el) { // Открытие и закрытие меню любимых мест назначения
+                $(el).closest("span").find(".live_menu").toggle();
+                $(el).toggleClass("active");
+            }
+
+            function adress_form(el) { // Открытие формы для ввода подробного адреса
+                $(el).closest("li").find(".adress__form").addClass("active").show();
+                $(el).closest("label").addClass("active");
+            }
+
+            function railway_menu(el) { // Открытие списка адресов вокзалов
+                $(el).closest("li").find(".railway__menu").addClass("active").show();
+                $(el).addClass("active");
+            }
+
+            function wishes_select(el) {
+                $(el).toggleClass("active");
+            }
+
+            $(document).mouseup(function(e) { // Функция закрытия попапов по клику вне попапа
+                if (city.css('display') == 'block') { // Закрытие меню со списком городов
+                    if (!city.is(e.target)
+                    && city.has(e.target).length === 0)
+                    {   
+                        city.hide();
+                    }
+                }
+
+                if (login.css('display') == 'block') { // Закрытие окошка входа
+                    if (!login.is(e.target)
+                    && login.has(e.target).length === 0)
+                    {   
+                        login.hide();
+                    }
+                }
+
+                if (adress.hasClass('active')) { // Закрытие формы для ввода подробного адреса
+                    if (!adress.is(e.target)
+                    && adress.has(e.target).length === 0)
+                    {   
+                        adress.hide().removeClass("active");
+                        $(".form__input").removeClass("active");
+                        $(".form__where").removeClass("active");
+                    }
+                }
+
+                if (railway.hasClass('active')) { // Закрытие списка адресов вокзалов
+                    if (!railway.is(e.target)
+                    && railway.has(e.target).length === 0)
+                    {   
+                        railway.hide().removeClass("active");
+                        $(".railway").removeClass("active");
+                        $(".air").removeClass("active");
+                    }
+                }
+            });
+
+            $(document).ready(function() {
+                $(".phone__input").mask("+7 (999) 999-99-99",{placeholder:"+7 (   )"}); // Плагин для поля телефона
+
+                $("#tabs").tabs(); // Плагин табов переключения форм заказа такси "Заказать такси" и "Арендовать такси"
+
+                $('input, select').styler(); // Плагин для нестандартных чекбоксов и селектов
+
+                $('.quont-minus').click(function () { // Плюс и минус
+                    var $input = $(this).parent().find('input');
+                    var count = parseInt($input.val()) - 1;
+                    count = count < 1 ? 1 : count;
+                    $input.val(count);
+                    $input.change();
+                    return false;
+                });
+
+                $('.quont-plus').click(function () { // Плюс и минус
+                    var $input = $(this).parent().find('input');
+                    $input.val(parseInt($input.val()) + 1);
+                    $input.change();
+                    return false;
+                });
+
+                $('#rating').raty({
+                    space: false,
+                    path: 'img/'
+                });
+
+                $('.rating_list').raty({
+                    space: false,
+                    path: 'img/'
+                });
+            });
+
+            $(window).load(function() { // Плагин нестандартного скролла
+                $(".railway__menu").mCustomScrollbar();
+                $(".list_body").mCustomScrollbar();
+            })
+        </script>
+    </body>
+</html>

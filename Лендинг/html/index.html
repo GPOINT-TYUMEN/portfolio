@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Продающие страницы. Разработка продающих страниц, лендингов, страниц захвата от интернет-агентства Creative.</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_balnk">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true" target="_balnk">активируйте Google Chrome Frame</a> для улучшения работы текущего браузера.</p>
+		<![endif]-->
+		<div class="popup" id="order" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Новая заявка</h2>
+						<ul>
+							<li><label for="">Как вас зовут</label><input type="text"><br /><em>Например, Виктор Степанович</em></li>
+							<li><label for="">Телефон</label><input type="tel"><br /><em>Например, 89021234567</em></li>
+							<li><label for="">Эл. почта</label><input type="email"><br /><em>Например, ivanovsergey@mail.ru</em></li>
+							<li><label for="">Комментарий</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+							<li><input class="button" type="submit" value="Отправить заявку"><p>Обещаем, что не будем рассылать спам и не передадим<br /> ваш e-mail злоумышленникам.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="order_end" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Спасибо</h2>
+						<p>Наш менеджер свяжется с вами в ближайшее<br />время по указанному телефону или эл. почте.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="callback" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Заказ обратного звонка</h2>
+						<ul>
+							<li><label for="">Как вас зовут</label><input type="text"><br /><em>Например, Виктор Степанович</em></li>
+							<li><label for="">Телефон</label><input type="tel"><br /><em>Например, 89021234567</em></li>
+							<li><input class="button" type="submit" value="Заказать звонок"><p>Мы не будем надоедать вам с рекламными SMS и мы<br />не передадим ваш номер телефона злоумышленникам.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="callback_end" style="display: none;">
+			<div class="bg"></div>
+			<div class="table">
+				<div class="tr">
+					<div class="block">
+						<a href="javascript:void(0);" class="close"></a>
+						<h2>Спасибо</h2>
+						<p>Наш менеджер свяжется с вами в ближайшее<br />время.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header before">
+				<div class="block before">
+					<div class="top clearfix">
+						<div class="logo"><img src="img/logo.png" alt=""></div>
+						<div class="block-button">
+							<a class="button" onclick="callback_show()" href="javascript:void(0);">Заказать звонок</a>
+							<a class="button" onclick="order_show()" href="javascript:void(0);">Отправить заявку</a>
+						</div>
+						<div class="phone">
+							<p><span>+7 3452</span> 69-56-89</p>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="info-block">
+							<h1>Продающие страницы</h1>
+							<p><em>или landing page, лэндинги, посадочные страницы, одностраничники, <br /> страницы захвата и т.п.</em></p>
+							<p>Одностраничный сайт, содержащий в себе всю необходимую <br />информацию для принятия решения о покупке <br />или обращению именно в вашу компанию.</p>
+							<p><strong>Это быстрее, эффективнее и дешевле, чем создание сайта.</strong></p>
+							<p><a href="#" class="button">Узнать цены</a></p>
+						</div>
+						<div class="caruosel">
+							<div id="caruosel">
+								<div class="item"><img src="img/img1.png" alt=""></div>
+								<div class="item"><img src="img/img2.png" alt=""></div>
+								<div class="item"><img src="img/img3.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="content">
+				<div class="block-promo clearfix">
+					<div class="item">
+						<img src="img/img1.gif" alt="">
+						<p>Мы верим, что интернет на самом деле<br /> является эффективным средством <br />достижения целей вашей компании и<br /> реального <strong>увеличения дохода</strong>.</p>
+					</div>
+					<div class="item">
+						<img src="img/img2.gif" alt="">
+						<p><strong>Быстро достигнуть</strong> поставленных<br /> целей помогает продающая страница.</p>
+					</div>
+					<div class="item">
+						<img src="img/img3.gif" alt="">
+						<p>Мы предлагаем <strong>профессиональную<br /> разработку</strong> продающих страниц <br />и последующую <strong>рекламную<br /> поддержку</strong>.</p>
+					</div>
+				</div>
+				<div class="block-form">
+					<div class="block">
+						<form action="">
+							<ul class="clearfix">
+								<li class="before">Нужна продающая страница?<br /><strong>Заполните форму.</strong></li>
+								<li><input type="text" placeholder="Как вас зовут?"></li>
+								<li><input type="email" placeholder="Эл. почта"></li>
+								<li><input type="tel" placeholder="Телефон"></li>
+								<li><input type="submit" class="button" value="Отправить"></li>
+							</ul>
+						</form>
+					</div>
+					<div class="text">
+						<p>Мы гарантируем, что ваши личные данные не будут переданы злоумышленникам.</p>
+					</div>
+				</div>
+				<div class="block-price">
+					<h2>Стоимость</h2>
+					<div class="block clearfix">
+						<div class="item">
+							<p><em>Ваш доход</em></p>
+							<h4>Базовый</h4>
+							<p>Заявите о себе без инвестирования<br /> больших средств.</p>
+							<p><strong>Срок реализации</strong><br />1–2 недели *</p>
+							<p>
+								<strong>Стоимость</strong><br />
+								<span class="old">56 000 P</span><br />
+								<span class="new">52 200 P</span>
+							</p>
+							<p><a href="javascript:void(0);" onclick="order_show()" class="button">Заказать</a></p>
+						</div>
+						<div class="item">
+							<p><em>Ваш доход</em></p>
+							<h3>Оптимальный</h3>
+							<p>Получите реальную отдачу<br />и доход.</p>
+							<p><strong>Срок реализации</strong><br />2–3 недели *</p>
+							<p>
+								<strong>Стоимость</strong><br />
+								<span class="old">75 000 P</span><br />
+								<span class="new">69 400 P</span>
+							</p>
+							<p><a href="javascript:void(0);" onclick="order_show()" class="button">Заказать</a></p>
+						</div>
+						<div class="item">
+							<p><em>Ваш доход</em></p>
+							<h4>Расширенный</h4>
+							<p>Функциональный вариант<br /> для вашего бизнеса.</p>
+							<p><strong>Срок реализации</strong><br />1 месяц *</p>
+							<p>
+								<strong>Стоимость</strong><br />
+								<span class="old">97 000 P</span><br />
+								<span class="new">89 700 P</span>
+							</p>
+							<p><a href="javascript:void(0);" onclick="order_show()" class="button">Заказать</a></p>
+						</div>
+					</div>
+					<div class="text-block clearfix">
+						<div class="item-text">
+							<div class="text">
+								<ul>
+									<li>Профессиональный дизайн</li>
+									<li>Корректная работа на мобильных устройствах</li>
+									<li>Разработка прототипа</li>
+									<li>Верстка и программирование</li>
+									<li>Форма обратной связи</li>
+									<li>Кнопка перезвонить</li>
+									<li>Слайдер с акцией</li>
+									<li>Фотогалерея</li>
+									<li>Интерактивная карта</li>
+									<li>Адрес сайта (доменное имя), на 1 год</li>
+									<li>Размещение (хостинг), на 1 год</li>
+									<li>Подключение счетчиков Метрика и Google Analytics</li>
+								</ul>
+							</div>
+							<div class="text">
+								<p>Те же компоненты, что и в <strong><em>базовом<br /> тарифе</em></strong>, а также:</p>
+								<ul>
+									<li>Продающие тексты (копирайтинг)</li>
+									<li>Подключение онлайн консультанта</li>
+									<li>Создание рекламной кампании в Яндекс.Директ</li>
+									<li>Создание рекланой кампании в Google Adwords</li>
+									<li>Аналитика и консультация на 1 месяц</li>
+									<li>Корпоративный e-mail</li>
+								</ul>
+							</div>
+							<p>Те же компоненты, что в <strong><em>базовом<br /> и оптимальном тарифах</em></strong>, а также:</p>
+							<ul>
+								<li>Параллакс-эффект или анимация HTML5</li>
+								<li>Калькулятор</li>
+								<li>Мини-каталог товаров или услуг</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="about-block">
+					<h2>Почему мы</h2>
+					<img src="img/bg-about.jpg" alt="">
+				</div>
+				<div class="block-project">
+					<h2>Реализованные проекты</h2>
+					<div class="clearfix">
+						<div class="item before"><a href="http://svarog-leasing.ru/" target="_blank"><img src="img/img-p1.jpg" alt=""></a></div>
+						<div class="item before"><a href=""><img src="img/img-p2.jpg" alt=""></a></div>
+						<div class="item before"><a href="http://feeladelfia.ru/" target="_blank"><img src="img/img-p3.jpg" alt=""></a></div>
+						<div class="item before"><img src="img/img-p4.jpg" alt=""></div>
+						<div class="item before"><a href="http://idagadget.com/" target="_blank"><img src="img/img-p5.jpg" alt=""></a></div>
+						<div class="item before"><img src="img/img-p6.jpg" alt=""></div>
+					</div>
+					<div class="block-button">
+						<p><a href="javascript:void(0);" onclick="order_show()" class="button">Заказать проект</a></p>
+					</div>
+				</div>
+				<div class="block-dev">
+					<h2>Процесс разработки</h2>
+					<div class="block"><img src="img/img-dev.jpg" alt=""></div>
+				</div>
+				<div class="block-video">
+					<h2>Немного о продающих страницах</h2>
+					<div class="clearfix">
+						<div class="item">
+							<div class="video">
+								<iframe width="304" height="204" src="//www.youtube.com/embed/IGzauQaF26w?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="text">
+								<p>Что такое лиды?</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="video">
+								<iframe width="304" height="204" src="//www.youtube.com/embed/oTEBJPGAeSQ?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="text">
+								<p>Что такое конверсия сайта?</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="video">
+								<iframe width="304" height="204" src="//www.youtube.com/embed/ILIoX1t4dzQ?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="text">
+								<p>Точки захвата (телефон и форма заявки). Видео-лекция.</p>
+							</div>
+						</div>
+					</div>
+					<p><em>Видео из проекта «Бизнес-молодость»</em></p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="block-adress">
+					<h2>Как нас найти</h2>
+					<div class="clearfix">
+						<div class="info">
+							<p class="before">г. Тюмень, ул. Николая Федорова, 9, офис 3</p>
+							<p class="tel"><strong><span>+7 3452</span> 69-56-89</strong></p>
+							<p><a href="javascript:void(0);" onclick="order_show()" class="button">Отправить заявку</a></p>
+							<p><a href="javascript:void(0);" onclick="callback_show()" class="button">Заказать звонок</a></p>
+							<p>
+								<a href="img/14_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g1.jpg" alt=""></a>
+								<a href="img/4_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g2.jpg" alt=""></a>
+								<a href="img/5_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g3.jpg" alt=""></a>
+								<a href="img/17_big.jpg" class="fancybox" rel="gallery1"><img src="img/img-g4.jpg" alt=""></a>
+							</p>
+						</div>
+						<div class="maps"><script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HTOkVaPK7IMCtAABEA6QgM9j6XdyhUzU&width=548&height=306"></script></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/vendor/jquery.fancybox.pack.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#caruosel").carouFredSel({
+					width: 250,
+					height: 191,
+					items: {
+						visible: 1,
+						minimum: 1,
+						width: 250,
+						height: 191
+					},
+					scroll: {
+						items: 1,
+						fx: "crossfade",
+						duration: 1000
+					},
+					auto: 3000
+				});
+			})
+		</script>
+	</body>
+</html>
