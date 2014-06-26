@@ -1,0 +1,648 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if gte IE 9]><link href="css/ie9.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#accordion").accordion({
+			'autoHeight': false
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="submenu">
+				<ul>
+					<li class="active"><a href="#">Новости</a></li>
+					<li><a href="#">База объявлений</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Это интересно</a></li>
+					<li><a href="#">Консультации экспертов</a></li>
+					<li><a href="#">Каталог компаний</a></li>
+				</ul>
+			</div>
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top clearfix">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Продать</a>
+					<a href="#">Снять</a>
+					<a href="#">Сдать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Комнату</a>
+					<a href="#">Квартиру</a>
+					<a href="#">Нежилое</a>
+					<a href="#">Землю / дом</a>
+				</div>
+				<!--<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>-->
+			</div>
+			<div class="block-form">
+				<div class="line" id="top-line">
+					<div class="checkbox"><label><input type="checkbox" /> пансионат</label></div>
+					<div class="checkbox"><label><input type="checkbox" /> малосемейка</label></div>
+					<div class="checkbox"><label><input type="checkbox" /> без посредников</label></div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="but">
+						<label style="width: 121px;"><input type="checkbox" /> кроме первого</label>
+						<label><input type="checkbox" /> кроме последнего</label>
+					</div>
+					<div class="area">
+						<p>тип дома</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="square-block">
+						<div class="square">
+							<span>Общая площадь</span>
+							<input type="text" />
+						</div>
+						<div class="square">
+							<span>жилая площадь</span>
+							<input type="text" />
+						</div>
+						<div class="square last">
+							<span>площадь КУХНИ</span>
+							<input type="text" />
+						</div>
+					</div>
+					<div class="area">
+						<p>Балкон</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+					<div class="area">
+						<p>остекление</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="Например: 50 лет Октября ул" /></span>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="main-promo">
+			<div class="item first">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+			<div class="item">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+			<div class="item">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+			<div class="item">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+			<div class="item">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+			<div class="item">
+				<img src="images/140x100.jpg" />
+				<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+			</div>
+		</div>
+		<div class="main clearfix">
+			<div class="leftcolumn">
+				<div class="news">
+					<div class="title">
+						<h2>Новости</h2>
+						<a class="active" href="#">Все</a>
+						<a href="#">Жильё</a>
+						<a href="#">Ипотека</a>
+						<a href="#">Сотка</a>
+						<a href="#">Бизнес</a>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/137x99.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/137x99.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/137x99.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="more"><a href="#">Все новости</a> →</div>
+				</div>
+				<div class="last-news">
+					<h2>Ранее в новостях</h2>
+					<script>
+						$(document).ready(function(){
+							$("#last-news").carouFredSel({
+								circular: false,
+								infinite: false,
+								direction: "up",
+								width: 469,
+								height: "variable",
+								items: {
+									visible: 1,
+									width: 469,
+									height: "variable"
+								},
+								scroll: 1,
+								prev: "#last-prev",
+								next: "#last-next"
+							});
+						});
+					</script>
+					<div class="block">
+						<a href="javascript:void(0);" id="last-prev" class="prev"><i></i></a>
+						<div id="last-news">
+							<div class="item">
+								<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+								<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+								<div class="info">
+									<span class="date">13 сентября 2011</span>
+									<span class="tags">Жильё</span>
+									<span class="photo"></span>
+									<span class="video"></span>
+									<span class="comments"><i></i>42</span>
+								</div>
+							</div>
+							<div class="item">
+								<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+								<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+								<div class="info">
+									<span class="date">13 сентября 2011</span>
+									<span class="tags">Жильё</span>
+									<span class="photo"></span>
+									<span class="video"></span>
+									<span class="comments"><i></i>42</span>
+								</div>
+							</div>
+							<div class="item">
+								<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+								<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+								<div class="info">
+									<span class="date">13 сентября 2011</span>
+									<span class="tags">Жильё</span>
+									<span class="photo"></span>
+									<span class="video"></span>
+									<span class="comments"><i></i>42</span>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:void(0);" id="last-next" class="next"><i></i></a>
+					</div>
+				</div>
+				<div class="interesting">
+					<div class="title">
+						<h2>Это интересно</h2>
+						<div class="more"><a href="#">Всё интересное</a> →</div>
+					</div>
+					<div class="block">
+						<div class="item">
+							<div class="img"><img src="images/145x109.jpg" /></div>
+							<div class="text">
+								<p><a href="#">Почему не критично общество потребления?</a></p>
+								<p class="date">1 сентября 2011</p>
+								<p>Продвижение проекта директивно концентрирует из ряда вон выходящий анализ зарубежного опыта,учитывая современные тенденции.</p>
+							</div>
+							<div class="name"><i></i>Константин<br />Константинопольский</div>
+						</div>
+						<div class="item">
+							<div class="img"><img src="images/145x109.jpg" /></div>
+							<div class="text">
+								<p><a href="#">Почему не критично общество потребления?</a></p>
+								<p class="date">1 сентября 2011</p>
+								<p>Продвижение проекта директивно концентрирует из ряда вон выходящий анализ зарубежного опыта,учитывая современные тенденции.</p>
+							</div>
+							<div class="name"><i></i>Константин<br />Константинопольский</div>
+						</div>
+						<div class="item">
+							<div class="img"><img src="images/145x109.jpg" /></div>
+							<div class="text">
+								<p><a href="#">Почему не критично общество потребления?</a></p>
+								<p class="date">1 сентября 2011</p>
+								<p>Продвижение проекта директивно концентрирует из ряда вон выходящий анализ зарубежного опыта,учитывая современные тенденции.</p>
+							</div>
+							<div class="name"><i></i>Константин<br />Константинопольский</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner"><img src="images/banner.jpg" /></div>
+				<div class="expert">
+					<div class="title">
+						<h2>Консультации эксперта</h2>
+						<div class="more"><a href="#">Все эксперты</a> →</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/120x116.jpg" /></div>
+						<div class="text">
+							<div class="name">Пантелеева<br />Юлия Валериевна</div>
+							<div class="post">Генеральный директор ТРЦ «Недвижимость для Вас»</div>
+							<div class="request"><a class="button" href="#">Задать вопрос</a> <a href="#">Ответов: 32</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-info">
+					<div class="catalog">
+						<h2>Каталог компаний <sup>1788</sup></h2>
+						<div class="accordion" id="accordion">
+							<h3><a href="#" class="dotted">Банки</a></h3>
+							<div>
+								<ul>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+								</ul>
+								<p><a href="#">все компании</a> →</p>
+							</div>
+							<h3><a href="#" class="dotted">Банки</a></h3>
+							<div>
+								<ul>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+								</ul>
+								<p><a href="#">все компании</a> →</p>
+							</div>
+							<h3><a href="#" class="dotted">Банки</a></h3>
+							<div>
+								<ul>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+								</ul>
+								<p><a href="#">все компании</a> →</p>
+							</div>
+							<h3><a href="#" class="dotted">Банки</a></h3>
+							<div>
+								<ul>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+								</ul>
+								<p><a href="#">все компании</a> →</p>
+							</div>
+							<h3><a href="#" class="dotted">Банки</a></h3>
+							<div>
+								<ul>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+									<li><a href="#">Агентство недвижимости "Домовёнок"</a></li>
+								</ul>
+								<p><a href="#">все компании</a> →</p>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<h4>Наши проекты</h4>
+						<ul>
+							<li><a href="#"><i class="buildings"></i>Новостройки</a></li>
+							<li><a href="#"><i class="repair"></i>Ремонт</a></li>
+							<li><a href="#"><i class="weaving"></i>Сотка</a></li>
+							<li><a href="#"><i class="bussines"></i>Бизнес-квадраты</a></li>
+							<li><a href="#"><i class="mortgage"></i>Ипотека, кредиты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner"><img src="images/471x126.gif" /></div>
+			</div>
+			<div class="rightcolumn">
+				<div class="board">
+					<div class="title">
+						<h2>База объявлений <sup>15478</sup></h2>
+						<div class="more"><a href="#">Все объявления</a> →</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="images/71x54.jpg" /></div>
+						<div class="text">
+							<p><a href="#">Василия Гольцова 32, 1 комнатная</a></p>
+							<p><em>1600 кв.м.</em> Тюменский 3 микрорайон</p>
+							<div class="info"><span class="price">3 500 000</span> <span class="phone"><i></i>+7(3452)41-56-56</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="special-offer">
+					<div class="title">
+						<h2>Спецпредложения</h2>
+						<div class="more"><a href="#">Все спецпредложения</a> →</div>
+					</div>
+					<div class="shadow first">
+						<div class="s-top-l">
+							<div class="s-right">
+								<div class="s-top-r">
+									<div class="item clearfix">
+										<div class="text">
+											<p><a href="#">Домик в деревне</a></p>
+											<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+											<div class="info"><span class="price">170 000 руб.</span><p>10 сентября 2011 — Продажа домов</p></div>
+										</div>
+										<div class="img"><img src="images/180x135.gif" /></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow">
+						<div class="s-top-l">
+							<div class="s-right">
+								<div class="s-top-r">
+									<div class="item clearfix">
+										<div class="text">
+											<p><a href="#">Домик в деревне</a></p>
+											<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+											<div class="info"><span class="price">170 000 руб.</span><p>10 сентября 2011 — Продажа домов</p></div>
+										</div>
+										<div class="img"><img src="images/180x135.gif" /></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow last">
+						<div class="s-top-l">
+							<div class="s-right">
+								<div class="s-top-r">
+									<div class="item clearfix">
+										<div class="text">
+											<p><a href="#">Домик в деревне</a></p>
+											<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+											<div class="info"><span class="price">170 000 руб.</span><p>10 сентября 2011 — Продажа домов</p></div>
+										</div>
+										<div class="img"><img src="images/180x135.gif" /></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-day">
+					<div class="tabs clearfix">
+						<div class="active"><a href="#">Квартира дня</a></div>
+						<div><a href="#">Кредит дня</a></div>
+						<div><a href="#">Агент дня</a></div>
+					</div>
+					<div class="block">
+						<div class="text">
+							<p class="title"><a href="#">3-комнатная квартира</a></p>
+							<ul>
+								<li>
+									<span class="left">Район</span>
+									<span class="right">1 мкр.</span>
+								</li>
+								<li>
+									<span class="left">Улица</span>
+									<span class="right">Ленина</span>
+								</li>
+								<li>
+									<span class="left">Этаж</span>
+									<span class="right">6</span>
+								</li>
+								<li>
+									<span class="left">Площадь</span>
+									<span class="right">76 м<sup>2</sup></span>
+								</li>
+								<li>
+									<span class="left">Кухня</span>
+									<span class="right">15м<sup>2</sup></span>
+								</li>
+								<li class="price">
+									<span class="left">Цена</span>
+									<span class="right">4 500 000 руб.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="img"><img src="images/180x135.gif" /></div>
+					</div>
+				</div>
+				<div class="recommends">
+					<h2>Портал рекомендует</h2>
+					<div class="block">
+						<div class="text">
+							<p class="title"><a href="#">3-комнатная квартира</a></p>
+							<ul>
+								<li>
+									<span class="left">Район</span>
+									<span class="right">1 мкр.</span>
+								</li>
+								<li>
+									<span class="left">Улица</span>
+									<span class="right">Ленина</span>
+								</li>
+								<li>
+									<span class="left">Этаж</span>
+									<span class="right">6</span>
+								</li>
+								<li>
+									<span class="left">Площадь</span>
+									<span class="right">76 м<sup>2</sup></span>
+								</li>
+								<li>
+									<span class="left">Кухня</span>
+									<span class="right">15м<sup>2</sup></span>
+								</li>
+								<li class="price">
+									<span class="left">Цена</span>
+									<span class="right">4 500 000 руб.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="img"><img src="images/180x135.gif" /></div>
+					</div>
+				</div>
+				<div class="watch">
+					<h2>Сегодня смотрят</h2>
+					<div class="block">
+						<div class="item">
+							<img src="images/103x73.jpg" />
+							<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+						</div>
+						<div class="item">
+							<img src="images/103x73.jpg" />
+							<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+						</div>
+						<div class="item">
+							<img src="images/103x73.jpg" />
+							<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+						</div>
+						<div class="item">
+							<img src="images/103x73.jpg" />
+							<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

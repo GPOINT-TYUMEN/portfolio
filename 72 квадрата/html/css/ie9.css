@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.filter .block-form .line .room span a.active { filter: none; }
+.filter .block-form .line .button button[type=submit] { filter: none; }
+.main .leftcolumn .expert .item .text .request a.button { filter: none; }
+.internal .expert .item .request a.button { filter: none; }
+.expert-advice .profile .block .text .request a.button { filter: none; }
+.pag-nav ul li.active a { filter: none; }
+.form-faq input[type=submit] { filter: none; }
+.view-board .title .price div { filter: none; }
+.view-board .block-board .block-images .mini a.prev { filter: none; }
+.view-board .block-board .block-images .mini a.next { filter: none; }
+.view-board .block-board .right .info ul li.width .phone { filter: none; }
+.list-board .title .filter a.active { filter: none; }
+.list-board .table .tr .price span.total { filter: none; }
+.list-board .table .tr .price span.unit { filter: none; }
+.list-board .table .tr .contacts span { filter: none; }
+.enterprises .filter { filter: none; }

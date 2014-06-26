@@ -1,0 +1,243 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if gte IE 9]><link href="css/ie9.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Арендовать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Вторичное жильё</a>
+					<a href="#">Новостройки</a>
+					<a href="#">Загородная</a>
+					<a href="#">Коммерческая</a>
+				</div>
+				<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>
+			</div>
+			<div class="block-form">
+				<div class="line">
+					<div class="room">
+						<p>Комнат</p>
+						<span>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5+</a>
+							<a class="last" href="#">П</a>
+						</span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="любой" /></span>
+					</div>
+					<div class="repair">
+						<p>отделка</p>
+						<span><select><option>любая</option></select></span>
+					</div>
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="place">
+						<p>этажность</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="lifetime">
+						<p>срок эксплуатации</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="additionally">
+						<p>дополнительно</p>
+						<label><input type="checkbox" /> телефон</label>
+						<label><input type="checkbox" /> интернет</label>
+						<label><input type="checkbox" /> сигнализация</label>
+						<label><input type="checkbox" /> балкон</label>
+						<label><input type="checkbox" /> лоджия</label>
+						<label><input type="checkbox" /> домофон</label>
+						<label><input type="checkbox" /> парковка</label>
+						<label><input type="checkbox" /> лифт</label>
+					</div>
+				</div>
+				<div class="line bottom">
+					<div class="repair">
+						<p>за период</p>
+						<span><select><option>все</option></select></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> телефон</label>
+					</div>
+					<div class="phone">
+						<p>телефон</p>
+						<span><input type="text" /></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> с фото</label>
+						<label><input type="checkbox" /> агентства</label>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="internal clearfix">
+			<div class="expert-advice user lk">
+				<div class="title">
+					<div class="breadcrumbs">
+							<a href="#" class="home-crumb" title="На главную"></a> →
+							Личный кабинет
+					</div>
+					<h2>Личный кабинет</h2>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Объявления</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>
+						<li class="last"><a href="#">Профиль</a></li>
+					</ul>
+				</div>
+				<div class="faq">
+					<div class="question">
+						<div class="name"><i></i>Василий Викторович <span>(22 октября 2011, 11:46)</span></div>
+						<div class="text">Здравствуйте. Скажите , пожалуйста,выкупают ли агентства недвижимость или только являются посредниками при продаже. и сколько стоит услуга агентства? они берут фиксированную плату или процент от стоимости квартиры? Спасибо.</div>
+					</div>
+					<div class="reply">
+						<div class="text">Обычно не выкупают, они занимаются подбором недвижимости и являются посредником при заключении сделки. О прейскуранте услуг агентств Вам лучше узнавать у самих специалистов. Телефоны представлены в разделе Агентства недвижимости. Поищите аналогичные предложения, спрос на элитное жилье сейчас на низком уровне. Калужские АН недвижимости безусловно занимаются продажей недвижимости в области, но за такую сделку врядли возьмутся с охотой.</div>
+						<div class="name">
+							<i></i>
+							<span>Константинопольский Константин Константинович</span>
+							<span><img src="images/25x25.jpg" /></span>
+						</div>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						<div class="name"><i></i>Василий Викторович <span>(22 октября 2011, 11:46)</span></div>
+						<div class="text">Здравствуйте. Скажите , пожалуйста,выкупают ли агентства недвижимость или только являются посредниками при продаже. и сколько стоит услуга агентства? они берут фиксированную плату или процент от стоимости квартиры? Спасибо.</div>
+					</div>
+					<div class="reply">
+						<div class="text">Обычно не выкупают, они занимаются подбором недвижимости и являются посредником при заключении сделки. О прейскуранте услуг агентств Вам лучше узнавать у самих специалистов. Телефоны представлены в разделе Агентства недвижимости. Поищите аналогичные предложения, спрос на элитное жилье сейчас на низком уровне. Калужские АН недвижимости безусловно занимаются продажей недвижимости в области, но за такую сделку врядли возьмутся с охотой.</div>
+						<div class="name">
+							<i></i>
+							<span>Константинопольский Константин Константинович</span>
+							<span><img src="images/25x25.jpg" /></span>
+						</div>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question">
+						<div class="name"><i></i>Василий Викторович <span>(22 октября 2011, 11:46)</span></div>
+						<div class="text">Здравствуйте. Скажите , пожалуйста,выкупают ли агентства недвижимость или только являются посредниками при продаже. и сколько стоит услуга агентства? они берут фиксированную плату или процент от стоимости квартиры? Спасибо.</div>
+					</div>
+					<div class="reply">
+						<div class="text">Обычно не выкупают, они занимаются подбором недвижимости и являются посредником при заключении сделки. О прейскуранте услуг агентств Вам лучше узнавать у самих специалистов. Телефоны представлены в разделе Агентства недвижимости. Поищите аналогичные предложения, спрос на элитное жилье сейчас на низком уровне. Калужские АН недвижимости безусловно занимаются продажей недвижимости в области, но за такую сделку врядли возьмутся с охотой.</div>
+						<div class="name">
+							<i></i>
+							<span>Константинопольский Константин Константинович</span>
+							<span><img src="images/25x25.jpg" /></span>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Арендовать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Вторичное жильё</a>
+					<a href="#">Новостройки</a>
+					<a href="#">Загородная</a>
+					<a href="#">Коммерческая</a>
+				</div>
+				<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>
+			</div>
+			<div class="block-form">
+				<div class="line">
+					<div class="room">
+						<p>Комнат</p>
+						<span>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5+</a>
+							<a class="last" href="#">П</a>
+						</span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="любой" /></span>
+					</div>
+					<div class="repair">
+						<p>отделка</p>
+						<span><select><option>любая</option></select></span>
+					</div>
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="place">
+						<p>этажность</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="lifetime">
+						<p>срок эксплуатации</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="additionally">
+						<p>дополнительно</p>
+						<label><input type="checkbox" /> телефон</label>
+						<label><input type="checkbox" /> интернет</label>
+						<label><input type="checkbox" /> сигнализация</label>
+						<label><input type="checkbox" /> балкон</label>
+						<label><input type="checkbox" /> лоджия</label>
+						<label><input type="checkbox" /> домофон</label>
+						<label><input type="checkbox" /> парковка</label>
+						<label><input type="checkbox" /> лифт</label>
+					</div>
+				</div>
+				<div class="line bottom">
+					<div class="repair">
+						<p>за период</p>
+						<span><select><option>все</option></select></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> телефон</label>
+					</div>
+					<div class="phone">
+						<p>телефон</p>
+						<span><input type="text" /></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> с фото</label>
+						<label><input type="checkbox" /> агентства</label>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="internal clearfix">
+			<div class="leftcolumn">
+				<div class="view-text">
+					<div class="title">
+						<div>
+							<h1>Почему выражена наиболее полно экспансия?</h1>
+							<div class="date">13 сентября 2011</div>
+						</div>
+					</div>
+					<div class="preview">VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег. Эластичность спроса, вопреки мнению П.Друкера, требовальна к креативу.</div>
+					<div class="block-img">
+						<div class="img"><img src="images/471x353.jpg" /></div>
+						<div class="info">
+							<span class="comments"><a href="#"><i></i>2 комментария</a> ↓</span>
+							<span class="tags">Жильё</span>
+						</div>
+					</div>
+					<div class="block-text">
+						<p>VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег. Эластичность спроса, вопреки мнению П.Друкера, требовальна к креативу. Потребительский рынок, не меняя концепции, изложенной выше, определяет формат события, учитывая современные тенденции. Имидж охватывает поведенческий таргетинг, учитывая современные тенденции.</p>
+						<blockquote>VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег.</blockquote>
+						<p>Конвесия покупателя, анализируя результаты рекламной кампании, синхронизирует анализ рыночных цен, признавая определенные рыночные тенденции. Искусство медиапланирования, согласно Ф.Котлеру, разнородно упорядочивает социальный статус, осознав маркетинг как часть производства. Соц-дем характеристика аудитории, отбрасывая подробности, существенно транслирует медиавес, используя опыт предыдущих кампаний. Согласно предыдущему, организация службы маркетинга одновременно ускоряет PR, не считаясь с затратами.</p>
+						<p>Повторный контакт трансформирует традиционный канал, отвоевывая свою долю рынка. Восприятие марки, отбрасывая подробности, непосредственно усиливает конструктивный формат события, не считаясь с затратами. Привлечение аудитории последовательно порождает продукт, учитывая современные тенденции. Партисипативное планирование повсеместно транслирует типичный показ баннера, опираясь на опыт западных коллег. До недавнего времени считалось, что конкурент программирует целевой трафик, признавая определенные рыночные тенденции.</p>
+						<p>VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег. Эластичность спроса, вопреки мнению П.Друкера, требовальна к креативу. Потребительский рынок, не меняя концепции, изложенной выше, определяет формат события, учитывая современные тенденции. Имидж охватывает поведенческий таргетинг, учитывая современные тенденции.</p>
+						<blockquote>Конвесия покупателя, анализируя результаты рекламной кампании, синхронизирует анализ рыночных цен, признавая определенные рыночные тенденции.</blockquote>
+						<p>Конвесия покупателя, анализируя результаты рекламной кампании, синхронизирует анализ рыночных цен, признавая определенные рыночные тенденции. Искусство медиапланирования, согласно Ф.Котлеру, разнородно упорядочивает социальный статус, осознав маркетинг как часть производства. Соц-дем характеристика аудитории, отбрасывая подробности, существенно транслирует медиавес, используя опыт предыдущих кампаний. Согласно предыдущему, организация службы маркетинга одновременно ускоряет PR, не считаясь с затратами.</p>
+						<p>Повторный контакт трансформирует традиционный канал, отвоевывая свою долю рынка. Восприятие марки, отбрасывая подробности, непосредственно усиливает конструктивный формат события, не считаясь с затратами. Привлечение аудитории последовательно порождает продукт, учитывая современные тенденции. Партисипативное планирование повсеместно транслирует типичный показ баннера, опираясь на опыт западных коллег. До недавнего времени считалось, что конкурент программирует целевой трафик, признавая определенные рыночные тенденции.</p>
+					</div>
+					<div class="block-comments">
+						<h2>Комменатрии <span>(2)</span></h2>
+						<div class="item">
+							<div class="text">VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег.</div>
+							<div class="name"><i></i>Константин Константинопольский</div>
+						</div>
+						<div class="item">
+							<div class="text">VIP-мероприятие осмысленно продуцирует пак-шот, полагаясь на инсайдерскую информацию. Продвижение проекта неестественно отражает сублимированный сегмент рынка, опираясь на опыт западных коллег.</div>
+							<div class="name"><i></i>Константин Константинопольский</div>
+						</div>
+					</div>
+					<div class="form-faq">
+						<h2>Оставить комментарий</h2>
+						<form>
+							<ul>
+								<li>
+									<p>Ваше имя:</p>
+									<input type="text" />
+								</li>
+								<li>
+									<p>Ваш вопрос:</p>
+									<textarea></textarea>
+								</li>
+							</ul>
+							<input type="submit" value="Отправить" />
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<div class="news">
+					<div class="title">
+						<h2>Также по этой теме</h2>
+					</div>
+					<div class="item">
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="text">
+							<p><a href="#">Институциональный CTR: гипотеза и теории</a></p>
+							<p>Основная стадия проведения рыночного исследования, конечно, индуцирует охват аудитории, полагаясь на инсайдерскую информацию.</p>
+							<div class="info">
+								<span class="date">13 сентября 2011</span>
+								<span class="tags">Жильё</span>
+								<span class="photo"></span>
+								<span class="video"></span>
+								<span class="comments"><i></i>42</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

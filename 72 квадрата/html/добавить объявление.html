@@ -1,0 +1,499 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if gte IE 9]><link href="css/ie9.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Арендовать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Вторичное жильё</a>
+					<a href="#">Новостройки</a>
+					<a href="#">Загородная</a>
+					<a href="#">Коммерческая</a>
+				</div>
+				<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>
+			</div>
+			<div class="block-form">
+				<div class="line">
+					<div class="room">
+						<p>Комнат</p>
+						<span>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5+</a>
+							<a class="last" href="#">П</a>
+						</span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="любой" /></span>
+					</div>
+					<div class="repair">
+						<p>отделка</p>
+						<span><select><option>любая</option></select></span>
+					</div>
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="place">
+						<p>этажность</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="lifetime">
+						<p>срок эксплуатации</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="additionally">
+						<p>дополнительно</p>
+						<label><input type="checkbox" /> телефон</label>
+						<label><input type="checkbox" /> интернет</label>
+						<label><input type="checkbox" /> сигнализация</label>
+						<label><input type="checkbox" /> балкон</label>
+						<label><input type="checkbox" /> лоджия</label>
+						<label><input type="checkbox" /> домофон</label>
+						<label><input type="checkbox" /> парковка</label>
+						<label><input type="checkbox" /> лифт</label>
+					</div>
+				</div>
+				<div class="line bottom">
+					<div class="repair">
+						<p>за период</p>
+						<span><select><option>все</option></select></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> телефон</label>
+					</div>
+					<div class="phone">
+						<p>телефон</p>
+						<span><input type="text" /></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> с фото</label>
+						<label><input type="checkbox" /> агентства</label>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="internal clearfix">
+			<div class="profile lk">
+				<div class="title">
+					<div class="breadcrumbs">
+							<a href="#" class="home-crumb" title="На главную"></a> →
+							Личный кабинет
+					</div>
+					<h2>Личный кабинет</h2>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Объявления</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>
+						<li><a href="#">Карточка компании</a></li>
+						<li class="last"><a href="#">Профиль</a></li>
+					</ul>
+				</div>
+				<form method="post" id="new_product" enctype="multipart/form-data" class="simple_form new_product" action="/realties" accept-charset="UTF-8">
+					<div style="margin:0;padding:0;display:inline"><input type="hidden" value="✓" name="utf8"><input type="hidden" value="easu3MasBwNsv49S5uQ3eTC4wMyQQYKfQ0MlWy7n9nY=" name="authenticity_token"></div>
+					<div class="input select required">
+						<label for="product_action_type" class="select required"><abbr title="обязательно">*</abbr> Тип объявления</label>
+						<select name="product[action_type]" id="product_action_type" class="select required">
+							<option value="Buy">Купить</option>
+							<option value="Sale">Продать</option>
+							<option value="Resident">Снять</option>
+							<option value="Rent">Сдать</option>
+						</select>
+					</div>
+					<div class="input select required">
+						<select name="product[product_type]" id="product_product_type" class="select required">
+							<option value="Room">Комнату</option>
+							<option value="Flat">Квартиру</option>
+							<option value="Office">Нежилое</option>
+							<option value="Cottage">Землю / дом</option>
+						</select>
+					</div>
+					<div class="input check_boxes optional">
+						<label class="check_boxes optional"> Категория</label>
+						<span class="checkbox">
+							<input type="checkbox" value="8" name="product[taxonomy_ids][]" id="product_taxonomy_ids_8" class="check_boxes optional">
+							<label for="product_taxonomy_ids_8" class="collection_check_boxes">Купить</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" value="9" name="product[taxonomy_ids][]" id="product_taxonomy_ids_9" class="check_boxes optional">
+							<label for="product_taxonomy_ids_9" class="collection_check_boxes">Арендовать</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" value="10" name="product[taxonomy_ids][]" id="product_taxonomy_ids_10" class="check_boxes optional">
+							<label for="product_taxonomy_ids_10" class="collection_check_boxes">Вторичное жилье</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" value="11" name="product[taxonomy_ids][]" id="product_taxonomy_ids_11" class="check_boxes optional">
+							<label for="product_taxonomy_ids_11" class="collection_check_boxes">New Realty</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" value="12" name="product[taxonomy_ids][]" id="product_taxonomy_ids_12" class="check_boxes optional">
+							<label for="product_taxonomy_ids_12" class="collection_check_boxes">Загородная недвижимость</label>
+						</span>
+						<span class="checkbox">
+							<input type="checkbox" value="13" name="product[taxonomy_ids][]" id="product_taxonomy_ids_13" class="check_boxes optional">
+							<label for="product_taxonomy_ids_13" class="collection_check_boxes">Коммерческая недвижимость</label>
+						</span>
+						<input type="hidden" value="" name="product[taxonomy_ids][]">
+					</div>
+					<div class="input string required">
+						<label for="product_title" class="string required"><abbr title="обязательно">*</abbr> Заголовок</label>
+						<input type="text" size="25" required="required" name="product[title]" maxlength="255" id="product_title" class="string required">
+					</div>
+					<div class="input select required">
+						<label for="product_region_id" class="select required"><abbr title="обязательно">*</abbr> Район</label>
+						<select required="required" name="product[region_id]" id="product_region_id" class="select required">
+							<option value=""></option>
+							<option value="1">Центральный</option>
+							<option value="2">Лесобаза</option>
+							<option value="3">Калининский</option>
+							<option value="4">1 мкр</option>
+							<option value="5">2 мкр</option>
+							<option value="6">3 мкр</option>
+							<option value="7">4 мкр</option>
+							<option value="8">5 мкр</option>
+							<option value="9">6 мкр</option>
+							<option value="10">Автоград</option>
+							<option value="11">Антипино</option>
+							<option value="12">Бабарынка</option>
+							<option value="13">Березняковский</option>
+							<option value="14">Букино</option>
+							<option value="15">Ватутина</option>
+							<option value="16">Верхний Бор</option>
+							<option value="17">Войновка</option>
+							<option value="18">Воровского</option>
+							<option value="19">Воронино</option>
+							<option value="20">Восточный 2 мкр</option>
+							<option value="21">Восточный мкр</option>
+							<option value="22">Гилево</option>
+							<option value="23">Гилевское Кольцо</option>
+							<option value="24">Городище</option>
+							<option value="25">Дербыши</option>
+							<option value="26">ДОК</option>
+							<option value="27">Дом обороны</option>
+							<option value="28">Дом печати</option>
+							<option value="29">Драмтеатр</option>
+							<option value="30">Дударева</option>
+							<option value="31">Завод медоборудования</option>
+							<option value="32">Зайково</option>
+							<option value="33">Зарека</option>
+							<option value="34">Заречный 1 мрн.</option>
+							<option value="35">Заречный 2 мрн.</option>
+							<option value="36">Заречный 3 мрн.</option>
+							<option value="37">Заречный 4 мрн.</option>
+							<option value="38">Затюменка</option>
+							<option value="39">Исторический центр</option>
+							<option value="40">Казарово</option>
+							<option value="41">Комарово</option>
+							<option value="42">Копытово</option>
+							<option value="43">КПД</option>
+							<option value="44">Матмассы</option>
+							<option value="45">Маяк</option>
+							<option value="46">МЖК</option>
+							<option value="47">ММС</option>
+							<option value="48">Московский</option>
+							<option value="49">Московский тр.</option>
+							<option value="50">Мыс</option>
+							<option value="51">Парфеново</option>
+							<option value="52">Патрушево</option>
+							<option value="53">Плеханово</option>
+							<option value="54">Привоз</option>
+							<option value="55">Рабочий поселок</option>
+							<option value="56">Рощино</option>
+							<option value="57">РТС</option>
+							<option value="58">СМП</option>
+							<option value="59">Стрела</option>
+							<option value="60">Суходолье</option>
+							<option value="61">Тарманы</option>
+							<option value="62">Тура мрн.</option>
+							<option value="63">Тюменский мкн. 1</option>
+							<option value="64">Тюменский мкн. 2</option>
+							<option value="65">Тюменский мкн. 3</option>
+							<option value="66">Центр. рн._Харьковская</option>
+							<option value="67">Центр.рн._Гор.адм.</option>
+							<option value="68">Центр.рн._Малыгина</option>
+							<option value="69">Червишевский тр.</option>
+							<option value="70">Электрон</option>
+							<option value="71">Югра</option>
+							<option value="72">Южный 1</option>
+							<option value="73">Южный 2</option>
+						</select>
+					</div>
+					<div class="input string required">
+						<label for="product_address" class="string required"><abbr title="обязательно">*</abbr> Адрес</label>
+						<input type="text" size="25" required="required" name="product[address]" maxlength="255" id="product_address" class="string required">
+					</div>
+					<div class="input select optional">
+						<label for="product_material" class="select optional"> Тип дома</label>
+						<select name="product[material]" id="product_material" class="select optional">
+							<option value=""></option>
+							<option value="Кирпичный">Кирпичный</option>
+							<option value="Панельный">Панельный</option>
+							<option value="Деревянный">Деревянный</option>
+						</select>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[pension]">
+						<input type="checkbox" value="1" name="product[pension]" id="product_pension" class="boolean optional">
+						<label for="product_pension" class="boolean optional"> Пансионат</label></div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[malosemeika]">
+						<input type="checkbox" value="1" name="product[malosemeika]" id="product_malosemeika" class="boolean optional">
+						<label for="product_malosemeika" class="boolean optional"> Малосемейка</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[newbuilding]">
+						<input type="checkbox" value="1" name="product[newbuilding]" id="product_newbuilding" class="boolean optional">
+						<label for="product_newbuilding" class="boolean optional"> Новостройка</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[resale]">
+						<input type="checkbox" value="1" name="product[resale]" id="product_resale" class="boolean optional">
+						<label for="product_resale" class="boolean optional"> Вторичное жильё</label>
+					</div>
+					<div class="input string optional">
+						<label for="product_lifetime" class="string optional"> Срок эксплуатации</label>
+						<input type="text" size="25" name="product[lifetime]" maxlength="255" id="product_lifetime" class="string optional">
+					</div>
+					<div class="input select optional">
+						<label for="product_bathroom" class="select optional"> Санузел</label>
+						<select name="product[bathroom]" id="product_bathroom" class="select optional">
+							<option value=""></option>
+							<option value="Совмещённый">Совмещённый</option>
+							<option value="Раздельный">Раздельный</option>
+						</select>
+					</div>
+					<div class="input select optional">
+						<label for="product_windows" class="select optional"> Окна</label>
+						<select name="product[windows]" id="product_windows" class="select optional">
+							<option value=""></option>
+							<option value="Пластиковые">Пластиковые</option>
+							<option value="Стеклянные">Стеклянные</option>
+						</select>
+					</div>
+					<div class="input select optional">
+						<label for="product_glazing" class="select optional"> Остекление</label>
+						<select name="product[glazing]" id="product_glazing" class="select optional">
+							<option value=""></option>
+							<option value="Остеклён">Остеклён</option>
+							<option value="Не остеклён">Не остеклён</option>
+						</select>
+					</div>
+					<div class="input float optional">
+						<label for="product_price" class="float optional"> Цена</label>
+						<input type="number" step="any" size="19" name="product[price]" id="product_price" class="numeric float optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_rooms" class="integer optional"> Комнат</label>
+						<input type="number" step="1" size="4" name="product[rooms]" id="product_rooms" class="numeric integer optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_square" class="integer optional"> Общая площадь</label>
+						<input type="number" step="1" size="4" name="product[square]" id="product_square" class="numeric integer optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_live_square" class="integer optional"> Жилая площадь</label>
+						<input type="number" step="1" size="4" name="product[live_square]" id="product_live_square" class="numeric integer optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_kitchen_square" class="integer optional"> Площадь кухни</label>
+						<input type="number" step="1" size="4" name="product[kitchen_square]" id="product_kitchen_square" class="numeric integer optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_floor" class="integer optional"> Этаж</label>
+						<input type="number" step="1" size="4" name="product[floor]" id="product_floor" class="numeric integer optional">
+					</div>
+					<div class="input integer optional">
+						<label for="product_floors" class="integer optional"> Этажность</label>
+						<input type="number" step="1" size="4" name="product[floors]" id="product_floors" class="numeric integer optional">
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[phone_yes]">
+						<input type="checkbox" value="1" name="product[phone_yes]" id="product_phone_yes" class="boolean optional">
+						<label for="product_phone_yes" class="boolean optional"> Телефон</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[internet]">
+						<input type="checkbox" value="1" name="product[internet]" id="product_internet" class="boolean optional">
+						<label for="product_internet" class="boolean optional"> Интернет</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[alarm]">
+						<input type="checkbox" value="1" name="product[alarm]" id="product_alarm" class="boolean optional">
+						<label for="product_alarm" class="boolean optional"> Сигнализация</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[oriel]">
+						<input type="checkbox" value="1" name="product[oriel]" id="product_oriel" class="boolean optional">
+						<label for="product_oriel" class="boolean optional"> Лоджия</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[intercom]">
+						<input type="checkbox" value="1" name="product[intercom]" id="product_intercom" class="boolean optional">
+						<label for="product_intercom" class="boolean optional"> Домофон</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[parking]">
+						<input type="checkbox" value="1" name="product[parking]" id="product_parking" class="boolean optional">
+						<label for="product_parking" class="boolean optional"> Парковка</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[elevator]">
+						<input type="checkbox" value="1" name="product[elevator]" id="product_elevator" class="boolean optional">
+						<label for="product_elevator" class="boolean optional"> Лифт</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[mortgage]">
+						<input type="checkbox" value="1" name="product[mortgage]" id="product_mortgage" class="boolean optional">
+						<label for="product_mortgage" class="boolean optional"> Ипотека</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[stateprogram]">
+						<input type="checkbox" value="1" name="product[stateprogram]" id="product_stateprogram" class="boolean optional">
+						<label for="product_stateprogram" class="boolean optional"> Госпрограмма</label>
+					</div>
+					<div class="input boolean optional">
+						<input type="hidden" value="0" name="product[installment]">
+						<input type="checkbox" value="1" name="product[installment]" id="product_installment" class="boolean optional">
+						<label for="product_installment" class="boolean optional"> Рассрочка</label>
+					</div>
+					<div class="input tel required">
+						<label for="product_phone" class="tel required"><abbr title="обязательно">*</abbr> Телефон</label>
+						<input type="tel" value="" size="25" required="required" name="product[phone]" maxlength="255" id="product_phone" class="string tel required">
+					</div>
+					<div class="input text required">
+						<label for="product_body" class="text required"><abbr title="обязательно">*</abbr> Информация</label>
+						<textarea toolbar="Easy" rows="40" required="required" name="product[body]" id="product_body" cols="120" class="text required ckeditor"></textarea>
+					</div>
+					<div id="gallery_form" class="clear">
+						<figure></figure>
+						<div class="input file optional">
+							<label for="product_image" class="file optional"> Изображение</label>
+							<div class="uploader" id="uniform-product_image">
+								<input type="file" name="product[image]" id="product_image" class="file optional" size="14.8" style="opacity: 0;">
+								<span class="filename" style="-moz-user-select: none;">No file selected</span>
+								<span class="action" style="-moz-user-select: none;">Choose File</span>
+							</div>
+						</div>
+						<div class="new_fields clear">
+							<a onclick="add_fields(this, 'attachments', '&lt;div class=\'inputs gallery_form\'&gt;\n\n&lt;div class=\&quot;input file required\&quot;&gt;&lt;label class=\&quot;file required\&quot; for=\&quot;product_attachments_attributes_new_attachments_image\&quot;&gt;&lt;abbr title=\&quot;обязательно\&quot;&gt;*&lt;\/abbr&gt; Изображение&lt;\/label&gt;&lt;input class=\&quot;file required\&quot; id=\&quot;product_attachments_attributes_new_attachments_image\&quot; name=\&quot;product[attachments_attributes][new_attachments][image]\&quot; required=\&quot;required\&quot; type=\&quot;file\&quot; /&gt;&lt;\/div&gt;\n&lt;div class=\&quot;input string optional\&quot;&gt;&lt;label class=\&quot;string optional\&quot; for=\&quot;product_attachments_attributes_new_attachments_title\&quot;&gt; Название&lt;\/label&gt;&lt;input class=\&quot;string optional\&quot; id=\&quot;product_attachments_attributes_new_attachments_title\&quot; maxlength=\&quot;255\&quot; name=\&quot;product[attachments_attributes][new_attachments][title]\&quot; size=\&quot;25\&quot; type=\&quot;text\&quot; /&gt;&lt;\/div&gt;\n&lt;div class=\&quot;input text optional\&quot;&gt;&lt;label class=\&quot;text optional\&quot; for=\&quot;product_attachments_attributes_new_attachments_description\&quot;&gt; Описание&lt;\/label&gt;&lt;textarea class=\&quot;text optional\&quot; cols=\&quot;10\&quot; id=\&quot;product_attachments_attributes_new_attachments_description\&quot; name=\&quot;product[attachments_attributes][new_attachments][description]\&quot; rows=\&quot;3\&quot;&gt;&lt;\/textarea&gt;&lt;\/div&gt;\n&lt;div class=\&quot;input hidden\&quot;&gt;&lt;input class=\&quot;hidden\&quot; id=\&quot;product_attachments_attributes_new_attachments__destroy\&quot; name=\&quot;product[attachments_attributes][new_attachments][_destroy]\&quot; type=\&quot;hidden\&quot; value=\&quot;false\&quot; /&gt;&lt;\/div&gt;\n&lt;input id=\&quot;product_attachments_attributes_new_attachments__destroy\&quot; name=\&quot;product[attachments_attributes][new_attachments][_destroy]\&quot; type=\&quot;hidden\&quot; value=\&quot;false\&quot; /&gt;&lt;a href=\&quot;#\&quot; onclick=\&quot;remove_fields(this); return false;\&quot;&gt;Удалить&lt;\/a&gt;\n&lt;\/div&gt;\n'); return false;" href="#">Добавить изображение</a>
+						</div>
+						<div class="input hidden">
+							<input type="hidden" value="Unpublished" name="product[status]" id="product_status" class="hidden">
+						</div>
+					</div>
+					<div class="actions clear">
+						<input type="submit" value="Добавить объявление" name="commit" class="button">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

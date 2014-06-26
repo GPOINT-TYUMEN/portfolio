@@ -1,0 +1,280 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if gte IE 9]><link href="css/ie9.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+<script src="js/jquery-contained-sticky-scroll.js"></script>
+
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#accordion").accordion({
+			'autoHeight': false
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="submenu">
+				<ul>
+					<li class="active"><a href="#">Новости</a></li>
+					<li><a href="#">База объявлений</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Это интересно</a></li>
+					<li><a href="#">Консультации экспертов</a></li>
+					<li><a href="#">Каталог компаний</a></li>
+				</ul>
+			</div>
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Арендовать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Вторичное жильё</a>
+					<a href="#">Новостройки</a>
+					<a href="#">Загородная</a>
+					<a href="#">Коммерческая</a>
+				</div>
+				<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>
+			</div>
+			<div class="block-form">
+				<div class="line">
+					<div class="room">
+						<p>Комнат</p>
+						<span>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5+</a>
+							<a class="last" href="#">П</a>
+						</span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="любой" /></span>
+					</div>
+					<div class="repair">
+						<p>отделка</p>
+						<span><select><option>любая</option></select></span>
+					</div>
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="place">
+						<p>этажность</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="lifetime">
+						<p>срок эксплуатации</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="additionally">
+						<p>дополнительно</p>
+						<label><input type="checkbox" /> телефон</label>
+						<label><input type="checkbox" /> интернет</label>
+						<label><input type="checkbox" /> сигнализация</label>
+						<label><input type="checkbox" /> балкон</label>
+						<label><input type="checkbox" /> лоджия</label>
+						<label><input type="checkbox" /> домофон</label>
+						<label><input type="checkbox" /> парковка</label>
+						<label><input type="checkbox" /> лифт</label>
+					</div>
+				</div>
+				<div class="line bottom">
+					<div class="repair">
+						<p>за период</p>
+						<span><select><option>все</option></select></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> телефон</label>
+					</div>
+					<div class="phone">
+						<p>телефон</p>
+						<span><input type="text" /></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> с фото</label>
+						<label><input type="checkbox" /> агентства</label>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="internal clearfix">
+			<div class="catalog">
+				<div class="title">
+					<div class="breadcrumbs">
+							<a href="#" class="home-crumb" title="На главную"></a> →
+							Каталог
+					</div>
+				</div>
+				<div class="main-promo">
+					<div class="item first">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+					<div class="item">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+					<div class="item">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+					<div class="item">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+					<div class="item">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+					<div class="item">
+						<img src="images/140x100.jpg" />
+						<p><a href="#">Мкр. Центральный, г.Железнодорожный</a></p>
+					</div>
+				</div>
+				<div class="leftcolumn">
+					<div class="title">
+						<h2>Каталог</h2>
+					</div>
+					<div class="menu">
+						<ul>
+							<li class="banks"><i></i><span><a href="#"><span>Банки</span></a></li>
+							<li class="estates"><i></i><a href="#"><span>Агенства недвижимости</span></a></li>
+							<li class="constructins"><i></i><a href="#"><span>Строительные организации</span></a></li>
+							<li class="offices"><i></i><a href="#"><span>Офисы</a></span></li>
+							<li class="cottages"><i></i><a href="#"><span>Загородная недвижимость</span></a></li>
+							<li class="search"><i></i><a href="#"><span>Поиск</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightcolumn">
+					<div class="interesting">
+						<div class="title">
+							<h2>Это интересно</h2>
+							<div class="more"><a href="#">Всё интересное</a> →</div>
+						</div>
+						<div class="block">
+							<div class="item">
+								<div class="img"><img src="images/145x109.jpg" /></div>
+								<div class="text">
+									<p><a href="#">Почему не критично общество потребления?</a></p>
+									<p class="date">1 сентября 2011</p>
+									<p>Продвижение проекта директивно концентрирует из ряда вон выходящий анализ зарубежного опыта,учитывая современные тенденции.</p>
+								</div>
+								<div class="name"><i></i>Константин<br />Константинопольский</div>
+							</div>
+							<div class="item">
+								<div class="img"><img src="images/145x109.jpg" /></div>
+								<div class="text">
+									<p><a href="#">Почему не критично общество потребления?</a></p>
+									<p class="date">1 сентября 2011</p>
+									<p>Продвижение проекта директивно концентрирует из ряда вон выходящий анализ зарубежного опыта,учитывая современные тенденции.</p>
+								</div>
+								<div class="name"><i></i>Константин<br />Константинопольский</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>

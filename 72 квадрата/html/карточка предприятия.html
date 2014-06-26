@@ -1,0 +1,319 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<!-- Оптимизируем для экранов мобильников -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--[if gte IE 9]><link href="css/ie9.css" type="text/css" rel="stylesheet" /><![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.carouFredSel.js"></script>
+<script src="js/jquery-contained-sticky-scroll.js"></script>
+
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#accordion").accordion({
+			'autoHeight': false
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<div class="header">
+		<div class="top-banner"><a href="#"><img src="images/banner.gif" /></a></div>
+		<nav>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#">Поиск недвижимости</a></li>
+					<li><a href="#">Ремонт</a></li>
+					<li><a href="#">Сотка</a></li>
+					<li><a href="#">Бизнес квадраты</a></li>
+					<li><a href="#">Ипотека, кредиты</a></li>
+					<li><a href="#">Для риэлторов</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="body">
+		<div class="head">
+			<div class="submenu">
+				<ul>
+					<li class="active"><a href="#">Новости</a></li>
+					<li><a href="#">База объявлений</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Это интересно</a></li>
+					<li><a href="#">Консультации экспертов</a></li>
+					<li><a href="#">Каталог компаний</a></li>
+				</ul>
+			</div>
+			<div class="logo"><a href="#"><img src="images/logo.gif" /></a></div>
+			<div class="text">В нашей базе только самые актуальные объявления<br />всего <strong>15478</strong> объявлений, <strong>235</strong> добавлено за неделю.</div>
+		</div>
+		<div class="filter">
+			<form>
+			<div class="top">
+				<div class="trade">
+					<a class="active" href="#">Купить</a>
+					<a href="#">Арендовать</a>
+				</div>
+				<div class="form">
+					<a class="active" href="#">Вторичное жильё</a>
+					<a href="#">Новостройки</a>
+					<a href="#">Загородная</a>
+					<a href="#">Коммерческая</a>
+				</div>
+				<div class="add">
+					<a href="#"><i>+</i>Добавить объявление</a>
+				</div>
+			</div>
+			<div class="block-form">
+				<div class="line">
+					<div class="room">
+						<p>Комнат</p>
+						<span>
+							<a class="active" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5+</a>
+							<a class="last" href="#">П</a>
+						</span>
+					</div>
+					<div class="area">
+						<p>Район</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="price">
+						<p>Цена, руб.</p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div class="place">
+						<p>Площадь, м<sup>2</sup></p>
+						<span><input type="text" placeholder="мин." /> — <input type="text" placeholder="макс." /></span>
+					</div>
+					<div id="button-top" class="button"></div>
+				</div>
+				<div class="line">
+					<div class="adress">
+						<p>Адрес</p>
+						<span><input type="text" placeholder="любой" /></span>
+					</div>
+					<div class="repair">
+						<p>отделка</p>
+						<span><select><option>любая</option></select></span>
+					</div>
+					<div class="place">
+						<p>этаж</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+					<div class="place">
+						<p>этажность</p>
+						<span><input type="text" placeholder="от" /> — <input type="text" placeholder="до" /></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="lifetime">
+						<p>срок эксплуатации</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="area">
+						<p>санузел</p>
+						<span><select><option>любой</option></select></span>
+					</div>
+					<div class="repair">
+						<p>окна</p>
+						<span><select><option>любые</option></select></span>
+					</div>
+				</div>
+				<div class="line">
+					<div class="additionally">
+						<p>дополнительно</p>
+						<label><input type="checkbox" /> телефон</label>
+						<label><input type="checkbox" /> интернет</label>
+						<label><input type="checkbox" /> сигнализация</label>
+						<label><input type="checkbox" /> балкон</label>
+						<label><input type="checkbox" /> лоджия</label>
+						<label><input type="checkbox" /> домофон</label>
+						<label><input type="checkbox" /> парковка</label>
+						<label><input type="checkbox" /> лифт</label>
+					</div>
+				</div>
+				<div class="line bottom">
+					<div class="repair">
+						<p>за период</p>
+						<span><select><option>все</option></select></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> телефон</label>
+					</div>
+					<div class="phone">
+						<p>телефон</p>
+						<span><input type="text" /></span>
+					</div>
+					<div class="additionally">
+						<label><input type="checkbox" /> с фото</label>
+						<label><input type="checkbox" /> агентства</label>
+					</div>
+					<div id="button-bottom" class="button"><button type="submit"><i></i>Найти предложения</button></div>
+				</div>
+			</div>
+			</form>
+			<div class="advenced"><div class="block" id="hide"><a class="dotted" href="javascript:void(0);">Свернуть</a> ↑</div><div class="block" id="show"><a class="dotted" href="javascript:void(0);">Расширенный поиск</a> ↓</div></div>
+		</div>
+		<div class="internal clearfix">
+			<div class="enterprise-card">
+				<div class="title">
+					<div class="breadcrumbs">
+							<a href="#" class="home-crumb" title="На главную"></a> →
+							<a href="#">Каталог</a> →
+							Список предприятий
+					</div>
+					<div class="back">
+						← <a href="#">Назад к результатам поиска</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="about">
+						<h1><a href="#">Региональное агенство недвижимости «Этажи»</a></h1>
+						<img src="images/etagi.jpg" class="logo" alt="Региональное агенство недвижимости «Этажи»" width="140" height="140" />
+						<p>
+							<span>Адрес:</span>
+							г. Тюмень, ул. Ленина, 38/1, 5 этаж
+						</p>
+						<p>
+							<span>Телефон:</span>
+							8 (3452) 51-22-22 (многоканальный)
+						</p>
+						<p>
+							<span>Факс:</span>
+							8 (3452) 39-66-10
+						</p>
+						<p>
+							<span>e-mail:</span>
+							<a href="mailto:512222@etagi.com">512222@etagi.com</a>
+						</p>
+						<p>
+							<span>Режим работы:</span>
+							Пн-пт: с 09:00 до 20:00, сб-вс: с 11:00 до 17:00
+						</p>
+						<p class="additional">
+							<span>Дополнительная информация:</span>
+							Региональное агентство недвижимости «Этажи» создано в 2000 году
+в Тюмени. Сегодня компания является действительным членом Российской гильдии риэлторов и Объединения риэлторов Тюменской области. География - территория всей Тюменской области, офисы расположены в Тюмени, Сургуте, Нижневартовске и Новом Уренгое;
+в будущем откроется еще 15 филиалов на территории всего УрФО.
+						</p>
+					</div>
+					<!-- Если галереии нет, то блока block-images не должно быть -->
+					<div class="block-images" id="block-images">
+						<script>
+						$(document).ready(function(){
+							$("#carousel-mini").carouFredSel({
+								circular: false,
+								infinite: false,
+								width: 423,
+								align: false,
+								height: 54,
+								items: {
+									visible: "variable",
+									width: 71,
+									height: 54
+								},
+								auto: false,
+								prev: "#carousel-mini-prev",
+								next: "#carousel-mini-next"
+							});
+						});
+						</script>
+						<div class="images"><img src="images/471x353.jpg" /></div>
+						<div class="mini">
+							<ul id="carousel-mini">
+								<li class="active"><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+								<li><a href="#"><img src="images/71x54.jpg" /></a></li>
+							</ul>
+							<a href="javascript:void(0);" class="prev" id="carousel-mini-prev"><i></i></a>
+							<a href="javascript:void(0);" class="next" id="carousel-mini-next"><i></i></a>
+						</div>
+					</div>
+					<div class="map" id="map">
+						<!-- При деплое нужно будет обновить ключ от апи яндекс карт, указав домен -->
+						<script src="http://api-maps.yandex.ru/1.1/?key=ADrQQU8BAAAALBcFUgIA_IBIs8Il_kixs3iBU6SbMHmPXa8AAAAAAAAAAAALLb4tCYST5vryig2fsJ5HQZZXdw==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+						<script type="text/javascript">
+							YMaps.jQuery(window).load(function () {
+
+								var coords = [65.532441, 57.154693];
+								var title = 'Региональное агенство недвижимости «Этажи»';
+								var map = new YMaps.Map(YMaps.jQuery("#YMapsID-4650")[0]);
+								
+								map.setCenter(new YMaps.GeoPoint(coords[0],coords[1]), 17, YMaps.MapType.MAP);
+								YMaps.MapType.PMAP.getName = function () { return "Народная"; };
+								var placemark = new YMaps.Placemark(new YMaps.GeoPoint(coords[0],coords[1]));
+								placemark.name = title;
+								map.addOverlay(placemark); 
+								
+								function createObject (type, point, style, description) {
+									var allowObjects = ["Placemark", "Polyline", "Polygon"],
+										index = YMaps.jQuery.inArray( type, allowObjects),
+										constructor = allowObjects[(index == -1) ? 0 : index];
+										description = description || "";
+									
+									var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+									object.description = description;
+									
+									return object;
+								}
+							});
+						</script>
+
+						<div id="YMapsID-4650" style="height: 330px;"></div>
+					</div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="copy">
+			<p>© 2011 «72квадрата.рф» Все права защищены.</p>
+			<p>Разработка и дизайн сайта — студия «<a href="http://www.crtweb.ru" target="_blank">Креатив</a>»</p>
+		</div>
+		<ul>
+			<li><a href="#">Поиск недвижимости</a></li>
+			<li><a href="#">Ремонт</a></li>
+			<li><a href="#">Сотка</a></li>
+			<li><a href="#">Бизнес квадраты</a></li>
+			<li><a href="#">Ипотека, кредиты</a></li>
+			<li><a href="#">Для риэлторов</a></li>
+		</ul>
+	</div>
+</footer>
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<![endif]-->
+</body>
+</html>
