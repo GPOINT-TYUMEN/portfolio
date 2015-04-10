@@ -1,0 +1,70 @@
+$font-stack: PH, sans-serif;
+$font-header: KG Second Chances Solid, sans-serif;
+$font-character: Brandon Grottesque, sans-serif;
+
+$background: #f9fcfe;
+$color-text: #fff;
+$color-border: #808080;
+$color-bg-input: #E4E4E4;
+$color-h2: #7AC743;
+$color-black-opacity: rgba(0,0,0,.73);
+$color-name: #94BC15;
+$color-post: #4D4D4D;
+$color-black: #000;
+
+$baseline-px: 16px;
+$font-base: 16;
+
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $baseline-px / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+      #{$property}: $px-values / $baseline-rem; }
+  @else {
+      // Create an empty list that we can dump values into
+      $rem-values: unquote("");
+      @each $value in $px-values {
+      // If the value is zero, return 0
+          @if $value == 0 {
+              $rem-values: append($rem-values, $value);
+          }
+          @else {
+              $rem-values: append($rem-values, $value / $baseline-rem);
+          }
+      }
+      // Return the property and its list of converted values
+      #{$property}: $rem-values;
+  }
+}
+
+@function rel($scale, $base: $font-base, $units: rem) {
+  @return ($scale/$base)#{$units};
+}
+
+@function rem($scale, $base: $font-base) {
+  @return rel($scale, $base, rem)
+}
+
+@function em($scale, $base: $font-base) {
+  @return rel($scale, $base, em)
+}
+
+@mixin max-min-width {
+  min-width: em(1000);
+  max-width: em(1000);
+  margin: em(0) auto;
+  padding: em(0) em(20);
+}
+
+@mixin min-width {
+  min-width: em(1000);
+}
+
+@mixin ul {
+  margin: em(0);
+  padding: em(0);
+  list-style: none;
+}

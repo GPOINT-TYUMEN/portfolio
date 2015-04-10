@@ -1,0 +1,167 @@
+$font-stack: PragmaticaRoman, sans-serif;
+
+$background: #f9fcfe;
+$color-header-links: #fff;
+$color-bg-input: rgba(255,255,255,.8);
+$color-border-input: #68a6cb;
+$color-input: #1aaddf;
+$color-text: #fff;
+$color-orange: #fdb714;
+$color-orange-text: #0d4570;
+$color-header: #0066a9;
+$color-bg-step: #70c1ea;
+$color-strong-work: #0092d3;
+$color-bg-input-message: #0091cd;
+
+
+$color-67: #676767;
+$color-7f: #7F7F7F;
+$color-link-hover: #db4a4d;
+$color-hover-menu: #efefef;
+$color-hover: #ebebeb;
+$color-hover-bg: #d67872;
+$color-a3: #a3a3a3;
+$color-c6: #c6c6c6;
+$color-e5: #e5e5e5;
+$color-f1: #f1f1f1;
+$color-ea: #eaeaea;
+$color-b4: #b4b4b4;
+$color-d4: #d4d4d4;
+$color-ec: #ececec;
+$color-2d: #2d2d2d;
+$color-green: #24b05a;
+$bg-button: #db4a4d;
+$bg-shadow: #c4564f;
+
+$baseline-px: 16px;
+$font-base: 16;
+
+@mixin rem($property, $px-values) {
+    // Convert the baseline into rems
+    $baseline-rem: $baseline-px / 1rem;
+    // Print the first line in pixel values
+    #{$property}: $px-values;
+    // If there is only one (numeric) value, return the property/value line for it.
+    @if type-of($px-values) == "number" {
+        #{$property}: $px-values / $baseline-rem; }
+    @else {
+        // Create an empty list that we can dump values into
+        $rem-values: unquote("");
+        @each $value in $px-values {
+        // If the value is zero, return 0
+            @if $value == 0 {
+                $rem-values: append($rem-values, $value);
+            }
+            @else {
+                $rem-values: append($rem-values, $value / $baseline-rem);
+            }
+        }
+        // Return the property and its list of converted values
+        #{$property}: $rem-values;
+    }
+}
+
+@function rel($scale, $base: $font-base, $units: rem) {
+    @return ($scale/$base)#{$units};
+}
+
+@function rem($scale, $base: $font-base) {
+    @return rel($scale, $base, rem)
+}
+
+@function em($scale, $base: $font-base) {
+    @return rel($scale, $base, em)
+}
+
+$b-orange: 1px solid $color-orange;
+
+$border-orange: $b-orange;
+
+$box-shadow: 0 3px 0 $bg-shadow;
+
+@mixin max-min-width {
+    min-width: em(1000);
+    max-width: em(1000);
+    margin: em(0) auto;
+    padding: em(0);
+}
+
+@mixin min-width {
+    min-width: em(1000);
+}
+
+@mixin fixed($top) {
+    position: fixed;
+    width: 100%;
+    left: em(0);
+    right: em(0);
+    top: $top;
+    z-index: 500;
+}
+
+@mixin ul {
+    margin: em(0);
+    padding: em(0);
+    list-style: none;
+}
+
+@mixin transition-all-1s {
+    transition: all .1s ease-out 0s;
+}
+
+@mixin transition-all-5s {
+    transition: all .5s ease-out 0s;
+}
+
+@mixin transition-opacity {
+    -webkit-transition: opacity .5s ease-out 0s, visibility .3s ease 0s;
+       -moz-transition: opacity .5s ease-out 0s, visibility .3s ease 0s;
+         -o-transition: opacity .5s ease-out 0s, visibility .3s ease 0s;
+            transition: opacity .5s ease-out 0s, visibility .3s ease 0s;
+}
+
+@mixin transition-border-bottom {
+    -webkit-transition: border-bottom-color .3s ease 0s;
+       -moz-transition: border-bottom-color .3s ease 0s;
+         -o-transition: border-bottom-color .3s ease 0s;
+            transition: border-bottom-color .3s ease 0s;
+}
+
+@mixin transition-color {
+    -webkit-transition: color .1s ease 0s;
+       -moz-transition: color .1s ease 0s;
+         -o-transition: color .1s ease 0s;
+            transition: color .1s ease 0s;
+}
+
+@mixin transition-bg {
+    -webkit-transition: background .2s ease 0s;
+       -moz-transition: background .2s ease 0s;
+         -o-transition: background .2s ease 0s;
+            transition: background .2s ease 0s;
+}
+
+@mixin transition-bg-color {
+    -webkit-transition: background .2s ease 0s, color .1s ease 0s;
+       -moz-transition: background .2s ease 0s, color .1s ease 0s;
+         -o-transition: background .2s ease 0s, color .1s ease 0s;
+            transition: background .2s ease 0s, color .1s ease 0s;
+}
+
+@mixin transition-height {
+    -webkit-transition: height .8s ease 0s;
+       -moz-transition: height .8s ease 0s;
+         -o-transition: height .8s ease 0s;
+            transition: height .8s ease 0s;
+}
+
+@mixin transition-transform-opacity {
+    -webkit-transition: transform .3s ease 0s, opacity .3s ease-out 0s, max-height .2s ease 0s, margin-top .3s ease 0s, padding-top .3s ease 0s;
+       -moz-transition: transform .3s ease 0s, opacity .3s ease-out 0s, max-height .2s ease 0s, margin-top .3s ease 0s, padding-top .3s ease 0s;
+         -o-transition: transform .3s ease 0s, opacity .3s ease-out 0s, max-height .2s ease 0s, margin-top .3s ease 0s, padding-top .3s ease 0s;
+            transition: transform .3s ease 0s, opacity .3s ease-out 0s, max-height .2s ease 0s, margin-top .3s ease 0s, padding-top .3s ease 0s;
+}
+
+@mixin border-color {
+    border-color: $color-b4 $color-d4 $color-ec;
+}
