@@ -117,6 +117,7 @@ textarea {
 
       em {
         font-family: $font-character;
+        font-style: normal;
       }
     }
   }
@@ -311,6 +312,7 @@ textarea {
       input[type=text] {
         border: 1px solid $color-border;
         background: $color-bg-input;
+        font-family: $font-character;
         width: 100%;
         padding: 0 em(7,13);
         height: em(20,13);
@@ -362,6 +364,14 @@ textarea {
   .submit-block {
     opacity: 1;
     visibility: visible;
+  }
+
+  .header-item--logo {
+    z-index: 105!important;
+  }
+
+  .header-item--social {
+    z-index: 105!important;
   }
 }
 
@@ -641,6 +651,8 @@ h2 {
       }
 
       &.footer-item--icon__mail {
+        padding-right: 0;
+
         &:before {
           background-position: -115px -33px;
           width: em(33);

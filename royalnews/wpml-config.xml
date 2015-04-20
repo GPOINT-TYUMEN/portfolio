@@ -1,0 +1,113 @@
+<wpml-config>
+    <admin-texts>
+        <key name="royalnews_options">
+            <key name="wlm_tracking_code" />
+            <key name="wlm_custom_css" />
+            <key name="wlm_footer_left" />
+            <key name="wlm_footer_right" />
+            <key name="wlm_color_primary" />
+            <key name="wlm_color_topbar" />
+            <key name="wlm_color_leftcol" />
+            <key name="wlm_color_footer" />
+            <key name="wlm_color_subfooter" />
+            <key name="wlm_color_leftmenu_text" />
+            <key name="wlm_color_leftmenu_onhover_text" />
+            <key name="wlm_color_leftmenu_active_text" />
+            <key name="wlm_color_leftcol_text" />
+            <key name="wlm_color_leftcol_links_text" />
+            <key name="wlm_color_leftcol_links_onhover_text" />
+            <key name="wlm_color_footer_headings" />
+            <key name="wlm_color_footer_text" />
+            <key name="wlm_color_footer_links_text" />
+            <key name="wlm_color_footer_links_onhover_text" />
+            <key name="wlm_color_subfooter_text" />
+            <key name="wlm_color_subfooter_links_text" />
+            <key name="wlm_color_subfooter_links_onhover_text" />
+            <key name="wlm_twitter" />
+            <key name="wlm_facebook" />
+            <key name="wlm_pinterest" />
+            <key name="wlm_googleplus" />
+            <key name="wlm_instagram" />
+            <key name="wlm_twitter_username" />
+            <key name="wlm_twitter_count" />
+            <key name="wlm_contact_form_email" />
+            <key name="wlm_google_map_lat" />
+            <key name="wlm_google_map_lng" />
+            <key name="wlm_contact_info" />
+            <key name="wlm_home1_mainnews_title" />
+            <key name="wlm_home1_mainnews_items" />
+            <key name="wlm_home1_popular_title" />
+            <key name="wlm_home2_mainnews_title" />
+            <key name="wlm_home2_mainnews_items" />			
+        </key>
+    </admin-texts>
+    <custom-types>
+        <!--custom-type translate="0">portfolio</custom-type-->
+    </custom-types>
+    <taxonomies>
+        <!--taxonomy translate="1">portfolio_entries</taxonomy-->
+    </taxonomies>
+    <custom-fields>
+        <custom-field action="translate">wlm_small_news_description</custom-field>
+		<custom-field action="translate">wlm_post_video_url</custom-field>
+		<custom-field action="translate">wlm_review_section_title</custom-field>
+		<custom-field action="translate">wlm_review_summary</custom-field>
+		<custom-field action="translate">wlm_review_rate_type</custom-field>
+		<custom-field action="translate">wlm_review_rate_title1</custom-field>
+		<custom-field action="translate">wlm_review_rate_title2</custom-field>
+		<custom-field action="translate">wlm_review_rate_title3</custom-field>
+		<custom-field action="translate">wlm_review_rate_title4</custom-field>
+		<custom-field action="translate">wlm_review_rate_title5</custom-field>
+		<custom-field action="translate">wlm_review_rate_title6</custom-field>
+		<custom-field action="translate">wlm_review_rate_title7</custom-field>
+		<custom-field action="translate">wlm_review_rate_title8</custom-field>
+		<custom-field action="translate">wlm_review_rate_title9</custom-field>
+		<custom-field action="translate">wlm_review_rate_title10</custom-field>
+		<custom-field action="copy">wlm_review_rate_count1</custom-field>
+		<custom-field action="copy">wlm_review_rate_count2</custom-field>
+		<custom-field action="copy">wlm_review_rate_count3</custom-field>
+		<custom-field action="copy">wlm_review_rate_count4</custom-field>
+		<custom-field action="copy">wlm_review_rate_count5</custom-field>
+		<custom-field action="copy">wlm_review_rate_count6</custom-field>
+		<custom-field action="copy">wlm_review_rate_count7</custom-field>
+		<custom-field action="copy">wlm_review_rate_count8</custom-field>
+		<custom-field action="copy">wlm_review_rate_count9</custom-field>
+		<custom-field action="copy">wlm_review_rate_count10</custom-field>
+    </custom-fields>
+    <language-switcher-settings>
+        <key name="icl_lang_sel_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#EEEEEE</key>
+        </key>
+        <key name="icl_lang_sel_footer_config">
+            <key name="font-current-normal">#393939</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#F5F5F5</key>
+            <key name="background-current-hover">#FFFFFF</key>
+            <key name="font-other-normal">#393939</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#F5F5F5</key>
+            <key name="background-other-hover">#FFFFFF</key>
+            <key name="border">transparent</key>
+            <key name="background">transparent</key>
+        </key>    
+        <key name="icl_language_switcher_sidebar">1</key>
+        <key name="icl_widget_title_show">0</key>
+        <key name="icl_lang_sel_type">dropdown</key>
+        <key name="icl_lso_link_empty">0</key>
+        <key name="icl_lso_flags">1</key>
+        <key name="icl_lso_native_lang">1</key>
+        <key name="icl_lso_display_lang">0</key>
+        <key name="icl_lang_sel_footer">0</key>
+        <key name="icl_post_availability">1</key>
+        <key name="icl_post_availability_position">below</key>
+        <key name="icl_post_availability_text">This post is also available in: %s</key>
+    </language-switcher-settings>
+</wpml-config>

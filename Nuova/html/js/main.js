@@ -28,9 +28,14 @@ $(document).ready(function() {
   };
 
   var timeOut = setTimeout(showDiv, 8000);
-  $('body').mousemove(function(){
-    clearTimeout(timeOut);
-    $('.hide-out').hide();
-    timeOut = setTimeout(showDiv, 8000);
+  $('body').mousemove(function() {
+    if ( !$('body').hasClass('submit-form') ) {
+      clearTimeout(timeOut);
+      $('.hide-out').hide();
+      timeOut = setTimeout(showDiv, 8000);
+    } else {
+      $('.hide-out').hide();
+    }
   });
+
 })

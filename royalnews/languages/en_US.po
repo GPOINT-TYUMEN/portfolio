@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RoyalNews WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-09 09:15-0700\n"
+"PO-Revision-Date: 2014-09-07 21:16-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: y:\\royalnews\n"
+
+#: 404.php
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php
+msgid "Home"
+msgstr ""
+
+#: 404.php
+msgid "404"
+msgstr ""
+
+#: 404.php
+msgid ""
+"We are sorry, but the page you are<br />looking for can <span>not be found</"
+"span>"
+msgstr ""
+
+#: 404.php
+msgid "You can try searching our site or visit the homepage"
+msgstr ""
+
+#: 404.php
+msgid "Search the site..."
+msgstr ""
+
+#: archive.php
+msgid "Author archive"
+msgstr ""
+
+#: archive.php
+msgid "Blog Archives"
+msgstr ""
+
+#: archive.php
+msgid "Search Results for: %s"
+msgstr ""
+
+#: archive.php
+msgid "ERROR PAGE 404"
+msgstr ""
+
+#: archive.php
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php
+msgid "Category Archives: %s"
+msgstr ""
+
+#: author.php
+msgid "Post"
+msgstr ""
+
+#: author.php
+msgid "Posts"
+msgstr ""
+
+#: author.php
+msgid "Comment"
+msgstr ""
+
+#: author.php
+msgid "Comments"
+msgstr ""
+
+#: author.php
+msgid "Facebook"
+msgstr ""
+
+#: author.php
+msgid "Twitter"
+msgstr ""
+
+#: author.php
+msgid "Vimeo"
+msgstr ""
+
+#: author.php
+msgid "Google+"
+msgstr ""
+
+#: author.php
+msgid "RSS"
+msgstr ""
+
+#: comments.php
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php
+msgid "<span class='meta-nav'>&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php
+msgid "Newer Comments <span class='meta-nav'>&rarr;</span>"
+msgstr ""
+
+#: functions.php
+msgid "Leave Comment"
+msgstr ""
+
+#: functions.php
+msgid "Submit Comment"
+msgstr ""
+
+#: functions.php
+msgid "Extra profile information"
+msgstr ""
+
+#: functions.php
+msgid "Please enter your Facebook URL."
+msgstr ""
+
+#: functions.php
+msgid "Please enter your Twitter URL."
+msgstr ""
+
+#: functions.php
+msgid "Please enter your Vimeo URL."
+msgstr ""
+
+#: functions.php
+msgid "Please enter your Google+ URL."
+msgstr ""
+
+#: functions.php
+msgid "Please enter your RSS URL."
+msgstr ""
+
+#: functions.php
+msgid " liked"
+msgstr ""
+
+#: functions.php
+msgid "Unlike"
+msgstr ""
+
+#: functions.php
+msgid "Like"
+msgstr ""
+
+#: functions.php
+msgid "Name"
+msgstr ""
+
+#: functions.php
+msgid "Email"
+msgstr ""
+
+#: functions.php
+msgid "Website"
+msgstr ""
+
+#: functions.php
+msgid "You must be <a href='%s'>logged in</a> to post a comment."
+msgstr ""
+
+#: functions.php
+msgid ""
+"Logged in as <a href='%1$s'>%2$s</a>. <a href='%3$s' title='Log out of this "
+"account'>Log out?</a><br /><br />"
+msgstr ""
+
+#: functions.php
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: functions.php
+msgid "Cancel reply"
+msgstr ""
+
+#: header.php
+msgid "Subscribe"
+msgstr ""
+
+#: index.php
+msgid "View more materials"
+msgstr ""
+
+#: search.php
+msgid "If you're not happy with the results, please do another search"
+msgstr ""
+
+#: single.php
+msgid "By"
+msgstr ""
+
+#: single.php
+msgid "Related posts"
+msgstr ""
+
+#: single.php
+msgid "Great"
+msgstr ""
+
+#: single.php
+msgid "Good"
+msgstr ""
+
+#: single.php
+msgid "Average"
+msgstr ""
+
+#: single.php
+msgid "Poor"
+msgstr ""
+
+#: single.php
+msgid "Terrible"
+msgstr ""
+
+#: single.php
+msgid "Summary:"
+msgstr ""
+
+#: single.php
+msgid "Pages:"
+msgstr ""
+
+#: template-archives.php
+msgid "Here is an archive of your posts organized by year and month."
+msgstr ""
+
+#: template-archives.php
+msgid "Please click on needed Year or Month link"
+msgstr ""
+
+#: template-contact.php
+msgid "Contact info:"
+msgstr ""
+
+#: template-contact.php
+msgid "Send Message"
+msgstr ""
+
+#: template-contact.php
+msgid "Subject"
+msgstr ""
+
+#: template-contact.php
+msgid "Your message has been sent!"
+msgstr ""
+
+#: template-homepage4.php
+msgid "Load more posts"
+msgstr ""
+
+#: template-homepage6.php
+msgid "Previous Page"
+msgstr ""
+
+#: template-homepage6.php
+msgid "Next Page"
+msgstr ""
+
+#: template-homepage7.php
+msgid "Reviews"
+msgstr ""
+
+#: breadcrumbs.php
+msgid "ERROR 404"
+msgstr ""
+
+#: breadcrumbs.php
+msgid "Archive by category"
+msgstr ""
+
+#: breadcrumbs.php
+msgid "Search Results for"
+msgstr ""
+
+#: breadcrumbs.php
+msgid "Posts tagged"
+msgstr ""
+
+#: breadcrumbs.php
+msgid "Articles posted by"
+msgstr ""
+
+#: widget-newsletter.php
+msgid "Enter Your Email Address"
+msgstr ""
+
+#: widget-newsletter.php
+msgid "Submit"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "Previous"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "First"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "Last"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "Next"
+msgstr ""
+
+#: wp-pagenavi.php
+msgid "Prev"
+msgstr ""
