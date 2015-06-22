@@ -1,0 +1,85 @@
+$font-stack: DIN Next CYR, sans-serif;
+$font-two: Open Sans, sans-serif;
+
+$black10: rgba(0,0,0,.1);
+$black40: rgba(0,0,0,.4);
+$white: #fff;
+$green: #15F0B4;
+$dark-gray: #393939;
+
+$baseline-px: 16px;
+$font-base: 16;
+
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $baseline-px / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem; }
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: unquote("");
+    @each $value in $px-values {
+    // If the value is zero, return 0
+      @if $value == 0 {
+        $rem-values: append($rem-values, $value);
+      }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+@function rel($scale, $base: $font-base, $units: rem) {
+  @return ($scale/$base)#{$units};
+}
+
+@function rem($scale, $base: $font-base) {
+  @return rel($scale, $base, rem)
+}
+
+@function em($scale, $base: $font-base) {
+  @return rel($scale, $base, em)
+}
+
+@mixin max-min-width {
+  min-width: em(1000);
+  max-width: em(1000);
+  margin: em(0) auto;
+  padding: em(0);
+}
+
+@mixin min-width {
+  min-width: em(320);
+}
+
+@mixin fixed($top) {
+  position: fixed;
+  width: 100%;
+  left: em(0);
+  right: em(0);
+  top: $top;
+  z-index: 500;
+}
+
+@mixin ul {
+  margin: em(0);
+  padding: em(0);
+  list-style: none;
+}
+
+@mixin svg {
+  display: block;
+  position: absolute;
+}
+
+@mixin before {
+  display: block;
+  position: absolute;
+  content: "";
+}

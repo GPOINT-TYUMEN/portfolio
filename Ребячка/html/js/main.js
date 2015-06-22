@@ -1,4 +1,5 @@
 (function($){
+
   $(window).load(function(){
     $(".content").mCustomScrollbar();
 
@@ -24,18 +25,51 @@
 		});
   });
 
+  $('#timetable').on('click', function() {
+    $('.item-block--timetable').toggle();
+    $(this).parent().parent().toggleClass('current');
+  })
+
   $(document).ready(function() {
+    $('.js-close').on('click', function(e) {
+      e.preventDefault();
+      $('.popup').addClass('hidden');
+    });
+
+    $('.js-resume').on('click', function(e) {
+      e.preventDefault();
+      $('.popup--resume').removeClass('hidden');
+    })
+
+    setTimeout(function() {
+      $('input, select').styler();
+    }, 100)
+
   	$('.owl-best').owlCarousel({
       loop: true,
       nav: true,
       items: 1
     });
 
+    $('.owl-all').owlCarousel({
+      loop: true,
+      nav: true,
+      items: 1
+    });
+
+    $('.owl-only-dots').owlCarousel({
+      loop: true,
+      nav: false,
+      items: 1,
+      dots: true
+    });
+
     $('.owl-felicitation').owlCarousel({
       loop: true,
       nav: true,
       items: 1,
-      dots: false
+      dots: false,
+      animateOut: 'fadeOut'
     });
 
     $('.owl-leader').owlCarousel({
@@ -45,11 +79,86 @@
       dots: false
     });
 
+    $('.owl-not-dots-three').owlCarousel({
+      loop: true,
+      nav: true,
+      items: 3,
+      dots: false
+    });
+
+    $('.owl-not-dots-four').owlCarousel({
+      loop: true,
+      nav: true,
+      items: 4,
+      dots: false
+    });
+
+    $('.owl-not-dots-five').owlCarousel({
+      loop: true,
+      nav: true,
+      items: 5,
+      dots: false
+    });
+
     $('.owl-partners').owlCarousel({
       loop: true,
       nav: true,
       items: 4,
       dots: false
     });
+
+    $('.owl-gallery').owlCarousel({
+      loop: true,
+      nav: true,
+      items: 5,
+      dots: false
+    });
+
+    $('#accordion').accordion();
+
+    $('.tabs .item-block--tab a').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this),
+        tab = $this.attr("href");
+
+      $this.closest('.clearfix').find('a').removeClass("current");
+      $this.addClass("current");
+
+      $this.parent().parent().parent().parent().find(".item-block--100").addClass("hidden");
+      $(tab).removeClass("hidden");
+    });
+
+    $('#vacancy .item-block--links a').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this),
+        tab = $this.attr("href");
+
+      $('#vacancy .item-block--links a').removeClass("current");
+      $this.addClass("current");
+
+      $(".item-block--text-tabs").addClass("hidden");
+      $(tab).removeClass("hidden");
+    });
+
+    $('#maps').on('click', function(e) {
+      e.preventDefault();
+      $(this).parent().toggleClass('item-block--maps--open');
+    });
+
+    $('.item-block--about-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Загрузка изображений #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+      }
+    });
+
   })
 })(jQuery);

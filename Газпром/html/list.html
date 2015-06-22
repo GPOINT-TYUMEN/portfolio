@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <div class="header clearfix">
+        <div class="header-item column-first">
+          <div class="button">
+            <p><a href="#">Назад</a></p>
+          </div>
+        </div>
+        <div class="header-item column-last clearfix">
+          <div class="header-item header-title">
+            <h1>Документы</h1>
+          </div>
+          <div class="header-item header-logo"><img src="img/logo-gazprom.png" alt=""></div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="clearfix">
+        <div class="item-column column-first">
+          <div class="title-column">
+            <p><span>№</span>Название</p>
+          </div>
+          <div class="content">
+            <div class="tree" id="jstree">
+              <ul>
+                <li class="folder">
+                  <span>Папки</span>
+                  <ul>
+                    <li data-list="1">
+                      <span>Важно</span>
+                      <ul>
+                        <li><span>Отчет о финансовой деятельности за 2012 год, Владимиров В. П.</span></li>
+                        <li><span>Федеральный закон РФ «Об образовании» от 12.02.1998</span></li>
+                        <li><span>Постановление правительства РФ от 05.02.1998 №167</span></li>
+                      </ul>
+                    </li>
+                    <li data-list="2">
+                      <span>Архив</span>
+                      <ul>
+                        <li><span>Отчет о финансовой деятельности за 2012 год, Владимиров В. П.</span></li>
+                        <li><span>Федеральный закон РФ «Об образовании» от 12.02.1998</span></li>
+                        <li><span>Постановление правительства РФ от 05.02.1998 №167</span></li>
+                      </ul>
+                    </li>
+                    <li data-list="3">
+                      <span>Бланки, шаблоны, образцы</span>
+                      <ul>
+                        <li><span>Отчет о финансовой деятельности за 2012 год, Владимиров В. П.</span></li>
+                        <li><span>Федеральный закон РФ «Об образовании» от 12.02.1998</span></li>
+                        <li><span>Постановление правительства РФ от 05.02.1998 №167</span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="docs">
+                  <span>Документы</span>
+                  <ul>
+                    <li data-list="1"><span>Отчет о финансовой деятельности за 2012 год, Владимиров В. П.</span></li>
+                    <li data-list="2"><span>Федеральный закон РФ «Об образовании» от 12.02.1998</span></li>
+                    <li data-list="3"><span>Постановление правительства РФ от 05.02.1998 №167</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item-column column-last middle position"><!-- TODO: если не нужно показывать это блок в маленьком разрешении экрана, то убираем position-->
+          <h3>Документы <a href="#" class="close"></a></h3>
+          <img class="empty-logo" src="img/logo-big.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/jstree.min.js"></script>
+    <script src="js/vendor/jquery.mCustomScrollbar.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

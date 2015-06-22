@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DINNextCYRBold';
+    src: url('fonts/DINNextCYRBold.eot');
+    src: url('fonts/DINNextCYRBold.eot') format('embedded-opentype'),
+         url('fonts/DINNextCYRBold.woff2') format('woff2'),
+         url('fonts/DINNextCYRBold.woff') format('woff'),
+         url('fonts/DINNextCYRBold.ttf') format('truetype'),
+         url('fonts/DINNextCYRBold.svg#DINNextCYRBold') format('svg');
+}

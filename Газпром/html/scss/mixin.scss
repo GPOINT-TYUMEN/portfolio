@@ -1,0 +1,138 @@
+$font-stack: SegoeUI, sans-serif;
+
+$color-text: #444;
+$color-text-white: #fff;
+$color-text-black: #000;
+$color-text-gray: gray;
+$color-text-bright-blue: #007ac3;
+$color-text-greenish-blue: #23465a;
+$color-text-midnight-blue: #003c60;
+$color-text-aqua: #0f93e2;
+
+$color-bg-white: #fff;
+$color-bg-black: #000;
+$color-bg-alice-blue: #ecf5fa;
+$color-bg-bright-jeans: #297fc5;
+$color-bg-bright-telegram: #cad1d5;
+$color-bg-alice-blue: #f0f6fa;
+$color-bg-gray97: #f7f7f7;
+$color-bg-lavender: #dceffa;
+
+$color-link: #e98524;
+$color-link-white: #fff;
+$color-link-black: #000;
+$color-link-bright-jeans: #277cc3;
+$color-link-smokynd-white: #eef4f7;
+
+$color-border-white: #fff;
+$color-border-gray: #ccc;
+$color-border-bright-telegram: #cad1d5;
+$color-border-black-amber: #010101;
+$color-border-bright-blue: #007ac3;
+$color-border-alice-blue: #ecf5fa;
+$color-border-very-pale-blue: #bcc4c9;
+$color-border-aqua: #0f93e2;
+$color-border-muslim-green: #04bf0d;
+$color-border-mahogany-krayola: #d44142;
+$color-border-bright-jeans: #287dc4;
+$color-border-dove-colored: #71a0c9;
+$color-border-light-gray: #d8d8d8;
+
+$color-shadow-black: #000;
+$color-shadow-middle-persian-blue: #006ab5;
+$color-shadow-niagara: #89b2d7;
+$color-shadow-snow-white: #fcfcfc;
+$color-shadow-cornflower: #5fa4e0;
+
+$height-header-full: 99px;
+$height-header-small: 55px;
+
+$baseline-px: 16px;
+$font-base: 16;
+
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $baseline-px / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+      #{$property}: $px-values / $baseline-rem; }
+  @else {
+      // Create an empty list that we can dump values into
+      $rem-values: unquote("");
+      @each $value in $px-values {
+      // If the value is zero, return 0
+          @if $value == 0 {
+              $rem-values: append($rem-values, $value);
+          }
+          @else {
+              $rem-values: append($rem-values, $value / $baseline-rem);
+          }
+      }
+      // Return the property and its list of converted values
+      #{$property}: $rem-values;
+  }
+}
+
+@function rel($scale, $base: $font-base, $units: rem) {
+  @return ($scale/$base)#{$units};
+}
+
+@function rem($scale, $base: $font-base) {
+  @return rel($scale, $base, rem)
+}
+
+@function em($scale, $base: $font-base) {
+  @return rel($scale, $base, em)
+}
+
+@mixin max-min-width {
+  min-width: em(960);
+  margin: em(0) auto;
+  padding: em(0);
+}
+
+@mixin fixed($top) {
+  position: fixed;
+  width: 100%;
+  left: em(0);
+  right: em(0);
+  top: $top;
+  z-index: 500;
+}
+
+@mixin ul {
+  margin: em(0);
+  padding: em(0);
+  list-style: none;
+}
+
+@mixin before {
+  display: block;
+  position: absolute;
+  content: '';
+}
+
+@mixin before-img {
+  background: url(../img/sprite.png) no-repeat;
+}
+
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$opacity-ie+")";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$opacity-ie+")"; //IE8
+}
+
+@mixin transition($transition...) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}transition: $transition;
+  }
+}

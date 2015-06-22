@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body class="contacts">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 17 26" id="icon-phone">
+        <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+          <path stroke="#FFF" stroke-width="2" d="M0 20.25V1.5C0 .67.7 0 1.5 0h12c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5H0" stroke-linecap="round"/>
+          <rect width="5" height="2" x="5" y="3" fill="#FFF" rx="1.5"/>
+          <circle cx="7.5" cy="19.5" r="1.5" fill="#FFF"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 25 19" id="icon-mail">
+        <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2" stroke-linejoin="round">
+          <path d="M24 8.3v8.93c0 .43-.34.77-.77.77H1.77c-.43 0-.77-.34-.77-.77V1.77c0-.42.34-.77.77-.77h21.46c.43 0 .77.35.77.78V4" stroke-linecap="round"/>
+          <path d="M1 4l11.5 7L24 4"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 17 26" id="icon-phone-green">
+        <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+          <path stroke="#06D19A" stroke-width="2" d="M0 20.25V1.5C0 .67.7 0 1.5 0h12c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5H0" stroke-linecap="round"/>
+          <rect width="5" height="2" x="5" y="3" fill="#06D19A" rx="1.5"/>
+          <circle cx="7.5" cy="19.5" r="1.5" fill="#06D19A"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 25 19" id="icon-mail-green">
+        <g fill="none" fill-rule="evenodd" stroke="#06D19A" stroke-width="2" stroke-linejoin="round">
+          <path d="M24 8.3v8.93c0 .43-.34.77-.77.77H1.77c-.43 0-.77-.34-.77-.77V1.77c0-.42.34-.77.77-.77h21.46c.43 0 .77.35.77.78V4" stroke-linecap="round"/>
+          <path d="M1 4l11.5 7L24 4"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 124 124" id="icon-menu"><path d="M112 6H12C5.4 6 0 11.4 0 18s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12zM112 50H12C5.4 50 0 55.4 0 62s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12zM112 94H12c-6.6 0-12 5.4-12 12s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z"/></symbol>
+    </svg>
+
+    <header>
+      <div class="header">
+        <nav>
+          <div class="menu clearfix">
+            <svg class="icon icon-menu">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+            <ul class="first clearfix">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a class="current" href="#">Контакты</a></li>
+            </ul>
+            <ul class="clearfix">
+              <li>
+                <svg class="icon icon-mail">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+                <a href="mailto:hello@rtilab.ru">hello@rtilab.ru</a>
+              </li>
+              <li>
+                <svg class="icon icon-phone">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                +7 (909) 823-16-25
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="contacts-block clearfix">
+        <div class="contacts-left">
+          <div class="adress">
+            <p>Г. ТЮМЕНЬ, <br>УЛ. РЕСПУБЛИКИ, 142 <br>ТЕХНОПАРК</p>
+          </div>
+        </div>
+        <div class="contacts-right">
+          <form action="">
+            <ul>
+              <li><input type="text" placeholder="Имя"></li>
+              <li><input type="email" placeholder="Email"></li>
+              <li><textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea></li>
+              <li class="button clearfix"><span class="file" data-placeholder="Загрузить файл"><input type="file" name="" id=""></span><input type="submit" value="Отправить"></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

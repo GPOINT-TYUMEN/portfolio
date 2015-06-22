@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SegoeUIBold';
+    src: url('fonts/SegoeUIBold.eot');
+    src: url('fonts/SegoeUIBold.eot') format('embedded-opentype'),
+         url('fonts/SegoeUIBold.woff2') format('woff2'),
+         url('fonts/SegoeUIBold.woff') format('woff'),
+         url('fonts/SegoeUIBold.ttf') format('truetype'),
+         url('fonts/SegoeUIBold.svg#SegoeUIBold') format('svg');
+}
