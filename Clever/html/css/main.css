@@ -1,0 +1,1107 @@
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	min-height: 740px;
+	height: 100%;
+	font-size: 1em;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	padding: 0.2em 0;
+	background: #ccc;
+	color: #000;
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+* Image replacement
+*/
+
+.ir {
+	overflow: hidden;
+	border: 0;
+	background-color: transparent;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	display: block;
+	width: 0;
+	height: 150%;
+	content: "";
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	border: 0;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	position: static;
+	overflow: visible;
+	clip: auto;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	display: table; /* 2 */
+	content: " "; /* 1 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
+textarea:focus,
+input:focus {
+	outline: 0;
+}
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+
+@media print {
+	* {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	/*
+	* Don't show links for images, or javascript/internal links
+	*/
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+	
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	@page {
+		margin: 0.5cm;
+	}
+	
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+.onepage-pagination {
+	display: none;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	min-width: 1000px;
+	width: 100%;
+	background: rgba(17,30,38,.7);
+}
+
+.header .block {
+	margin: 27px auto 0;
+	max-width: 1106px;
+	padding: 0 10px 27px;
+}
+
+.header .logo {
+	float: left;
+}
+
+.header .logo .onepage-pagination {
+	display: block;
+	margin: 0!important;
+	padding: 0;
+	list-style: none;
+}
+
+.header .logo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header .menu {
+	float: right;
+	margin: 4px 0 0;
+}
+
+.header .menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+.header .menu li {
+	float: left;
+	margin: 0 0 0 25px;
+	/*letter-spacing: .056em;*/
+	font: 1.125em/1em "Open Sans", sans-serif;
+}
+
+.header .menu li .active,
+.header .menu .selected a {
+	font-family: "Open Sans", sans-serif;
+}
+
+.viewing-page-1 .header .menu .work {
+	display: none;
+}
+
+.viewing-page-1 .header .menu .hide {
+	display: block;
+}
+
+.header .menu li a {
+	color: #98A2AF;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.header .menu li a:hover {
+	color: #fff;
+}
+
+.header .menu li .active,
+.header .menu .top-menu .selected a {
+	opacity: 1;
+	color: #4A90E2;
+}
+
+.header .menu .top-menu .active {
+	color: #98A2AF;
+}
+
+.viewing-page-2 .header .menu .top-menu .selected a {
+	color: #98A2AF;
+}
+
+.wrapper {
+	display: block;
+	width: 100%;
+	height: 100%!important;
+}
+
+.wrapper section {
+	min-height: 740px;
+	height: 100%;
+}
+
+.caroufredsel_wrapper {
+	margin: 0 auto!important;
+	min-height: 100%;
+}
+
+#main-carousel,
+#carousel {
+	min-height: 100%;
+}
+
+.item-main {
+	height: 100%;
+}
+
+.block-main {
+	margin: 0 auto;
+	display: table;
+	width: 100%;
+	min-width: 1000px;
+	min-height: 740px;
+	height: 100%;
+}
+
+.block-main .block {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+
+.block-main .slogan {
+	margin: 0 0 92px;
+	text-align: center;
+}
+
+.block-main .slogan img {
+	margin: 0 0 23px;
+}
+
+.block-main .slogan p {
+}
+
+.block-main .slogan p,
+.block-team .team .slogan p,
+.block-contacts .slogan p {
+	color: #98A2AF;
+	text-align: center;
+	font: 1.375em/1.364em "Open Sans", sans-serif;
+}
+
+.block-main .work {
+	/*margin: 0 0 160px;*/
+	text-align: center;
+	height: 230px;
+}
+
+.block-main .work .item {
+	display: inline-block;
+	margin: 0 42px;
+	width: 170px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.block-main .work .item .img {
+	margin: 0 0 17px;
+	height: 85px;
+	line-height: 85px;
+}
+
+.block-main .work .item .img img {
+	vertical-align: middle;
+}
+
+.block-main .work .item p {
+	color: #fff;
+	font: 1.25em/1.3em "Open Sans", sans-serif;
+}
+
+.block-main .onepage-pagination {
+	display: block;
+	margin: 0!important;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 65px;
+}
+
+.block-main .onepage-pagination li {
+	text-align: center;
+	letter-spacing: .03em;
+	font: 1.25em/1em "Helvetica Neue Light";
+}
+
+.block-main .onepage-pagination a {
+	color: #4A90E2;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	position: relative;
+}
+
+.block-main .onepage-pagination a:hover {
+	opacity: 1;
+}
+
+.block-main .onepage-pagination a:before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 28px;
+	height: 16px;
+	background: url(../img/sprite.png) no-repeat -46px 0;
+	left: 50%;
+	margin-left: -14px;
+	bottom: -32px;
+}
+
+.block-carousel {
+	position: relative;
+	min-height: 740px;
+	width: 100%;
+	height: 100%;
+}
+
+.block-carousel .block {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.block-carousel .carousel {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.block-carousel .item-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 640px;
+}
+
+.block-carousel .item-table .block {
+	display: table-cell;
+	height: 100%;
+	width: 770px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.block-carousel .carousel .item {
+	float: left;
+	height: 100%;
+}
+
+.block-carousel .carousel .description {
+	float: left;
+	padding: 0;
+	width: 320px;
+	height: 640px;
+	line-height: 640px;
+}
+
+.block-carousel .carousel .line-height {
+	height: auto;
+	line-height: 1;
+	position: relative;
+}
+
+@media screen and (max-width: 1090px) {
+	.block-carousel .carousel .description {
+		
+	}
+}
+
+.block-carousel .carousel .description .text {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1em;
+}
+
+.block-carousel .carousel .description h3 {
+	margin: 0 0 17px;
+	font: 1.5em/1em "Open Sans", sans-serif;
+	color: #fff;
+}
+
+.block-carousel .carousel .description p {
+	margin: 0 0 49px;
+	color: #849296;
+	font: 1.125em/1.444em "Open Sans", sans-serif;
+}
+
+.block-carousel .carousel .description a {
+	position: relative;
+	display: inline-block;
+	padding: 0 13px 0 0;
+	color: #009BDB;
+	text-decoration: none;
+	font-size: .9em;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+}
+
+.block-carousel .carousel .description .app {
+	display: block;
+	width: 172px;
+	height: 58px;
+	background: url(../img/app_store.png) no-repeat 0 -58px;
+	opacity: .4;
+}
+
+.block-carousel .carousel .line-height .app {
+	position: absolute;
+	right: -170px;
+	top: 50px;
+}
+
+.block-carousel .carousel .description .app:hover {
+	opacity: 1;
+}
+
+.block-carousel .carousel .images {
+	float: left;
+	min-width: 450px;
+	text-align: right;
+}
+
+.block-carousel .prev,
+.block-carousel .next {
+	position: absolute;
+	top: 50%;
+	z-index: 50;
+	margin-top: -25px;
+	width: 49px;
+	height: 128px;
+	border: 1px solid #e8e8e9;
+	background: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-carousel .prev {
+	left: 0;
+	border-left: none;
+}
+
+.block-carousel .next {
+	right: 0;
+	border-right: 0;
+}
+
+.block-carousel .prev:before,
+.block-carousel .next:before {
+	position: absolute;
+	top: 53px;
+	display: block;
+	width: 12px;
+	height: 23px;
+	background: url(../img/sprite.gif) no-repeat;
+	content: "";
+	opacity: .5;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-carousel .prev:before {
+	left: 18px;
+	background-position: -62px 0;
+}
+
+.block-carousel .next:before {
+	right: 18px;
+	background-position: -74px 0;
+}
+
+.block-carousel .prev:hover,
+.block-carousel .next:hover {
+	border-color: #AAAFB6;
+}
+
+.block-carousel .prev:hover:before {
+	opacity: 1;
+}
+
+.block-carousel .next:hover:before {
+	opacity: 1;
+}
+
+.block-carousel .pagination {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+}
+
+.block-carousel .pagination a {
+	display: inline-block;
+	margin: 0 0 0 16px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	text-decoration: none;
+	font: 1em/1em "Open Sans", sans-serif;
+	color: #889298;
+}
+
+.block-carousel .pagination a:hover {
+	color: #fff;
+}
+
+.block-carousel .pagination a:first-child {
+	margin: 0;
+}
+
+.block-carousel .pagination .selected {
+	color: #4A90E2;
+}
+
+.block-carousel .pagination .selected.color1 {
+	border-color: #009bdb;
+	background: #009bdb;
+}
+
+.block-carousel .pagination .selected.color2 {
+	border-color: #34971d;
+	background: #34971d;
+}
+
+.block-carousel .pagination .selected.color3 {
+	border-color: #59616c;
+	background: #59616c;
+}
+
+.block-carousel .pagination .selected.color4 {
+	border-color: #db3838;
+	background: #db3838;
+}
+
+.block-team,
+.block-contacts {
+	position: relative;
+	min-height: 740px;
+	width: 100%;
+	height: 100%;
+}
+
+.block-team .block,
+.block-contacts .block {
+	display: table;
+	margin: 0 auto;
+	width: 770px;
+	height: 100%;
+}
+
+.block-team .team,
+.block-contacts .contacts {
+	position: relative;
+	z-index: 50;
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.block-team .team .slogan {
+	margin: 0 0 75px;
+}
+
+.block-team .team .items {
+	margin: 0 0 83px;
+}
+
+.block-team .team .items .item {
+	display: inline-block;
+	margin: 0 0 0 43px;
+	width: 156px;
+	vertical-align: top;
+}
+
+.block-team .team .items .item:first-child {
+	margin: 0;
+}
+
+.block-team .team .items .item .img {
+	margin: 0 0 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 156px;
+	height: 156px;
+}
+
+.block-team .team .items .item .name {
+	margin: 0 0 4px;
+}
+
+.block-team .team .items .item .name p {
+	color: #fff;
+	font: 1.25em/1.35em "Open Sans", sans-serif;
+}
+
+.block-team .team .items .item .post p {
+	color: #98A2AF;
+	font: 1.125em/1.333em "Open Sans", sans-serif;
+}
+
+.block-team .reviews {
+	position: relative;
+	padding: 0 0 43px;
+}
+
+.block-team .reviews .item {
+	float: left;
+	width: 770px;
+	line-height: 160px;
+}
+
+.block-team .reviews .item p {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1em;
+}
+
+.block-team .reviews .item span {
+	display: inline-block;
+	width: 565px;
+	color: #98A2AF;
+	vertical-align: top;
+	font: 1.25em/1.4em "Open Sans", sans-serif;
+}
+
+.block-team .reviews .item span em {
+	color: #39393A;
+}
+
+.block-team .reviews .item .name {
+	padding: 0 43px 0 3px;
+	width: 153px;
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #98A2AF;
+}
+
+.block-team .reviews .item .name em {
+	color: #4A4A4A;
+	font-style: normal;
+	font-size: 1.125em;
+	color: #fff;
+	display: inline-block;
+	margin: 0 0 6px;
+}
+
+.block-team .reviews .next {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	display: block;
+	width: 40px;
+	height: 38px;
+	background: url(../img/sprite.png) no-repeat -122px -38px;
+	opacity: .5;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	margin-left: -20px;
+}
+
+.block-team .reviews .next:hover {
+	opacity: 1;
+}
+
+.block-team .reviews .pagination {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.block-team .reviews .pagination span {
+	display: none;
+}
+
+.block-team .reviews .pagination a {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #c7cdd6;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.block-team .reviews .pagination a:hover {
+	border-color: #838B97;
+}
+
+.block-team .reviews .pagination a:first-child {
+	margin: 0;
+}
+
+.block-team .reviews .pagination .selected {
+	border-color: #8e939c;
+	background: #8e939c;
+}
+
+.block-contacts .slogan {
+	margin: 0 0 87px;
+}
+
+.block-contacts .form {
+	float: right;
+	margin: 10px 0 0;
+}
+
+.block-contacts .form ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.block-contacts .form li {
+	margin: 0 0 15px;
+}
+
+.block-contacts .form input[type=text],
+.block-contacts .form input[type=email],
+.block-contacts .form textarea {
+	padding: 0 10px;
+	width: 322px;
+	height: 41px;
+	border: 2px solid #6B747E;
+	background: transparent;
+	background: none;
+	color: #fff;
+	font: 1.125em/1em "Open Sans", sans-serif;
+	opacity: .7;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+.block-contacts .form textarea {
+	padding: 10px;
+	min-height: 154px;
+	height: 154px;
+}
+
+.block-contacts .form input[type=text]:focus,
+.block-contacts .form input[type=email]:focus,
+.block-contacts .form textarea:focus {
+	border-color: #fff;
+}
+
+.block-contacts .form input[type=submit] {
+	padding: 0;
+	width: 345px;
+	height: 50px;
+	border: none;
+	background: #6B747E;
+	color: #fff;
+	text-align: center;
+	font: 1.125em/1em "Open Sans", sans-serif;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+.block-contacts .form input[type=submit]:hover {
+	background: #fff;
+	color: #1C232A;
+}
+
+.block-contacts .contact {
+	float: left;
+	width: 400px;
+}
+
+.block-contacts .contact ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.block-contacts .contact li {
+	margin: 0 0 27px;
+}
+
+.block-contacts .contact p {
+	font: 1.125em/1.778em "Open Sans", sans-serif;
+	color: #98A2AF;
+}
+
+.block-contacts .contact span,
+.block-contacts .contact a {
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.333em;
+}
+
+.block-contacts .contact a {
+	text-decoration: none;
+}
+
+.block-contacts .contact .email:before {
+	width: 22px;
+	height: 17px;
+	background-position: 0 0;
+}
+
+.block-contacts .contact .skype:before {
+	top: -3px;
+	width: 24px;
+	height: 24px;
+	background-position: -22px 0;
+}
+
+.lb_label {
+	padding: 0 10px;
+	color: #fff;
+	letter-spacing: .05em;
+	font: 1.125em/1em "Open Sans";
+}
+
+.footer {
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	min-width: 1000px;
+	width: 100%;
+}
+
+@media screen and (max-height: 740px) {
+	.footer {
+		top: 678px;
+		bottom: auto;
+	}
+
+	.block-carousel .pagination {
+		bottom: 20px;
+	}
+}
+
+.footer .block {
+	margin: 0 auto;
+	max-width: 1106px;
+	padding: 0 10px;
+}
+
+.footer .block .item {
+	float: left;
+	position: relative;
+	z-index: 101;
+}
+
+.footer .block a {
+	display: inline-block;
+	width: 24px;
+	background: url(../img/sprite.png) no-repeat;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+	opacity: .4;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.footer .block a:hover {
+	opacity: 1;
+}
+
+.footer .block .email {
+	background-position: -74px -18px;
+	height: 18px;
+}
+
+.footer .block .tw {
+	background-position: -98px -22px;
+	height: 22px;
+}
+
+.viewing-page-1 .footer .block p,
+.viewing-page-1 .footer .block a {
+	color: #D4D4D4;
+}
+
+.viewing-page-4 .footer .block p,
+.viewing-page-4 .footer .block a {
+	color: #D4D4D4;
+}
+
+.viewing-page-4 .footer .block .item:first-child {
+	display: none;
+}
+
+.footer .block a {
+	text-decoration: none;
+}

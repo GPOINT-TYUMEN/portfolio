@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="b-popup" id="popup_promo" style="display: none;">
+            <div class="b-popup__bg" onclick="popup_close()"></div>
+            <div class="b-popup__table">
+                <div class="b-popup__block">
+                    <div class="b-popup__wrapper">
+                        <a href="javascript:void(0);" onclick="popup_close()" class="close"></a>
+                        <h2>Получение промокода</h2>
+                        <div class="b-popup__form">
+                            <form action="">
+                                <ul>
+                                    <li><input type="text" placeholder="Имя" /></li>
+                                    <li><input type="tel" placeholder="Телефон" /></li>
+                                    <li>
+                                        <input type="password" placeholder="Пароль" />
+                                        <label>Вы получите пароль<br />по смс в течение 1 минуты</label>
+                                    </li>
+                                    <li><input type="submit" value="Получить" /></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup" id="popup_order" style="display: none;">
+            <div class="b-popup__bg" onclick="popup_close()"></div>
+            <div class="b-popup__table">
+                <div class="b-popup__block">
+                    <div class="b-popup__wrapper">
+                        <a href="javascript:void(0);" onclick="popup_close()" class="close"></a>
+                        <h2>Покупка приложения</h2>
+                        <div class="b-popup__form">
+                            <form action="">
+                                <ul>
+                                    <li><input type="text" placeholder="Имя" /></li>
+                                    <li><input type="text" placeholder="Фамилия" /></li>
+                                    <li><input type="tel" placeholder="Телефон" /></li>
+                                    <li><input type="email" placeholder="Электронная почта" /></li>
+                                    <li class="radio">
+                                        <p><strong>Вид лицензии</strong></p>
+                                        <input type="radio" name="lisense" id="standard" />
+                                        <label for="standard">Стандарт</label>
+                                        <input type="radio" name="lisense" id="business" />
+                                        <label for="business">Бизнес</label>
+                                    </li>
+                                    <li><input type="submit" value="Купить" /></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup" style="display: none;">
+            <div class="b-popup__bg" onclick="popup_close()"></div>
+            <div class="b-popup__table">
+                <div class="b-popup__block">
+                    <div class="b-popup__wrapper">
+                        <div class="b-text">
+                            <h3>Спасибо!</h3>
+                            <p>Наш менеджер свяжется с вами<br />в течение часа</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="b-header wrapper clearfix">
+                <div class="b-header__item b-header__logo">
+                    <a href="#"><img src="img/logo.png" alt="" /></a>
+                </div>
+                <div class="b-header__item b-header__menu">
+                    <nav>
+                        <ul class="clearfix">
+                            <li><a id="benefitslink" href="#">О приложении</a></li>
+                            <li><a id="chancelink" href="#">Возможности</a></li>
+                            <li><a id="orderlink" href="#">Купить</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="b-green">
+            <div class="wrapper">
+                <div class="b-main">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-text">
+                                <h1>Multitouch Designer</h1>
+                                <p>приложение для создания мультитач-презентаций,<br />которые можно запускать на сенсорных столах,<br />моноблоках с сенсорным экраном</p>
+                            </div>
+                            <div class="b-button">
+                                <ul>
+                                    <li><a onclick="popup__promo()" href="javascript:void(0);">Получить демо-версию</a></li>
+                                    <li><a onclick="popup__order()" href="javascript:void(0);">Купить</a></li>
+                                </ul>
+                            </div>
+                            <div class="b-video">
+                                <div class="b-play"><a href="#"></a></div>
+                                <div class="b-text">
+                                    <p>Создание презентации за 1 минтуту</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="chance">
+            <div class="wrapper">
+                <div class="b-chance">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-text">
+                                <h2>Возможности приложения</h2>
+                            </div>
+                            <div class="b-list">
+                                <div class="b-item">
+                                    <p>Создание простых страниц свободного дизайна</p>
+                                    <p>С Multitouch Designer вы сможете<br /> создаватьпрезентационные страницы<br /> просто и быстро</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Добавление в проект фото<br /> и видеогалерей</p>
+                                    <p>Фото и видеогалереи сделают ваши<br /> презентации интереснее и нагляднее</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Создание каталогов<br /> различной направленности</p>
+                                    <p>Создавайте каталоги различных тем<br /> и содержания</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Управление текстом,<br /> картинками, кнопками<br /> и другими элементами</p>
+                                    <p>В Multitouch Designer вы имеете<br /> быстрый доступ к интерфейсным<br /> элементам</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Управление анимационными<br /> эффектами при переходах<br /> между формами</p>
+                                    <p>Анимация сделает вашу презентацию<br /> более логичной, интересной<br /> и эффектной</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Создание инфографики<br /> с помощью наборов<br /> элементов</p>
+                                    <p>Создавайте каталоги различных тем<br /> и содержания</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-gray" id="benefits">
+            <div class="wrapper">
+                <div class="b-benefits">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-text">
+                                <h2>Преимущества приложения</h2>
+                            </div>
+                            <div class="b-list">
+                                <div class="b-item">
+                                    <p>Презентация за 1 день</p>
+                                    <p>В Multitouch Designer вы имеете<br /> быстрый доступ к интерфейсным<br /> элементам</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Программист не нужен</p>
+                                    <p>Анимация сделает вашу<br /> презентацию более логичной,<br /> интересной и эффектной</p>
+                                </div>
+                                <div class="b-item">
+                                    <p>Дизайнерские<br /> шаблоны оформления</p>
+                                    <p>Создавайте каталоги различных<br /> тем и содержания</p>
+                                </div>
+                            </div>
+                            <div class="b-screen"><img src="img/img-screen.jpg" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="order" class="b-green">
+            <div class="wrapper">
+                <div class="b-order">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-text">
+                                <h2>Подробности покупки</h2>
+                            </div>
+                            <div class="b-more">
+                                <div class="clearfix">
+                                    <div class="b-more__item">
+                                        <h3>«Стандарт»</h3>
+                                        <p>Вид лицензии, который позволяет создавать презентации в демонстрационном варианте, без коммерческого использования</p>
+                                        <h4>Стоимость лицензии</h4>
+                                        <p><strong>16 900 руб.</strong></p>
+                                        <h4>Стоимость продления</h4>
+                                        <p><strong>1 700 руб./год</strong></p>
+                                    </div>
+                                    <div class="b-more__item">
+                                        <h3>«Бизнес»</h3>
+                                        <p>Такой вид лицензии позволяет создавать интерактивные презентации на коммерческой основе</p>
+                                        <h4>Стоимость лицензии</h4>
+                                        <p><strong>50 000 руб.</strong></p>
+                                        <h4>Стоимость продления</h4>
+                                        <p><strong>10 000 руб./год</strong></p>
+                                    </div>
+                                </div>
+                                <div class="b-button">
+                                    <ul>
+                                        <li><a onclick="popup__promo()" href="javascript:void(0);">Получить демо-версию</a></li>
+                                        <li><a onclick="popup__order()" href="javascript:void(0);">Купить</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="b-other">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-text">
+                                <h2>Другие приложения RTI Multitouch</h2>
+                            </div>
+                            <div class="b-carousel">
+                                <div id="carousel">
+                                    <div class="b-carousel__item clearfix">
+                                        <div class="b-text">
+                                            <h3>Fantastic Touch |<br /> приложение #1</h3>
+                                            <p>Приложение представляет средство для создания мультитач-презентаций, которые можно запускать на всём, что можно потрогать</p>
+                                        </div>
+                                        <div class="b-img"><a href="#"><img src="img/img.jpg" alt="" /></a></div>
+                                    </div>
+                                    <div class="b-carousel__item clearfix">
+                                        <div class="b-text">
+                                            <h3>Fantastic Touch |<br /> приложение #1</h3>
+                                            <p>Приложение представляет средство для создания мультитач-презентаций, которые можно запускать на всём, что можно потрогать</p>
+                                        </div>
+                                        <div class="b-img"><a href="#"><img src="img/img.jpg" alt="" /></a></div>
+                                    </div>
+                                    <div class="b-carousel__item clearfix">
+                                        <div class="b-text">
+                                            <h3>Fantastic Touch |<br /> приложение #1</h3>
+                                            <p>Приложение представляет средство для создания мультитач-презентаций, которые можно запускать на всём, что можно потрогать</p>
+                                        </div>
+                                        <div class="b-img"><a href="#"><img src="img/img.jpg" alt="" /></a></div>
+                                    </div>
+                                    <div class="b-carousel__item clearfix">
+                                        <div class="b-text">
+                                            <h3>Fantastic Touch |<br /> приложение #1</h3>
+                                            <p>Приложение представляет средство для создания мультитач-презентаций, которые можно запускать на всём, что можно потрогать</p>
+                                        </div>
+                                        <div class="b-img"><a href="#"><img src="img/img.jpg" alt="" /></a></div>
+                                    </div>
+                                </div>
+                                <div id="pagination" class="pagination">
+                                    <div class="b-pag__item"><a href="#"><img src="img/pag-img.jpg" alt=""></a></div>
+                                    <div class="b-pag__item"><a href="#"><img src="img/pag-img.jpg" alt=""></a></div>
+                                    <div class="b-pag__item"><a href="#"><img src="img/pag-img.jpg" alt=""></a></div>
+                                    <div class="b-pag__item"><a href="#"><img src="img/pag-img.jpg" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="b-footer">
+                    <div class="b-table">
+                        <div class="block">
+                            <div class="b-form">
+                                <form action=""><input type="text" placeholder="Адрес электронной почты"><input type="submit" value="Подписаться"></form>
+                            </div>
+                            <div class="b-text">
+                                <p>Подпишитесь на рассылку, чтобы следить за обновлениями</p>
+                            </div>
+                            <div class="b-social">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>
+                            </div>
+                            <div class="b-footer__footer clearfix">
+                                <div class="b-footer__item b-footer__menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a id="benefitslinks" href="#">О приложении</a></li>
+                                            <li><a id="chancelinks" href="#">Возможности</a></li>
+                                            <li><a id="orderlinks" href="#">Купить</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="b-footer__item b-footer__copy">
+                                    <p>2014 © rtilab.ru</p>
+                                </div>
+                                <div class="b-footer__item b-footer__mail">
+                                    <p>Вопросы присылать на <a href="mailto:info@rtilab.ru">info@rtilab.ru</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
